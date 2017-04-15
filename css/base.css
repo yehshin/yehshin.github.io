@@ -1,0 +1,459 @@
+/* CSS for Ye Heon Shin's Portfolio */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+h1, p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Skeleton */
+
+/* Skeleton | Body */
+
+body {
+  overflow-y: hidden;
+}
+
+#container {
+  width: 100%;
+  height: auto;
+}
+
+/* Skeleton | Text */
+
+#container > h1#label, #container > p#about, #container > p#work, #container > a#resume, #container > a#email, #sm-links {
+  position: absolute;
+  transition: transform 1s, color 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+#container > h1#label {
+  margin-top: 50vh;
+  left: 38vw;
+  cursor: pointer;
+}
+
+#container > p#about {
+  top: 200px;
+  left: 5%;
+}
+
+#container > p#work {
+  top: 50px;
+  left: 50%;
+}
+
+#container > a#resume {
+  top: 300px;
+  left: 80%;
+}
+
+#container > a#email {
+  top: 500px;
+  left: 10%;
+}
+
+#container > #sm-links {
+  padding-left: 50vw;
+  padding-top: 85vh;
+}
+
+/* Skeleton | Social Media Links */
+
+#container > #sm-links {
+  z-index: -10;
+  width: 300px;
+  height: 70px;
+}
+
+#container > #sm-links .icon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* Texts */
+
+#container > p, #container a {
+  font-size: 20px;
+}
+
+/* Links */
+
+#container a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Three-D is Cray-Z */
+
+#container {
+  perspective: 600px;
+  perspective-origin: center;
+}
+
+/* Animations */
+
+/* Animations | JS */
+
+@keyframes fadeInEntry {
+  10% {
+    transform: translate3d(0, 80%, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes labelThreeD {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(-1, 1, 0, 10deg);
+  }
+}
+
+@keyframes fadeInUp {
+  10% {
+    opacity: 0;
+    transform: translate3d(0, 80%, 0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate3d(-1, 1, 0, 10deg);
+  }
+}
+
+@keyframes iconBounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.fadeInEntry {
+  animation-name: fadeInEntry;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.labelThreeD {
+  animation-name: labelThreeD;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+#container a#resume:hover, #container a#email:hover, #container h1#label:hover {
+  color: gray;
+}
+
+#container p#work:hover, #container p#about:hover {
+  cursor: default;
+}
+
+/* Animations | Social Media Links */
+
+.facebook div {
+  background: url('../images/fb-icon-black.png') no-repeat;
+  background-size: 50px 50px;
+}
+
+.facebook div:hover {
+  background: url('../images/fb-icon-color.png') no-repeat;
+  background-size: 50px 50px;
+  animation-name: iconBounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.instagram div {
+  background: url('../images/insta-icon-black.png') no-repeat;
+  background-size: 50px 50px;
+}
+
+.instagram div:hover {
+  background: url('../images/insta-icon-color.png') no-repeat;
+  background-size: 50px 50px;
+  animation-name: iconBounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.linkedin div {
+  background: url('../images/linkedin-icon-black.png') no-repeat;
+  background-size: 50px 50px;
+}
+
+.linkedin div:hover {
+  background: url('../images/linkedin-icon-color.png') no-repeat;
+  background-size: 50px 50px;
+  animation-name: iconBounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.github div {
+  background: url('../images/github-icon-black.png') no-repeat;
+  background-size: 50px 50px;
+}
+
+.github div:hover {
+  background: url('../images/github-icon-color.png') no-repeat;
+  background-size: 50px 50px;
+  animation-name: iconBounce;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Mobile | Portrait */
+
+@media only screen and (max-width: 375px) {
+
+  #container > h1#label {
+    left: 3%;
+    margin-top: 5%;
+  }
+
+  #container > p#about {
+    top: 120px;
+    left: 5%;
+  }
+
+  #container > p#work {
+    top: 190px;
+    left: 5%;
+  }
+
+  #container > a#resume {
+    top: 300px;
+    left: 5%;
+  }
+
+  #container > a#email {
+    top: 360px;
+    left: 5%;
+  }
+
+  #container > #sm-links {
+    padding-left: 5%;
+    padding-top: 75vh;
+  }
+
+  #container > p, #container a {
+    font-size: 16px;
+  }
+
+  #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
+  color: black;
+  }
+
+}
+
+/* Mobile | Landscape */
+
+@media only screen and (min-width: 376px) and (max-width: 667px) {
+
+  #container > h1#label {
+    left: 5%;
+    margin-top: 5%;
+  }
+
+  #container > p#about {
+    top: 100px;
+    left: 5%;
+  }
+
+  #container > p#work {
+    top: 190px;
+    left: 5%;
+  }
+
+  #container > a#resume {
+    top: 320px;
+    left: 6%;
+  }
+
+  #container > a#email {
+    top: 380px;
+    left: 6%;
+  }
+
+  #container > #sm-links {
+    padding-left: 6%;
+    padding-top: 450px;
+  }
+
+  #container > p, #container a {
+    font-size: 16px;
+  }
+
+  #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
+  color: black;
+  }
+
+}
+
+/* Macbooks or any other nice laptop */
+
+@media only screen and (min-width: 2000px) {
+
+  #container > p#about {
+    top: 416px;
+    left: 5%;
+  }
+
+  #container > p#work {
+    top: 104px;
+    left: 50%;
+  }
+
+  #container > a#resume {
+    top: 625px;
+    left: 80%;
+  }
+
+  #container > a#email {
+    top: 1171px;
+    left: 10%;
+  }
+
+  #container > #sm-links {
+    padding-left: 50vw;
+    padding-top: 85vh;
+  }
+
+  #container > p, #container a {
+  font-size: 24px;
+  }
+
+}
+
+
+
+/* Code for web like structure, still needs work/not sure if should use */
+
+/*#container > #webPersp > hr.string {
+  position: absolute;
+  width: 0px;
+}
+
+@keyframes expandStringOne {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100%{
+    transform: rotateZ(45deg);
+  }
+}
+
+@keyframes expandStringTwo {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100%{
+    transform: rotateZ(-25deg);
+  }
+}
+
+@keyframes expandStringThree {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100%{
+    transform: rotateZ(-50deg);
+  }
+}
+
+@keyframes expandStringFour {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100%{
+    transform: rotateZ(15deg);
+  }
+}
+
+#container > #webPersp > hr.string1 {
+  width: 150px;
+  top: 260px;
+  left: 350px;
+  animation: expandStringOne;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#container > #webPersp > hr.string2 {
+  width: 200px;
+  top: 400px;
+  left: 250px;
+  animation: expandStringTwo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#container > #webPersp > hr.string3 {
+  width: 270px;
+  top: 200px;
+  left: 800px;
+  animation: expandStringThree;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#container > #webPersp > hr.string4 {
+  width: 170px;
+  top: 380px;
+  left: 890px;
+  animation: expandStringFour;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}*/
+
+/*#container > #webPersp {
+  perspective: 1000px;
+  perspective-origin: center;
+}
