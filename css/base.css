@@ -9,7 +9,7 @@ h1, p, a {
 }
 
 /* Skeleton */
-
+	
 /* Skeleton | Body */
 
 body {
@@ -23,7 +23,7 @@ body {
 
 /* Skeleton | Text */
 
-#container > h1#label, #container > p#about, #container > p#work, #container > a#resume, #container > a#email, #sm-links {
+#container > h1#label, #container > p#about, #container > p#work, #container > a#resume, #container > a#email, #container #sm-links {
   position: absolute;
   transition: transform 1s, color 0.5s;
   opacity: 0;
@@ -32,8 +32,18 @@ body {
 
 #container > h1#label {
   margin-top: 50vh;
-  left: 38vw;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
+}
+
+#container > hr#underline {
+	opacity: 0;
+	width: 200px;
+	position: absolute;
+	margin-top: 58vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #container > p#about {
@@ -51,9 +61,25 @@ body {
   left: 80%;
 }
 
+#container > hr#resume-line {
+	opacity: 0;
+	position: absolute;
+	width: 40px;
+	top: 320px;
+  left: 81%;
+}
+
 #container > a#email {
   top: 500px;
   left: 10%;
+}
+
+#container > hr#contact-line {
+	opacity: 0;
+	position: absolute;
+	width: 50px;
+	top: 520px;
+  left: 12%;
 }
 
 #container > #sm-links {
@@ -120,6 +146,16 @@ body {
   }
 }
 
+@keyframes flash {
+  from, 50%, to {
+    opacity: 0;
+  }
+
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInUp {
   10% {
     opacity: 0;
@@ -132,6 +168,28 @@ body {
     opacity: 1;
     transform: rotate3d(-1, 1, 0, 10deg);
   }
+}
+
+@keyframes resumeLine {
+	0% {
+		opacity: 0;
+		transform: rotate3d(-1, 1, 0, 10deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate3d(-1, 1, 0, 10deg);
+	}
+}
+
+@keyframes contactLine {
+	0% {
+		opacity: 0;
+		transform: rotate3d(-1, 1, 0, 10deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate3d(-1, 1, 0, 10deg);
+	}
 }
 
 @keyframes iconBounce {
@@ -165,6 +223,31 @@ body {
   animation-name: fadeInUp;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+}
+
+.flash {
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.flashContactLine {
+	animation-name: contactLine;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-delay: 3s;
+}
+
+.flashResumeLine {
+	animation-name: resumeLine;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-delay: 3s;
 }
 
 #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
@@ -238,7 +321,6 @@ body {
 @media only screen and (max-width: 375px) {
 
   #container > h1#label {
-    left: 3%;
     margin-top: 5%;
   }
 
@@ -271,8 +353,33 @@ body {
     font-size: 16px;
   }
 
+	#container > hr#underline {
+		opacity: 0;
+		width: 100px;
+		position: absolute;
+		margin-top: 18vh;
+	  left: 50%;
+	  transform: translateX(-50%);
+	}
+
+	#container > hr#resume-line {
+		opacity: 0;
+		position: absolute;
+		width: 30px;
+		top: 315px;
+	  left: 9%;
+	}
+
+	#container > hr#contact-line {
+		opacity: 0;
+		position: absolute;
+		width: 40px;
+		top: 375px;
+	  left: 10%;
+	}
+
   #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
-  color: black;
+  	color: black;
   }
 
 }
@@ -282,41 +389,65 @@ body {
 @media only screen and (min-width: 376px) and (max-width: 667px) {
 
   #container > h1#label {
-    left: 5%;
     margin-top: 5%;
+    width: 50%;
   }
 
   #container > p#about {
-    top: 100px;
+    top: 120px;
     left: 5%;
   }
 
   #container > p#work {
-    top: 190px;
+    top: 210px;
     left: 5%;
   }
 
   #container > a#resume {
-    top: 320px;
+    top: 340px;
     left: 6%;
   }
 
   #container > a#email {
-    top: 380px;
+    top: 400px;
     left: 6%;
   }
 
   #container > #sm-links {
     padding-left: 6%;
-    padding-top: 450px;
+    padding-top: 470px;
   }
+
+  #container > hr#underline {
+		opacity: 0;
+		width: 100px;
+		position: absolute;
+		margin-top: 35vh;
+	  left: 40%;
+	}
+
+	#container > hr#resume-line {
+		opacity: 0;
+		position: absolute;
+		width: 30px;
+		top: 355px;
+	  left: 8%;
+	}
+
+	#container > hr#contact-line {
+		opacity: 0;
+		position: absolute;
+		width: 40px;
+		top: 415px;
+	  left: 9%;
+	}
 
   #container > p, #container a {
     font-size: 16px;
   }
 
   #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
-  color: black;
+  	color: black;
   }
 
 }
@@ -350,13 +481,36 @@ body {
     padding-top: 85vh;
   }
 
+	#container > hr#underline {
+		opacity: 0;
+		width: 200px;
+		position: absolute;
+		margin-top: 58vh;
+	  left: 50%;
+	  transform: translateX(-50%);
+	}
+
+	#container > hr#resume-line {
+		opacity: 0;
+		position: absolute;
+		width: 40px;
+		top: 645px;
+	  left: 81%;
+	}
+
+	#container > hr#contact-line {
+		opacity: 0;
+		position: absolute;
+		width: 50px;
+		top: 1191px;
+	  left: 12%;
+	}
+
   #container > p, #container a {
-  font-size: 24px;
+  	font-size: 24px;
   }
 
 }
-
-
 
 /* Code for web like structure, still needs work/not sure if should use */
 
