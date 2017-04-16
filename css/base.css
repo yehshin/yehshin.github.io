@@ -70,16 +70,16 @@ body {
 }
 
 #container > a#email {
-  top: 500px;
-  left: 10%;
+  top: 400px;
+  left: 20%;
 }
 
 #container > hr#contact-line {
 	opacity: 0;
 	position: absolute;
 	width: 100px;
-	top: 520px;
-  left: 10%;
+	top: 420px;
+  left: 20%;
 }
 
 #container > #sm-links {
@@ -472,8 +472,8 @@ body {
   }
 
   #container > a#email {
-    top: 1171px;
-    left: 10%;
+    top: 1071px;
+    left: 20%;
   }
 
   #container > #sm-links {
