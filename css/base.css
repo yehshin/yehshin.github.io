@@ -39,7 +39,7 @@ body {
 
 #container > hr#underline {
 	opacity: 0;
-	width: 200px;
+	width: 300px;
 	position: absolute;
 	margin-top: 57vh;
   left: 50%;
@@ -64,9 +64,9 @@ body {
 #container > hr#resume-line {
 	opacity: 0;
 	position: absolute;
-	width: 40px;
+	width: 70px;
 	top: 320px;
-  left: 81%;
+  left: 80%;
 }
 
 #container > a#email {
@@ -77,9 +77,9 @@ body {
 #container > hr#contact-line {
 	opacity: 0;
 	position: absolute;
-	width: 50px;
+	width: 100px;
 	top: 520px;
-  left: 12%;
+  left: 10%;
 }
 
 #container > #sm-links {
@@ -355,7 +355,7 @@ body {
 
 	#container > hr#underline {
 		opacity: 0;
-		width: 100px;
+		width: 180px;
 		position: absolute;
 		margin-top: 18vh;
 	  left: 50%;
@@ -365,17 +365,17 @@ body {
 	#container > hr#resume-line {
 		opacity: 0;
 		position: absolute;
-		width: 30px;
+		width: 60px;
 		top: 315px;
-	  left: 9%;
+	  left: 5%;
 	}
 
 	#container > hr#contact-line {
 		opacity: 0;
 		position: absolute;
-		width: 40px;
+		width: 75px;
 		top: 375px;
-	  left: 10%;
+	  left: 5%;
 	}
 
   #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
@@ -420,7 +420,7 @@ body {
 
   #container > hr#underline {
 		opacity: 0;
-		width: 100px;
+		width: 180px;
 		position: absolute;
 		margin-top: 35vh;
 	  left: 40%;
@@ -429,17 +429,17 @@ body {
 	#container > hr#resume-line {
 		opacity: 0;
 		position: absolute;
-		width: 30px;
+		width: 60px;
 		top: 355px;
-	  left: 8%;
+	  left: 6%;
 	}
 
 	#container > hr#contact-line {
 		opacity: 0;
 		position: absolute;
-		width: 40px;
+		width: 75px;
 		top: 415px;
-	  left: 9%;
+	  left: 6%;
 	}
 
   #container > p, #container a {
@@ -483,7 +483,7 @@ body {
 
 	#container > hr#underline {
 		opacity: 0;
-		width: 200px;
+		width: 300px;
 		position: absolute;
 		margin-top: 58vh;
 	  left: 50%;
@@ -493,17 +493,17 @@ body {
 	#container > hr#resume-line {
 		opacity: 0;
 		position: absolute;
-		width: 40px;
+		width: 70px;
 		top: 645px;
-	  left: 81%;
+	  left: 80%;
 	}
 
 	#container > hr#contact-line {
 		opacity: 0;
 		position: absolute;
-		width: 50px;
+		width: 100px;
 		top: 1191px;
-	  left: 12%;
+	  left: 10%;
 	}
 
   #container > p, #container a {
