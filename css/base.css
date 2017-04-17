@@ -32,7 +32,7 @@ body {
 
 #container > h1#label {
   margin-top: 50vh;
-  left: 50%;
+  left: 40%;
 }
 
 #container > p#about {
@@ -130,8 +130,9 @@ body {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-  90% {
+  60% {
     opacity: 1;
+    transform: rotate3d(-1, 1, 0, 0deg);
   }
   100% {
     opacity: 1;
@@ -192,7 +193,7 @@ body {
 
 .fadeInEntry {
   animation-name: fadeInEntry;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
 }
 
