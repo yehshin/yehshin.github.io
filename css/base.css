@@ -25,7 +25,7 @@ body {
 
 #container > h1#label, #container > p#about, #container > p#work, #container > a#resume, #container > a#email, #container #sm-links {
   position: absolute;
-  transition: transform 1s, color 0.5s;
+  transition: transform 1s, color 0.5s, border-bottom 0.5s;
   opacity: 0;
   z-index: 10;
 }
@@ -50,24 +50,8 @@ body {
   left: 80%;
 }
 
-#container > hr#resume-line {
-	opacity: 0;
-	position: absolute;
-	width: 70px;
-	top: 320px;
-  left: 80%;
-}
-
 #container > a#email {
   top: 400px;
-  left: 20%;
-}
-
-#container > hr#contact-line {
-	opacity: 0;
-	position: absolute;
-	width: 100px;
-	top: 420px;
   left: 20%;
 }
 
@@ -154,28 +138,6 @@ body {
   }
 }
 
-@keyframes resumeLine {
-	0% {
-		opacity: 0;
-		transform: rotate3d(-1, 1, 0, 10deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotate3d(-1, 1, 0, 10deg);
-	}
-}
-
-@keyframes contactLine {
-	0% {
-		opacity: 0;
-		transform: rotate3d(-1, 1, 0, 10deg);
-	}
-	100% {
-		opacity: 1;
-		transform: rotate3d(-1, 1, 0, 10deg);
-	}
-}
-
 @keyframes iconBounce {
   0% {
     transform: scale(1);
@@ -204,26 +166,12 @@ body {
   animation-delay: 2s;
 }
 
-.flashContactLine {
-	animation-name: contactLine;
-	animation-duration: 0.7s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-out;
-	animation-direction: alternate;
-	animation-delay: 5s;
-}
-
-.flashResumeLine {
-	animation-name: resumeLine;
-	animation-duration: 0.7s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-out;
-	animation-direction: alternate;
-	animation-delay: 5s;
-}
-
 #container a#resume:hover, #container a#email:hover {
-  color: rgb(226, 57, 57);
+  border-bottom: 1px solid white;
+}
+
+#container a#resume, #container a#email {
+  border-bottom: 1px solid black;
 }
 
 #container p#work:hover, #container p#about:hover, #container h1#label {
@@ -327,22 +275,6 @@ body {
     font-size: 16px;
   }
 
-	#container > hr#resume-line {
-		opacity: 0;
-		position: absolute;
-		width: 60px;
-		top: 315px;
-	  left: 3%;
-	}
-
-	#container > hr#contact-line {
-		opacity: 0;
-		position: absolute;
-		width: 75px;
-		top: 375px;
-	  left: 3%;
-	}
-
   #container a#resume:hover, #container a#email:hover, #container h1#label:hover {
   	color: black;
   }
@@ -368,28 +300,6 @@ body {
     }
     90% {
       opacity: 1;
-    }
-    100% {
-      opacity: 1;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-  }
-
-  @keyframes resumeLine {
-    0% {
-      opacity: 0;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-  }
-
-  @keyframes contactLine {
-    0% {
-      opacity: 0;
-      transform: rotate3d(-1, 1, 0, 0deg);
     }
     100% {
       opacity: 1;
@@ -433,22 +343,6 @@ body {
     padding-top: 470px;
   }
 
-	#container > hr#resume-line {
-		opacity: 0;
-		position: absolute;
-		width: 60px;
-		top: 355px;
-	  left: 5%;
-	}
-
-	#container > hr#contact-line {
-		opacity: 0;
-		position: absolute;
-		width: 75px;
-		top: 415px;
-	  left: 5%;
-	}
-
   #container > p, #container a {
     font-size: 16px;
   }
@@ -485,33 +379,16 @@ body {
     }
   }
 
-  @keyframes resumeLine {
-    0% {
-      opacity: 0;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-  }
-
-  @keyframes contactLine {
-    0% {
-      opacity: 0;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotate3d(-1, 1, 0, 0deg);
-    }
-  }
-
 }
 
 /* Macbooks or any other nice laptop */
 
 @media only screen and (min-width: 2000px) {
+
+  #container > h1#label {
+    margin-top: 50vh;
+    left: 43%;
+  }
 
   #container > p#about {
     top: 416px;
@@ -538,124 +415,8 @@ body {
     padding-top: 85vh;
   }
 
-	#container > hr#resume-line {
-		opacity: 0;
-		position: absolute;
-		width: 70px;
-		top: 645px;
-	  left: 80%;
-	}
-
-	#container > hr#contact-line {
-		opacity: 0;
-		position: absolute;
-		width: 100px;
-		top: 1191px;
-	  left: 10%;
-	}
-
   #container > p, #container a {
   	font-size: 24px;
   }
 
-}
-
-/* Code for web like structure, still needs work/not sure if should use */
-
-/*#container > #webPersp > hr.string {
-  position: absolute;
-  width: 0px;
-}
-
-@keyframes expandStringOne {
-  0% {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100%{
-    transform: rotateZ(45deg);
-  }
-}
-
-@keyframes expandStringTwo {
-  0% {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100%{
-    transform: rotateZ(-25deg);
-  }
-}
-
-@keyframes expandStringThree {
-  0% {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100%{
-    transform: rotateZ(-50deg);
-  }
-}
-
-@keyframes expandStringFour {
-  0% {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-  50% {
-    transform: scaleX(1);
-  }
-  100%{
-    transform: rotateZ(15deg);
-  }
-}
-
-#container > #webPersp > hr.string1 {
-  width: 150px;
-  top: 260px;
-  left: 350px;
-  animation: expandStringOne;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-#container > #webPersp > hr.string2 {
-  width: 200px;
-  top: 400px;
-  left: 250px;
-  animation: expandStringTwo;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-#container > #webPersp > hr.string3 {
-  width: 270px;
-  top: 200px;
-  left: 800px;
-  animation: expandStringThree;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-#container > #webPersp > hr.string4 {
-  width: 170px;
-  top: 380px;
-  left: 890px;
-  animation: expandStringFour;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}*/
-
-/*#container > #webPersp {
-  perspective: 1000px;
-  perspective-origin: center;
 }
