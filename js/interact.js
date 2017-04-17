@@ -1,28 +1,9 @@
 // JavaScript for Ye Heon Shin's Portfolio
 
-function fadeInEntry() {
-	var label;
+function fadeInUp() {
+	var label, about, work, resume, email, smLinks, contactLine, resumeLine;
 
 	label = document.getElementById('label');
-
-	label.className = 'fadeInEntry';
-}
-
-function labelThreeD() {
-	this.className = 'labelThreeD';
-
-	underline.className = '';
-}
-
-function flash() {
-	var underline = document.getElementById('underline');
-
-	underline.className = 'flash';
-}
-
-function fadeInUp() {
-	var about, work, resume, email, smLinks, contactLine, resumeLine;
-
 	about = document.getElementById('about');
 	work = document.getElementById('work');
 	resume = document.getElementById('resume');
@@ -31,6 +12,7 @@ function fadeInUp() {
 	contactLine = document.getElementById('contact-line');
 	resumeLine = document.getElementById('resume-line');
 
+	label.className = 'fadeInEntry';
 	about.className = 'fadeInUp';
 	work.className = 'fadeInUp';
 	resume.className = 'fadeInUp';
@@ -48,11 +30,8 @@ function flashLines() {
 	resumeLine.className = 'flashResumeLine'
 }
 
-window.addEventListener('load', fadeInEntry, false);
-window.addEventListener('load', flash, false);
-label.addEventListener('click', labelThreeD, false);
-label.addEventListener('click', fadeInUp, false);
-label.addEventListener('click', flashLines, false);
+window.addEventListener('load', fadeInUp, false);
+window.addEventListener('load', flashLines, false);
 
 // var strings, i;
 
