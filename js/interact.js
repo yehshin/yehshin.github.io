@@ -1,114 +1,129 @@
 // JavaScript for Ye Heon Shin's Portfolio
 
-var aboutLink = document.querySelector('.navAbout');
-var aboutBg = document.getElementById('aboutBg');
-var aboutText = document.getElementById('aboutText');
+function animeLinks() {
 
-var workLink = document.querySelector('.navWork');
-var workBg = document.getElementById('workBg');
-var workText = document.getElementById('workText');
+	if (window.innerWidth > 500) {
+		var links, i;
 
-var contactLink = document.querySelector('.navContact');
-var contactBg = document.getElementById('contactBg');
-var resume = document.getElementById('resume');
-var email = document.getElementById('email');
+		links = document.querySelectorAll('a');
 
-var stripedBg = document.getElementById('stripedBg');
-var aboutStripedBg = document.getElementById('aboutStripedBg');
-var workStripedBg = document.getElementById('workStripedBg');
-var contactStripedBg = document.getElementById('contactStripedBg');
+		for (i = 0; i < links.length; i++) {
+			links[i].addEventListener("mouseenter", function() {
+				this.className = "hovered";
+			}, false)
 
-var platformTextBg = document.getElementById('platformTextBg');
+			links[i].addEventListener("mouseleave", function() {
+				this.className = "";
+			}, false)
+		} 
+	}
 
-var loadCover = document.getElementById('loadCover');
+} // closes: function animeLinks()
 
-function loadPage() {
+function flipLanding() {
 
-	workBg.id = "workBgTop";
-	workText.id = "workBgTop";
+	var landingText, i;
 
-	contactBg.id = "contactBgTop";
-	resume.id = "hideResume";
-	email.id = "hideEmail";
+	landingText = document.querySelectorAll('.landingText');
 
-	workStripedBg.id = "workStripedBgTop";
-	contactStripedBg.id = "contactStripedBgTop";
+	for (i = 0; i < landingText.length; i++) {
+		landingText[i].className += " flipInX";
+	}
 
-	stripedBg.id = "aboutStripedBg";
-	platformTextBg.id = "aboutPlatformTextBg";
+} // closes: function flipLanding
 
-	loadCover.id = "loadCover";
+function fadeInText() {
 
-}
+	var aboutHead, aboutText, workHead, workText, contactHead, contactText;
 
-function about() {
+	aboutHead = document.querySelector('.aboutHead');
+	aboutText = document.querySelectorAll('.aboutText');
 
-	if (workBg.id === "workBg" || contactBg.id === "contactBg") {
-		
-		aboutBg.id = "aboutBg";
-		aboutText.id = "aboutText";
+	workHead = document.querySelector('.workHead');
+	workText = document.querySelectorAll('.workText');
 
-		workBg.id = "workBgTop";
+	contactHead = document.querySelector('.contactHead');
+	contactText = document.querySelectorAll('.contactText');
 
-		contactBg.id = "contactBgTop";
-		resume.id = "resume";
-		email.id = "email";
+	if (window.innerWidth > 667) { // desktop
 
-		aboutStripedBg.id = "aboutStripedBg";
-		workStripedBg.id = "workStripedBgTop";
-		contactStripedBg.id = "contactStripedBgTop";
+		if (window.pageYOffset > 350) {
+			aboutHead.className += " fadeInUp";
+			aboutText[0].className += " fadeInUp";
+			aboutText[1].className += " fadeInUp";
+			aboutText[2].className += " fadeInUp";
+		}
 
-		stripedBg.id = "aboutStripedBg";
-		platformTextBg.id = "aboutPlatformTextBg";
+		if (window.pageYOffset > 850) {
+			workHead.className += " fadeInUp";
+			workText[0].className += " fadeInUp";
+			workText[1].className += " fadeInUp";
+			workText[2].className += " fadeInUp";
+		}
+
+		if (window.pageYOffset > 1250) {
+			contactHead.className += " fadeInUp";
+			contactText[0].className += " fadeInUp";
+			contactText[1].className += " fadeInUp";
+			contactText[2].className += " fadeInUp";
+			contactText[3].className += " fadeInUp";
+			contactText[4].className += " fadeInUp";
+		}
+
+	} else if (window.innerWidth <= 375) { // mobile | portrait
+
+		if (window.pageYOffset > 300) {
+			aboutHead.className += " fadeInUp";
+			aboutText[0].className += " fadeInUp";
+			aboutText[1].className += " fadeInUp";
+			aboutText[2].className += " fadeInUp";
+		}
+
+		if (window.pageYOffset > 700) {
+			workHead.className += " fadeInUp";
+			workText[0].className += " fadeInUp";
+			workText[1].className += " fadeInUp";
+			workText[2].className += " fadeInUp";
+		}
+
+		if (window.pageYOffset > 1000) {
+			contactHead.className += " fadeInUp";
+			contactText[0].className += " fadeInUp";
+			contactText[1].className += " fadeInUp";
+			contactText[2].className += " fadeInUp";
+			contactText[3].className += " fadeInUp";
+			contactText[4].className += " fadeInUp";
+		}
+
+	} else if (window.innerWidth >= 376 && window.innerWidth <= 667) { // mobile | landscape
+
+		if (window.pageYOffset > 250) {
+			aboutHead.className += " fadeInUp";
+			aboutText[0].className += " fadeInUp";
+			aboutText[1].className += " fadeInUp";
+			aboutText[2].className += " fadeInUp";
+		}
+
+		if (window.pageYOffset > 550) {
+			workHead.className += " fadeInUp";
+			workText[0].className += " fadeInUp";
+			workText[1].className += " fadeInUp";
+			workText[2].className += " fadeInUp";
+		}
+
+		if (window.pageYOffset > 850) {
+			contactHead.className += " fadeInUp";
+			contactText[0].className += " fadeInUp";
+			contactText[1].className += " fadeInUp";
+			contactText[2].className += " fadeInUp";
+			contactText[3].className += " fadeInUp";
+			contactText[4].className += " fadeInUp";
+		}
 
 	}
-}
 
-function work() {
+} // closes: function fadeInText()
 
-	if (aboutBg.id === "aboutBg" || contactBg.id === "contactBg") {
-
-		workBg.id = "workBg";
-		workText.id = "workText";
-
-		aboutBg.id = "aboutBgTop";
-
-		contactBg.id = "contactBgTop";
-		resume.id = "resume";
-		email.id = "email";
-
-		workStripedBg.id = "workStripedBg";
-		aboutStripedBg.id = "aboutStripedBgTop";
-		contactStripedBg.id = "contactStripedBgTop";
-
-		stripedBg.id = "workStripedBg";
-		platformTextBg.id = "workPlatformTextBg";
-
-	}
-}
-
-function contact() {
-	
-	if (aboutBg.id === "aboutBg" || workBg.id === "workBg") {
-
-		contactBg.id = "contactBg";
-		resume.id = "resume";
-		email.id = "email";
-
-		aboutBg.id = "aboutBgTop";
-		workBg.id = "workBgTop";
-
-		contactStripedBg.id = 'contactStripedBg';
-		aboutStripedBg.id = "aboutStripedBgTop";
-		workStripedBg.id = "workStripedBgTop";
-
-		stripedBg.id = "contactStripedBg";
-		platformTextBg.id = "contactPlatformTextBg";
-
-	}
-}
-
-window.addEventListener("load", loadPage, false);
-aboutLink.addEventListener("click", about, false);
-workLink.addEventListener("click", work, false);
-contactLink.addEventListener("click", contact, false);
+window.addEventListener("load", flipLanding, false);
+window.addEventListener("load", animeLinks, false);
+window.addEventListener("scroll", fadeInText, false);
