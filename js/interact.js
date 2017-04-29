@@ -61,7 +61,7 @@ function fadeInText() {
 			workText[2].className += " fadeInUp";
 		}
 
-		if (window.pageYOffset > 1250) {
+		if (window.pageYOffset > 1100) {
 			contactHead.className += " fadeInUp";
 			contactText[0].className += " fadeInUp";
 			contactText[1].className += " fadeInUp";
