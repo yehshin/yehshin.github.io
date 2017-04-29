@@ -51,7 +51,7 @@ body {
 .workBg {
   background: #3ec6e3;
   color: white;
-  height: 460px;
+  height: 670px;
   margin-top: -50px;
 }
 
@@ -300,7 +300,7 @@ a {
   .aboutText, .workText, .contactText {
     width: 80%;
     margin-left: 10%;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   /* Text Backgrounds */
@@ -314,20 +314,20 @@ a {
   .aboutBg {
     background: #f6a25f;
     color: white;
-    height: 530px;
+    height: 490px;
   }
 
   .workBg {
     background: #3ec6e3;
     color: white;
-    height: 410px;
+    height: 690px;
     margin-top: -50px;
   }
 
   .contactBg {
     background: #ed3c3c;
     color: white;
-    height: 370px;
+    height: 350px;
     margin-top: -50px;
     margin-bottom: -70px;
   }
@@ -374,7 +374,7 @@ a {
   }
 
   .workBg {
-    height: 320px;
+    height: 550px;
     margin-top: -50px;
   }
 

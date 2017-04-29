@@ -54,14 +54,17 @@ function fadeInText() {
 			aboutText[2].className += " fadeInUp";
 		}
 
-		if (window.pageYOffset > 850) {
+		if (window.pageYOffset > 800) {
 			workHead.className += " fadeInUp";
 			workText[0].className += " fadeInUp";
 			workText[1].className += " fadeInUp";
-			workText[2].className += " fadeInUp";
+			workText[2].className += " fadeInUp";			
+			workText[3].className += " fadeInUp";
+			workText[4].className += " fadeInUp";
+			workText[5].className += " fadeInUp";
 		}
 
-		if (window.pageYOffset > 1100) {
+		if (window.pageYOffset > 1200) {
 			contactHead.className += " fadeInUp";
 			contactText[0].className += " fadeInUp";
 			contactText[1].className += " fadeInUp";
@@ -84,9 +87,12 @@ function fadeInText() {
 			workText[0].className += " fadeInUp";
 			workText[1].className += " fadeInUp";
 			workText[2].className += " fadeInUp";
+			workText[3].className += " fadeInUp";
+			workText[4].className += " fadeInUp";
+			workText[5].className += " fadeInUp";
 		}
 
-		if (window.pageYOffset > 1000) {
+		if (window.pageYOffset > 1200) {
 			contactHead.className += " fadeInUp";
 			contactText[0].className += " fadeInUp";
 			contactText[1].className += " fadeInUp";
@@ -109,9 +115,12 @@ function fadeInText() {
 			workText[0].className += " fadeInUp";
 			workText[1].className += " fadeInUp";
 			workText[2].className += " fadeInUp";
+			workText[3].className += " fadeInUp";
+			workText[4].className += " fadeInUp";
+			workText[5].className += " fadeInUp";
 		}
 
-		if (window.pageYOffset > 850) {
+		if (window.pageYOffset > 950) {
 			contactHead.className += " fadeInUp";
 			contactText[0].className += " fadeInUp";
 			contactText[1].className += " fadeInUp";
