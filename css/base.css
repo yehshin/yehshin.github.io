@@ -4,15 +4,16 @@
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Catamaran:900');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
 
-body {
-  font-family: 'Inconsolata', monospace;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:700');
+
+h1 {
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
-p.landingText, .aboutHead, .workHead, .contactHead {
-  font-family: 'Catamaran', sans-serif;
+h2, p, a {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /************************************************************************************************/
@@ -22,261 +23,157 @@ p.landingText, .aboutHead, .workHead, .contactHead {
 body {
   margin: 0;
   padding: 0;
+  background: white;
 }
 
 #container {
-  width: 100%;
-  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-/* Text Backgrounds */
-
-.section {
-  margin: 0;
-  padding: 0;
+#container-work {
+  margin-left: 5%;
+  margin-right: 5%;
+  opacity: 0;  
 }
 
-.landingBg {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  overflow: hidden;
-}
-
-.aboutBg {
-  background: #f6a25f;
-  color: white;
-  height: 520px;
-}
-
-.workBg {
-  background: #3ec6e3;
-  color: white;
-  height: 670px;
-  margin-top: -50px;
-}
-
-.contactBg {
-  background: #ed3c3c;
-  color: white;
-  height: 500px;
-  margin-top: -50px;
-  margin-bottom: -70px;
-  position: relative;
+#container-jot-it {
+  margin-left: 15%;
+  margin-right: 15%;
+  opacity: 0;
 }
 
 /* Text */
 
-.text {
-  font-size: 1.7em;
-  opacity: 0;
+#title {
+  font-size: 4em;
+  margin-top: 100px;
 }
 
-p.landingText {
-  text-transform: uppercase;
-  font-size: 4.5em;
-  line-height: 100%;
-  margin-left: 5%;
-  margin-top: 0%;
+#jot-it-title {
+  margin-top: 200px;
 }
 
-.gradName {
-  background: -webkit-linear-gradient(left, #1e49e9, #1fd5fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradDesign {
-  background: -webkit-linear-gradient(left, #ec1818, #f3f525);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradCreates {
-  background: -webkit-linear-gradient(left, #0bd8af, #1aed38);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradSolves {
-  background: -webkit-linear-gradient(left, #ff8401, #ff2d63);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.aboutHead, .workHead, .contactHead {
-  text-align: center;
-  margin: auto;
+h2 {
+  font-size: 2em;
+    margin-top: 50px;
   margin-bottom: 50px;
-  padding-top: 50px;
-  font-size: 3em;
 }
 
-.aboutText, .workText, .contactText {
-  width: 70%;
-  margin-left: 15%;
+.text {
+  line-height: 50px;
+  font-size: 1.3em;
+  clear: both;
+}
+
+.last-text {
+  margin-bottom: 75px;
 }
 
 /* Links */
 
-a {
-  color: white;
+.links {
+  font-size: 1.2em;
+  clear: both;
+  width: 20%;
+  margin-right: 10%;
+}
+
+.page-link {
+  position: fixed;
+  font-size: 1em;
   text-decoration: none;
-  border-bottom: 3px solid white;
-  transition: color 0.3s, border-bottom 0.3s;
+  clear: both;
+  display: block;
+  margin-bottom: 75px;
+  top: 50px;
+  left: 5%;
+  opacity: 0;
 }
 
-.hovered {
-  color: #c3c3c3;
-  border-bottom: 1px solid #c3c3c3;
-  transition: color 0.3s, border-bottom 0.3s;
+.linkedin, .github, .facebook, .instagram {
+  position: relative;
+  top: 50px;
+  margin-bottom: 100px;
+  font-size: 1em;
 }
 
-/* Animations */
+/* Images */
 
-@keyframes flipInX {
-  from {
-    transform: perspective(1400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(1400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(1400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(1400px) rotate3d(1, 0, 0, -5deg);
-    opacity: 1;
-  }
-
-  to {
-    transform: perspective(1400px);
-    opacity: 1;
-  }
+#jot-it-before {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  animation-name: flipInX;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
+.jot-it-after {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
+/* Animation */
 
-  to {
-    opacity: 1;
-    transform: none;
-  }
+a:not(.page-link) {
+  color: black;
+  transition: color 0.2s, border-bottom 0.2s;
+  text-decoration: none;
+  border-bottom: solid 1px black;
+}
+
+a:hover:not(.page-link) {
+  color: #00bb8f;
+  border-bottom: solid 1px #00bb8f;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.page-link {
+  transition: color 0.2s;
+  color: black;
+}
+
+.page-link:hover {
+  color: #00bb8f;
+  transition: color 0.2s;
 }
 
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
-/* Social Media Links */
-
-/*#sm-links {
-  z-index: -10;
-  width: 400px;
-  height: 70px;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-}
-
-#sm-links .icon {
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin-right: 30px;
-}*/
-
-/*@keyframes iconBounce {
+@keyframes fadeInUp {
   0% {
-    transform: scale(1);
+    opacity: 0;
+    transform: translateY(50px);
   }
-  25% {
-    transform: scale(1.4);
-  }
-  75% {
-    transform: scale(1.1);
-  }
+
   100% {
-    transform: scale(1.2);
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
-.facebook div {
-  background: url('../images/fb-icon-black.png') no-repeat;
-  background-size: 50px 50px;
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;  
 }
 
-.facebook div:hover {
-  background: url('../images/fb-icon-color.png') no-repeat;
-  background-size: 50px 50px;
-  animation-name: iconBounce;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
-.instagram div {
-  background: url('../images/insta-icon-black.png') no-repeat;
-  background-size: 50px 50px;
+  100% {
+    opacity: 1;
+  }
 }
-
-.instagram div:hover {
-  background: url('../images/insta-icon-color.png') no-repeat;
-  background-size: 50px 50px;
-  animation-name: iconBounce;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.linkedin div {
-  background: url('../images/linkedin-icon-black.png') no-repeat;
-  background-size: 50px 50px;
-}
-
-.linkedin div:hover {
-  background: url('../images/linkedin-icon-color.png') no-repeat;
-  background-size: 50px 50px;
-  animation-name: iconBounce;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.github div {
-  background: url('../images/github-icon-black.png') no-repeat;
-  background-size: 50px 50px;
-}
-
-.github div:hover {
-  background: url('../images/github-icon-color.png') no-repeat;
-  background-size: 50px 50px;
-  animation-name: iconBounce;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}*/
 
 /************************************************************************************************/
 
@@ -284,115 +181,14 @@ a {
 
 @media only screen and (max-width: 375px) {
 
-  /* Text */
-
-  p.landingText {
-    font-size: 3em;
-    line-height: 80%;
-    margin-top: 20px;
-  }    
-
-  .aboutHead, .workHead, .contactHead {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-size: 2em;
-  }
-
-  .aboutText, .workText, .contactText {
-    width: 80%;
-    margin-left: 10%;
-    font-size: 1.3em;
-  }
-
-  /* Text Backgrounds */
-
-  .landingBg {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-
-  .aboutBg {
-    background: #f6a25f;
-    color: white;
-    height: 490px;
-  }
-
-  .workBg {
-    background: #3ec6e3;
-    color: white;
-    height: 690px;
-    margin-top: -50px;
-  }
-
-  .contactBg {
-    background: #ed3c3c;
-    color: white;
-    height: 350px;
-    margin-top: -50px;
-    margin-bottom: -70px;
-  }
 
 }
-
-/************************************************************************************************/
 
 /* Mobile | Landscape */
 
 @media only screen and (min-width: 376px) and (max-width: 667px) {
 
-  /* Text */
 
-  p.landingText {
-    font-size: 3em;
-    line-height: 80%;
-    margin-left: 3%;
-    margin-top: 20px;
-  }    
-
-  .aboutHead, .workHead, .contactHead {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-size: 2em;
-  }
-
-  .aboutText, .workText, .contactText {
-    width: 80%;
-    margin-left: 10%;
-    font-size: 1.4em;
-  }
-
-  /* Text Backgrounds */
-
-  .landingBg {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-
-  .aboutBg {
-    height: 410px;
-  }
-
-  .workBg {
-    height: 550px;
-    margin-top: -50px;
-  }
-
-  .contactBg {
-    height: 340px;
-    margin-top: -50px;
-    margin-bottom: -70px;
-  }
 
 }
 
-/************************************************************************************************/
-
-/* Retina Screens and higher */
-
-@media only screen and (min-width: 1500px) {
-
-  /* Will Update */
-
-}
