@@ -100,14 +100,14 @@ h2 {
 
 /* Images */
 
-#jot-it-before {
+#jot-it-before, #radius-before, #radius-after {
   width: 100%;
   height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.jot-it-after {
+.jot-it-after, .radius-single {
   width: 20%;
   height: auto;
   float: left;
@@ -143,7 +143,7 @@ a:hover:not(.page-link) {
 
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -161,7 +161,7 @@ a:hover:not(.page-link) {
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;  
 }
 
