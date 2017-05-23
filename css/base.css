@@ -4,12 +4,12 @@
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 #logo {
@@ -62,25 +62,55 @@ body {
 }
 
 .light {
-	color: #eaeaea;
+	color: #dedede;
 }
 
 #about-title {
 	clear: both;
 	margin-left: 50px;
 	padding-top: 75px;
-	font-size: 3em;
+	font-size: 2.2em;
+	margin-left: 15%;
+	width: 70%;
 }
 
 #about-text {
 	margin-left: 50px;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin-right: 50px;
+	margin-left: 15%;
+	width: 70%;
+	line-height: 40px;
 }
 
 #resume-text {
 	margin-left: 50px;
-	font-size: 1.5em;
+	font-size: 1.2em;
+	margin-left: 15%;
+}
+
+h2 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 2.2em;
+	margin-left: 15%;	
+}
+
+.text {
+	font-size: 1.2em;
+	width: 70%;
+	margin-left: 15%;
+	clear: both;
+	line-height: 40px;
+}
+
+/* Work Titles */
+
+#jot-it-title, #radius-title, #breathe-title {
+	clear: both;
+	margin-left: 50px;
+	padding-top: 50px;
+	margin-left: 15%;
 }
 
 /* Work */
@@ -96,42 +126,31 @@ body {
 	margin-bottom: 80px;
 }
 
-/* Jot It */
-
-#jot-it-title {
-		clear: both;
-		margin-left: 50px;
-		padding-top: 50px;
-}
-
-.text, h2 {
-	margin-left: 50px;
-	clear: both;
-}
-
-h2 {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	font-size: 2.5em;	
-}
-
-.text {
-	font-size: 1.5em;
-	width: 90%;
-}
-
 /* Images */
 
 img {
 	margin: 50px;
 	width: 90%;
 	height: auto;
+	margin-left: 5%;
 }
 
-.jot-it-after, .radius-single {
-	width: 15%;
+.jot-it-after, .radius-single, .breathe-single {
+	width: 10%;
 	height: auto;
 	float: left;
+	margin-left: 10%;
+}
+
+/* Video */
+
+#breathe-video {
+	width: 20%;
+	height: auto;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* Links */
@@ -172,7 +191,7 @@ a:not(.home-link):hover {
 }
 
 #about:hover, .home-link:hover {
-	color: #eaeaea;
+	color: #dedede;
 }
 
 /* Animation | JavaScript */
@@ -224,19 +243,20 @@ a:not(.home-link):hover {
 	#about-title {
 		margin-left: 20px;
 		padding-top: 50px;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 
 	#about-text {
 		margin-left: 20px;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-right: 20px;
 		line-height: 40px;
+		width: 90%;
 	}
 
 	#resume-text {
 		margin-left: 20px;
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	.home-link {
@@ -267,7 +287,8 @@ a:not(.home-link):hover {
 		margin-bottom: 50px;
 	}
 
-	#jot-it-title {
+	#jot-it-title, #radius-title, #breathe-title {
+		clear: both;
 		margin-left: 20px;
 		padding-top: 50px;
 	}
@@ -280,11 +301,11 @@ a:not(.home-link):hover {
 	h2 {
 		margin-top: 20px;
 		margin-bottom: 20px;
-		font-size: 2em;	
+		font-size: 1.8em;	
 	}
 
 	.text {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		width: 90%;
 		margin-right: 20px;
 		line-height: 40px;
@@ -324,14 +345,16 @@ a:not(.home-link):hover {
 	#about-title {
 		margin-left: 20px;
 		padding-top: 50px;
-		font-size: 2em;
+		font-size: 1.8em;
+		width: 100%;
 	}
 
 	#about-text {
 		margin-left: 20px;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		margin-right: 20px;
 		line-height: 40px;
+		width: 90%;
 	}
 
 	#resume-text {
@@ -347,7 +370,7 @@ a:not(.home-link):hover {
 
 	.links {
 		margin-left: 20px;
-		font-size: 1.7em;	
+		font-size: 1.5em;	
 		margin-bottom: 40px;
 		margin-right: 20px;
 	}
@@ -367,7 +390,8 @@ a:not(.home-link):hover {
 		margin-bottom: 50px;
 	}
 
-	#jot-it-title {
+	#jot-it-title, #radius-title, #breathe-title {
+		clear: both;
 		margin-left: 20px;
 		padding-top: 50px;
 	}
@@ -380,11 +404,11 @@ a:not(.home-link):hover {
 	h2 {
 		margin-top: 20px;
 		margin-bottom: 20px;
-		font-size: 2em;	
+		font-size: 1.8em;	
 	}
 
 	.text {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		width: 90%;
 		margin-right: 20px;
 		line-height: 40px;
