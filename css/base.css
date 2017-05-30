@@ -502,7 +502,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	/* TEXT | Intro */
 
 	p.intro {
-		font-size: 3em;
+		font-size: 2.515em;
 		margin-left: 5%;
 		margin-right: 5%;
 		width: 340px;
@@ -510,11 +510,11 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	p.intro1 {
-		margin-top: 240px;
+		margin-top: 220px;
 	}
 
 	p.intro2 {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 	.projectTitle, .projectInfo	 {
@@ -548,7 +548,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	.projectTitle4, .projectInfo4 {
-		top: 150px;
+		top: 130px;
 	}
 
 	/* TEXT | About */
@@ -688,8 +688,8 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	.blinds {
 		opacity: 0;
-		width: 400px;
-		height: 130px;
+		width: 380px;
+		height: 120px;
 		background-color: #27779a;
 		position: absolute;
 		left: 0%;
@@ -701,14 +701,12 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	.blind1 {
-		top: 225px;
-		width: 400px;
+		top: 210px;
 		animation-delay: 1s;
 	}
 
 	.blind2 {
-		top: 390px;
-		height: 180px;
+		top: 355px;
 		animation-delay: 1.5s;
 	}
 
@@ -734,7 +732,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	p#scrollGuide {
 		font-size: 1em;
-		margin-top: 80px;	
+		margin-top: 40px;	
 		text-align: center;
 		margin-left: 0%;
 		opacity: 0;

@@ -303,7 +303,7 @@ if (window.innerWidth <= 375) { // Mobile Query | iPhone 6 | Portrait
 		projectTitle[i].style.opacity = "1";
 		projectInfo[i].style.opacity = "1";
 
-		images[i].style.opacity = "0.5";
+		images[i].style.opacity = "0.4";
 	}
 
 } else if (window.innerWidth >= 376 && window.innerWidth <= 667) { // Mobile Query | iPhone 6 | Landscape
@@ -315,7 +315,7 @@ if (window.innerWidth <= 375) { // Mobile Query | iPhone 6 | Portrait
 		projectTitle[i].style.opacity = "1";
 		projectInfo[i].style.opacity = "1";
 
-		images[i].style.opacity = "0.5";
+		images[i].style.opacity = "0.4";
 	}
 
 }
