@@ -568,6 +568,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		position: fixed;
 		left: 5%;
 		top: 40px;
+		z-index: 21;
 	}
 
 	/* LINKS | Contact Links */
@@ -578,6 +579,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		left: 5%;
 		opacity: 0;
 		top: 40px;
+		z-index: 21;
 	}
 
 	a.email {
@@ -697,7 +699,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		animation-duration: 1.5s;
 		animation-fill-mode: forwards;
 		animation-timing-function: cubic-bezier(.34,.1,.93,.12);
-		z-index: 10;
+		z-index: 30;
 	}
 
 	.blind1 {
@@ -840,6 +842,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		z-index: 20;
 		opacity: 0;
 		left: 5%;
+
 	}
 
 	.projectTitle {
@@ -892,6 +895,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		position: fixed;
 		left: 5%;
 		top: 20px;
+		z-index: 21;
 	}
 
 	/* LINKS | Contact Links */
@@ -902,6 +906,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		left: 5%;
 		opacity: 0;
 		top: 20px;
+		z-index: 21;
 	}
 
 	a.email {
@@ -1021,7 +1026,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		animation-duration: 1.5s;
 		animation-fill-mode: forwards;
 		animation-timing-function: cubic-bezier(.34,.1,.93,.12);
-		z-index: 10;
+		z-index: 30;
 	}
 
 	.blind1 {
