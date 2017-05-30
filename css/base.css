@@ -495,34 +495,35 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		text-align: center;
 		margin-top: 100px;
 		margin-bottom: 70px;
-		margin-left: 0%;
+		margin-left: 25%;
 		color: #898989;
 	}
 
 	/* TEXT | Intro */
 
 	p.intro {
-		font-size: 1.815em;
+		font-size: 3em;
 		margin-left: 5%;
 		margin-right: 5%;
-		width: 240px;
+		width: 340px;
+		line-height: 50px;
 	}
 
 	p.intro1 {
-		margin-top: 220px;
+		margin-top: 240px;
 	}
 
 	p.intro2 {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	.projectTitle, .projectInfo	 {
-		font-size: 2em;
+		font-size: 3em;
 		position: relative;
 		z-index: 20;
 		opacity: 0;
-		left: 20%;
-		width: 200px;
+		left: 22%;
+		width: 300px;
 	}
 
 	.projectTitle {
@@ -530,24 +531,24 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	.projectInfo {
-		font-size: 1.185em;
+		font-size: 1.815em;
 		color: #ff955b;
 	}
 
 	.projectTitle1, .projectInfo1 {
-		top: 250px;
+		top: 400px;
 	}
 
 	.projectTitle2, .projectInfo2 {
-		top: 180px;
+		top: 280px;
 	}
 
 	.projectTitle3, .projectInfo3 {
-		top: 190px;
+		top: 300px;
 	}
 
 	.projectTitle4, .projectInfo4 {
-		top: 170px;
+		top: 150px;
 	}
 
 	/* TEXT | About */
@@ -563,7 +564,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	/* LINKS | About Link */
 
 	a.about-link {
-		font-size: 0.815em;
+		font-size: 1.185em;
 		position: fixed;
 		left: 5%;
 		top: 40px;
@@ -572,7 +573,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	/* LINKS | Contact Links */
 
 	a.contact-links {
-		font-size: 0.815em;
+		font-size: 1.185em;
 		position: fixed;
 		left: 5%;
 		opacity: 0;
@@ -580,15 +581,15 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	a.email {
-		left: 85px;
+		left: 105px;
 	}
 
 	a.linkedin {
-		left: 145px;
+		left: 185px;
 	}
 
 	a.github {
-		left: 220px;
+		left: 290px;
 	}
 
 	/* LINKS | Back Home */
@@ -614,7 +615,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	/* IMAGES | Intro */
 
 	img {
-		width: 50%;
+		width: 70%;
 		height: auto;
 	}
 
@@ -628,10 +629,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	img.introImg4 {
-		width: 95%;
+		width: 110%;
 		height: auto;
-		margin-left: -10%;
-		margin-top: -10px;
+		margin-left: -5%;
+		margin-top: -100px;
 	}
 
 	/* IMAGES | Breathe */
@@ -688,7 +689,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	.blinds {
 		opacity: 0;
 		width: 400px;
-		height: 90px;
+		height: 130px;
 		background-color: #27779a;
 		position: absolute;
 		left: 0%;
@@ -700,13 +701,14 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	.blind1 {
-		top: 205px;
+		top: 225px;
 		width: 400px;
 		animation-delay: 1s;
 	}
 
 	.blind2 {
-		top: 315px;
+		top: 390px;
+		height: 180px;
 		animation-delay: 1.5s;
 	}
 
@@ -731,10 +733,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	p#scrollGuide {
-		font-size: 0.6em;
-		margin-top: 50px;	
+		font-size: 1em;
+		margin-top: 80px;	
 		text-align: center;
-		margin-left: -25%;
+		margin-left: 0%;
 		opacity: 0;
 		color: #898989;
 		animation-name: fadeIn;
