@@ -491,6 +491,14 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		margin-left: 5%;
 	}
 
+	p.last-line-intro {
+		text-align: left;
+		margin-top: 100px;
+		margin-bottom: 70px;
+		margin-left: 5%;
+		color: #898989;
+	}
+
 	/* TEXT | Intro */
 
 	p.intro {
@@ -509,14 +517,13 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	.projectTitle, .projectInfo	 {
-	font-size: 1em;
-	width: 350px;
-	position: relative;
-	z-index: 20;
-	opacity: 0;
-	left: 5%;
-	width: 150px;
-}
+		font-size: 1em;
+		position: relative;
+		z-index: 20;
+		opacity: 0;
+		left: 5%;
+		width: 150px;
+	}
 
 	.projectTitle {
 		color: #27779a;
@@ -771,7 +778,320 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 @media only screen and (min-width: 376px) and (max-width: 667px) {
 
+	/* TEXT */
 
+	/* TEXT | Universal */
+
+	h1 {
+		size: 1em;
+		color: #e2e6e8;
+		margin-left: 5%;
+	}
+
+	h1.title {
+		margin-top: 100px;
+	}
+
+	h2 {
+		size: 2em;
+		color: #e2e6e8;
+		margin-left: 5%;	
+	}
+
+	p.text {
+		color: #e2e6e8;
+		margin-left: 100px;
+		margin-right: 100px;
+		line-height: 30px;
+	}
+
+	p.project-text {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	p.last-line {
+		font-size: 0.85em;
+		margin-bottom: 50px;
+		margin-left: 5%;
+	}
+
+	/* TEXT | Intro */
+
+	p.intro {
+		font-size: 2em;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 500px;
+	}
+
+	p.intro1 {
+		margin-top: 130px;
+	}
+
+	p.intro2 {
+		margin-top: 70px;
+	}
+
+	.projectTitle, .projectInfo	 {
+		font-size: 1.185em;
+		width: 600px;
+		position: relative;
+		z-index: 20;
+		opacity: 0;
+		left: 5%;
+	}
+
+	.projectTitle {
+		color: #27779a;
+	}
+
+	.projectInfo {
+		font-size: 1em;
+		color: #ff955b;
+	}
+
+	.projectTitle1, .projectInfo1 {
+		top: 170px;
+	}
+
+	.projectTitle2, .projectInfo2 {
+		top: 140px;
+	}
+
+	.projectTitle3, .projectInfo3 {
+		top: 150px;
+	}
+
+	.projectTitle4, .projectInfo4 {
+		top: 150px;
+	}
+
+	p.last-line-intro {
+		text-align: left;
+		margin-top: 100px;
+		margin-bottom: 70px;
+		margin-left: 5%;
+		color: #898989;
+	}
+
+	/* TEXT | About */
+
+	.about-title {
+		margin-top: -100px;	
+	}
+
+	p.about-text {
+		line-height: 30px;
+	}
+
+	/* LINKS | About Link */
+
+	a.about-link {
+		font-size: 1em;
+		position: fixed;
+		left: 5%;
+		top: 20px;
+	}
+
+	/* LINKS | Contact Links */
+
+	a.contact-links {
+		font-size: 1em;
+		position: fixed;
+		left: 5%;
+		opacity: 0;
+		top: 20px;
+	}
+
+	a.email {
+		left: 120px;
+	}
+
+	a.linkedin {
+		left: 200px;
+	}
+
+	a.github {
+		left: 300px;
+	}
+
+	/* LINKS | Back Home */
+
+	a.back-home {
+		display: inline-block;
+		margin-left: 5%;
+		font-size: 0.85em;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	/* LINKS | Next Project */
+
+	a.next-project {
+		font-size: 0.85em;
+		margin-left: 60%;
+		margin-bottom: 100px;
+	}
+
+	/* IMAGES */
+
+	/* IMAGES | Intro */
+
+	img {
+		width: 20%;
+		height: auto;
+	}
+
+	img.introImg {
+		margin-left: 5%;
+		margin-top: -10px;
+	}
+
+	img.introImg1 {
+		margin-top: 10px;
+	}
+
+	img.introImg4 {
+		width: 60%;
+		height: auto;
+		margin-left: -5%;
+		margin-top: -10px;
+	}
+
+	/* IMAGES | Breathe */
+
+	img.breatheImg {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	img.breatheImg4 {
+		margin-right: 5%;
+	}
+
+	video#breathe-video {
+		width: 50%;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/* IMAGES | Jot It */
+
+	img.jot-it-img {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/* IMAGES | Radius */
+
+	img.radiusImg {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/* IMAGES | Starbucks */
+
+	img.starbucks-img {
+		margin-left: 0%;
+		width: 100%;
+		margin-right: 5%;
+	}
+
+	/* ANIMATION */
+
+	/* ANIMATION | Blinds */
+
+	.blinds {
+		opacity: 0;
+		width: 700px;
+		height: 80px;
+		background-color: #27779a;
+		position: absolute;
+		left: 0%;
+		animation-name: blinds;
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(.34,.1,.93,.12);
+		z-index: 10;
+	}
+
+	.blind1 {
+		top: 105px;
+		animation-delay: 1s;
+	}
+
+	.blind2 {
+		top: 205px;
+		animation-delay: 1.5s;
+	}
+
+	.blind3 {
+		top: 0px;
+		left: 0%;
+		height: 50px;
+		animation-delay: 2.1s;
+	}
+
+	.blind4 {
+		display: none;
+	}
+
+	.blind5 {
+		display: none;
+	}
+
+	.blind6 {
+		display: none;
+	}
+
+	p#scrollGuide {
+		font-size: 1em;
+		margin-top: 50px;	
+		text-align: left;
+		margin-left: 5%;
+		opacity: 0;
+		color: #898989;
+		animation-name: fadeIn;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-delay: 3s;
+	}
+
+	/* ANIMATION | Project Entry */
+
+	#container-glitch {
+		animation-name: glitch;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-delay: 0.5s;
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	@keyframes glitch {
+		0% {
+			margin-top: 120px;
+			opacity: 0;
+		}
+
+		30% {
+			opacity: 1;
+		}
+
+		100% {
+			margin-top: 0px;
+			opacity: 1;
+		}
+	}
 
 }
 
