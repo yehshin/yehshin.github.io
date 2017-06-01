@@ -113,15 +113,19 @@ p#scrollGuide {
 }
 
 .projectTitle2, .projectInfo2 {
-	top: 350px;
+	top: 330px;
 }
 
 .projectTitle3, .projectInfo3 {
-	top: 325px;
+	top: 350px;
 }
 
 .projectTitle4, .projectInfo4 {
 	top: 300px;
+}
+
+.projectTitle5, .projectInfo5 {
+	top: 350px;
 }
 
 p.last-line-intro {
@@ -272,6 +276,15 @@ img.starbucks-img {
 	margin-left: 100px;
 	width: 90%;
 	margin-right: 100px;
+}
+
+/* IMAGES | Amazon */
+
+img.amazon-img {
+	margin-left: 200px;
+	width: 30%;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* ANIMATION */
@@ -551,6 +564,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		top: 130px;
 	}
 
+	.projectTitle5, .projectInfo5 {
+		top: 300px;
+	}
+
 	/* TEXT | About */
 
 	.about-title {
@@ -682,6 +699,15 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		margin-left: 0%;
 		width: 100%;
 		margin-right: 5%;
+	}
+
+	/* IMAGES | Amazon */
+
+	img.amazon-img {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
 	/* ANIMATION */
@@ -870,6 +896,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		top: 150px;
 	}
 
+	.projectTitle5, .projectInfo5 {
+		top: 150px;
+	}
+
 	p.last-line-intro {
 		text-align: left;
 		margin-top: 100px;
@@ -1009,6 +1039,15 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		margin-left: 0%;
 		width: 100%;
 		margin-right: 5%;
+	}
+
+	/* IMAGES | Amazon */
+
+	img.radiusImg {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
 	/* ANIMATION */
