@@ -10,6 +10,7 @@ introImg2 = document.querySelectorAll('.introImg')[1];
 introImg3 = document.querySelectorAll('.introImg')[2];
 introImg4 = document.querySelectorAll('.introImg')[3];
 introImg5 = document.querySelectorAll('.introImg')[4];
+introImg6 = document.querySelectorAll('.introImg')[5];
 
 window.addEventListener("scroll", function() {
 
@@ -336,6 +337,65 @@ function removeAmazonText() {
 
 }
 
+function displayPawsText() {
+
+	var projectTitle = document.querySelectorAll('.projectTitle')[5];
+	var projectInfo = document.querySelectorAll('.projectInfo')[5];
+
+	projectTitle.style.transition = "opacity 0.2s";
+	projectInfo.style.transition = "opacity 0.2s";
+
+	projectTitle.style.opacity = "1";
+	projectInfo.style.opacity = "1";
+
+	projectTitle.addEventListener("mouseenter", function() {
+
+		this.style.opacity = "1";
+		projectInfo.style.opacity = "1";
+		introImg6.style.opacity = "0.3";
+		introImg6.style.transform = "scale(1.1)";
+
+	}, false);
+
+	projectInfo.addEventListener("mouseenter", function() {
+
+		this.style.opacity = "1";
+		projectTitle.style.opacity = "1";
+		introImg6.style.opacity = "0.3";
+		introImg6.style.transform = "scale(1.1)";
+
+	}, false);
+
+}
+
+function removePawsText() {
+
+	var projectTitle = document.querySelectorAll('.projectTitle')[5];
+	var projectInfo = document.querySelectorAll('.projectInfo')[5];
+
+	projectTitle.style.opacity = "0";
+	projectInfo.style.opacity = "0";
+
+	projectTitle.addEventListener("mouseleave", function() {
+
+		this.style.opacity = "0";
+		projectInfo.style.opacity = "0";
+		introImg6.style.opacity = "1";
+		introImg6.style.transform = "scale(1)"
+
+	}, false);
+
+	projectInfo.addEventListener("mouseleave", function() {
+
+		this.style.opacity = "0";
+		projectTitle.style.opacity = "0";
+		introImg6.style.opacity = "1";
+		introImg6.style.transform = "scale(1)"
+
+	}, false);
+
+}
+
 introImg1.addEventListener("mouseenter", displayBreatheText, false);
 introImg1.addEventListener("mouseleave", removeBreatheText, false);
 
@@ -351,8 +411,8 @@ introImg4.addEventListener("mouseleave", removeStarbucksText, false);
 introImg5.addEventListener("mouseenter", displayAmazonText, false);
 introImg5.addEventListener("mouseleave", removeAmazonText, false);
 
-
-
+introImg6.addEventListener("mouseenter", displayPawsText, false);
+introImg6.addEventListener("mouseleave", removePawsText, false);
 
 if (window.innerWidth <= 375) { // Mobile Query | iPhone 6 | Portrait
 

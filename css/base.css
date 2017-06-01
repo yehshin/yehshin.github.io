@@ -128,6 +128,10 @@ p#scrollGuide {
 	top: 350px;
 }
 
+.projectTitle6, .projectInfo6 {
+	top: 350px;
+}
+
 p.last-line-intro {
 	text-align: center;
 	margin-top: 100px;
@@ -285,6 +289,14 @@ img.amazon-img {
 	width: 30%;
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+/* IMAGES | Paws */
+
+img.paws-img {
+	margin-left: 200px;
+	width: 30%;
+	margin-top: 50px;
 }
 
 /* ANIMATION */
@@ -572,6 +584,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		top: 300px;
 	}
 
+	.projectTitle6, .projectInfo6 {
+		top: 300px;
+	}
+
 	/* TEXT | About */
 
 	.about-title {
@@ -708,6 +724,15 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	/* IMAGES | Amazon */
 
 	img.amazon-img {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/* IMAGES | Paws */
+
+	img.paws-img {
 		margin-left: 5%;
 		width: 40%;
 		margin-top: 50px;
@@ -922,6 +947,10 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		top: 150px;
 	}
 
+	.projectTitle6, .projectInfo6 {
+		top: 150px;
+	}
+
 	p.last-line-intro {
 		text-align: left;
 		margin-top: 100px;
@@ -1065,7 +1094,16 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	/* IMAGES | Amazon */
 
-	img.radiusImg {
+	img.amazonImg {
+		margin-left: 5%;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	/* IMAGES | Paws */
+
+	img.paws-img {
 		margin-left: 5%;
 		width: 40%;
 		margin-top: 50px;
