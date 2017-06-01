@@ -294,58 +294,60 @@ img.amazon-img {
 .blinds {
 	opacity: 0;
 	width: 700px;
-	height: 100px;
+	height: 72px;
 	background-color: #27779a;
 	position: absolute;
-	left: 70px;
+	left: 100px;
 	animation-name: blinds;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
-	animation-timing-function: cubic-bezier(.34,.1,.93,.12);
+	animation-timing-function: linear;
 	z-index: 10;
 }
 
 .blind1 {
-	top: 250px;
-	width: 650px;
+	top: 262px;
+	width: 620px;
 	animation-delay: 1s;
 }
 
 .blind2 {
-	top: 460px;
-	animation-delay: 1.5s;
+	top: 472px;
+	height: 74px;
+	width: 650px;
+	animation-delay: 1.1s;
 }
 
 .blind3 {
-	top: 85px;
-	left: 83%;
-	width: 100px;
-	height: 50px;
-	animation-delay: 2s;
+	top: 98px;
+	left: 85%;
+	width: 51px;
+	height: 22px;
+	animation-delay: 1.15s;
 }
 
 .blind4 {
-	top: 145px;
-	left: 83%;
-	width: 100px;
-	height: 50px;
-	animation-delay: 2.2s;
+	top: 160px;
+	left: 85%;
+	width: 51px;
+	height: 22px;
+	animation-delay: 1.2s;
 }
 
 .blind5 {
-	top: 205px;
-	left: 83%;
-	width: 120px;
-	height: 50px;
-	animation-delay: 2.4s;
+	top: 218px;
+	left: 85%;
+	width: 75px;
+	height: 22px;
+	animation-delay: 1.25s;
 }
 
 .blind6 {
-	top: 265px;
-	left: 83%;
-	width: 110px;
-	height: 50px;
-	animation-delay: 2.6s;
+	top: 279px;
+	left: 85%;
+	width: 61px;
+	height: 22px;
+	animation-delay: 1.3s;
 }
 
 @keyframes blinds {
@@ -382,35 +384,35 @@ p.intro, a.about-link, a.contact-links {
 }
 
 p.intro1 {
-	animation-delay: 1.8s;
+	animation-delay: 1.47s;
 	width: 700px;
 }
 
 p.intro2 {
-	animation-delay: 2.3s;
+	animation-delay: 1.57s;
 }
 
 a.about-link {
-	animation-delay: 2.8s;
+	animation-delay: 1.65s;
 }
 
 a.email {
-	animation-delay: 3s;
+	animation-delay: 1.7s;
 }
 
 a.linkedin {
-	animation-delay: 3.2s;
+	animation-delay: 1.75s;
 }
 
 a.github {
-	animation-delay: 3.4s;
+	animation-delay: 1.8s;
 }
 
 p#scrollGuide {
 	animation-name: fadeIn;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
-	animation-delay: 5s;
+	animation-delay: 3s;
 }
 
 @keyframes fadeIn {
@@ -523,10 +525,12 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	p.intro1 {
+		animation-delay: 1.47;
 		margin-top: 220px;
 	}
 
 	p.intro2 {
+		animation-delay: 1.57;
 		margin-top: 40px;
 	}
 
@@ -722,9 +726,9 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		position: absolute;
 		left: 0%;
 		animation-name: blinds;
-		animation-duration: 1.5s;
+		animation-duration: 1s;
 		animation-fill-mode: forwards;
-		animation-timing-function: cubic-bezier(.34,.1,.93,.12);
+		animation-timing-function: linear;
 		z-index: 30;
 	}
 
@@ -735,7 +739,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	.blind2 {
 		top: 355px;
-		animation-delay: 1.5s;
+		animation-delay: 1.1s;
 	}
 
 	.blind3 {
@@ -743,7 +747,7 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		left: 0%;
 		width: 400px;
 		height: 50px;
-		animation-delay: 2.1s;
+		animation-delay: 1.15s;
 	}
 
 	.blind4 {
@@ -756,6 +760,22 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	.blind6 {
 		display: none;
+	}
+
+	a.about-link {
+		animation-delay: 1.5s;
+	}
+
+	a.email {
+		animation-delay: 1.6s;
+	}
+
+	a.linkedin {
+		animation-delay: 1.7s;
+	}
+
+	a.github {
+		animation-delay: 1.8s;
 	}
 
 	p#scrollGuide {
@@ -854,10 +874,12 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 	}
 
 	p.intro1 {
+		animation-delay: 1.47s;
 		margin-top: 130px;
 	}
 
 	p.intro2 {
+		animation-delay: 1.57s;
 		margin-top: 70px;
 	}
 
@@ -1062,9 +1084,9 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 		position: absolute;
 		left: 0%;
 		animation-name: blinds;
-		animation-duration: 1.5s;
+		animation-duration: 1.2s;
 		animation-fill-mode: forwards;
-		animation-timing-function: cubic-bezier(.34,.1,.93,.12);
+		animation-timing-function: linear;
 		z-index: 30;
 	}
 
@@ -1075,14 +1097,14 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	.blind2 {
 		top: 205px;
-		animation-delay: 1.5s;
+		animation-delay: 1.1s;
 	}
 
 	.blind3 {
 		top: 0px;
 		left: 0%;
 		height: 50px;
-		animation-delay: 2.1s;
+		animation-delay: 1.15s;
 	}
 
 	.blind4 {
@@ -1095,6 +1117,22 @@ a.about-link:hover, a.contact-links:hover, a.inline-link:hover, a.back-home:hove
 
 	.blind6 {
 		display: none;
+	}
+
+	a.about-link {
+		animation-delay: 1.5s;
+	}
+
+	a.email {
+		animation-delay: 1.55s;
+	}
+
+	a.linkedin {
+		animation-delay: 1.65s;
+	}
+
+	a.github {
+		animation-delay: 1.75s;
 	}
 
 	p#scrollGuide {
