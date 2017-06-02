@@ -10,7 +10,6 @@ introImg2 = document.querySelectorAll('.introImg')[1];
 introImg3 = document.querySelectorAll('.introImg')[2];
 introImg4 = document.querySelectorAll('.introImg')[3];
 introImg5 = document.querySelectorAll('.introImg')[4];
-introImg6 = document.querySelectorAll('.introImg')[5];
 
 window.addEventListener("scroll", function() {
 
@@ -219,69 +218,10 @@ function removeJotItText() {
 
 }
 
-function displayStarbucksText() {
-
-	var projectTitle = document.querySelectorAll('.projectTitle')[3];
-	var projectInfo = document.querySelectorAll('.projectInfo')[3];
-
-	projectTitle.style.transition = "opacity 0.2s";
-	projectInfo.style.transition = "opacity 0.2s";
-
-	projectTitle.style.opacity = "1";
-	projectInfo.style.opacity = "1";
-
-	projectTitle.addEventListener("mouseenter", function() {
-
-		this.style.opacity = "1";
-		projectInfo.style.opacity = "1";
-		introImg4.style.opacity = "0.3";
-		introImg4.style.transform = "scale(1.1)";
-
-	}, false);
-
-	projectInfo.addEventListener("mouseenter", function() {
-
-		this.style.opacity = "1";
-		projectTitle.style.opacity = "1";
-		introImg4.style.opacity = "0.3";
-		introImg4.style.transform = "scale(1.1)";
-
-	}, false);
-
-}
-
-function removeStarbucksText() {
-
-	var projectTitle = document.querySelectorAll('.projectTitle')[3];
-	var projectInfo = document.querySelectorAll('.projectInfo')[3];
-
-	projectTitle.style.opacity = "0";
-	projectInfo.style.opacity = "0";
-
-	projectTitle.addEventListener("mouseleave", function() {
-
-		this.style.opacity = "0";
-		projectInfo.style.opacity = "0";
-		introImg4.style.opacity = "1";
-		introImg4.style.transform = "scale(1)"
-
-	}, false);
-
-	projectInfo.addEventListener("mouseleave", function() {
-
-		this.style.opacity = "0";
-		projectTitle.style.opacity = "0";
-		introImg4.style.opacity = "1";
-		introImg4.style.transform = "scale(1)"
-
-	}, false);
-
-}
-
 function displayAmazonText() {
 
-	var projectTitle = document.querySelectorAll('.projectTitle')[4];
-	var projectInfo = document.querySelectorAll('.projectInfo')[4];
+	var projectTitle = document.querySelectorAll('.projectTitle')[3];
+	var projectInfo = document.querySelectorAll('.projectInfo')[3];
 
 	projectTitle.style.transition = "opacity 0.2s";
 	projectInfo.style.transition = "opacity 0.2s";
@@ -293,8 +233,8 @@ function displayAmazonText() {
 
 		this.style.opacity = "1";
 		projectInfo.style.opacity = "1";
-		introImg5.style.opacity = "0.3";
-		introImg5.style.transform = "scale(1.1)";
+		introImg4.style.opacity = "0.3";
+		introImg4.style.transform = "scale(1.1)";
 
 	}, false);
 
@@ -302,8 +242,8 @@ function displayAmazonText() {
 
 		this.style.opacity = "1";
 		projectTitle.style.opacity = "1";
-		introImg5.style.opacity = "0.3";
-		introImg5.style.transform = "scale(1.1)";
+		introImg4.style.opacity = "0.3";
+		introImg4.style.transform = "scale(1.1)";
 
 	}, false);
 
@@ -311,6 +251,65 @@ function displayAmazonText() {
 
 function removeAmazonText() {
 
+	var projectTitle = document.querySelectorAll('.projectTitle')[3];
+	var projectInfo = document.querySelectorAll('.projectInfo')[3];
+
+	projectTitle.style.opacity = "0";
+	projectInfo.style.opacity = "0";
+
+	projectTitle.addEventListener("mouseleave", function() {
+
+		this.style.opacity = "0";
+		projectInfo.style.opacity = "0";
+		introImg4.style.opacity = "1";
+		introImg4.style.transform = "scale(1)"
+
+	}, false);
+
+	projectInfo.addEventListener("mouseleave", function() {
+
+		this.style.opacity = "0";
+		projectTitle.style.opacity = "0";
+		introImg4.style.opacity = "1";
+		introImg4.style.transform = "scale(1)"
+
+	}, false);
+
+}
+
+function displayPawsText() {
+
+	var projectTitle = document.querySelectorAll('.projectTitle')[4];
+	var projectInfo = document.querySelectorAll('.projectInfo')[4];
+
+	projectTitle.style.transition = "opacity 0.2s";
+	projectInfo.style.transition = "opacity 0.2s";
+
+	projectTitle.style.opacity = "1";
+	projectInfo.style.opacity = "1";
+
+	projectTitle.addEventListener("mouseenter", function() {
+
+		this.style.opacity = "1";
+		projectInfo.style.opacity = "1";
+		introImg5.style.opacity = "0.3";
+		introImg5.style.transform = "scale(1.1)";
+
+	}, false);
+
+	projectInfo.addEventListener("mouseenter", function() {
+
+		this.style.opacity = "1";
+		projectTitle.style.opacity = "1";
+		introImg5.style.opacity = "0.3";
+		introImg5.style.transform = "scale(1.1)";
+
+	}, false);
+
+}
+
+function removePawsText() {
+
 	var projectTitle = document.querySelectorAll('.projectTitle')[4];
 	var projectInfo = document.querySelectorAll('.projectInfo')[4];
 
@@ -332,65 +331,6 @@ function removeAmazonText() {
 		projectTitle.style.opacity = "0";
 		introImg5.style.opacity = "1";
 		introImg5.style.transform = "scale(1)"
-
-	}, false);
-
-}
-
-function displayPawsText() {
-
-	var projectTitle = document.querySelectorAll('.projectTitle')[5];
-	var projectInfo = document.querySelectorAll('.projectInfo')[5];
-
-	projectTitle.style.transition = "opacity 0.2s";
-	projectInfo.style.transition = "opacity 0.2s";
-
-	projectTitle.style.opacity = "1";
-	projectInfo.style.opacity = "1";
-
-	projectTitle.addEventListener("mouseenter", function() {
-
-		this.style.opacity = "1";
-		projectInfo.style.opacity = "1";
-		introImg6.style.opacity = "0.3";
-		introImg6.style.transform = "scale(1.1)";
-
-	}, false);
-
-	projectInfo.addEventListener("mouseenter", function() {
-
-		this.style.opacity = "1";
-		projectTitle.style.opacity = "1";
-		introImg6.style.opacity = "0.3";
-		introImg6.style.transform = "scale(1.1)";
-
-	}, false);
-
-}
-
-function removePawsText() {
-
-	var projectTitle = document.querySelectorAll('.projectTitle')[5];
-	var projectInfo = document.querySelectorAll('.projectInfo')[5];
-
-	projectTitle.style.opacity = "0";
-	projectInfo.style.opacity = "0";
-
-	projectTitle.addEventListener("mouseleave", function() {
-
-		this.style.opacity = "0";
-		projectInfo.style.opacity = "0";
-		introImg6.style.opacity = "1";
-		introImg6.style.transform = "scale(1)"
-
-	}, false);
-
-	projectInfo.addEventListener("mouseleave", function() {
-
-		this.style.opacity = "0";
-		projectTitle.style.opacity = "0";
-		introImg6.style.opacity = "1";
-		introImg6.style.transform = "scale(1)"
 
 	}, false);
 
@@ -405,14 +345,11 @@ introImg2.addEventListener("mouseleave", removeRadiusText, false);
 introImg3.addEventListener("mouseenter", displayJotItText, false);
 introImg3.addEventListener("mouseleave", removeJotItText, false);
 
-introImg4.addEventListener("mouseenter", displayStarbucksText, false);
-introImg4.addEventListener("mouseleave", removeStarbucksText, false);
+introImg4.addEventListener("mouseenter", displayAmazonText, false);
+introImg4.addEventListener("mouseleave", removeAmazonText, false);
 
-introImg5.addEventListener("mouseenter", displayAmazonText, false);
-introImg5.addEventListener("mouseleave", removeAmazonText, false);
-
-introImg6.addEventListener("mouseenter", displayPawsText, false);
-introImg6.addEventListener("mouseleave", removePawsText, false);
+introImg5.addEventListener("mouseenter", displayPawsText, false);
+introImg5.addEventListener("mouseleave", removePawsText, false);
 
 if (window.innerWidth <= 375) { // Mobile Query | iPhone 6 | Portrait
 
