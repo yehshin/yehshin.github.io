@@ -8,7 +8,7 @@
 		<meta name="description" content="Ye Heon Shin's Portfolio">
 		<meta name="keywords" content="Ye Heon Shin, Portfolio, Designer, Developer">
 		<link rel="icon" type="image/png" href="images/icon.png">
-		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/main.css">
 		<title>Ye Shin | Designer</title>
 	</head>
  
@@ -16,69 +16,97 @@
 
 		<div id="container">
 
-			<!-- Navigation -->
+			<!-- Hamburger Menu Btn -->
 
-			<div class="blinds blind3"></div>
-			<a class="links about-link" href="about/">About</a>
+			<div class="hamburger-btn">
+				<div class="hamburger-btn-line hamburger-btn-line-top"></div>
+				<div class="hamburger-btn-line hamburger-btn-line-bottom"></div>
+			</div>
 
-			<!-- Contact Links -->
-			<div class="blinds blind4"></div>
-			<a class="links contact-links email" href="mailto:yeshin316@gmail.com?Subject=Hello" title="yeshin316@gmail.com">Email</a>
+			<!-- Nav Menu / Contact Links -->
 
-			<div class="blinds blind5"></div>
-			<a class="links contact-links linkedin" href="https://www.linkedin.com/in/ye-shin/" target="_blank">LinkedIn</a>
+			<div class="nav-menu">
+				<a class="nav-item" href="./">Home</a><br>
+				<a class="nav-item" href="about/">About</a><br>
+				<a class="nav-item" href="starbucks/">Starbucks Redesign</a><br>
+				<a class="nav-item" href="ui/">Mobile UI Concepts</a><br>
+				<a class="nav-item" href="posters/">Poster Designs</a> <br>
 
-			<div class="blinds blind6"></div>
-			<a class="links contact-links github" href="https://github.com/yehshin" target="_blank">GitHub</a>
-			<!-- <a class="links contact-links instagram" href="https://www.instagram.com/yayitsye/" target="_blank">Instagram</a> -->
+				<a class="contact-links" href="mailto:yeshin316@gmail.com?Subject=Hello" title="yeshin316@gmail.com">Email</a><br>
+				<!-- <div class="contact-links">·</div> -->	
+				<a class="contact-links" href="https://www.linkedin.com/in/ye-shin/" target="_blank">LinkedIn</a><br>
+				<!-- <div class="contact-links">·</div> -->
+				<a class="contact-links" href="https://github.com/yehshin" target="_blank">GitHub</a>
+			</div>
 
-			<!-- Intro Text w/ Blind-->
+			<!-- Content -->
 
-			<div class="blinds blind1"></div>
-			<p class="text intro intro1">Ye Heon Shin is a designer</p>
+			<div class="content">
 
-			<div class="blinds blind2"></div>
-			<p class="text intro intro2">He creates digital products</p>
+				<!-- Main Header -->
 
-			<p id="scrollGuide">Scroll Down</p>
+				<h1 class="header landing-header">Hi my name is Ye Heon Shin.</h1>
+				<h2 class="subheader landing-subheader">I'm a digital designer.</h2>
+				<p class="disclaimer">*This portfolio is still under construction, but feel free to still see what's currently here</p>
 
-			<!-- Img's and Links to Work -->
+				<!-- Projects | Starbucks -->
 
-			<a href="breathe/">
-				<p class="projectTitle projectTitle1">Breathe</p>
-				<p class="projectInfo projectInfo1">Mobile UX/UI Design</p>
-				<img class="introImg introImg1" src="images/breathe/breathe-img1.png" width="500" height="951" alt="Image of Breathe App">
-			</a><br>
+				<p class="project-header starbucks-header">Starbucks Redesign</p>
+				<div class="project-header-underbox"></div>
 
-			<a href="jot-it/">
-				<p class="projectTitle projectTitle2">Jot It</p>
-				<p class="projectInfo projectInfo2">Mobile UI Design</p>
-				<img class="introImg introImg3" src="images/jot-it/jot-it-img1.png" width="500" height="951" alt="Image of Breathe App">
-			</a><br>
+				<div class="info-frame">
+				
+					<div class="thumbnail-frame starbucks-thumbnail-frame">
+						<a href="starbucks/"><img class="thumbnails starbucks-thumbnail" src="images/thumbnails/starbucks-mu-1-white.png" width="3840" height="2160" alt="Thumbnail image of Starbucks mockup"></a>
+					</div>
+					<p class="project-caption">Starbucks mobile app reimagined</p>
+					<p class="project-subcaption">A personal project where I designed solutions to problems I found within the mobile application.</p>
 
-			<a href="radius/">
-				<p class="projectTitle projectTitle3">Radius</p>
-				<p class="projectInfo projectInfo3">Mobile UI Design</p>
-				<img class="introImg introImg2" src="images/radius/radius-img6.png" width="500" height="951" alt="Image of Radius App">
-			</a><br>
+					<a class="view-project-link" href="starbucks/">View Project</a>
 
-			<a href="amazon/">
-				<p class="projectTitle projectTitle5">Amazon</p>
-				<p class="projectInfo projectInfo5">Mobile UI Redesign</p>
-				<img class="introImg introImg5" src="images/amazon/amazon-img1.png" width="500" height="951" alt="Image of Amazon Mobile Redesign">
-			</a><br>
+				</div>
 
-			<a href="paws/">
-				<p class="projectTitle projectTitle6">Paws</p>
-				<p class="projectInfo projectInfo6">Mobile UI Design</p>
-				<img class="introImg introImg6" src="images/paws/paws-img1.png" width="500" height="951" alt="Image of Paws Mobile App">
-			</a><br>
+				<!-- Projects | Mobile UI Concepts -->
 
-			<p class="text last-line last-line-intro"><em>More coming soon...</em></p>
+				<p class="project-header ui-header">Mobile UI Concepts</p>
+				<div class="project-header-underbox"></div>
+
+				<div class="info-frame">
+				
+					<div class="thumbnail-frame ui-thumbnail-frame">
+						<a href="ui/"><img class="thumbnails ui-thumbnail" src="images/thumbnails/ui-concepts-bg.png" width="3530" height="2550" alt="Thumbnail image of UI Concepts mockup"></a>
+					</div>
+					<p class="project-caption">A collection of my ideas</p>
+					<p class="project-subcaption">Mobile UI concepts that I designed, both inspired and original.</p>
+
+					<a class="view-project-link" href="ui/">View Project</a>
+
+				</div>
+
+				<!-- Projects | Posters -->
+
+				<p class="project-header poster-header">Poster Designs</p>
+				<div class="project-header-underbox"></div>
+
+				<div class="info-frame">
+				
+					<div class="thumbnail-frame poster-thumbnail-frame">
+						<a href="posters/"><img class="thumbnails poster-thumbnail" src="images/thumbnails/poster-7.png" width="2000" height="2667" alt="Thumbnail image of posters"></a>
+					</div>
+					<p class="project-caption">My attempts at creativity</p>
+					<p class="project-subcaption">Steezy poster designs I created to help fuel my design sense.</p>
+
+					<a class="view-project-link" href="posters/">View Project</a>
+
+				</div>
+
+			</div>
 
 		</div> <!-- closes: <div id="container"> -->
 
-		<script src="js/interact.js"></script>
+		<script src="js/base.js"></script>
+
+		<!-- Google Analytics -->
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
