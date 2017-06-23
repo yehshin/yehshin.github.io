@@ -357,89 +357,6 @@ function fadeInStarbucksLanding () {
 
 window.addEventListener('load', fadeInStarbucksLanding, false);
 
-function fadeInStarbucksPage() {
-
-	if (document.title === "Starbucks Redesign") {
-
-		var starbucksWrapper = document.querySelectorAll('.starbucks-wrapper');
-
-		if (this.pageYOffset > 300) {
-			
-			starbucksWrapper[1].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[1].style.opacity = '1';
-			starbucksWrapper[1].style.transform = "scale(1)";
-
-		} 
-
-		if (this.pageYOffset > 1000) {
-
-			starbucksWrapper[2].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[2].style.opacity = '1';
-			starbucksWrapper[2].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 1900) {
-
-			starbucksWrapper[3].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[3].style.opacity = '1';
-			starbucksWrapper[3].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 3500) {
-
-			starbucksWrapper[4].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[4].style.opacity = '1';
-			starbucksWrapper[4].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 4300) {
-
-			starbucksWrapper[5].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[5].style.opacity = '1';
-			starbucksWrapper[5].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 5000) {
-
-			starbucksWrapper[6].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[6].style.opacity = '1';
-			starbucksWrapper[6].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 6000) {
-
-			starbucksWrapper[7].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[7].style.opacity = '1';
-			starbucksWrapper[7].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 6800) {
-
-			starbucksWrapper[8].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[8].style.opacity = '1';
-			starbucksWrapper[8].style.transform = "scale(1)";
-		
-		}
-
-		if (this.pageYOffset > 8300) {
-
-			starbucksWrapper[9].style.transition = 'opacity 1s, transform 1s';
-			starbucksWrapper[9].style.opacity = '1';
-			starbucksWrapper[9].style.transform = "scale(1)";
-		
-		}
-
-	}
-
-}
-
-window.addEventListener('scroll', fadeInStarbucksPage, false);
 
 // UI Page Animation
 
@@ -455,15 +372,15 @@ function fadeInUILanding() {
 
 		uiheader.style.transition = 'opacity 1s, transform 1s';
 		uiheader.style.opacity = '1';
-		uiheader.style.transform = "scale(1)";
+		uiheader.style.transform = "translateX(0px)";
 
 		uiSubheader.style.transition = 'opacity 1s, transform 1s';
 		uiSubheader.style.opacity = '1';
-		uiSubheader.style.transform = "scale(1)";
+		uiSubheader.style.transform = "translateX(0px)";
 
 		uiLandingImg.style.transition = 'opacity 1s, transform 1s';
 		uiLandingImg.style.opacity = '1';
-		uiLandingImg.style.transform = "scale(1)";
+		uiLandingImg.style.transform = "translateX(0px)";
 
 	}
 
@@ -483,7 +400,7 @@ function fadeInUIPage() {
 			
 			uiWrapper[0].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[0].style.opacity = '1';
-			uiWrapper[0].style.transform = "scaleX(1)";
+			uiWrapper[0].style.transform = "translateX(0px)";
 
 		} 
 
@@ -491,7 +408,7 @@ function fadeInUIPage() {
 			
 			uiWrapper[1].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[1].style.opacity = '1';
-			uiWrapper[1].style.transform = "scaleX(1)";
+			uiWrapper[1].style.transform = "translateX(0px)";
 
 		} 
 
@@ -499,7 +416,7 @@ function fadeInUIPage() {
 
 			uiWrapper[2].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[2].style.opacity = '1';
-			uiWrapper[2].style.transform = "scaleX(1)";
+			uiWrapper[2].style.transform = "translateX(0px)";
 		
 		}
 
@@ -507,7 +424,7 @@ function fadeInUIPage() {
 
 			uiWrapper[3].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[3].style.opacity = '1';
-			uiWrapper[3].style.transform = "scaleX(1)";
+			uiWrapper[3].style.transform = "translateX(0px)";
 		
 		}
 
@@ -515,7 +432,7 @@ function fadeInUIPage() {
 
 			uiWrapper[4].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[4].style.opacity = '1';
-			uiWrapper[4].style.transform = "scaleX(1)";
+			uiWrapper[4].style.transform = "translateX(0px)";
 		
 		}
 
@@ -523,7 +440,7 @@ function fadeInUIPage() {
 
 			uiWrapper[5].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[5].style.opacity = '1';
-			uiWrapper[5].style.transform = "scaleX(1)";
+			uiWrapper[5].style.transform = "translateX(0px)";
 		
 		}
 
@@ -531,7 +448,7 @@ function fadeInUIPage() {
 
 			uiWrapper[6].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[6].style.opacity = '1';
-			uiWrapper[6].style.transform = "scaleX(1)";
+			uiWrapper[6].style.transform = "translateX(0px)";
 		
 		}
 
@@ -539,7 +456,23 @@ function fadeInUIPage() {
 
 			uiWrapper[7].style.transition = 'opacity 1s, transform 1s';
 			uiWrapper[7].style.opacity = '1';
-			uiWrapper[7].style.transform = "scaleX(1)";
+			uiWrapper[7].style.transform = "translateX(0px)";
+		
+		}
+
+		if (this.pageYOffset > 13300) {
+
+			uiWrapper[8].style.transition = 'opacity 1s, transform 1s';
+			uiWrapper[8].style.opacity = '1';
+			uiWrapper[8].style.transform = "translateX(0px)";
+		
+		}
+
+		if (this.pageYOffset > 14300) {
+
+			uiWrapper[9].style.transition = 'opacity 1s, transform 1s';
+			uiWrapper[9].style.opacity = '1';
+			uiWrapper[9].style.transform = "translateX(0px)";
 		
 		}
 
@@ -563,19 +496,19 @@ function fadeInPosterLanding() {
 
 		posterHeader.style.transition = 'opacity 1s, transform 1s';
 		posterHeader.style.opacity = '1';
-		posterHeader.style.transform = "scale(1)";
+		posterHeader.style.transform = "translateX(0px)";
 
 		posterSubheader.style.transition = 'opacity 1s, transform 1s';
 		posterSubheader.style.opacity = '1';
-		posterSubheader.style.transform = "scale(1)";
+		posterSubheader.style.transform = "translateX(0px)";
 
 		posters[0].style.transition = 'opacity 1s, transform 1s';
 		posters[0].style.opacity = '1';
-		posters[0].style.transform = "scaleY(1)";
+		posters[0].style.transform = "translateY(0px)";
 
 		posters[1].style.transition = 'opacity 1s, transform 1s';
 		posters[1].style.opacity = '1';
-		posters[1].style.transform = "scaleY(1)";
+		posters[1].style.transform = "translateY(0px)";
 
 	}
 
@@ -595,11 +528,11 @@ function fadeInPosterPage() {
 			
 			posters[2].style.transition = 'opacity 1s, transform 1s';
 			posters[2].style.opacity = '1';
-			posters[2].style.transform = "scaleY(1)";
+			posters[2].style.transform = "translateY(0px)";
 
 			posters[3].style.transition = 'opacity 1s, transform 1s';
 			posters[3].style.opacity = '1';
-			posters[3].style.transform = "scaleY(1)";
+			posters[3].style.transform = "translateY(0px)";
 
 			console.log('scrolled 300')
 
@@ -609,11 +542,11 @@ function fadeInPosterPage() {
 
 			posters[4].style.transition = 'opacity 1s, transform 1s';
 			posters[4].style.opacity = '1';
-			posters[4].style.transform = "scaleY(1)";
+			posters[4].style.transform = "translateY(0px)";
 
 			posters[5].style.transition = 'opacity 1s, transform 1s';
 			posters[5].style.opacity = '1';
-			posters[5].style.transform = "scaleY(1)";
+			posters[5].style.transform = "translateY(0px)";
 		
 		}
 
@@ -621,11 +554,11 @@ function fadeInPosterPage() {
 
 			posters[6].style.transition = 'opacity 1s, transform 1s';
 			posters[6].style.opacity = '1';
-			posters[6].style.transform = "scaleY(1)";
+			posters[6].style.transform = "translateY(0px)";
 
 			posters[7].style.transition = 'opacity 1s, transform 1s';
 			posters[7].style.opacity = '1';
-			posters[7].style.transform = "scaleY(1)";
+			posters[7].style.transform = "translateY(0px)";
 		
 		}
 
@@ -633,11 +566,11 @@ function fadeInPosterPage() {
 
 			posters[8].style.transition = 'opacity 1s, transform 1s';
 			posters[8].style.opacity = '1';
-			posters[8].style.transform = "scaleY(1)";
+			posters[8].style.transform = "translateY(0px)";
 
 			posters[9].style.transition = 'opacity 1s, transform 1s';
 			posters[9].style.opacity = '1';
-			posters[9].style.transform = "scaleY(1)";
+			posters[9].style.transform = "translateY(0px)";
 		
 		}
 
@@ -645,11 +578,11 @@ function fadeInPosterPage() {
 
 			posters[10].style.transition = 'opacity 1s, transform 1s';
 			posters[10].style.opacity = '1';
-			posters[10].style.transform = "scaleY(1)";
+			posters[10].style.transform = "translateY(0px)";
 
 			posters[11].style.transition = 'opacity 1s, transform 1s';
 			posters[11].style.opacity = '1';
-			posters[11].style.transform = "scaleY(1)";
+			posters[11].style.transform = "translateY(0px)";
 		
 		}
 
@@ -657,11 +590,11 @@ function fadeInPosterPage() {
 
 			posters[12].style.transition = 'opacity 1s, transform 1s';
 			posters[12].style.opacity = '1';
-			posters[12].style.transform = "scaleY(1)";
+			posters[12].style.transform = "translateY(0px)";
 
 			posters[13].style.transition = 'opacity 1s, transform 1s';
 			posters[13].style.opacity = '1';
-			posters[13].style.transform = "scaleY(1)";
+			posters[13].style.transform = "translateY(0px)";
 		
 		}
 
@@ -669,23 +602,59 @@ function fadeInPosterPage() {
 
 			posters[14].style.transition = 'opacity 1s, transform 1s';
 			posters[14].style.opacity = '1';
-			posters[14].style.transform = "scaleY(1)";
+			posters[14].style.transform = "translateY(0px)";
 
 			posters[15].style.transition = 'opacity 1s, transform 1s';
 			posters[15].style.opacity = '1';
-			posters[15].style.transform = "scaleY(1)";
+			posters[15].style.transform = "translateY(0px)";
 		
 		}
 
-		if (this.pageYOffset > 6600) {
+		if (this.pageYOffset > 6500) {
 
 			posters[16].style.transition = 'opacity 1s, transform 1s';
 			posters[16].style.opacity = '1';
-			posters[16].style.transform = "scaleY(1)";
+			posters[16].style.transform = "translateY(0px)";
 
 			posters[17].style.transition = 'opacity 1s, transform 1s';
 			posters[17].style.opacity = '1';
-			posters[17].style.transform = "scaleY(1)";
+			posters[17].style.transform = "translateY(0px)";
+		
+		}
+
+		if (this.pageYOffset > 7300) {
+
+			posters[18].style.transition = 'opacity 1s, transform 1s';
+			posters[18].style.opacity = '1';
+			posters[18].style.transform = "translateY(0px)";
+
+			posters[19].style.transition = 'opacity 1s, transform 1s';
+			posters[19].style.opacity = '1';
+			posters[19].style.transform = "translateY(0px)";
+		
+		}
+
+		if (this.pageYOffset > 8100) {
+
+			posters[20].style.transition = 'opacity 1s, transform 1s';
+			posters[20].style.opacity = '1';
+			posters[20].style.transform = "translateY(0px)";
+
+			posters[21].style.transition = 'opacity 1s, transform 1s';
+			posters[21].style.opacity = '1';
+			posters[21].style.transform = "translateY(0px)";
+		
+		}
+
+		if (this.pageYOffset > 8900) {
+
+			posters[22].style.transition = 'opacity 1s, transform 1s';
+			posters[22].style.opacity = '1';
+			posters[22].style.transform = "translateY(0px)";
+
+			posters[23].style.transition = 'opacity 1s, transform 1s';
+			posters[23].style.opacity = '1';
+			posters[23].style.transform = "translateY(0px)";
 		
 		}
 

@@ -111,7 +111,7 @@ h2.mobile-ui-subheader {
 	font-family: project-title;
 }
 
-.contact-links {
+.contact-links, .poster-subheader {
 	font-family: body;
 }
 
@@ -172,29 +172,29 @@ h2.mobile-ui-subheader {
 
 /* Structure | Starbucks */
 
-.starbucks-wrapper {
-	opacity: 0;
-	transform: scale(1.2);
-	transform-origin: right;
+.bg-wrap {
+	width: 100%;
+	height: 100vh;
+	background-color: #EEF2F5;
 }
 
 .starbucks-landing-frame {
 	position: relative;
 	z-index: -1;
+	background-color: #EEF2F5;
+	width: 100%;
+	height: 100vh;
+}
+
+.starbucks-first-wrapper {
+	opacity: 0;
+	transform-origin: right;
+	transform: scale(1.2);
 }
 
 .starbucks-wrapper:not(.starbucks-first-wrapper) {
 	width: 100%;
 	position: relative;
-	transform: scale(1.2);
-	opacity: 0;
-	transform-origin: right;
-}
-
-.starbucks-wrapper {
-	transform: scale(1.2);
-	opacity: 0;
-	transform-origin: right;
 }
 
 .starbucks-second-wrapper {
@@ -411,7 +411,7 @@ h1.mobile-ui-header {
 	margin-left: 50px;
 	margin-top: 200px;
 	opacity: 0;
-	transform: scale(1.2);
+	transform: translateX(-100px);
 	transform-origin: right;
 }
 
@@ -420,7 +420,7 @@ h2.mobile-ui-subheader {
 	margin-left: 50px;
 	color: #9EA0A6;
 	opacity: 0;
-	transform: scale(1.2);
+	transform: translateX(-100px);
 	transform-origin: right;
 }
 
@@ -447,13 +447,13 @@ p.mobile-ui-concept-title {
 h1.poster-header {
 	margin-top: 200px;
 	opacity: 0;
-	transform: scale(1.2);
+	transform: translateX(-100px);
 }
 
 h2.poster-subheader {
 	margin-left: 50px;
 	opacity: 0;
-	transform: scale(1.2);
+	transform: translateX(-100px);
 }
 
 /* Links */
@@ -605,7 +605,7 @@ video {
 
 .ui-wrapper {
 	opacity: 0;
-	transform: scaleX(1.2);
+	transform: translateX(100px);
 	transform-origin: left;
 }
 
@@ -617,7 +617,7 @@ img.mobile-ui-landing-img {
 	background: linear-gradient(to right, #eef2f3, #8e9eab); 
 	margin-top: 100px;
 	opacity: 0;
-	transform: scale(1.2);
+	transform: translateX(100px);
 	transform-origin: right;
 }
 
@@ -643,8 +643,7 @@ img.poster {
 	margin: 120px;
 	box-shadow: 10px 10px 40px rgba(0,0,0,.3);
 	opacity: 0;
-	transform: scaleY(1.5);
-	transform-origin: top;
+	transform: translateY(100px);
 }
 
 /* Design Funk */
@@ -754,9 +753,9 @@ img.next-project-img:hover {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: #ff4b1f; 
-	background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f); 
-	background: linear-gradient(to right, #ff9068, #ff4b1f);
+	background: #16222A;  
+	background: -webkit-linear-gradient(to right, #3A6073, #16222A); 
+	background: linear-gradient(to right, #3A6073, #16222A); 
 	opacity: 0;
 	top: 0px;
 	left: 0px;
@@ -771,9 +770,9 @@ img.next-project-img:hover {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: #ff4b1f; 
-	background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f); 
-	background: linear-gradient(to right, #ff9068, #ff4b1f);
+	background: #16222A;  
+	background: -webkit-linear-gradient(to right, #3A6073, #16222A); 
+	background: linear-gradient(to right, #3A6073, #16222A); 
 	opacity: 1;
 	top: 0px;
 	left: 0px;
