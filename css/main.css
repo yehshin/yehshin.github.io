@@ -5,7 +5,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
 }
 
 /* Logo */
@@ -14,7 +13,7 @@ a.logo {
 	font-size: 2em;
 	top: 30px;
 	left: 5%;
-	font-family: header;
+	font-family: helvetica;
 	position: fixed;
 	text-decoration: none;
 	color: black;
@@ -203,131 +202,7 @@ a.contact-link-revealed {
 
 /* Home Page */
 
-/* Home Page | Text */
 
-h1.home-title {
-	margin-top: 300px;
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 5.5em;
-}
-
-p.home-subtitle {
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 3.399em;
-}
-
-div.thumbnail-captions {
-	margin-left: 20%;
-	line-height: 20px;
-}
-
-p.thumbnail-caption-header {
-	font-size: 2em;
-}
-
-p.thumbnail-caption-subheader {
-	font-size: 1.236em;
-	margin-bottom: 150px;
-}
-
-p.thumbnail-caption-subheader:nth-child(3) {
-	margin-bottom: 200px;
-}
-
-/* Home Page | Links */
-
-div.home-page-contact-links {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	color: black;
-	width: 50%;
-	text-align: center;
-	margin-left: 25%;
-}
-
-div.home-page-contact-links > a.contact-links {
-	width: 3%;
-	margin-left: 5.2%;
-	margin-right: 5.2%;
-}
-
-/* Home Page | Thumbnails */
-
-div.project-thumbnails {
-	width: 60%;
-	height: 475px;
-	min-width: 55%;
-	min-height: 450px;
-	margin-top: 200px;
-	margin-bottom: 50px;
-	overflow: hidden;
-	margin-left: 20%;
-}
-
-div.project-thumbnails:nth-child(1) {
-	margin-top: 300px;
-}
-
-img.thumbnail-imgs {
-	width: 100%;
-	height: auto;
-	width: 100%;
-	height: auto;
-}
-
-img.ui-thumbnail {
-	margin-top: -60px;
-}
-
-img.starbucks-thumbnail {
-	width: 120%;
-	margin-left: -10%;
-	margin-top: -5%;
-}
-
-img.ui-thumbnail {
-	background-color: #f2f2f2;
-}
-
-/* About Me */
-
-/* About | Structure */
-
-/* About | Text */
-
-h1.about-header {
-	font-size: 4em;
-	font-family: header;
-	position: relative;
-	margin-left: 5%;
-	top: 150px;
-}
-
-p.about-text {
-	margin-left: 5%;
-	width: 90%;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	font-size: 1.2em;
-}
-
-p.about-text-top {
-	margin-top: 200px;
-}
-
-/* About | Links */
-
-
-/* About | Images */
-
-img.netflix-me {
-	width: 100%;
-	height: auto;
-	margin-bottom: -5px;
-}
 
 /* Starbucks */
 
@@ -761,58 +636,53 @@ img.poster {
 
 /* Fonts */
 
-a.logo {
-	font-family: logo;
-	/*color: #66fcf1;*/ /* dark / lightAqua */
-	/*color: #182628;*/ /* paleGreen / white */
-	/*color: #042D5B;*/ /* boldRed / navyBlue */
-}
-
-h1.home-title, p.thumbnail-caption-header, h1.starbucks-landing-title, h1.ui-header {
-	font-family: header;
-	/*color: white;*/ /* dark / lightAqua */
-	/*color: #182628;*/ /* paleGreen / white */
-	/*color: #042D5B;*/ /* boldRed / navyBlue */
-}
-
-p, h2.landing-subheader, a {
-	font-family: subheader;
-	/*color: #c5c6c7;*/ /* dark / lightAqua */
-	/*color: #f2f2f2;*/ /* paleGreen / white */
-	/*color: white;*/ /* boldRed / navyBlue */
-}
-
-div.hamburger-btn-line {
-	/*background-color: #66fcf1;*/ /* dark / lightAqua */
-	/*background-color: #182628;*/ /* paleGreen / white */
-	/*background-color: #042D5B;*/ /* boldRed / navyBlue */
-}
-
 body {
-	/*background-color: #1f2833;*/ /* dark / lightAqua */
-	/*background-color: #65ccb8;*/ /* paleGreen / white  */
-	/*background-color: #fc3c2d;*/ /* boldRed / navyBlue */
+	font-family: text;
+	font-size: 5em;
+	text-align: center;
+	margin-top: 20%;
+	background-color: #E54B4B;
+	color: white;
+	animation-name: bounceIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	transform: scale(0);
 }
 
+@keyframes bounceIn {
+	0% {
+		transform: scale(0);
+	}
 
-@font-face {
-    font-family: logo;
-    src: url(../fonts/bodoni/BodoniFLF-Bold.ttf);	
+	80% {
+		transform: scale(5);
+	}
+
+	85% {
+		transform: scale(0.5);
+	}
+
+	90% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 @font-face {
-    font-family: header;
+    font-family: text;
     src: url(../fonts/titillium_web/TitilliumWeb-Bold.ttf);
-}
-
-@font-face {
-    font-family: subheader;
-    src: url(../fonts/titillium_web/TitilliumWeb-Light.ttf);
 }
 
 
 @media only screen and (max-width: 375px) {
-
+	body {
+		font-size: 3em;
+		margin-top: 70%;
+	}
 }
 
 @media only screen and (min-width: 376px) and (max-width: 667px) {
