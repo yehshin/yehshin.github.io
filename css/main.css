@@ -339,8 +339,6 @@ body.home-body {
 	background-color: white;
 	color: white;
 	overflow: hidden;
-	perspective: 0px;
-	perspective-origin: center;
 }
 
 /*body:after {
@@ -1145,9 +1143,9 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 
 /****************************************************************************************************************************************************************************/
 
-/* Queries */
+/* Queries | Mobile Portrait */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 375px) {
 
 	/* Universal */
 
@@ -1165,12 +1163,12 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 	/* Logo */
 
 	a.logo {
-		font-size: 2em;
+		font-size: 3em;
 		left: 5%;
 		position: fixed;
 		text-decoration: none;
-		color: blue;
-		z-index: 1;
+		color: white;
+		z-index: 11;
 	}
 
 	/* Hamburger Menu Btn */
@@ -1179,7 +1177,8 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 		width: 30px;
 		height: 25px;
 		position: relative;
-		left: 93%;
+		left: 86%;
+		top: 45px;
 		cursor: pointer;
 		z-index: 101;
 		position: fixed;
@@ -1189,15 +1188,15 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 		width: 30px;
 		height: 25px;
 		position: relative;
-		top: 40px;
-		left: 93%;
+		top: 45px;
+		left: 86%;
 		cursor: pointer;
 		position: fixed;
 		z-index: 101;
 	}
 
 	.hamburger-btn-line {
-		width: 25px;
+		width: 30px;
 		height: 3px;
 		background-color: black;
 		position: absolute;
@@ -1235,7 +1234,7 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 	div.nav-menu-revealed {
 		box-sizing: border-box;
 		position: fixed;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		background: black;
 		opacity: 1;
@@ -1370,7 +1369,7 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 		}
 
 		100% {
-			top: 40px;
+			top: 45px;
 		}
 	}
 
@@ -1474,7 +1473,603 @@ h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h
 		}
 	}
 
-}
+	/* Home Page */
+
+	/* Home Page | Skeleton */
+
+	body.home-body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100vh;
+		/*box-sizing: border-box;*/
+		/*border: solid 20px black;*/
+		background-color: white;
+		color: white;
+		overflow: hidden;
+	}
+
+	/*body:after {
+		content: "";
+		width: calc(100vw - 40px);
+		height: calc(100vh - 40px);
+		background: black;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		bottom: 20px;
+		right: 20px;
+		z-index: -1;
+		border: solid 20px black;
+		box-sizing: inherit;
+	}*/
+
+	div.home-circle {
+		position: absolute;
+		width: 275px;
+		height: 275px;
+		background-color: white;
+		border-radius: 50%;
+		top: 275px;
+		left: 30px;
+		opacity: 0.3;
+	}
+
+	div.home-title-frame {
+		width: 100%;
+		height: 160px;
+		z-index: -2;
+	}
+
+	div.project-frame {
+		width: 90%;
+		height: 300px;
+		left: 5%;
+		position: relative;
+		margin-left: 0;
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+
+	div.project-a {
+		margin-top: 350px;
+	}
+
+	div.project-thumbnails {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+		z-index: 10;
+	}
+
+	/* Home Page | Text */
+
+	h1.home-title {
+		text-align: center;
+		font-size: 2em;
+		overflow: hidden;
+		height: auto;
+		display: inline-block;
+		width: 325px;
+		margin-left: 2%;
+	}
+
+	div.project-frame p.thumbnail-caption-header, div.project-frame p.thumbnail-caption-subheader {
+		position: absolute;
+		left: 0;
+		top: 120px; /* 100 px */
+		opacity: 1;
+		transition: top 0.5s, opacity 0.5s;
+		z-index: 11;
+	}
+
+	div.project-frame p.thumbnail-caption-header {
+		font-size: 1.618em;
+		top: 220px; /* 50 px */
+	}
+
+	div.project-frame p.thumbnail-caption-subheader {
+		margin-top: 140px;
+	}
+
+	/* Home Page | Images */
+
+	img.thumbnail-imgs {
+		width: 100%;
+		height: auto;
+		transition: filter 0.5s, transform 0.5s;
+	}
+
+	div.project-a img.starbucks-thumbnail {
+		margin-top: 0px;
+		transform: scale(1.1);
+	}
+
+	div.project-b img.ui-thumbnail {
+		background-color: lightgray;
+		margin-top: 0px;
+	}
+
+	/* Home Page | Animations */
+
+	div.home-title-frame {
+		width: 0;
+		height: 115px;
+		margin-left: 50%;
+		animation: appearTitle 1.5s 1s;
+		animation-fill-mode: forwards;
+		overflow: hidden;
+	}
+
+	@keyframes appearTitle {
+		0% {
+			width: 0;
+			margin-top: 200%;
+			border-left: solid 5px white;
+			/*border-right: solid 5px white;*/
+		}
+
+		70% {
+			width: 0;
+			margin-top: 60%;
+			margin-left: 50%;
+			border-left: solid 5px white;
+			/*border-right: solid 10px white;*/
+		}
+
+		100% {
+			margin-top: 60%;
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 35%;
+			border-left: solid 5px white;
+			/*border-right: solid 10px white;*/
+		}
+
+	}
+
+	div.home-circle {
+		transform: scale(0);
+		animation: appearCircle 2s 1s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes appearCircle {
+		0% {
+			transform: scale(0);
+		}
+
+		50% {
+			transform: scale(1.1);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	/* Starbucks Page  */
+
+	body.starbucks-body {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Starbucks | Skeleton */
+
+	div.starbucks-wrapper {
+		padding-top: 75px;
+		padding-bottom: 75px;
+		float: left;
+	}
+
+	div.starbucks-first-wrapper {
+		width: 100%;
+	}
+
+	div.starbucks-second-wrapper {
+		margin-top: -75px;
+		background-color: white;
+	}
+
+	div.starbucks-third-wrapper {
+		background-color: #F9F7E8;
+	}
+
+	div.starbucks-fourth-wrapper {
+		background-color: #D1E9E3;
+	}
+
+	div.starbucks-fifth-wrapper {
+		margin-top: -75px;	
+	}
+
+	div.starbucks-sixth-wrapper {
+		margin-top: -81px;
+		background-color: #E3E3E3;
+	}
+
+	div.starbucks-seventh-wrapper {
+		background-color: #61BFAD;
+	}
+
+	div.starbucks-eigth-wrapper {
+		background-color: #FACAC0;
+	}
+
+	div.starbucks-tenth-wrapper {
+		background-color: #0BBCD6;
+		margin-top: -80px;
+	}
+
+	div.starbucks-eleventh-wrapper {
+		background-color: white;
+		position: relative;
+	}
+
+	/* Starbucks | Text */
+
+	p.starbucks-text-header {
+		font-size: 45.304px;
+	}
+
+	p.starbucks-text {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	/* First Wrapper */
+
+	h1.starbucks-landing-title {
+		position: relative;
+		top: 150px;
+		left: 5%;
+		font-size: 36px;
+	}
+
+	p.project-info-header {
+		float: left;
+		margin-top: 30px;
+		margin-left: 5%;
+		font-weight: bold;
+	}
+
+	p.project-info-data, a.project-info-data {
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+
+	/* Second Wrapper */
+
+	div.starbucks-second-wrapper > p.text-a {
+		margin-left: 5%;
+		width: 60%;
+	}
+
+	/* Third Wrapper */
+
+	div.starbucks-third-wrapper > p.header-a {
+		float: left;
+		margin-left: 2%;
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+
+	div.starbucks-third-wrapper > p.text-a, div.starbucks-third-wrapper > p.text-b {
+		width: 43%;
+		float: left;
+		margin-right: 5%;
+		margin-left: 2%;
+	}
+
+	div.starbucks-third-wrapper > p.text-b {
+		margin-top: 50px;
+	}
+
+	/* Fourth Wrapper */
+
+	div.starbucks-fourth-wrapper > p.header-a {
+		margin-top: 0px;
+	}
+
+	div.starbucks-fourth-wrapper > p.header-a, div.starbucks-fourth-wrapper > p.text-a {
+		text-align: center;
+	}
+
+	div.starbucks-fourth-wrapper > p.text-a {
+		margin-top: 50px;
+	}
+
+	/* Sixth Wrapper */
+
+	div.starbucks-sixth-wrapper > .header-a, div.starbucks-sixth-wrapper > p.text-a, div.starbucks-sixth-wrapper > p.text-b, div.starbucks-sixth-wrapper > p.text-c {
+		margin-left: 5%;
+		width: 50%;
+		margin-bottom: 50px;
+	}
+
+	div.starbucks-sixth-wrapper > p.text-c {
+		float: left;
+	}
+
+	/* Seventh Wrapper */
+
+	div.starbucks-seventh-wrapper > p.header-a, div.starbucks-seventh-wrapper > p.text-a, div.starbucks-seventh-wrapper > p.text-b {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+
+	div.starbucks-seventh-wrapper > p.header-a, div.starbucks-seventh-wrapper > p.text-a {
+		margin-bottom: 50px;
+	}
+
+	div.starbucks-seventh-wrapper > p.text-b {
+		margin-top: 50px;
+	}
+
+	/* Eigth Wrapper */
+
+	div.starbucks-eigth-wrapper > p.header-a, div.starbucks-eigth-wrapper > p.text-a {
+		margin-left: 5%;
+		width: 60%;
+		margin-bottom: 50px;
+	}
+
+	div.starbucks-eigth-wrapper > p.header-a {
+		margin-top: 0;
+	}
+
+	/* Starbucks | Links */
+
+	a.project-info-data {
+		color: #E54B4B;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	p.more-projects-title {
+		font-size: 3em;
+		text-align: center;
+		margin: 0;
+	}
+
+	a.next-project-link {
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		background-color: red;
+	}
+
+	a.next-project-link > div.next-project-frame {
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	a.next-project-link > div.next-project-frame > img.next-project-img {
+		width: 100%;
+		height: auto;
+		margin-top: -300px;
+	}
+
+	a.next-project-link > div.next-project-frame > img.ui {
+		background-color: gray;
+	}
+
+	span.next-project-title {
+		color: white;
+		font-size: 2em;
+		position: absolute;
+		top: 50%; /* 45% */
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+		opacity: 0;
+	}
+
+	/* Starbucks | Images */
+
+	/* First Wrapper*/
+
+	img.starbucks-landing-img {
+		width: 100%;
+		height: auto;
+		margin-top: 75px;
+	}
+
+	/* Third Wrapper */
+
+	div.starbucks-third-wrapper > img.starbucks-img {
+		width: 20%;
+		height: auto;
+		margin-left: 5%;
+		float: left;
+	}
+
+	/* Fourth Wrapper */
+
+	div.starbucks-fourth-wrapper > img.starbucks-img {
+		width: 20%;
+		height: auto;
+		box-shadow: 10px 10px 40px rgba(0,0,0,.3);
+	}
+
+	div.starbucks-fourth-wrapper > img.img-a, div.starbucks-fourth-wrapper > img.img-b, div.starbucks-fourth-wrapper > img.img-c {
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+
+	div.starbucks-fourth-wrapper > img.img-d, div.starbucks-fourth-wrapper > img.img-e {
+		margin-left: 20%;
+		margin-top: 50px;
+	}
+
+	/* Fifth Wrapper */
+
+	div.starbucks-fifth-wrapper > img.img-a {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Sixth Wrapper */
+
+	div.starbucks-sixth-wrapper > img.img-a {
+		width: 20%;
+		height: auto;
+		float: left;
+		margin-left: 10%;
+		margin-top: -375px;
+	}
+
+	/* Seventh Wrapper */
+
+	div.starbucks-seventh-wrapper > img.starbucks-img {
+		width: 20%;
+		height: auto;
+		margin-left: 4%;
+	}
+
+	/* Eigth Wrapper */
+
+	div.starbucks-eigth-wrapper > img.starbucks-img {
+		width: 20%;
+		height: auto;
+		margin-left: 10%;
+	}
+
+	/* Ninth Wrapper */
+
+	div.starbucks-ninth-wrapper > img.starbucks-img {
+		width: 100%;
+		height: auto;
+		margin-top: -75px;
+	}
+
+	/* Tenth Wrapper */
+
+	div.starbucks-tenth-wrapper > img.starbucks-img {
+		width: 20%;
+		height: auto;
+		box-shadow: 10px 10px 40px rgba(0,0,0,.3);
+	}
+
+	div.starbucks-tenth-wrapper > img.img-a, div.starbucks-tenth-wrapper > img.img-b, div.starbucks-tenth-wrapper > img.img-c {
+		margin-left: 10%;
+		margin-top: 0;
+	}
+
+	div.starbucks-tenth-wrapper > img.img-d, div.starbucks-tenth-wrapper > img.img-e {
+		margin-left: 20%;
+		margin-top: 5%;
+	}
+
+	/* Eleventh Wrapper */
+
+	video.starbucks-vid {
+		width: 70%;
+		height: auto;
+		margin-left: 30%;
+		margin-top: -75px;
+		margin-bottom: -81px;
+		filter: brightness(50%);
+	}
+
+	p.play-vid-btn {
+		position: absolute;
+		top: 85%;
+		left: 40%;
+		transform: translateX(-50%);
+		font-size: 3em;
+		color: white;
+		cursor: pointer;
+	}
+
+	div.vid-progress-bar {
+		width: 70%;
+		height: 1%;
+		background: #096342;
+		position: absolute;
+		top: 99%;
+		left: 30%;
+	}
+
+	/* Starbucks | Animations */
+
+	h1.starbucks-landing-title {
+		position: relative;
+		top: 200px; /* 150px */
+		opacity: 0;
+	}
+
+	p.project-info-header {
+		margin-top: 50px; /* 200px */
+		opacity: 0;
+	}
+
+	p.project-info-data {
+		margin-top: 50px; /* 200px */
+		opacity: 0;
+	}
+
+	p.top {
+		margin-top: 250px;
+	}
+
+	a.project-info-data {
+		margin-top: 50px; /* 200px */
+		opacity: 0;
+		display: inline-block;
+	}
+
+	img.starbucks-landing-img {
+		width: 100%;
+		height: auto;
+		margin-top: 100px; /* 75px */
+		opacity: 0;
+	}
+
+	h1.starbucks-landing-title, p.project-info-header, p.project-info-data, a.project-info-data, img.starbucks-landing-img {
+		transition: opacity 0.5s, top 0.5s, margin-top 0.5s;;
+	}
+
+
+	div.vid-progress-bar {
+		transform: scaleX(0);
+		transform-origin: left;
+		animation-name: vidProgressBar;
+		animation-duration: 22.101333s; 
+		animation-timing-function: linear;
+		animation-play-state: paused;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes vidProgressBar {
+
+		0% {
+			transform: scaleX(0);
+		}
+
+		100% {
+			transform: scaleX(1);
+		}
+
+	}
+
+} /* end of mobile portrait query */
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 376px) and (max-width: 667px) {
 

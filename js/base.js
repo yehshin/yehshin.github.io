@@ -133,7 +133,7 @@ function revealNavItems() {
 
 hamburgerBtn.addEventListener('click', revealNavItems, false);
 
-// Reveal Contact Links
+// Universal | Reveal Contact Links
 
 var contactLinks, i;
 
@@ -586,7 +586,41 @@ function hoverThumbnails() {
 
 	} else { // mobile
 
-		// code goes here
+		if (this === projectFrame[0]) {
+
+			thumbnailImg[0].style.filter = "brightness(50%)";
+			thumbnailImg[0].style.transform = "scale(1.1)";
+
+			thumbnailHeader[0].style.opacity = "1";
+			thumbnailSubheader[0].style.opacity = "1";
+
+			thumbnailHeader[0].style.top = "50px";
+			thumbnailSubheader[0].style.top = "100px";
+
+		} else if (this === projectFrame[1]) {
+
+			thumbnailImg[1].style.filter = "brightness(50%)";
+			thumbnailImg[1].style.transform = "scale(1.1)";
+
+			thumbnailHeader[1].style.opacity = "1";
+			thumbnailSubheader[1].style.opacity = "1";
+
+			thumbnailHeader[1].style.top = "50px";
+			thumbnailSubheader[1].style.top = "100px";
+
+
+		} else if (this === projectFrame[2]) {
+
+			thumbnailImg[2].style.filter = "brightness(50%)";
+			thumbnailImg[2].style.transform = "scale(1.1)";
+
+			thumbnailHeader[2].style.opacity = "1";
+			thumbnailSubheader[2].style.opacity = "1";
+
+			thumbnailHeader[2].style.top = "50px";
+			thumbnailSubheader[2].style.top = "100px";
+			
+		}
 
 	}
 
@@ -795,66 +829,133 @@ function fadeInStarbucks() {
 
 	if (document.title === "Starbucks Redesign") {
 
-		var title, infoHeader, infoData, infoDataLink, landingImg, delayCounter, i;
+		if (window.innerWidth > 500) {
 
-		title = document.querySelector('h1.starbucks-landing-title');
-		infoHeader = document.querySelectorAll('p.project-info-header');
-		infoData = document.querySelectorAll('p.project-info-data');
-		infoDataLink = document.querySelector('a.project-info-data');
-		landingImg = document.querySelector('img.starbucks-landing-img');
+			var title, infoHeader, infoData, infoDataLink, landingImg, delayCounter, i;
 
-		title.style.top = "150px";
-		title.style.opacity = "1";
-		title.style.transitionDelay = "0.4s";
+			title = document.querySelector('h1.starbucks-landing-title');
+			infoHeader = document.querySelectorAll('p.project-info-header');
+			infoData = document.querySelectorAll('p.project-info-data');
+			infoDataLink = document.querySelector('a.project-info-data');
+			landingImg = document.querySelector('img.starbucks-landing-img');
 
-		landingImg.style.marginTop = "75px";
-		landingImg.style.opacity = "1";
-		landingImg.style.transitionDelay = "1.5s";
+			title.style.top = "150px";
+			title.style.opacity = "1";
+			title.style.transitionDelay = "0.4s";
 
-		delayCounter = 0.5;
+			landingImg.style.marginTop = "75px";
+			landingImg.style.opacity = "1";
+			landingImg.style.transitionDelay = "1.5s";
 
-		for (i = 0; i < infoHeader.length; i++) {
+			delayCounter = 0.5;
 
-			infoHeader[i].style.marginTop = "200px";
+			for (i = 0; i < infoHeader.length; i++) {
 
-			infoHeader[i].style.opacity = "1";
+				infoHeader[i].style.marginTop = "200px";
 
-			infoHeader[i].style.transitionDelay = delayCounter + "s";
+				infoHeader[i].style.opacity = "1";
 
-			delayCounter = delayCounter += 0.1;
+				infoHeader[i].style.transitionDelay = delayCounter + "s";
 
-		}
+				delayCounter = delayCounter += 0.1;
 
-		for (i = 0; i < infoData.length; i++) {
+			}
 
-			infoData[i].style.marginTop = "200px";
-			infoDataLink.style.marginTop = "200px";
+			for (i = 0; i < infoData.length; i++) {
 
-			infoData[i].style.opacity = "1";
+				infoData[i].style.marginTop = "200px";
+				infoDataLink.style.marginTop = "200px";
+
+				infoData[i].style.opacity = "1";
+				infoDataLink.style.opacity = "1";
+
+				infoData[i].style.transitionDelay = delayCounter + "s";
+				infoDataLink.style.transitionDelay = "1.4s";
+
+				delayCounter = delayCounter += 0.1;
+
+			}
+
+			infoDataLink.addEventListener('mouseenter', function() {
+
+				infoDataLink.style.color = "black";
+				infoDataLink.style.transition = "color 0.3s";
+				infoDataLink.style.transitionDelay = "0s";
+
+			}, false);
+
+			infoDataLink.addEventListener('mouseleave', function() {
+
+				infoDataLink.style.color = "#E54B4B";
+				infoDataLink.style.transition = "color 0.3s";
+				infoDataLink.style.transitionDelay = "0s";
+
+			}, false);
+
+		} else {
+
+			var title, infoHeader, infoData, infoDataLink, landingImg;
+
+			title = document.querySelector('h1.starbucks-landing-title');
+			infoHeader = document.querySelectorAll('p.project-info-header');
+			infoData = document.querySelectorAll('p.project-info-data');
+			infoDataLink = document.querySelector('a.project-info-data');
+			landingImg = document.querySelector('img.starbucks-landing-img');
+
+			title.style.top = "150px";
+			title.style.opacity = "1";
+			title.style.transitionDelay = "0.4s";
+
+			landingImg.style.marginTop = "75px";
+			landingImg.style.opacity = "1";
+			landingImg.style.transitionDelay = "1.5s";
+
+			infoHeader[0].style.marginTop = "200px";
+			infoHeader[0].style.opacity = "1";
+			infoHeader[0].style.transitionDelay = "0.5s";
+
+			infoData[0].style.marginTop = "200px";
+			infoData[0].style.opacity = "1";
+			infoData[0].style.transitionDelay = "0.6s";
+
+
+			infoHeader[1].style.marginTop = "30px";
+			infoHeader[1].style.opacity = "1";
+			infoHeader[1].style.transitionDelay = "0.7s";
+			infoHeader[1].style.clear = "left";
+
+			infoData[1].style.marginTop = "30px";
+			infoData[1].style.opacity = "1";
+			infoData[1].style.transitionDelay = "0.8s";
+
+
+			infoHeader[2].style.marginTop = "30px";
+			infoHeader[2].style.opacity = "1";
+			infoHeader[2].style.transitionDelay = "0.9s";
+			infoHeader[2].style.clear = "left";
+
+			infoData[2].style.marginTop = "30px";
+			infoData[2].style.opacity = "1";
+			infoData[2].style.transitionDelay = "1s";
+
+
+			infoHeader[3].style.marginTop = "30px";
+			infoHeader[3].style.opacity = "1";
+			infoHeader[3].style.transitionDelay = "1.1s";
+
+			infoData[3].style.marginTop = "30px";
+			infoData[3].style.opacity = "1";
+			infoData[3].style.transitionDelay = "1.2s";
+
+			infoData[4].style.marginTop = "30px";
+			infoData[4].style.opacity = "1";
+			infoData[4].style.transitionDelay = "1.3s";
+
+			infoDataLink.style.marginTop = "30px";
 			infoDataLink.style.opacity = "1";
-
-			infoData[i].style.transitionDelay = delayCounter + "s";
 			infoDataLink.style.transitionDelay = "1.4s";
 
-			delayCounter = delayCounter += 0.1;
-
 		}
-
-		infoDataLink.addEventListener('mouseenter', function() {
-
-			infoDataLink.style.color = "black";
-			infoDataLink.style.transition = "color 0.3s";
-			infoDataLink.style.transitionDelay = "0s";
-
-		}, false);
-
-		infoDataLink.addEventListener('mouseleave', function() {
-
-			infoDataLink.style.color = "#E54B4B";
-			infoDataLink.style.transition = "color 0.3s";
-			infoDataLink.style.transitionDelay = "0s";
-
-		}, false);
 
 	}
 
