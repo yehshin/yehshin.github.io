@@ -12,9 +12,9 @@
 		<title>Starbucks Redesign</title>
 	</head>
  
-	<body>
+	<body class="starbucks-body">
 
-		<div id="container">
+			<!-- My Logo -->
 
 			<a class="logo" href="../">ye.<a>
 
@@ -25,18 +25,24 @@
 				<div class="hamburger-btn-line hamburger-btn-line-bottom"></div>
 			</div>
 
-			<!-- Nav Meny Background / Items -->
+			<!-- Nav Menu / Nav Items / Contact Links -->
 
 			<div class="nav-menu">
-				<a class="nav-item" href="../">Home</a><br>
-				<a class="nav-item" href="../about/">About</a><br>
-				<a class="nav-item" href="../starbucks/">Starbucks Redesign</a><br>
-				<a class="nav-item" href="../ui/">Mobile UI Concepts</a><br>
-				<a class="nav-item" href="../posters/">Poster Designs</a> <br>
+				<a class="nav-item" href="../">Home</a>
+				<a class="nav-item" href="../about/">About</a>
+				<a class="nav-item" href="../starbucks/">Starbucks Redesign</a>
+				<a class="nav-item" href="../ui/">Mobile UI Concepts</a>
+				<a class="nav-item" href="../posters/">Poster Designs</a> 
 
-				<a class="contact-links" href="mailto:yeshin316@gmail.com?Subject=Hello" title="yeshin316@gmail.com">Email</a><br>
-				<a class="contact-links" href="https://www.linkedin.com/in/ye-shin/" target="_blank">LinkedIn</a><br>
-				<a class="contact-links" href="https://github.com/yehshin" target="_blank">GitHub</a>
+				<img class="nav-bg-img">
+
+				<div class="flex-nav">
+					<a class="contact-link" href="mailto:yeshin316@gmail.com?Subject=Hello" title="yeshin316@gmail.com">Email</a>
+					<a class="contact-link" href="../Ye Heon Shin - Resume.pdf" target="_blank">Resume</a>
+					<a class="contact-link" href="https://www.linkedin.com/in/ye-shin/" target="_blank">LinkedIn</a>
+					<a class="contact-link" href="https://github.com/yehshin" target="_blank">GitHub</a>
+				</div>
+
 			</div>
 
 			<!-- First Wrap -->
@@ -191,33 +197,30 @@
 
 			<div class="starbucks-wrapper starbucks-eleventh-wrapper">
 
-				<video class="starbucks-vid" autoplay loop>
+				<video class="starbucks-vid" loop>
 					<source class="starbucks-vid" src="../images/starbucks/starbucks-mu-vid.mp4" type="video/mp4">
+					Your browser does not support this video.
 				</video>
+
+				<div class="vid-progress-bar"></div>
+
+				<p class="play-vid-btn">Play</p>
 				
 			</div>
 
 			<!-- More Projects Links -->
 
-			<p class="more-projects-title">View More Projects</p>
+			<a class="next-project-link" href="../ui/">
 
-			<div class="next-project-all">
+				<div class="next-project-frame">
 
-				<a class="next-project-link" href="../ui/">
-					<div class="next-project-frame">
-						<img class="next-project-img ui" src="../images/thumbnails/ui-concepts-nobg.png" width="3530" height="2550" alt="Thumbnail image of UI Concepts mockup">
-					</div>
-				</a>
+					<img class="next-project-img ui" src="../images/thumbnails/ui-concepts-nobg.png" width="3530" height="2550" alt="Thumbnail image of UI Concepts mockup">
 
-				<a class="next-project-link" href="../posters/">
-					<div class="next-project-frame">
-						<img class="next-project-img posters" src="../images/thumbnails/poster-thumbnail.png" width="3500" height="2188" alt="Thumbnail image of UI Concepts mockup">
-					</div>
-				</a>
+					<span class="next-project-title">Next Project: Mobile UI Concepts</span>
 
-			</div>
+				</div>
 
-		</div> <!-- closes: <div id="container"> -->
+			</a>
 
 		<script src="../js/base.js"></script>
 

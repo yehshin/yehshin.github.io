@@ -1,174 +1,936 @@
-// // Universal Animations
+// Universal Animations
 
-// // Hamburger Menu Btn
+// Universal | Hamburger Menu Btn
 
-// var hamburgerBtn, hamburgerBtnLineTop, hamburgerBtnLineBottom;
+var hamburgerBtn, hamburgerBtnLineTop, hamburgerBtnLineBottom;
 
-// hamburgerBtn = document.querySelector('div.hamburger-btn');
-// hamburgerBtnLineTop = document.querySelector('div.hamburger-btn-line-top');
-// hamburgerBtnLineBottom = document.querySelector('div.hamburger-btn-line-bottom');
+hamburgerBtn = document.querySelector('div.hamburger-btn');
+hamburgerBtnLineTop = document.querySelector('div.hamburger-btn-line-top');
+hamburgerBtnLineBottom = document.querySelector('div.hamburger-btn-line-bottom');
 
-// function hamburgerBtnTransform() {
+function hamburgerBtnTransform() {
 
-// 	if (this.className === "hamburger-btn") {
+	if (this.className === "hamburger-btn") {
 
-// 		hamburgerBtnLineTop.style.transition = "transform 0.4s, top 0.4s, background-color 0.4s";
-// 		hamburgerBtnLineBottom.style.transition = "transform 0.4s, background-color 0.4s";
-// 		hamburgerBtnLineTop.style.transitionTimingFunction = "ease-in";
-// 		hamburgerBtnLineBottom.style.transitionTimingFunction = "ease-in";
+		hamburgerBtnLineTop.style.animationName = "topClicked";
+		hamburgerBtnLineBottom.style.animationName = "bottomClicked";
 
-// 		hamburgerBtnLineTop.style.transform = "rotate(495deg)"; // 135deg // 495
-// 		hamburgerBtnLineBottom.style.transform = "rotate(225deg)"; // 45deg // 225
+		hamburgerBtnLineTop.style.backgroundColor = "#E54B4B";
+		hamburgerBtnLineTop.style.transition = "background-color 0.3s";
+		hamburgerBtnLineBottom.style.backgroundColor = "#E54B4B";
+		hamburgerBtnLineBottom.style.transition = "background-color 0.3s";
 
-// 		hamburgerBtnLineTop.style.transformOrigin = "40% 50%";
-// 		hamburgerBtnLineTop.style.top = "11px";
-// 		hamburgerBtnLineTop.style.left = "1px";
+		this.setAttribute('class', 'hamburger-btn-clicked');
 
-// 		hamburgerBtnLineTop.style.backgroundColor = "white";
-// 		hamburgerBtnLineBottom.style.backgroundColor = "white";
+	} else if (this.className === "hamburger-btn-clicked") {
 
-// 		this.setAttribute('class', 'hamburger-btn-clicked');
+		hamburgerBtnLineTop.style.animationName = "topUnclicked";
+		hamburgerBtnLineBottom.style.animationName = "bottomUnclicked";
 
-// 	} else if (this.className === "hamburger-btn-clicked") {
-		
-// 		hamburgerBtnLineTop.style.transition = "transform 0.4s, top 0.4s, background-color 0.4s";
-// 		hamburgerBtnLineBottom.style.transition = "transform 0.4s, background-color 0.4s";
-// 		hamburgerBtnLineTop.style.transitionTimingFunction = "ease-in";
-// 		hamburgerBtnLineBottom.style.transitionTimingFunction = "ease-in";
+		if (document.title === "Ye Shin | Designer") {
 
-// 		hamburgerBtnLineTop.style.transform = "rotate(0deg)";
-// 		hamburgerBtnLineTop.style.top = "4px";
-// 		hamburgerBtnLineTop.style.left = "2px";
-// 		hamburgerBtnLineBottom.style.transform = "rotate(0deg)";
+			hamburgerBtnLineTop.style.backgroundColor = "white";
+			hamburgerBtnLineBottom.style.backgroundColor = "white";
 
-// 		hamburgerBtnLineTop.style.backgroundColor = "black";
-// 		hamburgerBtnLineBottom.style.backgroundColor = "black";
+		} else {
 
-// 		this.setAttribute('class', 'hamburger-btn');
+			hamburgerBtnLineTop.style.backgroundColor = "black";
+			hamburgerBtnLineBottom.style.backgroundColor = "black";
 
-// 	}
+		}
 
-// }
+		this.setAttribute('class', 'hamburger-btn');
 
-// hamburgerBtn.addEventListener('click', hamburgerBtnTransform, false);
+	}
 
-// // Hover on/off Hamburger
+}
 
-// function hoverOnHamburger() {
+hamburgerBtn.addEventListener('click', hamburgerBtnTransform, false);
 
-// 	if(this.className === "hamburger-btn") {
+// Universal | Animate the hamburger button into the screen on load only
 
-// 		hamburgerBtnLineTop.style.animationName = "topLineOn";
-// 		hamburgerBtnLineBottom.style.animationName = "bottomLineOn";
+function animateHamburgerIn() {
 
-// 	}
+	hamburgerBtn.style.animationName = "appearHamburger"; // this is so it doesn't animate after everytime it is clicked
 
-// }
+}
 
-// function hoverOffHamburger() {
+window.addEventListener('load', animateHamburgerIn, false);
 
+// Universal | Reveal Nav Background
 
-// 	if(this.className === "hamburger-btn") {
+var navMenu = document.querySelector('div.nav-menu');
 
-// 		hamburgerBtnLineTop.style.animationName = "topLineOff";
-// 		hamburgerBtnLineBottom.style.animationName = "bottomLineOff";
+function toggleNavBackground() {
 
-// 	}
+	if (navMenu.className === "nav-menu") {
 
-// }
+		navMenu.style.position = "fixed";
 
-// hamburgerBtn.addEventListener('mouseenter', hoverOnHamburger, false);
-// hamburgerBtn.addEventListener('mouseleave', hoverOffHamburger, false);
+		var body = document.querySelector('body');
 
-// // Reveal Nav Background
+		body.style.overflow = "hidden";
 
-// var navMenu = document.querySelector('div.nav-menu');
+		navMenu.setAttribute('class', 'nav-menu-revealed');
 
-// function revealNavBackground() {
+	} else if (navMenu.className === 'nav-menu-revealed') {
 
-// 	if (navMenu.className === "nav-menu") {
+		var body = document.querySelector('body');
 
-// 		navMenu.style.position = "fixed";
+		body.style.overflow = "visible";
 
-// 		var body = document.querySelector('body');
+		navMenu.setAttribute('class', 'nav-menu');
 
-// 		body.style.overflow = "hidden";
+	}
 
-// 		navMenu.setAttribute('class', 'nav-menu-revealed');
+}
 
-// 	} else if (navMenu.className === 'nav-menu-revealed') {
+hamburgerBtn.addEventListener('click', toggleNavBackground, false);
 
-// 		var body = document.querySelector('body');
+// Universal | Reveal Nav Items
 
-// 		body.style.overflow = "visible";
-
-// 		navMenu.setAttribute('class', 'nav-menu');
-
-// 	}
-
-// }
-
-// hamburgerBtn.addEventListener('click', revealNavBackground, false);
-
-// // Hover Nav Items
-
-// var navItem, i;
+var navItem, i;
 	
-// navItem = document.querySelectorAll('a.nav-item');
+navItem = document.querySelectorAll('a.nav-item');
 
-// for (i = 0; i < navItem.length; i++) {
+navItem[0].style.marginTop = "10%"; // needs to be mover further down from the top
 
-// 	navItem[i].addEventListener('mouseenter', function() {
+function revealNavItems() {
 
-// 		this.style.marginLeft = "110px";
-// 		this.style.transition = "margin-left 0.3s";
+	for (i = 0; i < navItem.length; i++) {
 
-// 	}, false)
+		if (navItem[i].className === "nav-item") {
 
-// 	navItem[i].addEventListener('mouseleave', function() {
+			var delayCounter = 0.5;
 
-// 		this.style.marginLeft = "100px";
-// 		this.style.transition = "margin-left 0.3s";
+			for (i = 0; i < navItem.length; i++) {
 
-// 	}, false)
-// }
+				navItem[i].style.transition = "opacity 0.7s, visibility 0.7s, margin-top 0.7s";
 
-// // Reveal Nav Items
+				navItem[0].style.marginTop = "8%";
 
-// function revealNavItems() {
+				navItem[i].style.transitionDelay = delayCounter + "s";
 
-// 	for (i = 0; i < navItem.length; i++) {
+				navItem[i].setAttribute('class', 'nav-item-revealed');
 
-// 		if (navItem[i].className === "nav-item") {
+				delayCounter = delayCounter += 0.1;
 
-// 			var delayCounter = 0.5;
+			}
 
-// 			for (i = 0; i < navItem.length; i++) {
+		} else if (navItem[i].className === "nav-item-revealed") {
 
-// 				navItem[i].style.transition = "opacity 0.7s, visibility 0.7s";
+			navItem[i].style.transition = "opacity 0.2s, visibility 0.2s, margin-top 0.7s";
 
-// 				navItem[i].style.transitionDelay = delayCounter + "s";
+			navItem[0].style.marginTop = "10%";
 
-// 				navItem[i].style.animationDelay = delayCounter + "s";
+			navItem[i].setAttribute('class', 'nav-item');
 
-// 				navItem[i].setAttribute('class', 'nav-item-revealed');
+		}
 
-// 				delayCounter = delayCounter += 0.1;
+	}
 
-// 			}
+}
 
-// 		} else if (navItem[i].className === "nav-item-revealed") {
+hamburgerBtn.addEventListener('click', revealNavItems, false);
 
-// 			navItem[i].style.transition = "opacity 0.2s, visibility 0.2s";
+// Reveal Contact Links
 
-// 			navItem[i].setAttribute('class', 'nav-item');
+var contactLinks, i;
 
-// 		}
+contactLinks = document.querySelectorAll('a.contact-link');
 
-// 	}
+function revealContactLinks() {
 
-// }
+	for (i = 0; i < contactLinks.length; i++) {
 
-// hamburgerBtn.addEventListener('click', revealNavItems, false);
+		if (contactLinks[i].className === "contact-link") {
+
+			var delayCounter = 1.1;
+
+			for (i = 0; i < contactLinks.length; i++) {
+
+				contactLinks[i].style.transition = "opacity 0.7s, visibility 0.7s, margin-top 0.7s";
+
+				contactLinks[i].style.transitionDelay = delayCounter + "s";
+
+				contactLinks[i].style.animationDelay = delayCounter + "s";
+
+				contactLinks[i].setAttribute('class', 'contact-link-revealed');
+
+				// delayCounter = delayCounter += 0.1;
+				// this will fade in all at once, or you can have it delay on each...your call
+
+			}
+
+		} else if (contactLinks[i].className === "contact-link-revealed") {
+
+			contactLinks[i].style.transition = "opacity 0.2s, visibility 0.2s, margin-top 0.7s";
+
+			contactLinks[i].setAttribute('class', 'contact-link');
+
+		}
+
+	}
+
+}
+
+// Universal | Hover Nav Items
+
+var navItem, i;
+	
+navItem = document.querySelectorAll('a.nav-item');
+
+for (i = 0; i < navItem.length; i++) {
+
+	navItem[i].addEventListener('mouseenter', function() {
+
+		// this.style.transition = "color 0.3s";
+		// this.style.color = "white";
+
+		this.style.animationName = "colorChange";
+		this.style.animationDuration = "0.3s";
+		this.style.animationIterationCount = "infinite";
+
+	}, false);
+
+	navItem[i].addEventListener('mouseleave', function() {
+
+		// this.style.transition = "color 0.3s";
+		// this.style.color = "#E54B4B";
+
+		this.style.animationName = "";
+
+	}, false);
+
+}
+
+// Universal | Hover Contact Links
+
+var contactLinks, i;
+	
+contactLinks = document.querySelectorAll('a.contact-link');
+
+for (i = 0; i < contactLinks.length; i++) {
+
+	contactLinks[i].addEventListener('mouseenter', function() {
+
+		// this.style.transition = "color 0.3s";
+		// this.style.color = "white";
+
+		this.style.animationName = "colorChange";
+		this.style.animationDuration = "0.3s";
+		this.style.animationIterationCount = "infinite";
+		this.style.animationDelay = "0s";
+
+	}, false);
+
+	contactLinks[i].addEventListener('mouseleave', function() {
+
+		// this.style.transition = "color 0.3s";
+		// this.style.color = "#E54B4B";
+
+		this.style.animationName = "";
+
+	}, false);
+
+}
+
+// Universal | Toggle Nav Menu Background Img
+
+var navItem = document.querySelectorAll('a.nav-item');
+
+var i;
+
+function revealNavBgImg() {
+
+	var navBgImg = document.querySelector('img.nav-bg-img');
+
+	if (this === navItem[0]) {
+
+		if (document.title === "Ye Shin | Designer") {
+
+			navBgImg.setAttribute('src', 'images/thumbnails/home-nav-menu-bg.png');
+			navBgImg.width = "2500px";
+			navBgImg.height = "1352px";
+			navBgImg.style.animationName = "fadeIn";
+
+		} else {
+
+			navBgImg.setAttribute('src', '../images/thumbnails/home-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1352px";		
+
+		}
+
+	} else if (this === navItem[1]) {
+
+		if (document.title === "Ye Shin | Designer") {
+
+			navBgImg.setAttribute('src', 'images/about/netflix-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1406px";
+
+		} else {
+
+			navBgImg.setAttribute('src', '../images/about/netflix-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1406px";
+
+		}
+
+	} else if (this === navItem[2]) {
+
+		if (document.title === "Ye Shin | Designer") {
+
+			navBgImg.setAttribute('src', 'images/thumbnails/starbucks-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500x";
+			navBgImg.height = "1406px";
+
+		} else {
+
+			navBgImg.setAttribute('src', '../images/thumbnails/starbucks-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500x";
+			navBgImg.height = "1406px";
+
+		}
+
+	} else if (this === navItem[3]) {
+
+		if (document.title === "Ye Shin | Designer") {
+
+			navBgImg.setAttribute('src', 'images/thumbnails/ui-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1806px";
+
+		} else {
+
+			navBgImg.setAttribute('src', '../images/thumbnails/ui-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1806px";
+
+		}
+
+	} else if (this === navItem[4]) {
+
+		if (document.title === "Ye Shin | Designer") {
+
+			navBgImg.setAttribute('src', 'images/thumbnails/poster-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1563px";
+
+		} else {
+
+			navBgImg.setAttribute('src', '../images/thumbnails/poster-nav-menu-bg.png');
+			navBgImg.style.animationName = "fadeIn";
+			navBgImg.width = "2500px";
+			navBgImg.height = "1563px";
+
+		}
+
+	}
+
+}
+
+function hideNavBgImg() {
+
+	var navBgImg = document.querySelector('img.nav-bg-img');
+
+	navBgImg.style.animationName = "fadeOut";
+
+}
+
+for (i = 0; i < navItem.length; i++) {
+
+	navItem[i].addEventListener('mouseenter', revealNavBgImg, false);
+	navItem[i].addEventListener('mouseleave', hideNavBgImg, false);
+
+}
+
+hamburgerBtn.addEventListener('click', revealContactLinks, false);
+
+// Universal | Next Project Links
+
+function nextProjectLinks() {
+
+	if (document.title === "Starbucks Redesign") {
+
+		var nextProjectLink, nextProjectImg, nextProjectTitle;	
+
+		nextProjectLink = document.querySelector('a.next-project-link');
+		nextProjectImg = document.querySelector('img.ui');
+		nextProjectTitle = document.querySelector('span.next-project-title');
+
+		nextProjectLink.addEventListener('mouseenter', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(50%)";
+			nextProjectImg.style.transform = "scale(1.1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0.3s";
+			nextProjectTitle.style.opacity = "1";
+			nextProjectTitle.style.top = "45%";
+
+		}, false);
+
+		nextProjectLink.addEventListener('mouseleave', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(100%)";
+			nextProjectImg.style.transform = "scale(1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0s";
+			nextProjectTitle.style.opacity = "0";
+			nextProjectTitle.style.top = "50%";
+
+		}, false);
+
+	} else if (document.title === "Mobile UI Concepts") {
+
+		var nextProjectLink, nextProjectImg, nextProjectTitle;	
+
+		nextProjectLink = document.querySelector('a.next-project-link');
+		nextProjectImg = document.querySelector('img.posters');
+		nextProjectTitle = document.querySelector('span.next-project-title');
+
+		nextProjectLink.addEventListener('mouseenter', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(50%)";
+			nextProjectImg.style.transform = "scale(1.1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0.3s";
+			nextProjectTitle.style.opacity = "1";
+			nextProjectTitle.style.top = "45%";
+
+		}, false);
+
+		nextProjectLink.addEventListener('mouseleave', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(100%)";
+			nextProjectImg.style.transform = "scale(1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0s";
+			nextProjectTitle.style.opacity = "0";
+			nextProjectTitle.style.top = "50%";
+
+		}, false);
+
+	} else if (document.title === "Poster Designs") {
+
+		var nextProjectLink, nextProjectImg, nextProjectTitle;	
+
+		nextProjectLink = document.querySelector('a.next-project-link');
+		nextProjectImg = document.querySelector('img.starbucks');
+		nextProjectTitle = document.querySelector('span.next-project-title');
+
+		nextProjectLink.addEventListener('mouseenter', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(50%)";
+			nextProjectImg.style.transform = "scale(1.1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0.3s";
+			nextProjectTitle.style.opacity = "1";
+			nextProjectTitle.style.top = "45%";
+
+		}, false);
+
+		nextProjectLink.addEventListener('mouseleave', function() {
+
+			nextProjectImg.style.transition = "filter 0.3s, transform 0.3s";
+			nextProjectImg.style.filter = "brightness(100%)";
+			nextProjectImg.style.transform = "scale(1)";
+
+			nextProjectTitle.style.transition = "top 0.3s, opacity 0.3s";
+			nextProjectTitle.style.transitionDelay = "0s";
+			nextProjectTitle.style.opacity = "0";
+			nextProjectTitle.style.top = "50%";
+
+		}, false);
+
+	}
+
+}
+
+window.addEventListener('load', nextProjectLinks, false);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Home Page Animations
+
+// Home | Toggle Home Page Body's Overflow
+
+function toggleBodyOverflow() { // this is so on the load the overflow is hidden but once the load is done, it toggles to visible so you can scroll
+
+	var body, navMenu;
+
+	body = document.querySelector('body');
+
+	setTimeout(function(){ 
+
+		body.style.overflow = "visible";
+		body.style.overflowX = "hidden"; 		
+
+	}, 3000);
+
+}
+
+// Make sure home page is scrolled to top on refresh
+
+function refreshToTop() {
+
+	if (document.title === "Ye Shin | Designer") {
+
+		window.scrollTo(0,0);
+		
+	}
+
+}
+
+window.addEventListener('beforeunload', refreshToTop, false);
+
+// Home | Fade in BG color
+
+window.addEventListener('load', toggleBodyOverflow, false);
+
+function fadeInBody() { // might be uneccessary...possibly take out...
+
+	if (document.title === "Ye Shin | Designer") {
+
+		var homeBody;
+
+		homeBody = document.querySelector('body.home-body');
+
+		homeBody.style.transition = "background-color 0.3s";
+
+		homeBody.style.backgroundColor = "#E54B4B";
+
+	}
+
+}
+
+window.addEventListener('load', fadeInBody, false);
+
+// Home | Hover on Project Thumbnails
+
+var projectFrame, i;
+
+projectFrame = document.querySelectorAll('div.project-frame');
+
+function hoverThumbnails() {
+
+	var thumbnailImg, thumbnailHeader, thumbnailSubheader;
+
+	thumbnailImg = document.querySelectorAll('img.thumbnail-imgs');
+	thumbnailHeader = document.querySelectorAll('p.thumbnail-caption-header');
+	thumbnailSubheader = document.querySelectorAll('p.thumbnail-caption-subheader');
+
+	for (i = 0; i < thumbnailHeader.length; i++) {
+
+		thumbnailHeader[i].style.transitionDelay = "0.4s";
+		thumbnailSubheader[i].style.transitionDelay = "0.5s";
+
+	}
+
+	if (window.innerWidth > 500) { // desktop
+
+		if (this === projectFrame[0]) {
+
+			thumbnailImg[0].style.filter = "brightness(50%)";
+			thumbnailImg[0].style.transform = "scale(1.1)";
+
+			thumbnailHeader[0].style.opacity = "1";
+			thumbnailSubheader[0].style.opacity = "1";
+
+			thumbnailHeader[0].style.top = "50px";
+			thumbnailSubheader[0].style.top = "100px";
+
+		} else if (this === projectFrame[1]) {
+
+			thumbnailImg[1].style.filter = "brightness(50%)";
+			thumbnailImg[1].style.transform = "scale(1.1)";
+
+			thumbnailHeader[1].style.opacity = "1";
+			thumbnailSubheader[1].style.opacity = "1";
+
+			thumbnailHeader[1].style.top = "50px";
+			thumbnailSubheader[1].style.top = "100px";
 
 
+		} else if (this === projectFrame[2]) {
+
+			thumbnailImg[2].style.filter = "brightness(50%)";
+			thumbnailImg[2].style.transform = "scale(1.1)";
+
+			thumbnailHeader[2].style.opacity = "1";
+			thumbnailSubheader[2].style.opacity = "1";
+
+			thumbnailHeader[2].style.top = "50px";
+			thumbnailSubheader[2].style.top = "100px";
+			
+		}
+
+	} else { // mobile
+
+		// code goes here
+
+	}
+
+}
+
+function unhoverThumbnails() {
+
+	var thumbnailImg, thumbnailHeader, thumbnailSubheader;
+
+	thumbnailImg = document.querySelectorAll('img.thumbnail-imgs');
+	thumbnailHeader = document.querySelectorAll('p.thumbnail-caption-header');
+	thumbnailSubheader = document.querySelectorAll('p.thumbnail-caption-subheader');
+
+	for (i = 0; i < thumbnailHeader.length; i++) {
+
+		thumbnailHeader[i].style.transitionDelay = "0s";
+		thumbnailSubheader[i].style.transitionDelay = "0s";
+
+	}
+
+	if (window.innerWidth > 500) { // desktop
+
+		if (this === projectFrame[0]) {
+
+			thumbnailImg[0].style.filter = "brightness(100%)";
+			thumbnailImg[0].style.transform = "scale(1)";
+
+			thumbnailHeader[0].style.opacity = "0";
+			thumbnailSubheader[0].style.opacity = "0";
+
+			thumbnailHeader[0].style.top = "70px";
+			thumbnailSubheader[0].style.top = "120px";
+
+		} else if (this === projectFrame[1]) {
+
+			thumbnailImg[1].style.filter = "brightness(100%)";
+			thumbnailImg[1].style.transform = "scale(1)";
+
+			thumbnailHeader[1].style.opacity = "0";
+			thumbnailSubheader[1].style.opacity = "0";
+
+			thumbnailHeader[1].style.top = "70px";
+			thumbnailSubheader[1].style.top = "120px";
+
+		} else if (this === projectFrame[2]) {
+
+			thumbnailImg[2].style.filter = "brightness(100%)";
+			thumbnailImg[2].style.transform = "scale(1)";
+
+			thumbnailHeader[2].style.opacity = "0";
+			thumbnailSubheader[2].style.opacity = "0";
+
+			thumbnailHeader[2].style.top = "70px";
+			thumbnailSubheader[2].style.top = "120px";
+			
+		} 
+
+	} else { // mobile
+
+		// code goes here
+
+	}	
+
+}
+
+for (var i = 0; i < projectFrame.length; i++) {
+
+	projectFrame[i].addEventListener('mouseenter', hoverThumbnails, false);
+	projectFrame[i].addEventListener('mouseleave', unhoverThumbnails, false);
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// About Page Animation
+
+// About | Fade in entry
+
+function fadeInAbout() {
+
+	if (document.title === "About Ye") {
+
+		var header, text, landingImg, delayCounter, i;
+
+		header = document.querySelector('h1.about-header');
+		text = document.querySelectorAll('p.about-text');
+		landingImg = document.querySelector('img.netflix-me');
+
+		header.style.top = "225px";
+		header.style.opacity = "1";
+		header.style.transitionDelay = "0.6s";
+
+		delayCounter = 0.7;
+
+		for (i = 0; i < text.length; i++) {
+
+			text[i].style.marginTop = "50px";
+
+			text[i].style.opacity = "1";
+
+			text[i].style.transitionDelay = delayCounter + "s";
+
+			delayCounter = delayCounter += 0.1;
+
+		}
+
+		text[0].style.marginTop = "275px";
+		text[0].style.opacity = "1";
+
+		landingImg.style.marginTop = "50px";
+		landingImg.style.opacity = "1";
+		landingImg.style.transitionDelay = "1s";
+
+	}
+
+}
+
+window.addEventListener('load', fadeInAbout, false);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Starbucks Redesign
+
+// Starbucks | Toggle Logo and Hamburger Color
+
+function toggleColor() {
+
+	var logo, hamburgerBtnLineTop, hamburgerBtnLineBottom;
+
+	logo = document.querySelector('a.logo');
+	hamburgerBtnLineTop = document.querySelector('div.hamburger-btn-line-top');
+	hamburgerBtnLineBottom = document.querySelector('div.hamburger-btn-line-bottom');
+
+	if (document.title !== "Ye Shin | Designer") {
+		
+		logo.style.color = "black";
+
+		hamburgerBtnLineTop.style.backgroundColor = "black";
+		hamburgerBtnLineBottom.style.backgroundColor = "black";
+
+	} 
+}
+
+window.addEventListener('load', toggleColor, false);
+
+// Starbucks | Play Video Button / Progress Bar
+
+function checkStarbucks() {
+
+	if (document.title === "Starbucks Redesign") {
+
+		var playBtn;
+
+		playBtn = document.querySelector(".play-vid-btn");
+
+		function toggleVid () {
+
+			var starbucksVid, vidProgressBar
+
+			starbucksVid = document.querySelector('video.starbucks-vid');
+			vidProgressBar = document.querySelector('div.vid-progress-bar');
+
+		  if (starbucksVid.paused == true) {
+
+				starbucksVid.play();
+
+				vidProgressBar.style.animationPlayState = "running";
+
+				starbucksVid.style.transition = "filter 0.3s";
+
+				starbucksVid.style.filter = "brightness(100%)"
+
+				playBtn.innerHTML = "Pause";
+
+				playBtn.style.color = "lightgray";
+
+		  } else {
+
+			    starbucksVid.pause();
+
+				vidProgressBar.style.animationPlayState = "paused";
+
+			  	starbucksVid.style.transition = "filter 0.3s";
+			  	
+			  	starbucksVid.style.filter = "brightness(50%)"
+
+			    playBtn.innerHTML = "Play";
+
+			    playBtn.style.color = "white";
+
+		  	}
+
+		}
+
+		playBtn.addEventListener('click', toggleVid, false);
+
+	}
+
+}
+
+window.addEventListener('load', checkStarbucks, false);
+
+// Starbucks | Fade in entry
+
+function fadeInStarbucks() {
+
+	if (document.title === "Starbucks Redesign") {
+
+		var title, infoHeader, infoData, infoDataLink, landingImg, delayCounter, i;
+
+		title = document.querySelector('h1.starbucks-landing-title');
+		infoHeader = document.querySelectorAll('p.project-info-header');
+		infoData = document.querySelectorAll('p.project-info-data');
+		infoDataLink = document.querySelector('a.project-info-data');
+		landingImg = document.querySelector('img.starbucks-landing-img');
+
+		title.style.top = "150px";
+		title.style.opacity = "1";
+		title.style.transitionDelay = "0.4s";
+
+		landingImg.style.marginTop = "75px";
+		landingImg.style.opacity = "1";
+		landingImg.style.transitionDelay = "1.5s";
+
+		delayCounter = 0.5;
+
+		for (i = 0; i < infoHeader.length; i++) {
+
+			infoHeader[i].style.marginTop = "200px";
+
+			infoHeader[i].style.opacity = "1";
+
+			infoHeader[i].style.transitionDelay = delayCounter + "s";
+
+			delayCounter = delayCounter += 0.1;
+
+		}
+
+		for (i = 0; i < infoData.length; i++) {
+
+			infoData[i].style.marginTop = "200px";
+			infoDataLink.style.marginTop = "200px";
+
+			infoData[i].style.opacity = "1";
+			infoDataLink.style.opacity = "1";
+
+			infoData[i].style.transitionDelay = delayCounter + "s";
+			infoDataLink.style.transitionDelay = "1.4s";
+
+			delayCounter = delayCounter += 0.1;
+
+		}
+
+		infoDataLink.addEventListener('mouseenter', function() {
+
+			infoDataLink.style.color = "black";
+			infoDataLink.style.transition = "color 0.3s";
+			infoDataLink.style.transitionDelay = "0s";
+
+		}, false);
+
+		infoDataLink.addEventListener('mouseleave', function() {
+
+			infoDataLink.style.color = "#E54B4B";
+			infoDataLink.style.transition = "color 0.3s";
+			infoDataLink.style.transitionDelay = "0s";
+
+		}, false);
+
+	}
+
+}
+
+
+window.addEventListener('load', fadeInStarbucks, false);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Mobile UI Concepts Page Animation
+
+// UI | Fade in entry
+
+function fadeInUi() {
+
+	if (document.title === "Mobile UI Concepts") {
+
+		var header, subHeader, landingImg;
+
+		header = document.querySelector('h1.ui-landing-header');
+		subHeader = document.querySelector('p.ui-landing-subheader');
+		landingImg = document.querySelector('img.ui-landing-img');
+
+		header.style.top = "225px";
+		header.style.opacity = "1";
+		header.style.transitionDelay = "0.6s";
+
+		subHeader.style.marginTop = "275px";
+		subHeader.style.opacity = "1";
+		subHeader.style.transitionDelay = "0.8s";
+
+		landingImg.style.marginTop = "75px";
+		landingImg.style.opacity = "1";
+		landingImg.style.transitionDelay = "1s";
+
+	}
+
+}
+
+window.addEventListener('load', fadeInUi, false);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Poster Designs Page Animation
+
+// Posters | Fade in entry
+
+function fadeInPosters() {
+
+	if (document.title === "Poster Designs") {
+
+		var header, text, landingImg;
+
+		header = document.querySelector('h1.poster-landing-header');
+		text = document.querySelectorAll('p.poster-text');
+		landingImg = document.querySelector('img.poster-landing-img');
+
+		header.style.top = "225px";
+		header.style.opacity = "1";
+		header.style.transitionDelay = "0.6s";
+
+		text[0].style.top = "275px";
+		text[0].style.opacity = "1";
+		text[0].style.transitionDelay = "0.7s";
+
+		text[1].style.top = "275px";
+		text[1].style.opacity = "1";
+		text[1].style.transitionDelay = "0.8s";
+
+		landingImg.style.marginTop = "300px";
+		landingImg.style.opacity = "1";
+		landingImg.style.transitionDelay = "1s";
+
+	}
+
+}
+
+window.addEventListener('load', fadeInPosters, false);
