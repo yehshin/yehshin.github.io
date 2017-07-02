@@ -1368,6 +1368,7 @@ a.logo {
 
 		20% {
 			top: 8.5px;
+			transform: rotate(0deg)
 		}
 
 		100% {
@@ -1385,6 +1386,7 @@ a.logo {
 
 		20% {
 			top: 8.5px;
+			transform: rotate(0deg)
 		}
 
 		100% {
