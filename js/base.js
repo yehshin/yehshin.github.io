@@ -623,8 +623,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		for (i = 0; i < thumbnailHeader.length; i++) {
 
-			thumbnailHeader[i].style.transitionDelay = "0.4s";
-			thumbnailSubheader[i].style.transitionDelay = "0.5s";
+			thumbnailHeader[i].style.transitionDelay = "0.2s";
+			thumbnailSubheader[i].style.transitionDelay = "0.3s";			
+			// thumbnailHeader[i].style.transitionTimingFunction = "cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+			// thumbnailSubheader[i].style.transitionTimingFunction = "cubic-bezier(0.68, -0.55, 0.265, 1.55)";
 
 		}
 
