@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 					navItem[i].style.transition = "opacity 0.2s, visibility 0.2s, margin-top 0.7s";
 
-					navItem[0].style.marginTop = "48%";
+					navItem[0].style.marginTop = "50%";
 
 					navItem[i].setAttribute('class', 'nav-item');
 

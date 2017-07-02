@@ -1245,7 +1245,7 @@ a.logo {
 		color: #E54B4B;
 		font-size: 2em;
 		text-align: center;
-		margin-top: 30%;
+		margin-top: 27%;
 		display: block;
 		opacity: 0;
 		visibility: hidden;
@@ -1256,7 +1256,7 @@ a.logo {
 	a.nav-item-revealed {
 		opacity: 1;
 		visibility: visible;
-		margin-top: 12%;
+		margin-top: 7%;
 	}
 
 	a.contact-link, a.contact-link-revealed {
@@ -1521,7 +1521,7 @@ a.logo {
 		height: auto;
 		display: inline-block;
 		width: 325px;
-		margin-left: 2%;
+		margin-left: 4%;
 	}
 
 	div.project-frame p.thumbnail-caption-header, div.project-frame p.thumbnail-caption-subheader {
@@ -1564,7 +1564,7 @@ a.logo {
 
 	div.home-title-frame {
 		width: 0;
-		height: 150px;
+		height: 160px;
 		margin-left: 50%;
 		animation: appearTitle 1.5s 1s;
 		animation-fill-mode: forwards;
