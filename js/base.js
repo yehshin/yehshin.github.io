@@ -109,6 +109,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		if (window.innerWidth > 500) {
 
+			navItem[0].style.width = "10%";
+			navItem[0].style.marginLeft = "45%";
+			navItem[1].style.width = "10%";
+			navItem[1].style.marginLeft = "45%";
+			navItem[2].style.width = "30%";
+			navItem[2].style.marginLeft = "35%";
+			navItem[3].style.width = "32%";
+			navItem[3].style.marginLeft = "34%";
+			navItem[4].style.width = "26%";
+			navItem[4].style.marginLeft = "37%";
+
 			for (i = 0; i < navItem.length; i++) {
 
 				if (navItem[i].className === "nav-item") {
@@ -356,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			} else {
 
-				navBgImg.setAttribute('src', '../images/thumbnails/ui-nav-menu-bg.png');
+				navBgImg.setAttribute('src', '../images/thumbnails/ui-concepts-bg.png');
 				navBgImg.style.animationName = "fadeIn";
 				navBgImg.width = "1920px";
 				navBgImg.height = "1387px";
