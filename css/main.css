@@ -436,7 +436,8 @@ img.thumbnail-imgs {
 	height: auto;
 	transition: filter 0.5s, transform 0.5s;
 	/*transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
-	transition-timing-function: cubic-bezier(.51,.92,.24,1.15);
+	/*transition-timing-function: cubic-bezier(.51,.92,.24,1.15);*/
+	transition-timing-function: cubic-bezier(.18,.7,.52,.89);
 }
 
 div.project-a img.starbucks-thumbnail {
@@ -529,7 +530,7 @@ p.about-subheader {
 
 p.about-text {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 36px;
 	margin-left: 5%;
 	margin-top: 100px;
 	margin-right: 5%;
@@ -604,7 +605,7 @@ div.starbucks-first-wrapper {
 }
 
 div.starbucks-second-wrapper {
-	margin-top: -75px;
+	margin-top: -100px;
 	background-color: white;
 }
 
@@ -658,7 +659,7 @@ p.starbucks-text-header {
 
 p.starbucks-text {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 36px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -761,7 +762,7 @@ img.starbucks-landing-img {
 	width: 100%;
 	height: auto;
 	margin-top: 75px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 /* Third Wrapper */
@@ -974,7 +975,7 @@ div.ui-wrapper-one {
 
 p.ui-text {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 36px;
 }
 
 h1.ui-landing-header {
@@ -1043,7 +1044,7 @@ div.ui-wrapper img.ui-img {
 
 p.poster-text {
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 36px;
 }
 
 h1.poster-landing-header {
@@ -1088,6 +1089,7 @@ h1.poster-landing-header, p.poster-text, img.poster-landing-img {
 
 body {
 	font-family: avenirLight, Helvetica;
+	color: #3f3f3f;
 }
 
 @font-face {
@@ -1096,7 +1098,7 @@ body {
 } 
 
 h1.home-title, p.thumbnail-caption-header, h1.about-header, p.about-subheader, h1.starbucks-landing-title, p.project-info-header, p.starbucks-text-header, h1.ui-landing-header, p.project-type, h1.poster-header {
-	font-family: avenirBold;
+	font-family: avenirBold, Helvetica;
 }
 
 @font-face {
@@ -1644,7 +1646,7 @@ a.logo {
 
 	p.about-text {
 		font-size: 18px;
-		line-height: 28px;
+		line-height: 36px;
 		margin-left: 5%;
 		margin-top: 50px;
 		margin-right: 5%;
@@ -1773,7 +1775,7 @@ a.logo {
 
 	p.starbucks-text {
 		font-size: 18px;
-		line-height: 28px;
+		line-height: 36px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -2069,7 +2071,7 @@ a.logo {
 
 	p.ui-text {
 		font-size: 18px;
-		line-height: 28px;
+		line-height: 36px;
 	}
 
 	h1.ui-landing-header {
@@ -2138,7 +2140,7 @@ a.logo {
 
 	p.poster-text {
 		font-size: 18px;
-		line-height: 28px;
+		line-height: 36px;
 	}
 
 	h1.poster-landing-header {
