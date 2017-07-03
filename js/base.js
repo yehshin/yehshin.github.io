@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function(event) {
 
 	// Universal Animations
 
@@ -296,16 +296,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if (document.title === "Ye Shin | Designer") {
 
 				navBgImg.setAttribute('src', 'images/thumbnails/home-nav-menu-bg.png');
-				navBgImg.width = "2500px";
-				navBgImg.height = "1352px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1038px";
 				navBgImg.style.animationName = "fadeIn";
 
 			} else {
 
 				navBgImg.setAttribute('src', '../images/thumbnails/home-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1352px";		
+				navBgImg.width = "1920px";
+				navBgImg.height = "1038px";		
 
 			}
 
@@ -313,17 +313,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			if (document.title === "Ye Shin | Designer") {
 
-				navBgImg.setAttribute('src', 'images/about/netflix-nav-menu-bg.png');
+				navBgImg.setAttribute('src', 'images/about/me-netflix.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1406px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1080px";
 
 			} else {
 
-				navBgImg.setAttribute('src', '../images/about/netflix-nav-menu-bg.png');
+				navBgImg.setAttribute('src', '../images/about/me-netflix.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1406px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1080px";
 
 			}
 
@@ -333,15 +333,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				navBgImg.setAttribute('src', 'images/thumbnails/starbucks-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500x";
-				navBgImg.height = "1406px";
+				navBgImg.width = "1920x";
+				navBgImg.height = "1080px";
 
 			} else {
 
 				navBgImg.setAttribute('src', '../images/thumbnails/starbucks-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500x";
-				navBgImg.height = "1406px";
+				navBgImg.width = "1920x";
+				navBgImg.height = "1080px";
 
 			}
 
@@ -349,17 +349,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			if (document.title === "Ye Shin | Designer") {
 
-				navBgImg.setAttribute('src', 'images/thumbnails/ui-nav-menu-bg.png');
+				navBgImg.setAttribute('src', 'images/thumbnails/ui-concepts-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1806px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1387px";
 
 			} else {
 
 				navBgImg.setAttribute('src', '../images/thumbnails/ui-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1806px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1387px";
 
 			}
 
@@ -369,15 +369,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				navBgImg.setAttribute('src', 'images/thumbnails/poster-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1563px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1200px";
 
 			} else {
 
 				navBgImg.setAttribute('src', '../images/thumbnails/poster-nav-menu-bg.png');
 				navBgImg.style.animationName = "fadeIn";
-				navBgImg.width = "2500px";
-				navBgImg.height = "1563px";
+				navBgImg.width = "1920px";
+				navBgImg.height = "1200px";
 
 			}
 
@@ -623,8 +623,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		for (i = 0; i < thumbnailHeader.length; i++) {
 
-			thumbnailHeader[i].style.transitionDelay = "0.2s";
-			thumbnailSubheader[i].style.transitionDelay = "0.3s";			
+			thumbnailHeader[i].style.transitionDelay = "0.4s";
+			thumbnailSubheader[i].style.transitionDelay = "0.5s";			
 			// thumbnailHeader[i].style.transitionTimingFunction = "cubic-bezier(0.68, -0.55, 0.265, 1.55)";
 			// thumbnailSubheader[i].style.transitionTimingFunction = "cubic-bezier(0.68, -0.55, 0.265, 1.55)";
 
@@ -673,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if (this === projectFrame[0]) {
 
 				thumbnailImg[0].style.filter = "brightness(50%)";
-				thumbnailImg[0].style.transform = "scale(1.1)";
+				thumbnailImg[0].style.transform = "scale(1)";
 
 				thumbnailHeader[0].style.opacity = "1";
 				thumbnailSubheader[0].style.opacity = "1";
@@ -684,7 +684,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			} else if (this === projectFrame[1]) {
 
 				thumbnailImg[1].style.filter = "brightness(50%)";
-				thumbnailImg[1].style.transform = "scale(1.1)";
+				thumbnailImg[1].style.transform = "scale(1)";
 
 				thumbnailHeader[1].style.opacity = "1";
 				thumbnailSubheader[1].style.opacity = "1";
@@ -696,7 +696,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			} else if (this === projectFrame[2]) {
 
 				thumbnailImg[2].style.filter = "brightness(50%)";
-				thumbnailImg[2].style.transform = "scale(1.1)";
+				thumbnailImg[2].style.transform = "scale(1)";
 
 				thumbnailHeader[2].style.opacity = "1";
 				thumbnailSubheader[2].style.opacity = "1";
@@ -814,7 +814,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			text[0].style.marginTop = "275px";
 			text[0].style.opacity = "1";
 
-			landingImg.style.marginTop = "30px";
+			landingImg.style.marginTop = "40px";
 			landingImg.style.opacity = "1";
 			landingImg.style.transitionDelay = "1s";
 
@@ -856,22 +856,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		if (document.title === "Starbucks Redesign") {
 
-			var playBtn;
+			var playBtn, starbucksVid;
 
 			playBtn = document.querySelector(".play-vid-btn");
+			starbucksVid = document.querySelector('video.starbucks-vid');
 
 			function toggleVid () {
-
-				var starbucksVid, vidProgressBar
-
-				starbucksVid = document.querySelector('video.starbucks-vid');
-				vidProgressBar = document.querySelector('div.vid-progress-bar');
 
 			  if (starbucksVid.paused == true) {
 
 					starbucksVid.play();
-
-					vidProgressBar.style.animationPlayState = "running";
 
 					starbucksVid.style.transition = "filter 0.3s";
 
@@ -879,13 +873,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 					playBtn.innerHTML = "Pause";
 
-					playBtn.style.color = "lightgray";
+					playBtn.style.opacity = "0";
 
 			  } else {
 
 				    starbucksVid.pause();
-
-					vidProgressBar.style.animationPlayState = "paused";
 
 				  	starbucksVid.style.transition = "filter 0.3s";
 				  	
@@ -893,12 +885,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				    playBtn.innerHTML = "Play";
 
-				    playBtn.style.color = "white";
+				    playBtn.style.opacity = "1";
 
 			  	}
 
 			}
 
+			starbucksVid.addEventListener('click', toggleVid, false);
 			playBtn.addEventListener('click', toggleVid, false);
 
 		}

@@ -130,24 +130,24 @@ img.nav-bg-img {
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-		transform: scale(1.1);
+		transform: scale(1.2);
 	}
 
 	100% {
 		opacity: 1;
-		transform: scale(1);
+		transform: scale(1.1);
 	}
 }
 
 @keyframes fadeOut {
 	0% {
 		opacity: 1;
-		transform: scale(1);
+		transform: scale(1.1);
 	}	
 
 	100% {
 		opacity: 0;
-		transform: scale(1.1);
+		transform: scale(1.2);
 	}
 }
 
@@ -445,7 +445,9 @@ div.project-a img.starbucks-thumbnail {
 }
 
 div.project-b img.ui-thumbnail {
-	background-color: lightgray;
+	background: #06beb6; 
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  
+	background: linear-gradient(to right, #48b1bf, #06beb6); 
 	margin-top: -100px;
 }
 
@@ -623,11 +625,11 @@ div.starbucks-fifth-wrapper {
 
 div.starbucks-sixth-wrapper {
 	margin-top: -81px;
-	background-color: #E3E3E3;
+	background-color: #f9f9f9;
 }
 
 div.starbucks-seventh-wrapper {
-	background-color: #61BFAD;
+	background-color: #E88565;
 }
 
 div.starbucks-eigth-wrapper {
@@ -640,7 +642,9 @@ div.starbucks-tenth-wrapper {
 }
 
 div.starbucks-eleventh-wrapper {
-	background-color: white;
+	background: white; 
+	background: -webkit-linear-gradient(to right, white, #F3F0FC);  
+	background: linear-gradient(to right, white, #F3F0FC); 
 	position: relative;
 }
 
@@ -740,7 +744,9 @@ a.next-project-link > div.next-project-frame > img.next-project-img {
 }
 
 a.next-project-link > div.next-project-frame > img.ui {
-	background-color: gray;
+	background: #06beb6; 
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  
+	background: linear-gradient(to right, #48b1bf, #06beb6); 
 }
 
 span.next-project-title {
@@ -864,9 +870,9 @@ div.starbucks-tenth-wrapper > img.img-d, div.starbucks-tenth-wrapper > img.img-e
 /* Eleventh Wrapper */
 
 video.starbucks-vid {
-	width: 70%;
+	width: 80%;
 	height: auto;
-	margin-left: 30%;
+	margin-left: 10%;
 	margin-top: -75px;
 	margin-bottom: -81px;
 	filter: brightness(50%);
@@ -874,21 +880,12 @@ video.starbucks-vid {
 
 p.play-vid-btn {
 	position: absolute;
-	top: 85%;
-	left: 40%;
+	top: 50%;
+	left: 50%;
 	transform: translateX(-50%);
 	font-size: 3em;
 	color: white;
 	cursor: pointer;
-}
-
-div.vid-progress-bar {
-	width: 70%;
-	height: 1%;
-	background: #096342;
-	position: absolute;
-	top: 99%;
-	left: 30%;
 }
 
 /* Starbucks | Animations */
@@ -1021,9 +1018,9 @@ img.ui-landing-img {
 	width: 100%;
 	height: auto;
 	margin-top: 125px; /* 75px */
-	background: #8e9eab;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #06beb6; 
+	background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  
+	background: linear-gradient(to right, #48b1bf, #06beb6); 
 }
 
 div.ui-wrapper img.ui-img {
@@ -1297,14 +1294,14 @@ a.logo {
 		}
 
 		100% {
-			transform: scale(1);
+			transform: scale(1.1);
 			opacity: 1;
 		}
 	}
 
 	@keyframes fadeOut {
 		0% {
-			transform: scale(1);
+			transform: scale(1.1);
 			opacity: 1;
 		}
 
@@ -1561,7 +1558,9 @@ a.logo {
 	}
 
 	div.project-b img.ui-thumbnail {
-		background-color: lightgray;
+		background: #06beb6; 
+		background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  
+		background: linear-gradient(to right, #48b1bf, #06beb6); 
 		margin-top: 0px;
 	}
 
@@ -1739,11 +1738,11 @@ a.logo {
 
 	div.starbucks-sixth-wrapper {
 		margin-top: -81px;
-		background-color: #E3E3E3;
+		background-color: #f9f9f9;
 	}
 
 	div.starbucks-seventh-wrapper {
-		background-color: #61BFAD;
+		background-color: #D1E9D3;
 	}
 
 	div.starbucks-eigth-wrapper {
@@ -1756,7 +1755,9 @@ a.logo {
 	}
 
 	div.starbucks-eleventh-wrapper {
-		background-color: white;
+		background: white; 
+		background: -webkit-linear-gradient(to right, white, #F3F0FC);  
+		background: linear-gradient(to right, white, #F3F0FC); 
 		position: relative;
 	}
 
@@ -1853,7 +1854,9 @@ a.logo {
 	}
 
 	a.next-project-link > div.next-project-frame > img.ui {
-		background-color: gray;
+		background: #06beb6; 
+		background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  
+		background: linear-gradient(to right, #48b1bf, #06beb6); 
 	}
 
 	span.next-project-title {
@@ -1978,11 +1981,6 @@ a.logo {
 		margin-top: -30px;
 		margin-bottom: -40px;
 		filter: brightness(100%);
-	}
-
-	p.play-vid-btn, div.vid-progress-bar {
-		opacity: 0;
-		visibility: hidden;
 	}
 
 	/* Starbucks | Animations */
@@ -2119,8 +2117,8 @@ a.logo {
 		height: auto;
 		margin-top: 75px; /* 75px */
 		background: #8e9eab;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /
+		background: linear-gradient(to right, #eef2f3, #8e9eab); 
 	}
 
 	div.ui-wrapper img.ui-img {
