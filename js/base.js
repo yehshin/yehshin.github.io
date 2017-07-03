@@ -107,18 +107,61 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	function revealNavItems() {
 
-		if (window.innerWidth > 500) {
+		if (window.innerWidth > 1200) {
 
 			navItem[0].style.width = "10%";
 			navItem[0].style.marginLeft = "45%";
 			navItem[1].style.width = "10%";
 			navItem[1].style.marginLeft = "45%";
-			navItem[2].style.width = "30%";
-			navItem[2].style.marginLeft = "35%";
-			navItem[3].style.width = "32%";
-			navItem[3].style.marginLeft = "34%";
+			navItem[2].style.width = "40%";
+			navItem[2].style.marginLeft = "30%";
+			navItem[3].style.width = "35%";
+			navItem[3].style.marginLeft = "32.5%";
 			navItem[4].style.width = "26%";
 			navItem[4].style.marginLeft = "37%";
+
+			for (i = 0; i < navItem.length; i++) {
+
+				if (navItem[i].className === "nav-item") {
+
+					var delayCounter = 0.5;
+
+					for (i = 0; i < navItem.length; i++) {
+
+						navItem[i].style.transition = "opacity 0.7s, visibility 0.7s, margin-top 0.7s";
+
+						navItem[0].style.marginTop = "8%";
+
+						navItem[i].style.transitionDelay = delayCounter + "s";
+
+						navItem[i].setAttribute('class', 'nav-item-revealed');
+
+						delayCounter = delayCounter += 0.1;
+
+					}
+
+				} else if (navItem[i].className === "nav-item-revealed") {
+
+					navItem[0].style.marginTop = "10%";
+
+					navItem[i].setAttribute('class', 'nav-item');
+
+				}
+
+			}
+
+		} else if (window.innerWidth > 600 && window.innerWidth < 1199) {
+
+			navItem[0].style.width = "10%";
+			navItem[0].style.marginLeft = "45%";
+			navItem[1].style.width = "10%";
+			navItem[1].style.marginLeft = "45%";
+			navItem[2].style.width = "40%";
+			navItem[2].style.marginLeft = "30%";
+			navItem[3].style.width = "40%";
+			navItem[3].style.marginLeft = "30%";
+			navItem[4].style.width = "30%";
+			navItem[4].style.marginLeft = "35%";
 
 			for (i = 0; i < navItem.length; i++) {
 
