@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	function revealNavItems() {
 
-		if (window.innerWidth > 1200) {
+		if (window.innerWidth > 1000) {
 
 			navItem[0].style.width = "10%";
 			navItem[0].style.marginLeft = "45%";
@@ -115,10 +115,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			navItem[1].style.marginLeft = "45%";
 			navItem[2].style.width = "40%";
 			navItem[2].style.marginLeft = "30%";
-			navItem[3].style.width = "35%";
-			navItem[3].style.marginLeft = "32.5%";
-			navItem[4].style.width = "26%";
-			navItem[4].style.marginLeft = "37%";
+			navItem[3].style.width = "38%";
+			navItem[3].style.marginLeft = "31%";
+			navItem[4].style.width = "30%";
+			navItem[4].style.marginLeft = "35%";
 
 			for (i = 0; i < navItem.length; i++) {
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			}
 
-		} else if (window.innerWidth > 600 && window.innerWidth < 1199) {
+		} else if (window.innerWidth > 500 && window.innerWidth < 999) {
 
 			navItem[0].style.width = "10%";
 			navItem[0].style.marginLeft = "45%";
@@ -158,10 +158,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			navItem[1].style.marginLeft = "45%";
 			navItem[2].style.width = "40%";
 			navItem[2].style.marginLeft = "30%";
-			navItem[3].style.width = "40%";
-			navItem[3].style.marginLeft = "30%";
-			navItem[4].style.width = "30%";
-			navItem[4].style.marginLeft = "35%";
+			navItem[3].style.width = "45%";
+			navItem[3].style.marginLeft = "27.5%";
+			navItem[4].style.width = "35%";
+			navItem[4].style.marginLeft = "32.5%";
 
 			for (i = 0; i < navItem.length; i++) {
 
