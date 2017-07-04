@@ -550,13 +550,29 @@ body.about-body p.text-f {
 body.about-body p.text-g {
 	/*margin-left: 0;*/
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	padding-top: 100px;
+	margin-bottom: 200px;
+	font-size: 36px;
 }
 
 h1.about-header, p.about-text, img.netflix-me {
 	transition: top 0.5s, margin-top 0.5s, opacity 0.5s;
 	opacity: 0;
+}
+
+p.always-credit-the-artist-when-you-can {
+	margin-left: 20%;
+	margin-top: -50px;
+}
+
+p.always-credit-the-artist-when-you-can > a {
+	color: #E54B4B;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+p.always-credit-the-artist-when-you-can > a:hover {
+	color: black;
 }
 
 /* About | Links */
@@ -1542,6 +1558,12 @@ a.logo {
 
 	div.project-frame p.thumbnail-caption-subheader {
 		margin-top: 140px;
+	}
+
+	p.always-credit-the-artist-when-you-can {
+		margin-left: 0;
+		text-align: center;
+		margin-top: -50px;
 	}
 
 	/* Home Page | Images */
