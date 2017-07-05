@@ -628,11 +628,11 @@ div.starbucks-second-wrapper {
 }
 
 div.starbucks-third-wrapper {
-	background-color: #F9F7E8;
+	background-color: #EEF2F5;
 }
 
 div.starbucks-fourth-wrapper {
-	background-color: #D1E9E3;
+	background-color: white;
 }
 
 div.starbucks-fifth-wrapper {
@@ -641,26 +641,24 @@ div.starbucks-fifth-wrapper {
 
 div.starbucks-sixth-wrapper {
 	margin-top: -81px;
-	background-color: #f9f9f9;
+	background-color: white;
 }
 
 div.starbucks-seventh-wrapper {
-	background-color: #E88565;
+	background-color: #EEF2F5;
 }
 
 div.starbucks-eigth-wrapper {
-	background-color: #FACAC0;
+	background-color: white;
 }
 
 div.starbucks-tenth-wrapper {
-	background-color: #0BBCD6;
+	background-color: white;
 	margin-top: -80px;
 }
 
 div.starbucks-eleventh-wrapper {
-	background: white; 
-	background: -webkit-linear-gradient(to right, white, #F3F0FC);  
-	background: linear-gradient(to right, white, #F3F0FC); 
+	background: #EEF2F5;
 	position: relative;
 }
 
@@ -892,6 +890,7 @@ video.starbucks-vid {
 	margin-top: -75px;
 	margin-bottom: -81px;
 	filter: brightness(50%);
+	position: relative;
 }
 
 p.play-vid-btn {
@@ -1723,11 +1722,11 @@ a.logo {
 	}
 
 	div.starbucks-third-wrapper {
-		background-color: #F9F7E8;
+		background-color: #EEF2F5;
 	}
 
 	div.starbucks-fourth-wrapper {
-		background-color: #D1E9E3;
+		background-color: white;
 	}
 
 	div.starbucks-fifth-wrapper {
@@ -1737,19 +1736,19 @@ a.logo {
 
 	div.starbucks-sixth-wrapper {
 		margin-top: -81px;
-		background-color: #f9f9f9;
+		background-color: white;
 	}
 
 	div.starbucks-seventh-wrapper {
-		background-color: #D1E9D3;
+		background-color: #EEF2F5;
 	}
 
 	div.starbucks-eigth-wrapper {
-		background-color: #FACAC0;
+		background-color: white;
 	}
 
 	div.starbucks-tenth-wrapper {
-		background-color: #0BBCD6;
+		background-color: white;
 		margin-top: -80px;
 	}
 
