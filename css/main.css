@@ -939,29 +939,6 @@ h1.starbucks-landing-title, p.project-info-header, p.project-info-data, a.projec
 	transition: opacity 0.5s, top 0.5s, margin-top 0.5s;;
 }
 
-
-div.vid-progress-bar {
-	transform: scaleX(0);
-	transform-origin: left;
-	animation-name: vidProgressBar;
-	animation-duration: 22.101333s; 
-	animation-timing-function: linear;
-	animation-play-state: paused;
-	animation-iteration-count: infinite;
-}
-
-@keyframes vidProgressBar {
-
-	0% {
-		transform: scaleX(0);
-	}
-
-	100% {
-		transform: scaleX(1);
-	}
-
-}
-
 /****************************************************************************************************************************************************************************/
 
 /* Mobile UI Concepts*/
@@ -2005,6 +1982,18 @@ a.logo {
 		filter: brightness(100%);
 	}
 
+	p.play-vid-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 3em;
+		color: white;
+		cursor: pointer;
+		opacity: 0;
+		visibility: hidden;
+	}
+
 	/* Starbucks | Animations */
 
 	h1.starbucks-landing-title {
@@ -2042,29 +2031,6 @@ a.logo {
 
 	h1.starbucks-landing-title, p.project-info-header, p.project-info-data, a.project-info-data, img.starbucks-landing-img {
 		transition: opacity 0.5s, top 0.5s, margin-top 0.5s;;
-	}
-
-
-	div.vid-progress-bar {
-		transform: scaleX(0);
-		transform-origin: left;
-		animation-name: vidProgressBar;
-		animation-duration: 22.101333s; 
-		animation-timing-function: linear;
-		animation-play-state: paused;
-		animation-iteration-count: infinite;
-	}
-
-	@keyframes vidProgressBar {
-
-		0% {
-			transform: scaleX(0);
-		}
-
-		100% {
-			transform: scaleX(1);
-		}
-
 	}
 
 	/* Mobile UI Concepts*/
