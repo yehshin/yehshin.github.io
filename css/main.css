@@ -538,8 +538,21 @@ p.about-text {
 	margin-right: 5%;
 }
 
+span.dark {
+	font-weight: bold;
+}
+
 body.about-body p.text-a {
 	margin-top: 325px; /* 275px */
+}
+
+span.quote {
+	display: block;
+	margin-top: 100px;
+	margin-bottom: 100px;	
+	font-size: 36px;
+	font-style: italic;
+	margin-right: 5%;
 }
 
 body.about-body p.text-f {
@@ -1652,6 +1665,15 @@ a.logo {
 	body.about-body p.text-a {
 		margin-top: 325px; /* 275px */
 	}
+
+	span.quote {
+	display: block;
+	margin-top: 75px;
+	margin-bottom: 75px;	
+	font-size: 28px;
+	font-style: italic;
+	margin-right: 5%;
+}
 
 	body.about-body p.text-f {
 		/*margin-left: 0;*/
