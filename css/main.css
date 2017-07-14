@@ -7,6 +7,10 @@ html, body, h1, h2, p, a, ul, ol, li, div, img, video, source, span {
 	padding: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /* UNIVERSAL | Header Frame */
 
 div.header-frame {
@@ -26,7 +30,6 @@ a.logo {
 	position: fixed;
 	font-size: 32px;
 	margin-left: 50px;
-	color: black;
 	text-decoration: none;
 	top: 20px;
 }
@@ -46,17 +49,11 @@ div.nav {
 a.nav-item {
 	font-size: 16px;
 	align-items: baseline;
-	color: black;
 	text-decoration: none;
-	transition: color 0.3s;
 }
 
 div.nav > a.a, div.nav > a.b {
 	margin-right: 50px;
-}
-
-a.nav-item:hover {
-	color: #243EFF;
 }
 
 /* UNIVERSAL | Burger */
@@ -85,7 +82,7 @@ div.burger-top, div.burger-bottom {
 	position: fixed;
 	width: 30px;
 	height: 3px;
-	background-color: black;
+	background-color: #5b5b5b;
 }
 
 div.burger-top {
@@ -177,7 +174,6 @@ div.burger-nav, div.burger-nav-revealed {
 }
 
 a.burger-item {
-	color: black;
 	text-decoration: none;
 	display: block;
 	font-size: 42px;
@@ -225,6 +221,7 @@ div.landing > p.landing-title {
 	display: block;
 	color: white;
 	font-size: 72px;
+	width: 100%;
 }
 
 p.headers, p.text {
@@ -237,7 +234,6 @@ p.headers, p.text {
 
 p.headers {
 	font-size: 32px;
-	font-weight: bold;
 	margin-bottom: 20px;
 	margin-top: 100px;
 }
@@ -249,7 +245,6 @@ p.text {
 
 p.problems {
 	font-size: 18px;
-	font-weight: bold;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
@@ -258,8 +253,7 @@ p.problems {
 }
 
 a.text-link, a.my-email {
-	color: #243EFF;
-	text-decoration: none;
+	color: #243EFF;	
 }
 
 /* UNIVERSIAL | Images */
@@ -288,18 +282,6 @@ div.greeting-frame {
 	transform: translateX(-50%);
 	margin-top: 250px;
 	margin-bottom: 250px;
-}
-
-span.red-highlight {
-	/*color: #ff4f4f;*/
-}
-
-span.blue-highlight {
-	/*color: #1fc4f2;*/
-}
-
-span.green-highlight {
-	/*color: #5ef257;*/
 }
 
 div.projects-frame p.thumbnail-caption {
@@ -340,7 +322,6 @@ div.content-about > p.about-top {
 p.quote {
 	font-size: 36px;
 	line-height: 48px;
-	font-style: italic;
 }
 
 p.fin {
@@ -380,10 +361,6 @@ div.content-contact > p.contact-top {
 div.socialize {
 	margin-top: 50px;
 	margin-bottom: 200px;
-}
-
-p.social-header {
-	font-weight: bold;
 }
 
 a.social-links {
@@ -691,30 +668,6 @@ div.content-posters > div.gallery img:hover {
 
 /****************************************************************************************************************************************************************************/
 
-/* FONTS */
-
-body {
-	font-family: avenirLight, Helvetica;
-	color: #5b5b5b;
-}
-
-div.logo {
-	font-family: avenirBold, Helvetica;
-	font-weight: bold;
-}
-
-@font-face {
-    font-family: avenirLight;
-    src: url(../fonts/avenir/AvenirLTStd-Light.otf);
-} 
-
-@font-face {
-    font-family: avenirBold;
-    src: url(../fonts/avenir/AvenirLTStd-Book.otf);
-} 
-
-/****************************************************************************************************************************************************************************/
-
 /* QUERIES */
 
 /* QUERIES | Mobile Portrait */
@@ -788,10 +741,6 @@ div.logo {
 		line-height: 30px; /**/
 	}
 
-	a.text-link {
-		color: orange;
-	}
-
 	/* UNIVERSIAL | Images */
 
 	div.landing > img.landing-img {
@@ -814,18 +763,6 @@ div.logo {
 		transform: translateX(0); /**/
 		margin-top: 210px; /**/
 		margin-bottom: 150px;/**/
-	}
-
-	span.red-highlight {
-		/*color: #ff4f4f;*/
-	}
-
-	span.blue-highlight {
-		/*color: #1fc4f2;*/
-	}
-
-	span.green-highlight {
-		/*color: #5ef257;*/
 	}
 
 	div.projects-frame p.thumbnail-caption {
@@ -1179,10 +1116,6 @@ div.logo {
 		line-height: 30px; /**/
 	}
 
-	a.text-link {
-		color: orange;
-	}
-
 	/* UNIVERSIAL | Images */
 
 	div.landing > img.landing-img {
@@ -1205,18 +1138,6 @@ div.logo {
 		transform: translateX(0); /**/
 		margin-top: 150px; /**/
 		margin-bottom: 150px;/**/
-	}
-
-	span.red-highlight {
-		/*color: #ff4f4f;*/
-	}
-
-	span.blue-highlight {
-		/*color: #1fc4f2;*/
-	}
-
-	span.green-highlight {
-		/*color: #5ef257;*/
 	}
 
 	div.projects-frame p.thumbnail-caption {
@@ -1487,7 +1408,7 @@ div.logo {
 	/* UNIVERSAL | Nav */
 
 	div.nav {
-		margin-left: 62%; /**/
+		margin-left: 58%; /**/
 	}
 
 	/* UNIVERSAL | Footer */
@@ -1772,3 +1693,162 @@ div.logo {
 	}
 
 }
+
+/****************************************************************************************************************************************************************************/
+
+/* FONTS */
+
+body {
+    font-family: WorkSans-Light;
+	color: #5b5b5b;
+}
+
+a.logo {
+    font-family: WorkSans-Bold;
+	color: #5b5b5b;
+}
+
+a.nav-item {
+    font-family: WorkSans-Regular;
+	color: #5b5b5b;
+	transition: color 0.3s;
+	text-transform: uppercase;
+}
+
+a.nav-item:hover {
+	color: #243EFF;
+}
+
+a.burger-item {
+    font-family: WorkSans-Medium;
+	color: #5b5b5b;
+	text-transform: uppercase;
+}
+
+a.burger-item:hover {
+	color: #243EFF;
+}
+
+a.text-link {
+	color: #243EFF;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+a.text-link:hover {
+	color: #5b5b5b;
+}
+
+a.my-email {
+	text-decoration: none;
+	color: #243EFF;
+}
+
+a.my-email:hover {
+	color: #5b5b5b;
+}
+
+a.social-links {
+	width: 90px;
+    font-family: WorkSans-Regular;
+	transition: color 0.3s;
+	color: #243EFF;
+	text-transform: uppercase;
+}
+
+a.social-links:hover {
+	color: #5b5b5b;
+}
+
+p.headers {
+    font-family: WorkSans-Medium;
+}
+
+p.text {
+    font-family: WorkSans-Light;
+	color: #5b5b5b;
+}
+
+p.problems {
+    font-family: WorkSans-Medium;
+	color: #5b5b5b;
+}
+
+p.quote {
+    font-family: WorkSans-Regular;
+	color: #5b5b5b;
+	font-style: italic;
+}
+
+p.home-text {
+    font-family: WorkSans-Medium;
+}
+
+span.gradient-highlight {
+    background: -webkit-linear-gradient(#00d2ff, #3a7bd5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+div.projects-frame p.thumbnail-caption {
+    font-family: WorkSans-Regular;
+	color: #5b5b5b;
+}
+
+p.landing-title {
+    font-family: WorkSans-Medium;
+}
+
+p.social-header {
+    font-family: WorkSans-Medium;
+}
+
+p.legal {
+    font-family: WorkSans-Thin;
+}
+
+@font-face {
+    font-family: WorkSans-HairLine;
+    src: url(../fonts/work_sans/WorkSans-Hairline.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-Thin;
+    src: url(../fonts/work_sans/WorkSans-Thin.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-ExtraLight;
+    src: url(../fonts/work_sans/WorkSans-ExtraLight.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-Light;
+    src: url(../fonts/work_sans/WorkSans-Light.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-Regular;
+    src: url(../fonts/work_sans/WorkSans-Regular.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-Medium;
+    src: url(../fonts/work_sans/WorkSans-Medium.otf);
+}
+
+@font-face {
+    font-family: WorkSans-Bold;
+    src: url(../fonts/work_sans/WorkSans-Bold.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-ExtraBold;
+    src: url(../fonts/work_sans/WorkSans-ExtraBold.otf);
+} 
+
+@font-face {
+    font-family: WorkSans-Black;
+    src: url(../fonts/work_sans/WorkSans-Black.otf);
+} 
+
