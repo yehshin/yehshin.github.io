@@ -95,9 +95,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				burgerNav.setAttribute('class', 'burger-nav-revealed');
 
+				var body;
+
+				body = document.querySelector('body');
+
+				body.style.overflow = "hidden";
+
 			} else if (burgerNav.className === "burger-nav-revealed") {
 
 				burgerNav.setAttribute('class', 'burger-nav');
+
+				var body;
+
+				body = document.querySelector('body');
+
+				body.style.overflow = "visible";
 
 			}
 
@@ -125,6 +137,62 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// HOME
 
+	var thumbnailFrame, thumbnailImg, thumbnailCaption, i;
+
+	thumbnailFrame = document.querySelectorAll('a.thumbnail-frame');
+	thumbnailImg = document.querySelectorAll('img.thumbnail-img');
+	thumbnailCaption = document.querySelectorAll('p.thumbnail-caption');
+
+	function hoverThumbnail() {
+
+		if (this[i] === this[0]) {
+
+
+
+		} else if (this[i] === this[1]) {
+
+
+
+		} else if (this[i] === this[2]) {
+
+
+
+		} else if (this[i] === this[3]) {
+
+
+
+		}
+
+	}
+
+	function unhoverThumbnail() {
+
+		if (this[i] === this[0]) {
+
+
+
+		} else if (this[i] === this[1]) {
+
+
+
+		} else if (this[i] === this[2]) {
+
+
+
+		} else if (this[i] === this[3]) {
+
+
+
+		}
+
+	}
+
+	for (i = 0; i < thumbnailFrame.length; i++) {
+
+		thumbnailFrame[i].addEventListener('mouseenter', hoverThumbnail, false);
+		thumbnailFrame[i].addEventListener('mouseleave', unhoverThumbnail, false);
+
+	}
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
