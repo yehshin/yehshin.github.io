@@ -1765,21 +1765,26 @@ a.burger-item {
 
 a.text-link {
 	color: #243EFF;
+	border-bottom: solid 1px #243EFF;
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: color 0.3s, border-bottom 0.3s;
 }
 
 a.text-link:hover {
 	color: #5b5b5b;
+	border-bottom: solid 1px #5b5b5b;
 }
 
 a.my-email {
 	text-decoration: none;
 	color: #243EFF;
+	border-bottom: solid 1px #243EFF;
+	transition: color 0.3s, border-bottom 0.3s;
 }
 
 a.my-email:hover {
 	color: #5b5b5b;
+	border-bottom: solid 1px #5b5b5b;
 }
 
 a.social-links {
