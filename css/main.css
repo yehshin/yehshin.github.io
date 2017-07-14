@@ -9,6 +9,8 @@ html, body, h1, h2, p, a, ul, ol, li, div, img, video, source, span {
 
 body {
 	overflow-x: hidden;
+	opacity: 1;
+	transition: opacity 0.7s;
 }
 
 /* UNIVERSAL | Header Frame */
@@ -183,11 +185,6 @@ a.burger-item {
 	margin-top: 15%;
 }
 
-/*div.burger-nav > a.burger-item, div.burger-nav-revealed > a.burger-item {
-	transition: opacity 0.5s, margin-top 0.5s;
-	transition-delay: 0.5s;
-}*/
-
 div.burger-nav > a.a {
 	margin-top: 50%;
 }
@@ -202,8 +199,8 @@ div.footer {
 	width: 100%;
 	height: auto;
 	border-top: solid 1px #EFEFEF;
-	padding-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 30px;
+	margin-bottom: 30px;
 }
 
 div.footer > p.legal {
@@ -253,8 +250,13 @@ p.problems {
 	line-height: 32px;
 }
 
-a.text-link, a.my-email {
-	color: #243EFF;	
+a.next-project {
+	display: inline-block;
+	height: auto;
+	margin-bottom: 100px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
 }
 
 /* UNIVERSIAL | Images */
@@ -265,8 +267,6 @@ div.landing > img.landing-img {
 	margin-top: 80px;
 	filter: brightness(40%);
 }
-
-/****************************************************************************************************************************************************************************/
 
 /* HOME */
 
@@ -303,6 +303,7 @@ div.projects-frame > a.thumbnail-frame {
 	transform: translateX(-50%);
 	margin-bottom: 200px;
 	overflow: hidden;
+	transition: filter 0.3s;
 }
 
 div.projects-frame > a.thumbnail-frame > img.thumbnail-img {
@@ -310,14 +311,12 @@ div.projects-frame > a.thumbnail-frame > img.thumbnail-img {
 	height: auto;
 }
 
-/****************************************************************************************************************************************************************************/
-
 /* ABOUT */
 
 /* ABOUT | Text */
 
 div.content-about > p.about-top {
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 p.quote {
@@ -349,19 +348,17 @@ img.good-boy {
 	margin-bottom: 50px;
 }
 
-/****************************************************************************************************************************************************************************/
-
 /* CONTACT */
 
 /* CONTACT | Text */
 
 div.content-contact > p.contact-top {
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 div.socialize {
 	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 a.social-links {
@@ -371,8 +368,6 @@ a.social-links {
 	text-decoration: none;
 	color: #243EFF;
 }
-
-/****************************************************************************************************************************************************************************/
 
 /* MINDFULL */
 
@@ -517,7 +512,7 @@ div.mindfull-vids-3 > video.mindfull-video {
 	margin-bottom: -50px;
 }
 
-/****************************************************************************************************************************************************************************/
+
 
 /* STARBUCKS */
 
@@ -612,7 +607,7 @@ div.starbucks-vid-2 > video.starbucks-vid {
 	margin-bottom: -20px;
 }
 
-/****************************************************************************************************************************************************************************/
+
 
 /* UI */
 
@@ -639,7 +634,7 @@ div.content-ui > div.gallery img:hover {
 	box-shadow: 10px 10px 40px rgba(0,0,0,.3);
 }
 
-/****************************************************************************************************************************************************************************/
+
 
 /* POSTERS */
 
@@ -667,7 +662,7 @@ div.content-posters > div.gallery img:hover {
 	opacity: 0.8;
 }
 
-/****************************************************************************************************************************************************************************/
+
 
 /* QUERIES */
 
@@ -1695,7 +1690,49 @@ div.content-posters > div.gallery img:hover {
 
 }
 
-/****************************************************************************************************************************************************************************/
+/* TRANSITION ANIMATION */
+
+/* TRANSITION ANIMATION | All */
+
+div.header-frame {
+	transition: opacity 1s;
+	transition-delay: 0.5s;
+	opacity: 0;
+}
+
+div.footer {
+	transition: opacity 1s;
+	transition-delay: 1.5s;
+	opacity: 0;
+}
+
+/* TRANSITION ANIMATION | Home */
+
+div.greeting-frame, div.projects-frame {
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+div.greeting-frame {
+	transition-delay: 0.75s;
+}
+
+div.projects-frame {
+	transition-delay: 1s;
+}
+
+/* TRANSITION ANIMATION | Everything Else */
+
+img.landing-img, p.landing-title, p.headers, p.text, p.problems, div.content-mindfull a.next-project, div.content-starbucks a.next-project, div.content-contact a.social-links, div.content-ui a.next-project, div.content-mindfull img, div.content-starbucks img, div.content-ui img, div.content-posters img, div.gallery, div.content-about img, video {
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+p.headers, p.text, p.problems, a.next-project, div.content-mindfull img, div.content-starbucks img, div.content-ui img, div.content-posters img, video {
+	transition-delay: 1.25s;
+}
+
+
 
 /* FONTS */
 
@@ -1726,10 +1763,6 @@ a.burger-item {
 	text-transform: uppercase;
 }
 
-a.burger-item:hover {
-	color: #243EFF;
-}
-
 a.text-link {
 	color: #243EFF;
 	text-decoration: none;
@@ -1751,7 +1784,7 @@ a.my-email:hover {
 
 a.social-links {
 	width: 90px;
-    font-family: WorkSans-Regular;
+    font-family: WorkSans-Medium;
 	transition: color 0.3s;
 	color: #243EFF;
 	text-transform: uppercase;
@@ -1759,6 +1792,12 @@ a.social-links {
 
 a.social-links:hover {
 	color: #5b5b5b;
+}
+
+a.next-project {
+	font-family: WorkSans-Medium;
+	color: #243EFF;
+	transition: color 0.3s;
 }
 
 p.headers {
@@ -1786,9 +1825,14 @@ p.home-text {
 }
 
 span.gradient-highlight {
-    background: -webkit-linear-gradient(#00d2ff, #3a7bd5);
+    background: -webkit-linear-gradient(left, #00d2ff, #3a7bd5);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	color: #5b5b5b;
+}
+
+span.dark {
+    font-family: WorkSans-Medium;
 }
 
 div.projects-frame p.thumbnail-caption {
