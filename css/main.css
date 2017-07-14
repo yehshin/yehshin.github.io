@@ -321,7 +321,7 @@ div.content-about > p.about-top {
 }
 
 p.quote {
-	font-size: 36px;
+	font-size: 24px;
 	line-height: 48px;
 }
 
@@ -788,7 +788,7 @@ div.content-posters > div.gallery img:hover {
 	}
 
 	p.quote {
-		font-size: 24px; /**/
+		font-size: 20px; /**/
 		line-height: 42px; /**/
 	}
 
