@@ -297,6 +297,11 @@ div.projects-frame p.thumbnail-caption {
 	margin-top: 10px;
 }
 
+span.caption-sub {
+	font-size: 16px;
+	color: #BFBFBF;
+}
+
 /* HOME | Images */
 
 div.projects-frame > a.thumbnail-frame {
