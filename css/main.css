@@ -627,10 +627,10 @@ div.gallery a {
 }
 
 div.content-ui > div.gallery img{
-	width: 12%;
+	width: 17%;
 	height: auto;
-	margin-left: 3.8%;
-	margin-bottom: 3.8%;
+	margin-left: 2.2%;
+	margin-bottom: 2.2%;
 	transition: box-shadow 0.3s;
 }
 
