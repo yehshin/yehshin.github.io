@@ -324,6 +324,12 @@ div.projects-frame > a.thumbnail-frame > img.thumbnail-img {
 
 /* ABOUT | Text */
 
+div.content-about p.headers, div.content-about p.text {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 div.content-about > p.about-top {
 	margin-top: 250px;
 }
@@ -795,6 +801,12 @@ div.content-posters > div.gallery img:hover {
 
 	/* ABOUT | Text */
 
+	div.content-about p.headers, div.content-about p.text {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 	div.content-about > p.about-top {
 		margin-top: 200px; /**/
 	}
@@ -1191,6 +1203,12 @@ div.content-posters > div.gallery img:hover {
 
 	/* ABOUT | Images */
 
+	div.content-about p.headers, div.content-about p.text {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 	img.me-netflix {
 		width: 90%;
 		height: auto;
@@ -1492,6 +1510,12 @@ div.content-posters > div.gallery img:hover {
 
 	/* ABOUT | Images */
 
+	div.content-about p.headers, div.content-about p.text {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
 	img.me-netflix {
 		width: 100%; /**/
 		margin-left: 0%; /**/
@@ -1657,6 +1681,12 @@ div.content-posters > div.gallery img:hover {
 	}
 
 	/* ABOUT | Images */
+
+	div.content-about p.headers, div.content-about p.text {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
 
 	img.me-netflix {
 		width: 100%; /**/
