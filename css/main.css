@@ -365,6 +365,12 @@ div.content-contact > p.contact-top {
 	margin-top: 250px;
 }
 
+div.content-contact p.headers, div.content-contact p.text {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 div.socialize {
 	margin-top: 50px;
 	margin-bottom: 100px;
@@ -830,6 +836,12 @@ div.content-posters > div.gallery img:hover {
 		margin-top: 200px;
 	}
 
+	div.content-contact p.headers, div.content-contact p.text {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 	div.socialize {
 		margin-top: 50px;
 		margin-bottom: 150px;
@@ -1205,6 +1217,12 @@ div.content-posters > div.gallery img:hover {
 		margin-top: 200px;
 	}
 
+	div.content-contact p.headers, div.content-contact p.text {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
 	div.socialize {
 		margin-top: 50px;
 		margin-bottom: 150px;
@@ -1486,6 +1504,16 @@ div.content-posters > div.gallery img:hover {
 		margin-right: 0%; /**/
 	}
 
+	/* CONTACT */
+
+	/* CONTACT | Text */
+
+	div.content-contact p.headers, div.content-contact p.text {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
 	/* MINDFULL */
 
 	/* MINDFULL | Images */
@@ -1571,7 +1599,7 @@ div.content-posters > div.gallery img:hover {
 	/* UNIVERSAL | Nav */
 
 	div.nav {
-		margin-left: 70%; /**/
+		margin-left: 67%; /**/
 	}
 
 	/* UNIVERSAL | Footer */
@@ -1640,6 +1668,16 @@ div.content-posters > div.gallery img:hover {
 		width: 100%; /**/
 		margin-left: 0%; /**/
 		margin-right: 0%; /**/
+	}
+
+	/* CONTACT */
+
+	/* CONTACT | Text */
+
+	div.content-contact p.headers, div.content-contact p.text {
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 
 	/* MINDFULL */
