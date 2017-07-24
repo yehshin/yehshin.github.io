@@ -210,14 +210,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			videos = document.querySelectorAll('video');
 
 			landingImg.style.opacity = "1";
-			landingImg.style.transitionDelay = "0.75s";
 			landingTitle.style.opacity = "1";
-			landingTitle.style.transitionDelay = "1s";
 
 			if (document.title !== 'Posters') {
 
 				nextProject.style.opacity = "1";
-				nextProject.style.transitionDelay = "1.25s";
 				nextProject.style.opacity = "1";
 
 			}
@@ -225,7 +222,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			if (document.title === 'UI Concepts' || document.title === "Posters") {
 
 				gallery.style.opacity = "1";
-				gallery.style.transitionDelay = '1.25s'
 
 			}
 
@@ -282,7 +278,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			for (i = 0; i < imgs.length; i++) {
 
 				imgs[i].style.opacity = "1";
-				imgs[i].style.transitionDelay = "1.25s";
 
 			}
 
@@ -295,7 +290,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				for (i=0; i < socialLinks.length; i++) {
 
 					socialLinks[i].style.opacity = "1"
-					socialLinks[i].style.transitionDelay = "1.25s";
 
 				}
 
@@ -331,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "./";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -351,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -379,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "about/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -397,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "contact/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -417,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../about/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -435,7 +429,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../contact/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -463,7 +457,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "about/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -481,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "contact/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -501,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../about/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -519,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../contact/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -547,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../starbucks/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -567,7 +561,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../ui/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -587,7 +581,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "../posters/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -698,7 +692,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "mindfull/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -716,7 +710,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "starbucks/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -734,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "ui/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 
@@ -752,7 +746,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 				window.location = "posters/";
 
-			}, 1000);
+			}, 250);
 
 		}, false);
 

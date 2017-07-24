@@ -10,7 +10,7 @@ html, body, h1, h2, p, a, ul, ol, li, div, img, video, source, span {
 body {
 	overflow-x: hidden;
 	opacity: 1;
-	transition: opacity 0.7s;
+	transition: opacity 0.25s;
 }
 
 /* UNIVERSAL | Header Frame */
@@ -1774,44 +1774,28 @@ div.content-posters > div.gallery img:hover {
 /* TRANSITION ANIMATION | All */
 
 div.header-frame {
-	transition: opacity 1s;
-	transition-delay: 0.5s;
+	transition: opacity 0.25s;
 	opacity: 0;
 }
 
 div.footer {
-	transition: opacity 1s;
-	transition-delay: 1.5s;
+	transition: opacity 0.25s;
 	opacity: 0;
 }
 
 /* TRANSITION ANIMATION | Home */
 
 div.greeting-frame, div.projects-frame {
-	transition: opacity 1s;
+	transition: opacity 0.25s;
 	opacity: 0;
-}
-
-div.greeting-frame {
-	transition-delay: 0.75s;
-}
-
-div.projects-frame {
-	transition-delay: 1s;
 }
 
 /* TRANSITION ANIMATION | Everything Else */
 
 img.landing-img, p.landing-title, p.headers, p.text, p.problems, div.content-mindfull a.next-project, div.content-starbucks a.next-project, div.content-contact a.social-links, div.content-ui a.next-project, div.content-mindfull img, div.content-starbucks img, div.content-ui img, div.content-posters img, div.gallery, div.content-about img, video {
-	transition: opacity 1s;
+	transition: opacity 0.25s;
 	opacity: 0;
 }
-
-p.headers, p.text, p.problems, a.next-project, div.content-mindfull img, div.content-starbucks img, div.content-ui img, div.content-posters img, video {
-	transition-delay: 1.25s;
-}
-
-
 
 /* FONTS */
 
