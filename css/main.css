@@ -281,6 +281,12 @@ div.greeting-frame p.home-text {
 	margin-bottom: 50px;
 }
 
+div.greeting-frame p.d {
+	font-size: 16px;
+	margin-top: -20px;
+	opacity: 0.38;
+}
+
 div.greeting-frame {
 	width: 700px;
 	margin-left: 50%;
@@ -773,6 +779,12 @@ div.content-posters > div.gallery img:hover {
 	div.greeting-frame p.home-text {
 		font-size: 28px; /**/
 		margin-bottom: 30px; /**/
+	}
+
+	div.greeting-frame p.d {
+		font-size: 16px;
+		margin-top: 20px;
+		opacity: 0.38;
 	}
 
 	div.greeting-frame {
