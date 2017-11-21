@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			}
 
-			if (document.title === 'Ye Shin | I Concepts' || document.title === "Ye Shin | Posters") {
+			if (document.title === 'Ye Shin | UI Concepts' || document.title === "Ye Shin | Posters") {
 
 				gallery.style.opacity = "1";
 
