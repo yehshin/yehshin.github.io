@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// Target Next Project Link Separately 
 
-	if (document.title === "Mindfull" || document.title === "Starbucks" || document.title === "UI Concepts") {
+	if (document.title === "Ye Shin | Mindfull" || document.title === "Ye Shin | Starbucks" || document.title === "Ye Shin | UI Concepts") {
 
 		var nextProject;
 
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// Target Posters Separately 
 
-	if (document.title === "Posters") {
+	if (document.title === "Ye Shin | Posters") {
 
 		var posters, i;
 
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			greetingFrame.style.opacity = "1";
 			projectsFrame.style.opacity = "1";
 
-		} else if (document.title === "Mindfull" || document.title === "Starbucks" || document.title === "UI Concepts" || document.title === "Posters") { // Projects
+		} else if (document.title === "Ye Shin | Mindfull" || document.title === "Ye Shin | Starbucks" || document.title === "Ye Shin | UI Concepts" || document.title === "Ye Shin | Posters") { // Projects
 
 			var landingImg, landingTitle, nextProject, gallery, headers, text, problems, imgs, videos, i;
 
@@ -212,14 +212,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			landingImg.style.opacity = "1";
 			landingTitle.style.opacity = "1";
 
-			if (document.title !== 'Posters') {
+			if (document.title !== 'Ye Shin | Posters') {
 
 				nextProject.style.opacity = "1";
 				nextProject.style.opacity = "1";
 
 			}
 
-			if (document.title === 'UI Concepts' || document.title === "Posters") {
+			if (document.title === 'Ye Shin | I Concepts' || document.title === "Ye Shin | Posters") {
 
 				gallery.style.opacity = "1";
 
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			}
 
-		} else if (document.title === "About Ye" || document.title === "Contact") {
+		} else if (document.title === "Ye Shin | About" || document.title === "Ye Shin | Contact") {
 
 			var headers, text, imgs;
 
@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			}
 
-			if (document.title === "Contact") {
+			if (document.title === "Ye Shin | Contact") {
 
 				var socialLinks, i;
 
@@ -525,7 +525,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	nextProject = document.querySelector('a.next-project');
 
-	if (document.title === "Mindfull") {
+	if (document.title === "Ye Shin | Mindfull") {
 
 		nextProject.addEventListener('click', function(e) {
 
@@ -545,7 +545,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		}, false);
 
-	} else if (document.title === "Starbucks") {
+	} else if (document.title === "Ye Shin | Starbucks") {
 
 		nextProject.addEventListener('click', function(e) {
 
@@ -565,7 +565,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		}, false);
 
-	} else if (document.title === "UI Concepts") {
+	} else if (document.title === "Ye Shin | UI Concepts") {
 
 		nextProject.addEventListener('click', function(e) {
 
@@ -589,7 +589,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// UNIVERSAL | Verify baguettes
 
-	if (document.title === "UI Concepts" || document.title === "Posters") {
+	if (document.title === "Ye Shin | UI Concepts" || document.title === "Ye Shin | Posters") {
 
 		baguetteBox.run('.gallery');
 
