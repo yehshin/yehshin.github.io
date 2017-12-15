@@ -53,7 +53,7 @@ HEADER
 
 header.main-header {
 	width: 840px;
-	margin-top: 70px;
+	margin-top: 40px;
 	margin-left: 50%;
 	transform: translateX(-50%);
 }
@@ -105,7 +105,7 @@ div.divider {
 
 header.main-header, header.main-header ul.nav li a {
 	font-family: LunchType22Regular, Helvetica, Sans;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 header.main-header a.home p.my-name, header.main-header ul.nav li a {
@@ -172,10 +172,10 @@ div.container section.work a.project-2, div.container section.work a.project-4 {
 
 div.container section.work a.project div.gradient {
   background: #4A4A4A; 
-  background: -webkit-linear-gradient(top,rgba(17,17,17,0.2),rgba(17,17,17,1));
-  background: -o-linear-gradient(bottom,rgba(17,17,17,0.2),rgba(17,17,17,1)); 
-  background: -moz-linear-gradient(bottom,rgba(17,17,17,0.2),rgba(17,17,17,1));
-  background: linear-gradient(to bottom, rgba(17,17,17,0.2), rgba(17,17,17,1));
+  background: -webkit-linear-gradient(top,rgba(33,33,33,0.1),rgba(33,33,33,0.8));
+  background: -o-linear-gradient(bottom,rgba(33,33,33,0.1),rgba(33,33,33,0.8)); 
+  background: -moz-linear-gradient(bottom,rgba(33,33,33,0.1),rgba(33,33,33,0.8));
+  background: linear-gradient(to bottom, rgba(33,33,33,0.1), rgba(33,33,33,0.8));
   width: 400px;
   height: 300px;
   position: absolute;
@@ -192,7 +192,7 @@ div.container section.work a.project p {
 }
 
 div.container section.work a.project p.project-type {
-	top: 163px;
+	top: 26px;
 }
 
 div.container section.work a.project p.project-name {
@@ -212,12 +212,13 @@ div.container section.work a.project img.project-thumbnail {
 
 div.container article.greeting {
 	font-family: LunchType22Light, Helvetica, Sans;
-	font-size: 36px;
+	font-size: 24px;
+	line-height: 54px;
 }
 
 div.container section.work a.project p.project-type {
 	font-family: LunchType22Light, Helvetica, Sans;
-	font-size: 12px;
+	font-size: 10px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -230,6 +231,7 @@ div.container section.work a.project p.project-name {
 div.container section.work a.project p.project-info {
 	font-family: LunchType22Light, Helvetica, Sans;
 	font-size: 18px;
+	line-height: 26px;
 }
 
 div.container a.inline-link {
@@ -302,7 +304,7 @@ div.container h2.text-title {
 div.container p.text {
 	font-family: LunchType22Light, Helvetica, Sans;
 	font-size: 18px;
-	line-height: 36px;
+	line-height: 30px;
 }
 
 div.container div.prev-next a {
@@ -343,8 +345,8 @@ div.container ol.lists li {
 	list-style-position: inside;
 }
 
-div.container ol.lists li span.list-space {
-	padding-left: 20px;
+div.container ol.lists li p {
+	display: inline-block;
 }
 
 div.container p.collapse {
@@ -755,7 +757,7 @@ QUERIES
 
 	div.container section.work a.project {
 		width: 100%;
-		height: 300px;
+		height: 250px;
 		margin-top: 60px;
 		float: none;
 		transition: transform 0.125s;
@@ -783,15 +785,15 @@ QUERIES
 	}
 
 	div.container section.work a.project p.project-type {
-		top: 193px;
+		top: 26px;
 	}
 
 	div.container section.work a.project p.project-name {
-		top: 210px;
+		top: 150px;
 	}
 
 	div.container section.work a.project p.project-info {
-		top: 246px;
+		top: 190px;
 	}
 
 	/* Type */
@@ -799,11 +801,12 @@ QUERIES
 	div.container article.greeting {
 		font-family: LunchType22Light, Helvetica, Sans;
 		font-size: 22px;
+		line-height: 46px;
 	}
 
 	div.container section.work a.project p.project-type {
 		font-family: LunchType22Light, Helvetica, Sans;
-		font-size: 8px;
+		font-size: 10px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	}
@@ -816,6 +819,7 @@ QUERIES
 	div.container section.work a.project p.project-info {
 		font-family: LunchType22Light, Helvetica, Sans;
 		font-size: 14px;
+		line-height: 18px;
 	}
 
 	/* 
