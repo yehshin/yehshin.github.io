@@ -1,0 +1,83 @@
+
+
+
+// =========
+// Container
+// =========
+
+$large-width: 960px;
+$small-width: 722px;
+
+
+// =========
+// Break Points
+// =========
+
+$first-break: 1040px;
+$second-break: 767px; // font change
+$third-break: 650px;
+
+
+// ======
+// Sizing
+// ======
+
+$large-padding: 150px;
+$bottom-footer-padding: 50px;
+
+// ==========
+// Typography
+// ==========
+
+// Kern
+
+$tight-kern: -0.5px;
+
+// Font Sizes
+
+$nav-font-size-large: 14px;
+$nav-letter-spacing: 1.78px;
+$nav-font-size-mobile: 12px;
+
+
+$hero-large-font: 48px;
+$hero-medium-font: 32px;
+$hero-small-font: 24px;
+$hero-extra-small-font: 22px;
+
+
+$footer-large-font: 28px;
+$footer-small-font: 24px;
+$footer-links-font: 18px;
+
+
+$project-type-font: 12px;
+$project-title-font: 28px;
+$project-info-font: 20px;
+
+
+$project-hero-large: 64px;
+$text-section-header: 36px;
+$text-section-body: 18px;
+
+// =====
+// Colors
+// =====
+
+$black: #111111;
+
+$blue-link: #008DFF;
+
+$dropmark-teal: #4BE1E2;
+$venmo-blue: #3C95CD;
+$mindfull-blue: #0173FF;
+$starbucks-green: #34B881;
+$poster-gray: #FAFAFA;
+
+
+// ===========
+// Box-Shadows
+// ===========
+
+$bs-header: 0px 0px 70px 0px rgba(17, 17, 17, 0.1);
+$bs-card: 0px 30px 60px -10px rgba(17, 17, 17, 0.15);

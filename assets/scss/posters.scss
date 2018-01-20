@@ -1,0 +1,98 @@
+
+
+
+@import 'base';
+@import 'home';
+@import 'projects';
+
+
+
+// ======
+// Header
+// ======
+
+header {
+
+  background-color: $poster-gray;
+
+  nav {
+
+    a {
+      color: #111111;
+    }
+
+  }
+
+}
+
+
+
+// ====
+// Hero
+// ====
+
+section.hero-bg {
+
+  div.bg {
+
+    background-color: $poster-gray;
+
+  }
+
+}
+
+
+
+// =========
+// Container
+// =========
+
+div.container {
+
+  section.project-hero {
+
+    h1, p {
+      color: #111111;
+    }
+
+    div.last {
+      clear: right;
+      padding-bottom: 100px;
+    }
+
+  }
+
+  section.next-projects {
+
+    div.col-2 {
+
+      a.project-card {
+        margin-top: 150px;
+
+        // 767px - Second Break
+        @media only screen and (max-width: $second-break)   {
+          margin-top: 50px;
+        }
+
+      }
+
+      a.starbucks {
+        margin-right: 60px;
+
+        // 1040px - First Break
+        @media only screen and (max-width: $first-break)   {
+          margin-right: 20px;
+        }
+
+        // 767px - Second Break
+        @media only screen and (max-width: $second-break)   {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

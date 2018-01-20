@@ -1,0 +1,59 @@
+
+
+
+@import 'base';
+@import 'home';
+@import 'projects';
+
+
+
+// =====
+// Header
+// =====
+
+header {
+
+  background-color: $dropmark-teal;
+
+}
+
+
+
+// ====
+// Hero
+// ====
+
+section.hero-bg {
+
+  div.bg {
+
+    background-color: $dropmark-teal;
+
+  }
+
+}
+
+
+
+// =========
+// Container
+// =========
+
+div.container {
+
+  section.project-hero {
+
+    img.hero-img {
+      width: 218px;
+      height: 295px;
+
+      @media only screen and (max-width: $second-break)   {
+        width: 152.6px;
+        height: 206.5px;
+      }
+
+    }
+
+  }
+
+}

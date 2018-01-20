@@ -1,0 +1,67 @@
+
+
+
+@import 'base';
+@import 'home';
+@import 'projects';
+
+
+
+// ======
+// Header
+// ======
+
+header {
+
+  background-color: $mindfull-blue;
+
+}
+
+
+
+// ====
+// Hero
+// ====
+
+section.hero-bg {
+
+  div.bg {
+
+    background-color: $mindfull-blue;
+
+  }
+
+}
+
+
+
+// =========
+// Container
+// =========
+
+div.container {
+
+  section.next-projects {
+
+    div.col-2 {
+
+      a.venmo{
+        margin-right: 60px;
+
+        // 1040px - First Break
+        @media only screen and (max-width: $first-break)   {
+          margin-right: 20px;
+        }
+
+        // 767px - Second Break
+        @media only screen and (max-width: $second-break)   {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

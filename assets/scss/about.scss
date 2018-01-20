@@ -1,0 +1,100 @@
+
+
+
+@import 'base';
+@import 'home';
+@import 'projects';
+
+
+
+// ======
+// Header
+// ======
+
+header {
+
+  background-color: white;
+
+  nav {
+
+    a {
+      color: #111111;
+    }
+
+  }
+
+}
+
+
+
+// =========
+// Container
+// =========
+
+div.container {
+
+  margin-top: 210px;
+
+  // 767px - Second Break
+  @media only screen and (max-width: $second-break)   {
+    margin-top: 160px;
+  }
+
+  section {
+
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 80px;
+      // 767px - Second Break
+      @media only screen and (max-width: $second-break)   {
+        margin-top: 40px;
+      }
+    }
+
+    p {
+      font-size: $hero-large-font;
+      font-family: BG-Med;
+      margin-top: 80px;
+
+      // 767px - Second Break
+      @media only screen and (max-width: $second-break)   {
+        font-size: $hero-large-font - 16px;
+        margin-top: 40px;
+      }
+
+    }
+
+    ul {
+      margin-top: 40px;
+      font-size: $hero-large-font;
+      font-family: BG-Med;
+      margin-left: 80px;
+
+      // 767px - Second Break
+      @media only screen and (max-width: $second-break)   {
+        font-size: $hero-large-font - 16px;
+        margin-left: 40px;
+        margin-top: 20px;
+      }
+
+      li {
+        margin-top: 40px;
+        padding-left: 20px;
+
+        // 767px - Second Break
+        @media only screen and (max-width: $second-break)   {
+          margin-top: 20px;
+          padding-left: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

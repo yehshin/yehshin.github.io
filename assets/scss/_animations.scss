@@ -1,0 +1,221 @@
+
+
+
+@import 'variables';
+
+
+
+// ======
+// Header
+// ======
+
+header {
+
+  transition: background-color 0.225s;
+
+  a.nav {
+    transition: color 0.225s, opacity 0.225s;
+  }
+
+}
+
+header {
+
+  a.nav:hover {
+    opacity: 0.38;
+  }
+
+}
+
+
+
+// =====
+// Links
+// =====
+
+a.blue-link {
+  border-bottom: solid 1px rgba(0, 141, 255, 0);
+  transition: border-bottom 0.225s;
+}
+
+a.blue-link:hover {
+  border-bottom: solid 1px rgba(0, 141, 255, 1);
+}
+
+a.inline-link {
+  border-bottom: solid 1px rgba(0, 141, 255, 0);
+  transition: border-bottom 0.225s;
+}
+
+a.inline-link:hover {
+  border-bottom: solid 1px rgba(0, 141, 255, 1);
+}
+
+a.inline-link-large {
+  border-bottom: solid 1px rgba(0, 141, 255, 0);
+  transition: border-bottom 0.225s;
+}
+
+a.inline-link-large:hover {
+  border-bottom: solid 1px rgba(0, 141, 255, 1);
+}
+
+a.inline-link-footer {
+  border-bottom: solid 1px rgba(0, 141, 255, 0);
+  transition: border-bottom 0.225s;
+}
+
+a.inline-link-footer:hover {
+  border-bottom: solid 1px rgba(0, 141, 255, 1);
+}
+
+
+
+// =============
+// Project Cards
+// =============
+
+section.project-wrapper {
+
+  // Project Cards
+
+  a.project-card {
+    transition: top 0.225s, box-shadow 0.225s;
+  }
+
+  // Overlay
+
+  span.overlay {
+    transition: opacity 0.225s;
+  }
+
+  div.thumbnail-bg {
+    img {
+      transition: opacity 0.225s;
+    }
+  }
+
+}
+
+
+
+// ==================
+// Next Project Cards
+// ==================
+
+section.next-projects{
+
+  // Project Cards
+
+  a.project-card {
+    transition: top 0.225s, box-shadow 0.225s;
+  }
+
+  // Overlay
+
+  span.overlay {
+    transition: opacity 0.225s;
+  }
+
+  div.thumbnail-bg {
+    img {
+      transition: opacity 0.225s;
+    }
+  }
+
+}
+
+
+
+// =============
+// Fade on Entry
+// =============
+
+@keyframes fadeIn {
+
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+
+}
+
+.fade-in, .fade-in-1 {
+  transition: opacity 0.5s, top 05s;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0;
+
+  position: relative;
+  opacity: 0;
+}
+
+.fade-in-2 {
+  animation-delay: 0.05s;
+}
+
+.fade-in-3 {
+  animation-delay: 0.1s;
+}
+
+.fade-in-4 {
+  animation-delay: 0.15s;
+}
+
+.fade-in-5 {
+  animation-delay: 0.2s;
+}
+
+.fade-in-6 {
+  animation-delay: 0.25s;
+}
+
+.fade-in-7 {
+  animation-delay: 0.3s;
+}
+
+.fade-in-8 {
+  animation-delay: 0.35s;
+}
+
+.fade-in-9 {
+  animation-delay: 0.4s;
+}
+
+.fade-in-10 {
+  animation-delay: 0.45s;
+}
+
+.fade-in-11 {
+  animation-delay: 0.5s;
+}
+
+.fade-in-12 {
+  animation-delay: 0.55s;
+}
+
+.fade-in-13 {
+  animation-delay: 0.6s;
+}
+
+.fade-in-14 {
+  animation-delay: 0.65s;
+}
+
+.fade-in-15 {
+  animation-delay: 0.7s;
+}
+
+.fade-in-16 {
+  animation-delay: 0.75s;
+}
+
+.fade-in-17 {
+  animation-delay: 0.8s;
+}

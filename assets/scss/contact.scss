@@ -1,0 +1,83 @@
+
+
+
+@import 'base';
+@import 'home';
+@import 'projects';
+
+
+
+// ======
+// Header
+// ======
+
+header {
+
+  background-color: white;
+
+  nav {
+
+    a {
+      color: #111111;
+    }
+
+  }
+
+}
+
+
+
+// =========
+// Container
+// =========
+
+div.container {
+
+  margin-top: 210px;
+
+  // 767px - Second Break
+  @media only screen and (max-width: $second-break)   {
+    margin-top: 160px;
+  }
+
+  section {
+
+    width: 100%;
+    height: auto;
+
+    p {
+      font-size: $hero-large-font;
+      font-family: BG-Med;
+      margin-top: 80px;
+
+      // 767px - Second Break
+      @media only screen and (max-width: $second-break)   {
+        font-size: $hero-large-font - 16px;
+        margin-top: 40px;
+      }
+
+    }
+
+    p.inline-link-large-wrapper {
+      margin-top: 20px;
+    }
+
+  }
+
+  footer {
+
+    p.creds {
+      font-family: BG-Bold, Helvetica, Sans-Serif;
+      font-size: $footer-links-font;
+      color: $black;
+      margin-top: 20px;
+
+      span {
+        opacity: 0.38;
+      }
+
+    }
+
+  }
+
+}
