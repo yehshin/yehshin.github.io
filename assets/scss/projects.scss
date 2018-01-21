@@ -10,7 +10,6 @@
 // Extensions
 // ==========
 
-
 %visible {
   display: inline;
   opacity: 1;
@@ -20,15 +19,6 @@
 }
 
 
-// 1040px - First Break
-@media only screen and (max-width: $first-break)   {
-
-}
-
-// 767px - Second Break
-@media only screen and (max-width: $second-break) {
-
-}
 
 // ======
 // Header
@@ -108,7 +98,6 @@ div.container {
 
     margin-top: 210px;
 
-    // 767px - Second Break
     @media only screen and (max-width: $second-break)   {
       margin-top: 160px;
     }
@@ -120,7 +109,6 @@ div.container {
       margin-left: 50%;
       transform: translate(-50%);
 
-      // 1040px -
       @media only screen and (max-width: $second-break)   {
         width: 100%;
       }
@@ -141,7 +129,8 @@ div.container {
     p {
       font-size: $footer-small-font;
       font-family: BG-Reg, Helvetica, Sans-Serif;
-      opacity: 0.8;
+      // opacity: 0.8;
+      color: #FAFAFA;
       margin-top: 20px;
 
       // 767px - Second Break
@@ -289,6 +278,8 @@ div.container {
     }
 
   }
+
+
 
   // ================
   // Prototype Videos
@@ -445,6 +436,7 @@ div.container {
     }
 
   }
+
 
 
   // ======
@@ -691,7 +683,5 @@ div.container {
     }
 
   }
-
-
 
 }
