@@ -354,7 +354,7 @@ div.home section.project-wrapper div.col-2 a.project-card div.thumbnail-bg {
   width: 450px;
   height: 300px;
   overflow: hidden; }
-div.home section.project-wrapper div.col-2 a.project-card span {
+div.home section.project-wrapper div.col-2 a.project-card span.overlay {
   font-family: BG-Bold, Helvetica, Sans-Serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -381,7 +381,7 @@ div.home section.project-wrapper {
         height: auto;
         margin-top: 50px; } }
     @media only screen and (max-width: 1040px) {
-      div.home section.project-wrapper div.col-2 a.project-card span {
+      div.home section.project-wrapper div.col-2 a.project-card span.overlay {
         top: 104px; } }
     @media only screen and (max-width: 1040px) {
       div.home section.project-wrapper div.col-2 a.project-card div.thumbnail-bg {
@@ -406,7 +406,7 @@ div.home section.project-wrapper {
       width: 410px; }
       @media only screen and (max-width: 1040px) {
         div.home section.project-wrapper div.col-2 a.project-card p {
-          width: 310px; } }
+          width: 320px; } }
     div.home section.project-wrapper div.col-2 a.project-card p.type {
       font-size: 12px;
       font-family: BG-Bold, Helvetica, Sans-Serif;
@@ -417,6 +417,9 @@ div.home section.project-wrapper {
       @media only screen and (max-width: 767px) {
         div.home section.project-wrapper div.col-2 a.project-card p.type {
           font-size: 10px; } }
+      div.home section.project-wrapper div.col-2 a.project-card p.type span.project-tag {
+        opacity: 0.5;
+        font-size: 8px; }
     div.home section.project-wrapper div.col-2 a.project-card p.title {
       font-size: 28px;
       font-family: BG-Bold, Helvetica, Sans-Serif;

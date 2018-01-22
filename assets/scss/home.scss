@@ -118,7 +118,7 @@ div.home {
           margin-top: 50px;
         }
 
-        span {
+        span.overlay {
           @extend %overlay;
 
           // 1040px - First Break
@@ -169,7 +169,7 @@ div.home {
 
           // 1040px - First Break
           @media only screen and (max-width: $first-break)   {
-            width: 310px;
+            width: 320px;
           }
 
         }
@@ -186,6 +186,11 @@ div.home {
           // 767px - Second Break
           @media only screen and (max-width: $second-break)   {
             font-size: $project-type-font - 2px;
+          }
+
+          span.project-tag {
+            opacity: 0.5;
+            font-size: $project-type-font - 4px;
           }
 
         }
