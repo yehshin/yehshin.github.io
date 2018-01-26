@@ -181,7 +181,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }

@@ -46,8 +46,8 @@ div.container {
     height: auto;
 
     p {
-      font-size: $hero-large-font;
-      font-family: BG-Med;
+      font-size: $text-section-body;
+      font-family: C-Regular;
       margin-top: 80px;
 
       // 767px - Second Break
@@ -59,7 +59,7 @@ div.container {
     }
 
     p.inline-link-large-wrapper {
-      margin-top: 20px;
+      margin-top: 0px;
     }
 
   }

@@ -181,7 +181,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -496,7 +496,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -957,7 +957,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -1272,7 +1272,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -1602,7 +1602,7 @@ div.container section.project-hero {
         font-size: 48px; } }
   div.container section.project-hero p {
     font-size: 24px;
-    font-family: BG-Reg, Helvetica, Sans-Serif;
+    font-family: C-Regular, Helvetica, Sans-Serif;
     color: #FAFAFA;
     margin-top: 20px; }
     @media only screen and (max-width: 767px) {
@@ -1908,6 +1908,15 @@ div.container {
   div.container section {
     width: 100%;
     height: auto; }
+    div.container section h1 {
+      font-size: 48px;
+      font-family: BG-Reg;
+      margin-top: 80px;
+      -webkit-font-smoothing: antialiased; }
+      @media only screen and (max-width: 767px) {
+        div.container section h1 {
+          font-size: 32px;
+          margin-top: 40px; } }
     div.container section img {
       width: 100%;
       height: auto;
@@ -1915,29 +1924,26 @@ div.container {
       @media only screen and (max-width: 767px) {
         div.container section img {
           margin-top: 40px; } }
+    div.container section img.fade-in-3, div.container section img.fade-in-8 {
+      margin-bottom: 20px; }
     div.container section p {
-      font-size: 48px;
-      font-family: BG-Med;
-      margin-top: 80px; }
+      font-size: 18px;
+      font-family: C-Regular; }
+    div.container section ol {
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: C-Regular;
+      margin-left: 40px; }
       @media only screen and (max-width: 767px) {
-        div.container section p {
-          font-size: 32px;
-          margin-top: 40px; } }
-    div.container section ul {
-      margin-top: 40px;
-      font-size: 48px;
-      font-family: BG-Med;
-      margin-left: 80px; }
-      @media only screen and (max-width: 767px) {
-        div.container section ul {
+        div.container section ol {
           font-size: 32px;
           margin-left: 40px;
           margin-top: 20px; } }
-      div.container section ul li {
-        margin-top: 40px;
+      div.container section ol li {
+        margin-top: 20px;
         padding-left: 20px; }
         @media only screen and (max-width: 767px) {
-          div.container section ul li {
+          div.container section ol li {
             margin-top: 20px;
             padding-left: 10px; } }
 

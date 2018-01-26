@@ -181,7 +181,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -496,7 +496,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -957,7 +957,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -1272,7 +1272,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -1602,7 +1602,7 @@ div.container section.project-hero {
         font-size: 48px; } }
   div.container section.project-hero p {
     font-size: 24px;
-    font-family: BG-Reg, Helvetica, Sans-Serif;
+    font-family: C-Regular, Helvetica, Sans-Serif;
     color: #FAFAFA;
     margin-top: 20px; }
     @media only screen and (max-width: 767px) {
@@ -1909,15 +1909,15 @@ div.container {
     width: 100%;
     height: auto; }
     div.container section p {
-      font-size: 48px;
-      font-family: BG-Med;
+      font-size: 18px;
+      font-family: C-Regular;
       margin-top: 80px; }
       @media only screen and (max-width: 767px) {
         div.container section p {
           font-size: 32px;
           margin-top: 40px; } }
     div.container section p.inline-link-large-wrapper {
-      margin-top: 20px; }
+      margin-top: 0px; }
   div.container footer p.creds {
     font-family: BG-Bold, Helvetica, Sans-Serif;
     font-size: 18px;

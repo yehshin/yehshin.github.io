@@ -45,6 +45,19 @@ div.container {
     width: 100%;
     height: auto;
 
+    h1 {
+      font-size: $hero-large-font;
+      font-family: BG-Reg;
+      margin-top: 80px;
+      -webkit-font-smoothing: antialiased;
+
+      // 767px - Second Break
+      @media only screen and (max-width: $second-break)   {
+        font-size: $hero-large-font - 16px;
+        margin-top: 40px;
+      }
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -55,24 +68,20 @@ div.container {
       }
     }
 
-    p {
-      font-size: $hero-large-font;
-      font-family: BG-Med;
-      margin-top: 80px;
-
-      // 767px - Second Break
-      @media only screen and (max-width: $second-break)   {
-        font-size: $hero-large-font - 16px;
-        margin-top: 40px;
-      }
-
+    img.fade-in-3, img.fade-in-8 {
+      margin-bottom: 20px;
     }
 
-    ul {
-      margin-top: 40px;
-      font-size: $hero-large-font;
-      font-family: BG-Med;
-      margin-left: 80px;
+    p {
+      font-size: $text-section-body;
+      font-family: C-Regular;
+    }
+
+    ol {
+      margin-top: 20px;
+      font-size: $text-section-body;
+      font-family: C-Regular;
+      margin-left: 40px;
 
       // 767px - Second Break
       @media only screen and (max-width: $second-break)   {
@@ -82,7 +91,7 @@ div.container {
       }
 
       li {
-        margin-top: 40px;
+        margin-top: 20px;
         padding-left: 20px;
 
         // 767px - Second Break

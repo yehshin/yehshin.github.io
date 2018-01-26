@@ -181,7 +181,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -496,7 +496,7 @@ span.wave {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   display: inline-block;
-  animation-delay: 0.3s; }
+  animation-delay: 1s; }
 
 * {
   -webkit-font-smoothing: antialiased; }
@@ -826,7 +826,7 @@ div.container section.project-hero {
         font-size: 48px; } }
   div.container section.project-hero p {
     font-size: 24px;
-    font-family: BG-Reg, Helvetica, Sans-Serif;
+    font-family: C-Regular, Helvetica, Sans-Serif;
     color: #FAFAFA;
     margin-top: 20px; }
     @media only screen and (max-width: 767px) {
