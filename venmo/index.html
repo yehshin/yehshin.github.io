@@ -2,28 +2,9 @@
 
 <!--
 
-
-
-Fancy seeing you here. If you're wondering, yeah I coded everything from scratch.
-
-
-
-  /$$$$$$   /$$$$$$$   /$$$$$$   /$$$$$$   /$$     /$$
- /$$__  $$ | $$__  $$ |_  $$_/  /$$__  $$ |  $$   /$$/
-| $$  \__/ | $$  \ $$   | $$   | $$  \__/  \  $$ /$$/
-|  $$$$$$  | $$$$$$$/   | $$   | $$         \  $$$$/
- \____  $$ | $$____/    | $$   | $$          \  $$/
- /$$  \ $$ | $$         | $$   | $$    $$     | $$
-|  $$$$$$/ | $$        /$$$$$$ |  $$$$$$/     | $$
- \______/  |__/       |______/  \______/      |__/
-
-
-
 "You miss 100% of the shots you don't take. - Wayne Gretzky"
 
                                             - Michael Scott
-
-
 
  -->
 
@@ -113,7 +94,7 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 				<h1 class="fade-in fade-in-1">Venmo Groups</h1>
 
-				<p class="fade-in fade-in-2">A new feature designed to help make both finding people and handling transactions more efficient.</p>
+				<p class="fade-in fade-in-2">A faster and easier way to transfer money with your group.</p>
 
 				<img class="hero-img fade-in fade-in-3" src="../assets/images/venmo/hero-img.png" width="1400" height="1094" alt="Hero Image of Venmo Groups">
 
@@ -127,23 +108,29 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 				<h2>Overview</h2>
 
-				<p>From being very skeptical about Venmo, to it becoming my goto method of handling transactions with friends, I’ve gotten familiar with the product. However, I found myself getting frustrated when I go out with large groups and try to find someone that I’m not friends with on the app. I also wondered if there could be a more efficient method of trying to request from or pay multiple people.</p>
+				<h3>Context</h3>
+
+				<p>Venmo is the modern way to transfer money. During October of 2017, I was moving around a lot trying to stay in NYC so I could keep working at my design internship. This resulted in me needing to Venmo a lot of people to pay for rent. After constant usage, I realized there was some friction when needing to transfer funds to many people, especially when it's recurring. Realizing this was the perfect time for me to practice my craft, I decided to find a solution.</p>
+
+				<h3>Outcome</h3>
+
+				<p>There's no outcome yet as this is an ongoing side project.</p>
+
+				<p>However, during this time I did conduct user interviews with several people, which not only showed traction for the need of this feature, but also helped me develop better interviewing skills.</p>
 
 				<!-- Problems -->
 
 				<h2>Problems</h2>
 
-				<p>Taking notes of the difficulties I came across when using Venmo, I narrowed it down to these problems and needs:</p>
-
-				<h3>Problems</h3>
+				<p>I narrowed it down to these problems that I wanted to solve:</p>
 
 				<ol>
 
-					<li>Requesting money from many people, especially people who are not in your friends list, can be tedious.</li>
+					<li>Requesting money from many people, especially those who are not in your friends list, can be tedious.</li>
 
-					<li>It can become repetitive to request or pay a fixed amount from the same group of people for a fixed duration of time.</li>
+					<li>It becomes repetitive to request or pay the same group of people over and over again.</li>
 
-					<li>There is not an obvious incentive in wanting to become friends with someone on Venmo.</li>
+					<li>There is no obvious incentive to become friends with someone on Venmo.</li>
 
 				</ol>
 
@@ -151,39 +138,28 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 				<h2>Assumptions and Constraints</h2>
 
-				<p>While this is a side project, I still wanted to complete it as though it were to actually ship. In doing so, I worked off of possible constraints and assumptions:</p>
-
-				<h3>Assumptions</h3>
+				<p>Since this was a side project, I created constraints and assumptions to put myself in a potential real case scenario:</p>
 
 				<ol>
 
-					<li>Majority of users share the same frustration I have with the tediousness of requesting money from many people.</li>
+					<li>From the user interviews, concluding there is a mass need for a solution when dealing with group transactions.</li>
 
-					<li>QR code is not an efficient design, but more of a last resort.</li>
+					<li>Limited to using Venmo's <a class="inline-link" href="http://brand.venmo.com/styleguide" target="_blank">style guide</a>.</li>
 
-					<li>Venmo engineers are unicorns. They can make anything.</li>
-
-				</ol>
-
-				<h3>Constraints</h3>
-
-				<ol>
-
-					<li>Not allowing for an automated payment feature as that turns Venmo more into a bank rather than a virtual wallet.</li>
-
-					<li>Designing with Venmo’s <a class="inline-link" href="http://brand.venmo.com/styleguide" target="_blank">style guide</a> in mind, restraining from more contrasting visual design changes.</li>
+					<li>Technical constraints are not an issue for the sake of creative brainstorming.</li>
 
 				</ol>
+
 
 				<!-- Solutions -->
 
 				<h2>Solutions</h2>
 
-				<p>My solution was to implement a new feature called Venmo Groups. With Groups, you can search for people based on location, making it easier to find many people at once. It also eliminates repetitive tasks by allowing you to make multiple payments in a single transaction.</p>
+				<p>My proposed solution was Venmo Groups, a new feature where you can search for people based on location so that finding groups of people becomes easier. The groups concept also allows you to pay and request from several people at once.</p>
 
-				<h3>Search by Location</h3>
+				<h3>Search By Location</h3>
 
-				<p>When creating a group, there is an option to search for nearby Venmo users by tracking their location and compiling a list of them. From there, simply select the people that will be part of the group. This makes it easy to find people, is faster than requesting from people one by one, and also makes it convenient for the user to stay connected with them through the app.</p>
+				<p>You can create a group by selecting to search nearby users. Once these users are found, a list will be compiled - the people from this list are assumed to also have their feature turned on. From this list, select the people you want to add to your group. This makes it easier to find people without having to fumble over usernames and faster than doing it one by one.</p>
 
 			</section>
 
@@ -211,9 +187,9 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 			<section class="text-wrapper-single-1 fade-in fade-in-7">
 
-				<h3>Multiple People in a Single Transaction</h3>
+				<h3>Multiple Transactions At Once</h3>
 
-				<p>Instead of having to pay or request from the same group of people over and over, say for paying rent or for Spotify Family, Groups allow people to pay or request a fixed amount from everyone who is a member of that group, simplifying the process.</p>
+				<p>Instead of having to do multiple, individual transactions over and over for recurring payments, such as paying for rent or Spotify Family, Venmo Groups allows you to conduct a single transaction with everyone in that group.</p>
 
 			</section>
 
@@ -241,7 +217,7 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 			<section class="text-wrapper-single-2 fade-in fade-in-10">
 
-				<p>If the amount varies per member than standard, single transactions can still be done within the group.</p>
+				<p>If the amount varies per member, then single transactions can still be done within the group.</p>
 
 			</section>
 
@@ -257,21 +233,21 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 			<section class="text-wrapper fade-in fade-in-12">
 
-				<h2>What I Learned</h2>
+				<h2>Takeaways</h2>
 
 				<p>The project took me about four days to complete, several hours each day. Here are the key lessons that I learned from it: </p>
 
-				<h3>Design Systems Lead to Invisible Design</h3>
+				<h3>Design Constraints Are Freeing</h3>
 
-				<p>I learned and believe that good design is invisible, which means that people can use the product without second thought because it did exactly what they wanted to do with no unpleasent surprises.</p>
+				<p>This was the first personal project where I wasn't designing from scratch. When doing so, a lot of time is usually spent building up the visual system, time that could be spent strategizing and brainstorming better solutions.</p>
 
-				<p>As this was a side project, I wasn’t able to get it into many hands to get feedback. However, I still learned that one aspect of invisible design is familiarity, and designing this project under Venmo’s <a class="inline-link" href="http://brand.venmo.com/styleguide" target="_blank">style guide</a> was good practice to keep my designs as familiar as possible.</p>
+				<p>Having Venmo's <a class="inline-link" href="http://brand.venmo.com/styleguide" target="_blank">style guide</a> at hand allowed me to not stress about the UI and focus more on the user problems.</p>
 
-				<h3>Prototype to Prove, not for Show</h3>
+				<h3>Waste Not, Want Not</h3>
 
-				<p>While creating prototypes with <a class="inline-link" href="https://origami.design/" target="_blank">Origami</a>, I realized how much easier it was for me to  prototype for the sake of proving my interaction, as opposed to showing off cool transitions and animations</p>
+				<p>Wanting to familiarize myself with more design software, I thought this project would be a good opportunity to teach myself <a class="inline-link" href="https://origami.design/" target="_blank">Origami</a>.</p>
 
-				<p>This was mostly because Venmo is already an established product with its interface and transitions in place, allowing me to not worry about those aspects so much and focus more on the user experience and thinking about what actions people might want to take next.</p>
+				<p>Getting carried away with all the animation capabilities, I realized how much time I was wasting creating prototypes that didn't show how a proposed feature would solve a certain problem. Prototypes aren't supposed to be created for the sake of showing your animating skills, but rather to make sure anyone using it can understand what it's trying to accomplish.</p>
 
 			</section>
 
@@ -297,19 +273,19 @@ Fancy seeing you here. If you're wondering, yeah I coded everything from scratch
 
 					</a>
 
-					<a href="../mindfull/" class="project-card mindfull">
+					<a href="../meetup-groups/" class="project-card meetup-groups">
 
 						<span class="overlay">View Project</span>
 
 						<div class="thumbnail-bg">
 
-							<img src="../assets/images/project-thumbnails/mindfull.jpg" width="900" height="600" alt="Image of Mindfull Thumbnail" >
+							<img src="../assets/images/project-thumbnails/meetup-groups.jpg" width="900" height="600" alt="Image of Meetup Groups Thumbnail" >
 
 						</div>
 
 						<p class="type">Next Project</p>
 
-						<p class="title">Mindfull</p>
+						<p class="title">Groups Page Redesign</p>
 
 					</a>
 

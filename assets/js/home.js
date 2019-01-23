@@ -108,3 +108,21 @@ projectCard[4].addEventListener('mouseleave', function() {
   thumbnailImg[4].style.opacity = visible;
 
 }, false);
+
+projectCard[5].addEventListener('mouseenter', function() {
+
+  this.style.top = hoveredTop;
+  this.style.boxShadow = hoveredBoxShadow;
+  overlay[5].style.opacity = visible;
+  thumbnailImg[5].style.opacity = fade;
+
+}, false);
+
+projectCard[5].addEventListener('mouseleave', function() {
+
+  this.style.top = initialTop;
+  this.style.boxShadow = initialBoxShadow;
+  overlay[5].style.opacity = hidden;
+  thumbnailImg[5].style.opacity = visible;
+
+}, false);

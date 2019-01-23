@@ -643,7 +643,8 @@ div.home section.hero {
     @media only screen and (max-width: 767px) {
       div.home section.hero h1 {
         width: 100%;
-        font-size: 32px; } }
+        font-size: 32px;
+        line-height: 48px; } }
   div.home section.hero p {
     font-family: BG-Med, Helvetica, Sans-Serif;
     font-size: 24px;
@@ -753,18 +754,18 @@ div.home section.project-wrapper {
           margin-bottom: 30px; } }
     div.home section.project-wrapper div.col-2 a.posters span.overlay {
       color: #111111; }
-    div.home section.project-wrapper div.col-2 a.dropmark, div.home section.project-wrapper div.col-2 a.mindfull {
+    div.home section.project-wrapper div.col-2 a.venmo, div.home section.project-wrapper div.col-2 a.mindfull, div.home section.project-wrapper div.col-2 a.posters {
       margin-right: 60px; }
       @media only screen and (max-width: 1040px) {
-        div.home section.project-wrapper div.col-2 a.dropmark, div.home section.project-wrapper div.col-2 a.mindfull {
+        div.home section.project-wrapper div.col-2 a.venmo, div.home section.project-wrapper div.col-2 a.mindfull, div.home section.project-wrapper div.col-2 a.posters {
           margin-right: 20px; } }
       @media only screen and (max-width: 767px) {
-        div.home section.project-wrapper div.col-2 a.dropmark, div.home section.project-wrapper div.col-2 a.mindfull {
+        div.home section.project-wrapper div.col-2 a.venmo, div.home section.project-wrapper div.col-2 a.mindfull, div.home section.project-wrapper div.col-2 a.posters {
           margin-right: 0; } }
-    div.home section.project-wrapper div.col-2 a.dropmark div.overlay, div.home section.project-wrapper div.col-2 a.dropmark div.thumbnail-bg {
-      background-color: #4BE1E2; }
     div.home section.project-wrapper div.col-2 a.venmo div.overlay, div.home section.project-wrapper div.col-2 a.venmo div.thumbnail-bg {
       background-color: #3C95CD; }
+    div.home section.project-wrapper div.col-2 a.meetup-groups div.overlay, div.home section.project-wrapper div.col-2 a.meetup-groups div.thumbnail-bg {
+      background-color: #F65858; }
     div.home section.project-wrapper div.col-2 a.mindfull div.overlay, div.home section.project-wrapper div.col-2 a.mindfull div.thumbnail-bg {
       background-color: #0173FF; }
     div.home section.project-wrapper div.col-2 a.starbucks div.overlay, div.home section.project-wrapper div.col-2 a.starbucks div.thumbnail-bg {
@@ -773,6 +774,8 @@ div.home section.project-wrapper {
       background-color: #FAFAFA; }
     div.home section.project-wrapper div.col-2 a.posters div.overlay p {
       color: #111111; }
+    div.home section.project-wrapper div.col-2 a.dropmark div.overlay, div.home section.project-wrapper div.col-2 a.dropmark div.thumbnail-bg {
+      background-color: #4BE1E2; }
 
 header nav a.hidden {
   display: inline;
@@ -1110,6 +1113,8 @@ div.container section.next-projects {
       background-color: #4BE1E2; }
     div.container section.next-projects div.col-2 a.venmo div.overlay, div.container section.next-projects div.col-2 a.venmo div.thumbnail-bg {
       background-color: #3C95CD; }
+    div.container section.next-projects div.col-2 a.meetup-groups div.overlay, div.container section.next-projects div.col-2 a.meetup-groups div.thumbnail-bg {
+      background-color: #F65858; }
     div.container section.next-projects div.col-2 a.mindfull div.overlay, div.container section.next-projects div.col-2 a.mindfull div.thumbnail-bg {
       background-color: #0173FF; }
     div.container section.next-projects div.col-2 a.starbucks div.overlay, div.container section.next-projects div.col-2 a.starbucks div.thumbnail-bg {

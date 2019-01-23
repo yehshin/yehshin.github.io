@@ -116,6 +116,58 @@ window.addEventListener('scroll', function() {
 
         }
 
+  } else if (document.title === "Ye Shin • Groups Redesign") {
+
+    if (window.innerWidth >= 650) {
+
+      if (window.pageYOffset >= 640) {
+
+        header.style.backgroundColor = "white";
+
+        for (i = 0; i < headerNav.length; i++) {
+
+          headerNav[i].style.color = "#111111";
+
+        }
+
+      } else {
+
+          header.style.backgroundColor = "#F65858";
+
+          for (i = 0; i < headerNav.length; i++) {
+
+            headerNav[i].style.color = "white";
+
+          }
+
+        }
+
+      } else {
+
+        if (window.pageYOffset >= 440) {
+
+          header.style.backgroundColor = "white";
+
+          for (i = 0; i < headerNav.length; i++) {
+
+            headerNav[i].style.color = "#111111";
+
+          }
+
+        } else {
+
+            header.style.backgroundColor = "#F65858";
+
+            for (i = 0; i < headerNav.length; i++) {
+
+              headerNav[i].style.color = "white";
+
+            }
+
+          }
+
+        }
+
   } else if (document.title === "Ye Shin • Mindfull") {
 
     if (window.innerWidth >= 650) {
