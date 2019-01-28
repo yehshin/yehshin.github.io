@@ -617,21 +617,6 @@ div.container {
         }
       }
 
-      a.posters {
-        margin-right: 60px;
-
-        // 1040px - First Break
-        @media only screen and (max-width: $first-break)   {
-          margin-right: 20px;
-        }
-
-        // 767px - Second Break
-        @media only screen and (max-width: $second-break)   {
-          margin-right: 0;
-        }
-
-      }
-
       a.dropmark {
 
         div.overlay, div.thumbnail-bg {

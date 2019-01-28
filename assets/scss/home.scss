@@ -25,14 +25,12 @@ div.home {
     h1 {
       font-family: BG-Reg, Helvetica, Sans-Serif;
       font-size: $hero-large-font;
-      width: 700px;
       letter-spacing: $tight-kern;
 
       // 768px - iPad
       @media only screen and (max-width: $second-break)   {
-        width: 100%;
         font-size: $hero-medium-font;
-        line-height: 48px;
+        line-height: 44px;
       }
 
     }
@@ -232,7 +230,7 @@ div.home {
         }
       }
 
-      a.venmo, a.mindfull, a.posters {
+      a.meetup-groups, a.dropmark, a.mindfull {
         margin-right: 60px;
 
         // 1040px - First Break
