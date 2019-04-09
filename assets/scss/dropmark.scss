@@ -41,21 +41,6 @@ section.hero-bg {
 
 div.container {
 
-  section.project-hero {
-
-    img.hero-img {
-      width: 218px;
-      height: 295px;
-
-      @media only screen and (max-width: $second-break)   {
-        width: 152.6px;
-        height: 206.5px;
-      }
-
-    }
-
-  }
-
   section.next-projects {
 
     div.col-2 {

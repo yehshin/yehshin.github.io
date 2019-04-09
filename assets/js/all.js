@@ -28,7 +28,7 @@ window.addEventListener('scroll', function() {
 
       } else {
 
-          header.style.backgroundColor = "#4BE1E2";
+          header.style.backgroundColor = "#2D2B6C";
 
           for (i = 0; i < headerNav.length; i++) {
 
@@ -52,7 +52,7 @@ window.addEventListener('scroll', function() {
 
         } else {
 
-            header.style.backgroundColor = "#4BE1E2";
+            header.style.backgroundColor = "#2D2B6C";
 
             for (i = 0; i < headerNav.length; i++) {
 
