@@ -1,84 +1,71 @@
 
 
 
-// =========
-// Container
-// =========
+// =======
+// Spacing
+// =======
 
-$large-width: 960px;
-$small-width: 722px;
-
-
-// =========
-// Break Points
-// =========
-
-$first-break: 1040px;
-$second-break: 767px; // font change
-$third-break: 650px;
+$padding__small: 6%;
+$padding__medium: 20%;
+$padding__large: 30%;
+$padding__none: 0%;
 
 
 // ======
 // Sizing
 // ======
 
-$large-padding: 150px;
-$bottom-footer-padding: 50px;
+$height__small: 8px;
+$height__flexible__small: 2em;
+$height__flexible__medium: 5em;
+$height__flexible__large: 7em;
+$height__large: 7em;
+
+$width__half: 50%;
+$width__max: 1440px;
 
 // ==========
 // Typography
 // ==========
 
-// Kern
-
-$tight-kern: -0.5px;
-
 // Font Sizes
+$font-size__small: 16px;
+$font-size__body: 20px;
+$font-size__body-large: 28px;
+$font-size__sub-header: 36px;
+$font-size__x-large: 80px;
 
-$nav-font-size-large: 14px;
-$nav-letter-spacing: 1.78px;
-$nav-font-size-mobile: 12px;
-
-
-$hero-large-font: 48px;
-$hero-medium-font: 32px;
-$hero-small-font: 24px;
-$hero-extra-small-font: 22px;
-
-
-$footer-large-font: 28px;
-$footer-small-font: 24px;
-$footer-links-font: 18px;
+// Line Height
+$line-height__body: 170%;
+$line-height__body__small: 140%;
 
 
-$project-type-font: 12px;
-$project-title-font: 28px;
-$project-info-font: 20px;
 
-
-$project-hero-large: 64px;
-$text-section-header: 36px;
-$text-section-body: 18px;
-
-// =====
+// ======
 // Colors
-// =====
+// ======
 
-$black: #111111;
-
-$blue-link: #008DFF;
-
-$dropmark-teal: #2D2B6C;
-$venmo-blue: #3C95CD;
-$meetup-peach: #F65858;
-$mindfull-blue: #0173FF;
-$starbucks-green: #34B881;
-$poster-gray: #FAFAFA;
+$black: #111;
+$black__opacity: rgba(17, 17, 17, 0.8);
+$white: #fff;
+$dark-gray: #222;
+$inline__link: #37D6EC;
+$inline__link__hover: #248E9C;
+$light-gray: #CFCFCF;
 
 
 // ===========
 // Box-Shadows
 // ===========
 
-$bs-header: 0px 0px 70px 0px rgba(17, 17, 17, 0.1);
-$bs-card: 0px 30px 60px -10px rgba(17, 17, 17, 0.15);
+$light-shadow: 0px 16px 24px 0px rgba(17, 17, 17, 0.24);
+$heavy-shadow: 0px 40px 40px 0px rgba(17, 17, 17, 0.80);
+
+// ===========
+// Breakpoints
+// ===========
+
+$breakpoint__extra-large: 1921px;
+$breakpoint__large: 1024px;
+$breakpoint__medium: 768px;
+$breakpoint__small: 320px;

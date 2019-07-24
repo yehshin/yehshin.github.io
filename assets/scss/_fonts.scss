@@ -2,76 +2,95 @@
 
 
 // =================
-// Brandon Grotesque
+// TT-Norms
 // =================
 
 @font-face {
-    font-family: BG-Black;
-    src: url(../fonts/bg-font/Brandon_blk.otf);
+    font-family: tt-black;
+    src: url(../fonts/tt/TTNorms-Black.otf);
 }
 
 @font-face {
-    font-family: BG-Bold;
-    src: url(../fonts/bg-font/Brandon_bld.otf);
+    font-family: tt-blackItalic;
+    src: url(../fonts/tt/TTNorms-BlackItalic.otf);
 }
 
 @font-face {
-    font-family: BG-Med;
-    src: url(../fonts/bg-font/Brandon_med.otf);
+    font-family: tt-heavy;
+    src: url(../fonts/tt/TTNorms-Heavy.otf);
 }
 
 @font-face {
-    font-family: BG-MedIt;
-    src: url(../fonts/bg-font/Brandon_med_it.otf);
+    font-family: tt-heavyItalic;
+    src: url(../fonts/tt/TTNorms-HeavyItalic.otf);
 }
 
 @font-face {
-    font-family: BG-Reg;
-    src: url(../fonts/bg-font/Brandon_reg.otf);
+    font-family: tt-extraBold;
+    src: url(../fonts/tt/TTNorms-ExtraBold.otf);
 }
 
 @font-face {
-    font-family: BG-Light;
-    src: url(../fonts/bg-font/Brandon_light.otf);
+    font-family: tt-extraBoldItalix;
+    src: url(../fonts/tt/TTNorms-ExtraBoldItalic.otf);
 }
 
 @font-face {
-    font-family: BG-Thin;
-    src: url(../fonts/bg-font/Brandon_thin.otf);
-}
-
-
-
-// ============
-// Crimson Text
-// ============
-
-@font-face {
-    font-family: C-Bold;
-    src: url(../fonts/crimson-font/CrimsonText-Bold.ttf);
+    font-family: tt-bold;
+    src: url(../fonts/tt/TTNorms-Bold.otf);
 }
 
 @font-face {
-    font-family: C-BoldIt;
-    src: url(../fonts/crimson-font/CrimsonText-BoldItalic.ttf);
+    font-family: tt-boldItalic;
+    src: url(../fonts/tt/TTNorms-BoldItalic.otf);
 }
 
 @font-face {
-    font-family: C-SemiBold;
-    src: url(../fonts/crimson-font/CrimsonText-SemiBold.ttf);
+    font-family: tt-medium;
+    src: url(../fonts/tt/TTNorms-Medium.otf);
 }
 
 @font-face {
-    font-family: C-SemiBoldIt;
-    src: url(../fonts/crimson-font/CrimsonText-SemiBoldIt.ttf);
+    font-family: tt-mediumItalic;
+    src: url(../fonts/tt/TTNorms-MediumItalic.otf);
 }
 
 @font-face {
-    font-family: C-Regular;
-    src: url(../fonts/crimson-font/CrimsonText-Regular.ttf);
+    font-family: tt-regular;
+    src: url(../fonts/tt/TTNorms-Regular.otf);
 }
 
 @font-face {
-    font-family: C-It;
-    src: url(../fonts/crimson-font/CrimsonText-Italic.ttf);
+    font-family: tt-regularItalic;
+    src: url(../fonts/tt/TTNorms-RegularItalic.otf);
+}
+
+@font-face {
+    font-family: tt-light;
+    src: url(../fonts/tt/TTNorms-Light.otf);
+}
+
+@font-face {
+    font-family: tt-lightItalic;
+    src: url(../fonts/tt/TTNorms-LightItalic.otf);
+}
+
+@font-face {
+    font-family: tt-extraLight;
+    src: url(../fonts/tt/TTNorms-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: tt-extraLightItalic;
+    src: url(../fonts/tt/TTNorms-ExtraLightItalic.otf);
+}
+
+@font-face {
+    font-family: tt-thin;
+    src: url(../fonts/tt/TTNorms-Thin.otf);
+}
+
+@font-face {
+    font-family: tt-thinItalic;
+    src: url(../fonts/tt/TTNorms-ThinItalic.otf);
 }

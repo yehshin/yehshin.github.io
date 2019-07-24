@@ -5,311 +5,163 @@
 
 
 
-// ====
-// Container
-// ====
+// =======
+// Content
+// =======
 
-div.home {
+section {
 
-  section.hero {
+  margin: $padding__none $padding__medium;
+  margin-top: $height__large * 2.5;
 
-    margin-top: 210px;
-    width: 100%;
-    margin-bottom: 50px;
+  h1 {
+    color: $white;
+    font-family: tt-bold;
+    font-size: $font-size__x-large;
+    margin-bottom: $height__flexible__medium;
 
-    // 768px - iPad
-    @media only screen and (max-width: $second-break) {
-      margin-top: 160px;
+    @media only screen and (min-width: $breakpoint__extra-large)   {
+
+      margin-right: $padding__medium;
+
     }
 
-    h1 {
-      font-family: BG-Reg, Helvetica, Sans-Serif;
-      font-size: $hero-large-font;
-      letter-spacing: $tight-kern;
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      // 768px - iPad
-      @media only screen and (max-width: $second-break)   {
-        font-size: $hero-medium-font;
-        line-height: 44px;
+      font-size: $font-size__body-large * 1.1;
+      margin-bottom: $height__flexible__small;
+
+    }
+
+    a {
+      display: inline-block;
+      color: $inline__link;
+      border-bottom: solid 1px rgba(55, 214, 236, 0.24);
+      transition: color 0.2s, border-bottom 0.2s;
+    }
+
+    a:hover {
+      color: $inline__link__hover;
+      border-bottom: solid 1px rgba(36, 142, 156, 0.24)
+    }
+  }
+
+
+  @media only screen and (min-width: $breakpoint__extra-large)   {
+
+    margin-right: auto;
+    margin-left: auto;
+    width: $width__max;
+
+  }
+
+  @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+
+    margin-right: $padding__medium;
+    margin-left: $padding__medium;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+    margin-right: $padding__small;
+    margin-left: $padding__small;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+    margin-top: $height__large;
+
+  }
+
+  div.project {
+
+    margin-bottom: $height__flexible__large;
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+      margin-bottom: $height__flexible__small;
+
+    }
+
+    a.project__thumbnail {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: $height__small * 3;
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        margin-bottom: $height__small * 2;
+
+      }
+
+      div.project-type-pill {
+        position: relative;
+        top: $height__flexible__small * 2;
+        left: $height__flexible__small * 0.7;
+        border-radius: 4px;
+        display: inline-block;
+        z-index: 100;
+        background-color: $black__opacity;
+        padding: 12px 24px;
+        box-shadow: $light-shadow;
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          top: $height__flexible__small * 1.6;
+          left: $height__flexible__small * 0.4;
+          padding: 8px 16px;
+
+        }
+
+        p {
+          color: $white;
+          font-family: tt-bold;
+          font-size: $font-size__small;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.2s;
+      }
+
+      img:hover {
+        filter: brightness(0.4);
+      }
+
+    }
+
+    h2 {
+      color: $white;
+      font-family: tt-bold;
+      font-size: $font-size__sub-header;
+      margin-bottom: $height__small * 2;
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        font-size: $font-size__body-large;
+        margin-bottom: $height__small;
+
       }
 
     }
 
     p {
-      font-family: BG-Med, Helvetica, Sans-Serif;
-      font-size: $hero-small-font;
-      margin-top: 20px;
-      color: #B6B6B6;
-      letter-spacing: $tight-kern;
+      color: $light-gray;
+      font-family: tt-medium;
+      font-size: $font-size__body;
 
-      // 768px - iPad
-      @media only screen and (max-width: $second-break)   {
-        width: 100%;
-        font-size: $hero-extra-small-font;
-      }
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      a {
-        font-family: BG-Bold, Helvetica, Sans-Serif;
-        letter-spacing: $tight-kern;
-      }
-
-    }
-
-  }
-
-
-
-  // Project Cards
-
-  %project-card {
-    width: 450px;
-    height: 500px;
-    margin-top: 100px;
-    box-shadow: $bs-card;
-    float: left;
-    position: relative;
-    top: 0;
-  }
-
-  %thumbnail-bg {
-    width: 450px;
-    height: 300px;
-    overflow: hidden;
-  }
-
-  %overlay {
-    font-family: BG-Bold, Helvetica, Sans-Serif;
-    font-size: $project-type-font;
-    text-transform: uppercase;
-    letter-spacing: 1.71px;
-    color: white;
-    position: absolute;
-    margin-left: 50%;
-    transform: translate(-50%);
-    top: 141px;
-    opacity: 0;
-  }
-
-  section.project-wrapper {
-
-    width: 100%;
-    height: auto;
-
-    div.col-2 {
-
-      width: 100%;
-      height: auto;
-
-      a.project-card {
-
-        @extend %project-card;
-
-        // 1040px - First Break
-        @media only screen and (max-width: $first-break)   {
-          width: 350px;
-          height: 455px;
-        }
-
-        // 767px - Second Break
-        @media only screen and (max-width: $second-break)   {
-          width: 100%;
-          height: auto;
-          margin-top: 50px;
-        }
-
-        span.overlay {
-          @extend %overlay;
-
-          // 1040px - First Break
-          @media only screen and (max-width: $first-break)   {
-            top: 104px;
-          }
-
-        }
-
-        div.thumbnail-bg {
-
-          @extend %thumbnail-bg;
-
-          // 1040px - First Break
-          @media only screen and (max-width: $first-break)   {
-            width: 350px;
-            height: 226px;
-          }
-
-          // 767px - Second Break
-          @media only screen and (max-width: $second-break)   {
-            width: 100%;
-            height: 226px;
-          }
-
-        }
-
-        img {
-
-          width: 100%;
-          height: auto;
-
-          // 767px - Second Break
-          @media only screen and (max-width: $second-break)   {
-            width: 339px;
-            height: 226px;
-            margin-left: 50%;
-            transform: translateX(-50%);
-          }
-
-        }
-
-        p {
-
-          color: $black;
-          margin-left: 20px;
-          width: 410px;
-
-          // 1040px - First Break
-          @media only screen and (max-width: $first-break)   {
-            width: 320px;
-          }
-
-        }
-
-        p.type {
-
-          font-size: $project-type-font;
-          font-family: BG-Bold, Helvetica, Sans-Serif;
-          text-transform: uppercase;
-          opacity: 0.5;
-          margin-top: 30px;
-          letter-spacing: 1.71px;
-
-          // 767px - Second Break
-          @media only screen and (max-width: $second-break)   {
-            font-size: $project-type-font - 2px;
-          }
-
-          span.project-tag {
-            opacity: 0.5;
-            font-size: $project-type-font - 4px;
-          }
-
-        }
-
-        p.title {
-
-          font-size: $project-title-font;
-          font-family: BG-Bold, Helvetica, Sans-Serif;
-          margin-top: 15px;
-
-          // 767px - Second Break
-          @media only screen and (max-width: $second-break)   {
-            font-size: $project-title-font - 4px;
-          }
-
-        }
-
-        p.info {
-
-          font-size: $project-info-font;
-          font-family: C-Regular, Georgia, Serif;
-          opacity: 0.5;
-
-          // 767px - Second Break
-          @media only screen and (max-width: $second-break)   {
-            font-size: $project-info-font - 2px;
-            width: 90%;
-            margin-bottom: 30px;
-          }
-
-        }
-
-      }
-
-      a.posters {
-        span.overlay {
-          color: #111111;
-        }
-      }
-
-      a.meetup-groups, a.dropmark, a.mindfull {
-        margin-right: 60px;
-
-        // 1040px - First Break
-        @media only screen and (max-width: $first-break)   {
-          margin-right: 20px;
-        }
-
-        // 767px - Second Break
-        @media only screen and (max-width: $second-break)   {
-          margin-right: 0;
-        }
-
-      }
-
-      a.venmo {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $venmo-blue;
-        }
-
-      }
-
-      a.meetup-groups {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $meetup-peach;
-        }
-
-      }
-
-      a.mindfull {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $mindfull-blue;
-        }
-
-      }
-
-      a.starbucks {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $starbucks-green;
-        }
-
-      }
-
-      a.posters {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $poster-gray;
-        }
-
-        div.overlay {
-
-          p {
-            color: $black;
-          }
-
-        }
-
-      }
-
-      a.dropmark {
-
-        div.overlay, div.thumbnail-bg {
-          background-color: $dropmark-teal;
-        }
+        font-size: $font-size__small;
+        line-height: $line-height__body__small;
 
       }
 
     }
-
   }
-
-
-
-
-
-
-
-
 }

@@ -4,7 +4,6 @@
 @import 'reset';
 @import 'fonts';
 @import 'variables';
-@import 'animations';
 
 
 
@@ -12,135 +11,67 @@
 // Universal
 // =========
 
-* {
-  -webkit-font-smoothing: antialiased;
+body {
+  background-color: $black;
 }
 
-::-moz-selection {
-    color: white;
-    background: blue;
+a.inline__link {
+  display: inline-block;
+  color: $inline__link;
+  border-bottom: solid 1px rgba(55, 214, 236, 0.24);
+  transition: color 0.2s, border-bottom 0.2s;
 }
 
-*::selection {
-  color: white;
-  background: blue;
+a.inline__link:hover {
+  color: $inline__link__hover;
+  border-bottom: solid 1px rgba(36, 142, 156, 0.24);
 }
-
-div.container {
-  width: $large-width;
-  margin-left: 50%;
-  transform: translate(-50%);
-
-  // 1040px - First Break
-  @media only screen and (max-width: $first-break)   {
-    width: $small-width;
-  }
-
-  // 767px - Second Break
-  @media only screen and (max-width: $second-break)   {
-    width: 92%;
-    margin-left: 4%;
-    transform: none;
-  }
-}
-
-
 
 // ==========
 // Extensions
 // ==========
 
-%header-base {
-  width: 100%;
-  height: 120px;
-  box-shadow: $bs-header;
-  position: fixed;
-  top: -60px;
-  left: 0px;
-  z-index: 100;
-  background-color: white;
+%nav-base {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: $height__large;
+  align-items: center;
 }
 
-%nav-links {
-  font-family: BG-Black, Helvetica, Sans-Serif;
-  font-size: $nav-font-size-large;
-  letter-spacing: $nav-letter-spacing;
-  text-transform: uppercase;
-  color: #111111;
+%footer-base {
+  box-sizing: border-box;
+  height: $height__large;
 }
-
-%hidden {
-  display: none;
-  opacity: 0;
-}
-
-
 
 // ======
 // Header
 // ======
 
 header {
+  @extend %nav-base;
 
-  @extend %header-base;
+  a {
+    font-family: tt-bold;
+    font-size: $font-size__small;
+    color: $white;
+    transition: color 0.2s;
+  }
 
-  nav {
+  a:hover {
+    color: $light-gray;
+  }
 
-    width: $large-width;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding-top: 60px;
-
-    // 1040px - First Break
-    @media only screen and (max-width: $first-break)   {
-      width: $small-width;
-    }
-
-    // 767px - Second Break
-    @media only screen and (max-width: $second-break)   {
-      width: 92%;
-      margin-left: 4%;
-      transform: none;
-    }
-
-    a.hidden {
-
-      @extend %hidden;
-
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-    }
+  li {
+    display: block;
+    float: right;
 
     a {
+      margin-left: 24px;
 
-      @extend %nav-links;
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      // 767px - Second Break
-      @media only screen and (max-width: $first-break)   {
-        font-size: $nav-font-size-large - 2px;
-      }
-
-    }
-
-    li.main-nav {
-
-      list-style: none;
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-
-        margin-left: 40px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        // 767px - Second Break
-        @media only screen and (max-width: $first-break)   {
-          margin-left: 20px;
-          padding-top: 21px;
-          padding-bottom: 21px;
-        }
+        margin-left: 16px;
 
       }
 
@@ -148,93 +79,119 @@ header {
 
   }
 
+  @media only screen and (min-width: $breakpoint__extra-large)   {
+
+    margin-right: auto;
+    margin-left: auto;
+    width: $width__max;
+
+  }
+
+  @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+
+    margin-right: $padding__medium;
+    margin-left: $padding__medium;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+    margin-right: $padding__small;
+    margin-left: $padding__small;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+    height: $height__flexible__medium;
+
+  }
+
 }
 
-
-
-// =====
+// ======
 // Footer
-// =====
+// ======
 
 footer {
+  @extend %footer-base;
 
-  clear: both;
-  margin-top: $large-padding;
-  margin-bottom: $bottom-footer-padding;
-  display: inline-block;
+  margin: $padding__none $padding__medium;
+  margin-bottom: $height__flexible__small;
+  margin-top: $height__flexible__large * 2;
 
-  // 767px - Second Break
-  @media only screen and (max-width: $second-break) {
-    width: 100%;
-    margin-top: $large-padding - 50px;
-  }
+  h2 {
+    color: $white;
+    font-family: tt-bold;
+    font-size: $font-size__sub-header;
 
-  p.msg {
-    font-family: BG-Med, Helvetica, Sans-Serif;
-    font-size: $footer-large-font;
-    width: 650px;
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    // 767px - Second Break
-    @media only screen and (max-width: $second-break) {
-      font-size: $footer-small-font;
-      width: 100%;
+      font-size: $font-size__body-large;
+
     }
 
   }
 
-  p.links {
-    font-family: BG-Bold, Helvetica, Sans-Serif;
-    font-size: $footer-links-font;
-    color: $black;
-    margin-top: 20px;
+  a {
+    font-family: tt-bold;
+    font-size: $font-size__small;
+    color: $white;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: $light-gray;
+  }
+
+  li {
+    margin-top: $height__flexible__small;
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+      margin-top: $height__small * 2;
+
+    }
 
     a {
-      color: $blue-link;
+      margin-right: 16px;
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        display: inline-block;
+        margin-right: 12px;
+        margin-bottom: 8px;
+
+      }
     }
+  }
+
+  @media only screen and (min-width: $breakpoint__extra-large)   {
+
+    margin-right: auto;
+    margin-left: auto;
+    width: $width__max;
 
   }
 
-  p.copyright {
-    font-family: BG-Bold, Helvetica, Sans-Serif;
-    font-size: $nav-font-size-large;
-    opacity: 0.2;
-    margin-top: 50px;
+  @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+
+    margin-right: $padding__medium;
+    margin-left: $padding__medium;
+
   }
 
-}
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
 
+    margin-right: $padding__small;
+    margin-left: $padding__small;
 
-
-// =====
-// Links
-// =====
-
-a.inline-link-bg {
-  color: $blue-link;
-}
-
-a.inline-link {
-  color: $blue-link;
-  font-family: C-Bold, Georgia, Serif;
-  display: inline-block;
-  height: 26px;
-}
-
-a.inline-link-large {
-  color: $blue-link;
-  font-family: BG-Med, Helvetica, sans-serif;
-  // display: inline-block;
-  height: 66px;
-
-  // 767px - Second Break
-  @media only screen and (max-width: $second-break)   {
-    height: 42px;
   }
 
-}
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-a.inline-link-footer {
-  font-family: BG-Bold, Helvetica, Sans-Serif;
-  font-size: $footer-links-font;
-  color: $blue-link;
+    margin-top: $height__flexible__large;
+
+  }
+
 }
