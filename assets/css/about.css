@@ -5,15 +5,16 @@
   outline: none;
   text-decoration: none;
   list-style: none;
-  -webkit-font-smoothing: antialiased; }
-
-::-moz-selection {
-  color: black;
-  background: white; }
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
 
 *::selection {
-  color: black;
-  background: white; }
+  color: #111;
+  background: #fff; }
+
+::-moz-selection {
+  color: #111;
+  background: #fff; }
 
 body {
   overflow-x: none; }
@@ -76,31 +77,28 @@ body {
   background-color: #111; }
 
 a.inline__link {
-  display: inline-block;
-  color: #37D6EC;
-  border-bottom: solid 1px rgba(55, 214, 236, 0.24);
+  color: #3884F8;
+  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
   transition: color 0.2s, border-bottom 0.2s; }
 
 a.inline__link:hover {
-  color: #248E9C;
-  border-bottom: solid 1px rgba(36, 142, 156, 0.24); }
+  color: #CFCFCF;
+  border-bottom: solid 1px #111; }
 
 header {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
-  height: 7em;
+  height: 120px;
   align-items: center; }
 
 footer {
-  box-sizing: border-box;
-  height: 7em; }
+  height: 120px; }
 
 header a {
   font-family: tt-bold;
   font-size: 16px;
   color: #fff;
-  transition: color 0.2s; }
+  transition: color 0.1s; }
 header a:hover {
   color: #CFCFCF; }
 header li {
@@ -122,16 +120,16 @@ header li {
     margin-left: 20%; } }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   header {
-    margin-right: 6%;
-    margin-left: 6%; } }
+    margin-right: 4%;
+    margin-left: 4%; } }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header {
-    height: 5em; } }
+    height: 100px; } }
 
 footer {
   margin: 0% 20%;
   margin-bottom: 2em;
-  margin-top: 14em; }
+  margin-top: 240px; }
   footer h2 {
     color: #fff;
     font-family: tt-bold;
@@ -143,14 +141,14 @@ footer {
     font-family: tt-bold;
     font-size: 16px;
     color: #fff;
-    transition: color 0.2s; }
+    transition: color 0.1s; }
   footer a:hover {
     color: #CFCFCF; }
   footer li {
-    margin-top: 2em; }
+    margin-top: 40px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       footer li {
-        margin-top: 16px; } }
+        margin-top: 24px; } }
     footer li a {
       margin-right: 16px; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -169,19 +167,19 @@ footer {
       margin-left: 20%; } }
   @media screen and (min-width: 320px) and (max-width: 1024px) {
     footer {
-      margin-right: 6%;
-      margin-left: 6%; } }
+      margin-right: 4%;
+      margin-left: 4%; } }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
-      margin-top: 7em; } }
+      margin-top: 120px; } }
 
 article.copy {
   margin: 0% 30%;
-  margin-top: 7em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     article.copy {
-      margin: 0% 6%;
-      margin-top: 5em; } }
+      margin: 0% 4%;
+      margin-top: 80px; } }
   article.copy p.large {
     color: #CFCFCF;
     font-family: tt-medium;
@@ -192,16 +190,16 @@ article.copy {
 
 article.timeline {
   margin: 0% 30%;
-  margin-top: 7em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     article.timeline {
-      margin: 0% 6%;
-      margin-top: 5em; } }
+      margin: 0% 4%;
+      margin-top: 80px; } }
   article.timeline h2 {
     color: #fff;
     font-family: tt-bold;
     font-size: 36px;
-    margin-bottom: 1.2em; }
+    margin-bottom: 40px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.timeline h2 {
         font-size: 28px; } }
@@ -214,7 +212,7 @@ article.timeline {
     article.timeline ul li {
       display: flex;
       justify-content: space-between;
-      margin-top: 2.4em; }
+      margin-top: 32px; }
       article.timeline ul li span.left {
         color: #fff;
         font-family: tt-bold; }
@@ -226,23 +224,23 @@ article.timeline {
       display: inline-block;
       color: #CFCFCF;
       font-family: tt-medium;
-      margin-top: 9.6px; }
+      margin-top: 12px; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
         article.timeline ul span.bottom {
           margin-top: 8px; } }
 
 article.faq {
   margin: 0% 30%;
-  margin-top: 7em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     article.faq {
-      margin: 0% 6%;
-      margin-top: 5em; } }
+      margin: 0% 4%;
+      margin-top: 80px; } }
   article.faq h2 {
     color: #fff;
     font-family: tt-bold;
     font-size: 36px;
-    margin-bottom: 1.2em; }
+    margin-bottom: 40px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.faq h2 {
         font-size: 28px; } }
@@ -250,20 +248,20 @@ article.faq {
     color: #fff;
     font-family: tt-bold;
     font-size: 20px;
-    margin-bottom: 12px; }
+    margin-bottom: 16px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.faq p.question {
         font-size: 16px;
-        margin-bottom: 9.6px; } }
+        margin-bottom: 8px; } }
   article.faq p.answer {
     color: #CFCFCF;
     font-family: tt-medium;
     font-size: 20px;
-    margin-bottom: 3em; }
+    margin-bottom: 40px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.faq p.answer {
         font-size: 16px;
-        margin-bottom: 2.4em;
+        margin-bottom: 32px;
         line-height: 140%; } }
 
 section.col-1 {
@@ -272,7 +270,7 @@ section.col-1 {
   margin-top: 7em; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-1 {
-      margin: 0% 6%;
+      margin: 0% 4%;
       margin-top: 5em; } }
   section.col-1 img {
     display: inline-block;

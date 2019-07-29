@@ -1,6 +1,10 @@
 
 
 
+@import 'variables';
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +13,17 @@
   text-decoration: none;
   list-style: none;
   -webkit-font-smoothing: antialiased;
-}
-
-::-moz-selection {
-    color: black;
-    background: white;
+  box-sizing: border-box;
 }
 
 *::selection {
-  color: black;
-  background: white;
+  color: $black;
+  background: $white;
+}
+
+::-moz-selection {
+    color: $black;
+    background: $white;
 }
 
 body {

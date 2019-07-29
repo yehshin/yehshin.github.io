@@ -5,37 +5,55 @@
 // Spacing
 // =======
 
-$padding__small: 6%;
+$padding__none: 0%;
+$padding__small: 4%;
 $padding__medium: 20%;
 $padding__large: 30%;
-$padding__none: 0%;
+
+
 
 
 // ======
 // Sizing
 // ======
 
+// Spacing
+
 $height__small: 8px;
 $height__flexible__small: 2em;
 $height__flexible__medium: 5em;
 $height__flexible__large: 7em;
-$height__large: 7em;
+// $height__small: 8px;
+// $height__flexible__small: 2em;
+// $height__flexible__medium: 5em;
+// $height__flexible__large: 7em;
+
+$spacing__extra-small: 8px;
+$spacing__small: 16px;
+$spacing__medium: 40px;
+$spacing__large: 120px;
+
+// Width
 
 $width__half: 50%;
 $width__max: 1440px;
+
+
 
 // ==========
 // Typography
 // ==========
 
 // Font Sizes
-$font-size__small: 16px;
-$font-size__body: 20px;
-$font-size__body-large: 28px;
-$font-size__sub-header: 36px;
-$font-size__x-large: 80px;
+
+$font-size__small: 16px;         // $font-size__extra-small
+$font-size__body: 20px;          // $font-size__small
+$font-size__body-large: 28px;    // $font-size__medium
+$font-size__sub-header: 36px;    // $font-size__large
+$font-size__x-large: 80px;       // $font-size__extra-large
 
 // Line Height
+
 $line-height__body: 170%;
 $line-height__body__small: 140%;
 
@@ -46,12 +64,13 @@ $line-height__body__small: 140%;
 // ======
 
 $black: #111;
-$black__opacity: rgba(17, 17, 17, 0.8);
+$black__transparent: rgba(17, 17, 17, 0.8);
 $white: #fff;
-$dark-gray: #222;
-$inline__link: #37D6EC;
-$inline__link__hover: #248E9C;
-$light-gray: #CFCFCF;
+$gray__dark: #222;
+$gray__light: #CFCFCF;
+$blue: #3884F8;
+$blue__transparent: rgba(56, 132, 248, 0.4);
+
 
 
 // ===========
@@ -60,6 +79,8 @@ $light-gray: #CFCFCF;
 
 $light-shadow: 0px 16px 24px 0px rgba(17, 17, 17, 0.24);
 $heavy-shadow: 0px 40px 40px 0px rgba(17, 17, 17, 0.80);
+
+
 
 // ===========
 // Breakpoints

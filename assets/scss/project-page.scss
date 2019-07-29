@@ -16,6 +16,7 @@ section.hero {
   overflow-x: hidden;
 
   h2 {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -24,18 +25,19 @@ section.hero {
     z-index: 100;
     color: $white;
     font-family: tt-bold;
-    font-size: $font-size__sub-header * 1.4;
+    font-size: $font-size__sub-header;
 
     @media only screen and (min-width: $breakpoint__extra-large)   {
 
-      left: $padding__large * 1.1;
-      right: $padding__large * 1.1;
+
+      left: $padding__large * 1.15;
+      right: $padding__large * 1.15;
 
     }
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    font-size: $font-size__body-large * 1.2;
+    font-size: $font-size__body-large;
     left: $padding__small;
     right: $padding__small;
 
@@ -61,6 +63,8 @@ section.hero {
 
 }
 
+
+
 // ====
 // Copy
 // ====
@@ -71,7 +75,7 @@ article.copy {
 
   @media only screen and (min-width: $breakpoint__extra-large)   {
 
-    margin: $padding__none $padding__large * 1.1;
+    margin: $padding__none $padding__large * 1.15;
 
   }
 
@@ -85,41 +89,47 @@ article.copy {
     color: $white;
     font-family: tt-bold;
     font-size: $font-size__sub-header;
-    margin-top: $height__flexible__small * 2;
-    margin-bottom: $height__small * 3;
+    margin-top: $spacing__large;
+    margin-bottom: $spacing__small * 2;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
       font-size: $font-size__body-large;
-      margin-top: $height__flexible__small * 1.4;
-      margin-bottom: $height__small * 2;
+      margin-top: $spacing__medium * 2;
+      margin-bottom: $spacing__small;
 
     }
 
   }
 
   p {
-    color: $light-gray;
+    color: $gray__light;
     font-family: tt-medium;
     font-size: $font-size__body;
     line-height: $line-height__body;
 
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+      font-size: $font-size__small;
+
+    }
   }
 
   p.single {
-    margin-top: $height__flexible__small * 4;
-    margin-bottom: $height__flexible__small;
+    margin-top: $spacing__large;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-top: $height__flexible__small * 2;
-      margin-bottom: $height__small;
+      margin-top: $spacing__medium * 2;
+      margin-bottom: $spacing__small;
 
     }
 
   }
 
 }
+
+
 
 // ======
 // Assets
@@ -131,74 +141,76 @@ section.col-full-width {
   display: inline-block;
   width: 100%;
   height: auto;
-  margin-top: $height__flexible__large * 1.5;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    margin-top: $height__flexible__medium;
+    margin-top: $spacing__medium * 2;
 
   }
 
   img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto;
   }
 
   img.asset-1 {
-    margin-bottom: 20px;
+    margin-bottom: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-bottom: 8px;
+      margin-bottom: $spacing__extra-small;
 
     }
   }
 
   img.asset-2 {
-    margin-top: 20px;
+    margin-top: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-top: 0px;
+      margin-top: $spacing__extra-small;
 
     }
   }
+
 }
 
 section.col-1 {
   display: block;
   margin: $padding__none $padding__medium;
-  margin-top: $height__flexible__large * 1.5;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
     margin: $padding__large $padding__none;
+    margin-top: $spacing__large;
 
   }
 
   img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto;
   }
 
   img.asset-1 {
-    margin-bottom: 20px;
+    margin-bottom: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-bottom: 8px;
+      margin-bottom: $spacing__extra-small;
 
     }
   }
 
   img.asset-2 {
-    margin-top: 20px;
+    margin-top: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-top: 0px;
+      margin-top: $spacing__extra-small;
 
     }
   }
@@ -208,11 +220,11 @@ section.col-2 {
   display: inline-block;
   width: 100%;
   height: auto;
-  margin-top: $height__flexible__large * 1.3;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    margin-top: $height__flexible__medium;
+    margin-top: $spacing__medium * 2;
 
   }
 
@@ -226,7 +238,7 @@ section.col-2 {
 
       width: 100%;
       float: none;
-      margin-bottom: $height__small * 2;
+      margin-bottom: $spacing__extra-small;
 
     }
   }
@@ -236,7 +248,7 @@ section.col-2__posters {
   display: flex;
   justify-content: space-around;
   margin: $padding__none $padding__small;
-  margin-top: $height__flexible__large * 1.2;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
@@ -265,12 +277,12 @@ section.col-2__posters {
 section.col-full-width-video {
   display: block;
   margin: $padding__none;
-  margin-top: $height__small * 5;
-  background-color: $dark-gray;
+  margin-top: $spacing__small;
+  background-color: $gray__dark;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    margin-top: $height__small * 2;
+    // margin-top: $spacing__extra-small;
 
   }
 
@@ -288,8 +300,8 @@ section.col-full-width-video {
 section.col-1-video {
   display: block;
   margin: $padding__none $padding__large;
-  margin-top: $height__flexible__large * 1.5;
-  background-color: $dark-gray;
+  margin-top: $spacing__large;
+  background-color: $gray__dark;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
@@ -308,27 +320,29 @@ section.col-1-video {
   }
 }
 
+
+
 // ============
 // Next Project
 // ============
 
 a.next-project {
   position: relative;
-  margin-top: $height__flexible__large * 1.2;
+  margin-top: $spacing__large;
   display: block;
   width: 100%;
   height: auto;
-  transition: filter 0.2s;
+  transition: filter 0.1s;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    margin-top: $height__flexible__large;
+    margin-top: $spacing__medium * 2;
 
   }
 
   span.kicker {
     display: inline-block;
-    color: $light-gray;
+    color: $gray__light;
     font-family: tt-bold;
     font-size: $font-size__small;
     margin-bottom: 8px;

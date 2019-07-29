@@ -13,17 +13,17 @@
 article.copy {
 
   margin: $padding__none $padding__large;
-  margin-top: $height__flexible__large;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
     margin: $padding__none $padding__small;
-    margin-top: $height__flexible__medium;
+    margin-top: $spacing__medium * 2;
 
   }
 
   p.large {
-    color: $light-gray;
+    color: $gray__light;
     font-family: tt-medium;
     font-size: $font-size__body-large;
 
@@ -39,12 +39,12 @@ article.copy {
 article.timeline {
 
   margin: $padding__none $padding__large;
-  margin-top: $height__flexible__large;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
     margin: $padding__none $padding__small;
-    margin-top: $height__flexible__medium;
+    margin-top: $spacing__medium * 2;
 
   }
 
@@ -52,7 +52,7 @@ article.timeline {
     color: $white;
     font-family: tt-bold;
     font-size: $font-size__sub-header;
-    margin-bottom: $height__flexible__small * 0.6;
+    margin-bottom: $spacing__medium;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
@@ -77,7 +77,7 @@ article.timeline {
 
       display: flex;
       justify-content: space-between;
-      margin-top: $height__flexible__small * 1.2;
+      margin-top: $spacing__small * 2;
 
       span.left {
         color: $white;
@@ -85,7 +85,7 @@ article.timeline {
       }
 
       span.right {
-        color: $light-gray;
+        color: $gray__light;
         font-family: tt-medium;
         text-align: right;
       }
@@ -94,13 +94,13 @@ article.timeline {
 
     span.bottom {
       display: inline-block;
-      color: $light-gray;
+      color: $gray__light;
       font-family: tt-medium;
-      margin-top: $height__small * 1.2;
+      margin-top: $spacing__extra-small * 1.5;
 
       @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-        margin-top: $height__small;
+        margin-top: $spacing__extra-small;
 
       }
 
@@ -113,12 +113,12 @@ article.timeline {
 article.faq {
 
   margin: $padding__none $padding__large;
-  margin-top: $height__flexible__large;
+  margin-top: $spacing__large;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
     margin: $padding__none $padding__small;
-    margin-top: $height__flexible__medium;
+    margin-top: $spacing__medium * 2;
 
   }
 
@@ -126,7 +126,7 @@ article.faq {
     color: $white;
     font-family: tt-bold;
     font-size: $font-size__sub-header;
-    margin-bottom: $height__flexible__small * 0.6;
+    margin-bottom: $spacing__medium;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
@@ -140,32 +140,34 @@ article.faq {
     color: $white;
     font-family: tt-bold;
     font-size: $font-size__body;
-    margin-bottom: $height__small * 1.5;
+    margin-bottom: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
       font-size: $font-size__small;
-      margin-bottom: $height__small * 1.2;
+      margin-bottom: $spacing__extra-small;
 
     }
   }
 
   p.answer {
-    color: $light-gray;
+    color: $gray__light;
     font-family: tt-medium;
     font-size: $font-size__body;
-    margin-bottom: $height__flexible__small * 1.5;
+    margin-bottom: $spacing__medium;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
       font-size: $font-size__small;
-      margin-bottom: $height__flexible__small * 1.2;
+      margin-bottom: $spacing__small * 2;
       line-height: $line-height__body__small;
 
     }
   }
 
 }
+
+
 
 // ======
 // Assets

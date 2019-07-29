@@ -7,25 +7,26 @@
 
 
 
-// =========
-// Universal
-// =========
+// ======
+// Global
+// ======
 
 body {
   background-color: $black;
 }
 
 a.inline__link {
-  display: inline-block;
-  color: $inline__link;
-  border-bottom: solid 1px rgba(55, 214, 236, 0.24);
+  color: $blue;
+  border-bottom: solid 1px $blue__transparent;
   transition: color 0.2s, border-bottom 0.2s;
 }
 
 a.inline__link:hover {
-  color: $inline__link__hover;
-  border-bottom: solid 1px rgba(36, 142, 156, 0.24);
+  color: $gray__light;
+  border-bottom: solid 1px $black;
 }
+
+
 
 // ==========
 // Extensions
@@ -34,15 +35,15 @@ a.inline__link:hover {
 %nav-base {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
-  height: $height__large;
+  height: $spacing__large;
   align-items: center;
 }
 
 %footer-base {
-  box-sizing: border-box;
-  height: $height__large;
+  height: $spacing__large;
 }
+
+
 
 // ======
 // Header
@@ -55,11 +56,11 @@ header {
     font-family: tt-bold;
     font-size: $font-size__small;
     color: $white;
-    transition: color 0.2s;
+    transition: color 0.1s;
   }
 
   a:hover {
-    color: $light-gray;
+    color: $gray__light;
   }
 
   li {
@@ -67,11 +68,11 @@ header {
     float: right;
 
     a {
-      margin-left: 24px;
+      margin-left: $spacing__extra-small * 3;
 
       @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-        margin-left: 16px;
+        margin-left: $spacing__small;
 
       }
 
@@ -103,7 +104,7 @@ header {
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    height: $height__flexible__medium;
+    height: $spacing__medium * 2.5;
 
   }
 
@@ -118,7 +119,7 @@ footer {
 
   margin: $padding__none $padding__medium;
   margin-bottom: $height__flexible__small;
-  margin-top: $height__flexible__large * 2;
+  margin-top: $spacing__large * 2;
 
   h2 {
     color: $white;
@@ -137,30 +138,30 @@ footer {
     font-family: tt-bold;
     font-size: $font-size__small;
     color: $white;
-    transition: color 0.2s;
+    transition: color 0.1s;
   }
 
   a:hover {
-    color: $light-gray;
+    color: $gray__light;
   }
 
   li {
-    margin-top: $height__flexible__small;
+    margin-top: $spacing__medium;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-      margin-top: $height__small * 2;
+      margin-top: $spacing__extra-small * 3;
 
     }
 
     a {
-      margin-right: 16px;
+      margin-right: $spacing__small;
 
       @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
         display: inline-block;
-        margin-right: 12px;
-        margin-bottom: 8px;
+        margin-right: $spacing__extra-small + $spacing__extra-small/2;
+        margin-bottom: $spacing__extra-small;
 
       }
     }
@@ -190,7 +191,7 @@ footer {
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    margin-top: $height__flexible__large;
+    margin-top: $spacing__large;
 
   }
 

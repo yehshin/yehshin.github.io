@@ -5,15 +5,16 @@
   outline: none;
   text-decoration: none;
   list-style: none;
-  -webkit-font-smoothing: antialiased; }
-
-::-moz-selection {
-  color: black;
-  background: white; }
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
 
 *::selection {
-  color: black;
-  background: white; }
+  color: #111;
+  background: #fff; }
+
+::-moz-selection {
+  color: #111;
+  background: #fff; }
 
 body {
   overflow-x: none; }
@@ -76,31 +77,28 @@ body {
   background-color: #111; }
 
 a.inline__link {
-  display: inline-block;
-  color: #37D6EC;
-  border-bottom: solid 1px rgba(55, 214, 236, 0.24);
+  color: #3884F8;
+  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
   transition: color 0.2s, border-bottom 0.2s; }
 
 a.inline__link:hover {
-  color: #248E9C;
-  border-bottom: solid 1px rgba(36, 142, 156, 0.24); }
+  color: #CFCFCF;
+  border-bottom: solid 1px #111; }
 
 header {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
-  height: 7em;
+  height: 120px;
   align-items: center; }
 
 footer {
-  box-sizing: border-box;
-  height: 7em; }
+  height: 120px; }
 
 header a {
   font-family: tt-bold;
   font-size: 16px;
   color: #fff;
-  transition: color 0.2s; }
+  transition: color 0.1s; }
 header a:hover {
   color: #CFCFCF; }
 header li {
@@ -122,16 +120,16 @@ header li {
     margin-left: 20%; } }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   header {
-    margin-right: 6%;
-    margin-left: 6%; } }
+    margin-right: 4%;
+    margin-left: 4%; } }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   header {
-    height: 5em; } }
+    height: 100px; } }
 
 footer {
   margin: 0% 20%;
   margin-bottom: 2em;
-  margin-top: 14em; }
+  margin-top: 240px; }
   footer h2 {
     color: #fff;
     font-family: tt-bold;
@@ -143,14 +141,14 @@ footer {
     font-family: tt-bold;
     font-size: 16px;
     color: #fff;
-    transition: color 0.2s; }
+    transition: color 0.1s; }
   footer a:hover {
     color: #CFCFCF; }
   footer li {
-    margin-top: 2em; }
+    margin-top: 40px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       footer li {
-        margin-top: 16px; } }
+        margin-top: 24px; } }
     footer li a {
       margin-right: 16px; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -169,11 +167,11 @@ footer {
       margin-left: 20%; } }
   @media screen and (min-width: 320px) and (max-width: 1024px) {
     footer {
-      margin-right: 6%;
-      margin-left: 6%; } }
+      margin-right: 4%;
+      margin-left: 4%; } }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
-      margin-top: 7em; } }
+      margin-top: 120px; } }
 
 section.hero {
   position: relative;
@@ -181,6 +179,7 @@ section.hero {
   height: auto;
   overflow-x: hidden; }
   section.hero h2 {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -189,16 +188,16 @@ section.hero {
     z-index: 100;
     color: #fff;
     font-family: tt-bold;
-    font-size: 50.4px; }
+    font-size: 36px; }
     @media only screen and (min-width: 1921px) {
       section.hero h2 {
-        left: 33%;
-        right: 33%; } }
+        left: 34.5%;
+        right: 34.5%; } }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       section.hero h2 {
-        font-size: 33.6px;
-        left: 6%;
-        right: 6%; } }
+        font-size: 28px;
+        left: 4%;
+        right: 4%; } }
   section.hero img {
     width: 100%;
     height: auto;
@@ -214,87 +213,90 @@ article.copy {
   margin: 0% 30%; }
   @media only screen and (min-width: 1921px) {
     article.copy {
-      margin: 0% 33%; } }
+      margin: 0% 34.5%; } }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     article.copy {
-      margin: 0% 6%; } }
+      margin: 0% 4%; } }
   article.copy h2 {
     color: #fff;
     font-family: tt-bold;
     font-size: 36px;
-    margin-top: 4em;
-    margin-bottom: 24px; }
+    margin-top: 120px;
+    margin-bottom: 32px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.copy h2 {
         font-size: 28px;
-        margin-top: 2.8em;
+        margin-top: 80px;
         margin-bottom: 16px; } }
   article.copy p {
     color: #CFCFCF;
     font-family: tt-medium;
     font-size: 20px;
     line-height: 170%; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.copy p {
+        font-size: 16px; } }
   article.copy p.single {
-    margin-top: 8em;
-    margin-bottom: 2em; }
+    margin-top: 120px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.copy p.single {
-        margin-top: 4em;
-        margin-bottom: 8px; } }
+        margin-top: 80px;
+        margin-bottom: 16px; } }
 
 section.col-full-width {
   display: inline-block;
   width: 100%;
   height: auto;
-  margin-top: 10.5em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-full-width {
-      margin-top: 5em; } }
+      margin-top: 80px; } }
   section.col-full-width img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto; }
   section.col-full-width img.asset-1 {
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       section.col-full-width img.asset-1 {
         margin-bottom: 8px; } }
   section.col-full-width img.asset-2 {
-    margin-top: 20px; }
+    margin-top: 16px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       section.col-full-width img.asset-2 {
-        margin-top: 0px; } }
+        margin-top: 8px; } }
 
 section.col-1 {
   display: block;
   margin: 0% 20%;
-  margin-top: 10.5em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-1 {
-      margin: 30% 0%; } }
+      margin: 30% 0%;
+      margin-top: 120px; } }
   section.col-1 img {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto; }
   section.col-1 img.asset-1 {
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       section.col-1 img.asset-1 {
         margin-bottom: 8px; } }
   section.col-1 img.asset-2 {
-    margin-top: 20px; }
+    margin-top: 16px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       section.col-1 img.asset-2 {
-        margin-top: 0px; } }
+        margin-top: 8px; } }
 
 section.col-2 {
   display: inline-block;
   width: 100%;
   height: auto;
-  margin-top: 9.1em; }
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-2 {
-      margin-top: 5em; } }
+      margin-top: 80px; } }
   section.col-2 img {
     display: block;
     width: 50%;
@@ -304,17 +306,17 @@ section.col-2 {
       section.col-2 img {
         width: 100%;
         float: none;
-        margin-bottom: 16px; } }
+        margin-bottom: 8px; } }
 
 section.col-2__posters {
   display: flex;
   justify-content: space-around;
-  margin: 0% 6%;
-  margin-top: 8.4em; }
+  margin: 0% 4%;
+  margin-top: 120px; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-2__posters {
       display: block;
-      margin: 0% 6%; } }
+      margin: 0% 4%; } }
   section.col-2__posters img {
     width: 40%;
     height: auto;
@@ -323,16 +325,13 @@ section.col-2__posters {
       section.col-2__posters img {
         width: 100%;
         float: none;
-        margin: 6% 0%; } }
+        margin: 4% 0%; } }
 
 section.col-full-width-video {
   display: block;
   margin: 0%;
-  margin-top: 40px;
+  margin-top: 16px;
   background-color: #222; }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    section.col-full-width-video {
-      margin-top: 16px; } }
   section.col-full-width-video video {
     display: inline-block;
     width: 80%;
@@ -345,7 +344,7 @@ section.col-full-width-video {
 section.col-1-video {
   display: block;
   margin: 0% 30%;
-  margin-top: 10.5em;
+  margin-top: 120px;
   background-color: #222; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     section.col-1-video {
@@ -361,14 +360,14 @@ section.col-1-video {
 
 a.next-project {
   position: relative;
-  margin-top: 8.4em;
+  margin-top: 120px;
   display: block;
   width: 100%;
   height: auto;
-  transition: filter 0.2s; }
+  transition: filter 0.1s; }
   @media screen and (min-width: 320px) and (max-width: 768px) {
     a.next-project {
-      margin-top: 7em; } }
+      margin-top: 80px; } }
   a.next-project span.kicker {
     display: inline-block;
     color: #CFCFCF;
@@ -387,8 +386,8 @@ a.next-project {
     font-size: 36px; }
     @media screen and (min-width: 320px) and (max-width: 768px) {
       a.next-project h2 {
-        left: 6%;
-        right: 6%;
+        left: 4%;
+        right: 4%;
         font-size: 28px; } }
   a.next-project img {
     width: 100%;
