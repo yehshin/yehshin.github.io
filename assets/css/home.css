@@ -223,7 +223,7 @@ section {
       margin-bottom: 24px; }
       @media screen and (min-width: 320px) and (max-width: 768px) {
         section div.project a.project__thumbnail {
-          margin-bottom: 16px; } }
+          margin-bottom: 12px; } }
       section div.project a.project__thumbnail div.project-type-pill {
         position: relative;
         top: 64px;
