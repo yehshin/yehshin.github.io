@@ -13,7 +13,12 @@
 
 body {
   background-color: $black;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: 0.4s;
 }
+
+
 
 a.inline__link {
   color: $blue;
@@ -56,7 +61,7 @@ header {
     font-family: tt-bold;
     font-size: $font-size__small;
     color: $white;
-    transition: color 0.1s;
+    transition: color 0.2s;
   }
 
   a:hover {
@@ -138,7 +143,7 @@ footer {
     font-family: tt-bold;
     font-size: $font-size__small;
     color: $white;
-    transition: color 0.1s;
+    transition: color 0.2s;
   }
 
   a:hover {

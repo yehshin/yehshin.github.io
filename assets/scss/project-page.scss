@@ -332,7 +332,6 @@ a.next-project {
   display: block;
   width: 100%;
   height: auto;
-  transition: filter 0.1s;
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
@@ -379,10 +378,7 @@ a.next-project {
     height: auto;
     filter: brightness(0.4);
     display: block;
+    transition: filter 0.2s;
   }
 
-}
-
-a.next-project:hover {
-  filter: brightness(0.4);
 }

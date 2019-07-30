@@ -74,7 +74,10 @@ body {
   font-family: tt-thinItalic;
   src: url(../fonts/tt/TTNorms-ThinItalic.otf); }
 body {
-  background-color: #111; }
+  background-color: #111;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: 0.4s; }
 
 a.inline__link {
   color: #3884F8;
@@ -98,7 +101,7 @@ header a {
   font-family: tt-bold;
   font-size: 16px;
   color: #fff;
-  transition: color 0.1s; }
+  transition: color 0.2s; }
 header a:hover {
   color: #CFCFCF; }
 header li {
@@ -141,7 +144,7 @@ footer {
     font-family: tt-bold;
     font-size: 16px;
     color: #fff;
-    transition: color 0.1s; }
+    transition: color 0.2s; }
   footer a:hover {
     color: #CFCFCF; }
   footer li {

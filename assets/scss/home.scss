@@ -36,7 +36,7 @@ section {
     a {
       color: $blue;
       border-bottom: solid 1px $blue__transparent;
-      transition: color 0.1s, border-bottom 0.1s;
+      transition: color 0.2s, border-bottom 0.2s;
     }
 
     a:hover {
@@ -125,7 +125,7 @@ section {
       img {
         width: 100%;
         height: auto;
-        transition: filter 0.1s;
+        transition: filter 0.2s;
       }
 
       img:hover {
