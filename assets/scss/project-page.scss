@@ -9,47 +9,67 @@
 // Hero
 // ====
 
-section.hero {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
+article.copy__hero {
+
+  margin: $padding__none $padding__large;
+
+  @media only screen and (min-width: $breakpoint__extra-large)   {
+
+    margin: $padding__none $padding__large * 1.15;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+    margin: $padding__none $padding__small;
+
+  }
 
   h2 {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: $padding__large;
-    right: $padding__large;
-    z-index: 100;
     color: $white;
     font-family: tt-bold;
     font-size: $font-size__sub-header;
-
-    @media only screen and (min-width: $breakpoint__extra-large)   {
-
-
-      left: $padding__large * 1.15;
-      right: $padding__large * 1.15;
-
-    }
+    margin-top: $spacing__large;
+    margin-bottom: $spacing__small;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    font-size: $font-size__body-large;
-    left: $padding__small;
-    right: $padding__small;
+      font-size: $font-size__body-large;
+      margin-top: $spacing__medium * 2;
+      margin-bottom: $spacing__small;
 
     }
 
   }
 
+  p {
+    color: $gray__light;
+    font-family: tt-regular;
+    font-size: $font-size__sub-header;
+    line-height: $line-height__body;
+    margin-bottom: $spacing__large;
+    line-height: 160%;
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+      font-size: $font-size__body-large;
+      margin-bottom: $spacing__medium * 2;
+
+    }
+  }
+
+}
+
+section.hero {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+
   img {
     width: 100%;
     height: auto;
     display: block;
-    filter: brightness(0.4);
+    // filter: brightness(0.4);
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
