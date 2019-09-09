@@ -190,6 +190,9 @@ article.copy {
     @media screen and (min-width: 320px) and (max-width: 768px) {
       article.copy p.large {
         font-size: 20px; } }
+  article.copy img {
+    width: 100%;
+    height: auto; }
 
 article.timeline {
   margin: 0% 30%;
