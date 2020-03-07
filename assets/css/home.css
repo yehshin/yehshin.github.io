@@ -79,15 +79,6 @@ body {
   transition: opacity 0.4s;
   transition-delay: 0.4s; }
 
-a.inline__link {
-  color: #3884F8;
-  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
-  transition: color 0.2s, border-bottom 0.2s; }
-
-a.inline__link:hover {
-  color: #CFCFCF;
-  border-bottom: solid 1px #111; }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -175,6 +166,15 @@ footer {
   @media screen and (min-width: 320px) and (max-width: 768px) {
     footer {
       margin-top: 120px; } }
+
+a.inline__link {
+  color: #3884F8;
+  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
+  transition: color 0.2s, border-bottom 0.2s; }
+
+a.inline__link:hover {
+  color: #CFCFCF;
+  border-bottom: solid 1px #111; }
 
 section {
   margin: 0% 20%;

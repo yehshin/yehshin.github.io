@@ -7,26 +7,15 @@
 
 
 
-// ======
-// Global
-// ======
+// ====
+// Body
+// ====
 
 body {
   background-color: $black;
   opacity: 0;
   transition: opacity 0.4s;
   transition-delay: 0.4s;
-}
-
-a.inline__link {
-  color: $blue;
-  border-bottom: solid 1px $blue__transparent;
-  transition: color 0.2s, border-bottom 0.2s;
-}
-
-a.inline__link:hover {
-  color: $gray__light;
-  border-bottom: solid 1px $black;
 }
 
 
@@ -113,6 +102,8 @@ header {
 
 }
 
+
+
 // ======
 // Footer
 // ======
@@ -198,4 +189,21 @@ footer {
 
   }
 
+}
+
+
+
+// ============
+// Interactions
+// ============
+
+a.inline__link {
+  color: $blue;
+  border-bottom: solid 1px $blue__transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+a.inline__link:hover {
+  color: $gray__light;
+  border-bottom: solid 1px $black;
 }

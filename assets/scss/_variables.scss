@@ -2,7 +2,7 @@
 
 
 // =======
-// Spacing
+// Padding
 // =======
 
 $padding__none: 0%;
@@ -12,24 +12,30 @@ $padding__large: 30%;
 
 
 
-
-// ======
-// Sizing
-// ======
-
-// Spacing
-
-$height__small: 8px;
-$height__flexible__small: 2em;
-$height__flexible__medium: 5em;
-$height__flexible__large: 7em;
+// =======
+// Margins
+// =======
 
 $spacing__extra-small: 8px;
 $spacing__small: 16px;
 $spacing__medium: 40px;
 $spacing__large: 120px;
 
+
+
+// ======
+// Height
+// ======
+
+$height__flexible__small: 2em;
+$height__flexible__medium: 5em;
+$height__flexible__large: 7em;
+
+
+
+// =====
 // Width
+// =====
 
 $width__half: 50%;
 $width__max: 1440px;
