@@ -9,11 +9,11 @@
   box-sizing: border-box; }
 
 *::selection {
-  color: #333;
+  color: #111;
   background: #fff; }
 
 ::-moz-selection {
-  color: #333;
+  color: #111;
   background: #fff; }
 
 body {
@@ -74,7 +74,7 @@ body {
   font-family: tt-thinItalic;
   src: url(../fonts/tt/TTNorms-ThinItalic.otf); }
 body {
-  background-color: #333;
+  background-color: #111;
   opacity: 0;
   transition: opacity 0.4s;
   transition-delay: 0.4s; }
@@ -174,7 +174,7 @@ a.inline__link {
 
 a.inline__link:hover {
   color: #CFCFCF;
-  border-bottom: solid 1px #333; }
+  border-bottom: solid 1px #111; }
 
 section {
   margin: 0% 20%;
@@ -197,7 +197,7 @@ section {
       transition: color 0.2s, border-bottom 0.2s; }
     section h1 a:hover {
       color: #fff;
-      border-bottom: solid 1px #333; }
+      border-bottom: solid 1px #111; }
   @media only screen and (min-width: 1921px) {
     section {
       margin-right: auto;

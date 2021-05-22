@@ -1,7 +1,8 @@
 
 
 
-@import 'base';
+@use 'base';
+@use 'variables';
 
 
 
@@ -11,12 +12,12 @@
 
 section {
 
-  margin: $padding__none $padding__medium;
+  // margin: $padding__none;
   margin-top: $spacing__large * 2;
 
   h1 {
     color: $white;
-    font-family: tt-bold;
+    font-family: om-bold;
     font-size: $font-size__x-large;
     margin-bottom: $spacing__large * 2;
 

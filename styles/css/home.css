@@ -1,273 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  list-style: none;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box; }
+/*
+Error: Undefined variable: "$spacing__large".
+        on line 16 of scss/home.scss
 
-*::selection {
-  color: #111;
-  background: #fff; }
+11: // =======
+12: 
+13: section {
+14: 
+15:   // margin: $padding__none;
+16:   margin-top: $spacing__large * 2;
+17: 
+18:   h1 {
+19:     color: $white;
+20:     font-family: om-bold;
+21:     font-size: $font-size__x-large;
 
-::-moz-selection {
-  color: #111;
-  background: #fff; }
-
-body {
-  overflow-x: none; }
-
-@font-face {
-  font-family: tt-black;
-  src: url(../fonts/tt/TTNorms-Black.otf); }
-@font-face {
-  font-family: tt-blackItalic;
-  src: url(../fonts/tt/TTNorms-BlackItalic.otf); }
-@font-face {
-  font-family: tt-heavy;
-  src: url(../fonts/tt/TTNorms-Heavy.otf); }
-@font-face {
-  font-family: tt-heavyItalic;
-  src: url(../fonts/tt/TTNorms-HeavyItalic.otf); }
-@font-face {
-  font-family: tt-extraBold;
-  src: url(../fonts/tt/TTNorms-ExtraBold.otf); }
-@font-face {
-  font-family: tt-extraBoldItalix;
-  src: url(../fonts/tt/TTNorms-ExtraBoldItalic.otf); }
-@font-face {
-  font-family: tt-bold;
-  src: url(../fonts/tt/TTNorms-Bold.otf); }
-@font-face {
-  font-family: tt-boldItalic;
-  src: url(../fonts/tt/TTNorms-BoldItalic.otf); }
-@font-face {
-  font-family: tt-medium;
-  src: url(../fonts/tt/TTNorms-Medium.otf); }
-@font-face {
-  font-family: tt-mediumItalic;
-  src: url(../fonts/tt/TTNorms-MediumItalic.otf); }
-@font-face {
-  font-family: tt-regular;
-  src: url(../fonts/tt/TTNorms-Regular.otf); }
-@font-face {
-  font-family: tt-regularItalic;
-  src: url(../fonts/tt/TTNorms-RegularItalic.otf); }
-@font-face {
-  font-family: tt-light;
-  src: url(../fonts/tt/TTNorms-Light.otf); }
-@font-face {
-  font-family: tt-lightItalic;
-  src: url(../fonts/tt/TTNorms-LightItalic.otf); }
-@font-face {
-  font-family: tt-extraLight;
-  src: url(../fonts/tt/TTNorms-ExtraLight.otf); }
-@font-face {
-  font-family: tt-extraLightItalic;
-  src: url(../fonts/tt/TTNorms-ExtraLightItalic.otf); }
-@font-face {
-  font-family: tt-thin;
-  src: url(../fonts/tt/TTNorms-Thin.otf); }
-@font-face {
-  font-family: tt-thinItalic;
-  src: url(../fonts/tt/TTNorms-ThinItalic.otf); }
-body {
-  background-color: #111;
-  opacity: 0;
-  transition: opacity 0.4s;
-  transition-delay: 0.4s; }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 120px;
-  align-items: center; }
-
-footer {
-  height: 120px; }
-
-header a {
-  font-family: tt-bold;
-  font-size: 16px;
-  color: #fff;
-  transition: color 0.2s; }
-header a:hover {
-  color: #CFCFCF; }
-header li {
-  display: block;
-  float: right; }
-  header li a {
-    margin-left: 24px; }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      header li a {
-        margin-left: 16px; } }
-@media only screen and (min-width: 1921px) {
-  header {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1440px; } }
-@media screen and (min-width: 1024px) and (max-width: 1921px) {
-  header {
-    margin-right: 20%;
-    margin-left: 20%; } }
-@media screen and (min-width: 320px) and (max-width: 1024px) {
-  header {
-    margin-right: 4%;
-    margin-left: 4%; } }
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  header {
-    height: 100px; } }
-
-footer {
-  margin: 0% 20%;
-  margin-bottom: 2em;
-  margin-top: 240px; }
-  footer h2 {
-    color: #fff;
-    font-family: tt-bold;
-    font-size: 36px; }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      footer h2 {
-        font-size: 28px; } }
-  footer a {
-    font-family: tt-bold;
-    font-size: 16px;
-    color: #fff;
-    transition: color 0.2s; }
-  footer a:hover {
-    color: #CFCFCF; }
-  footer li {
-    margin-top: 40px; }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      footer li {
-        margin-top: 24px; } }
-    footer li a {
-      margin-right: 16px; }
-      @media screen and (min-width: 320px) and (max-width: 768px) {
-        footer li a {
-          display: inline-block;
-          margin-right: 12px;
-          margin-bottom: 8px; } }
-  @media only screen and (min-width: 1921px) {
-    footer {
-      margin-right: auto;
-      margin-left: auto;
-      width: 1440px; } }
-  @media screen and (min-width: 1024px) and (max-width: 1921px) {
-    footer {
-      margin-right: 20%;
-      margin-left: 20%; } }
-  @media screen and (min-width: 320px) and (max-width: 1024px) {
-    footer {
-      margin-right: 4%;
-      margin-left: 4%; } }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    footer {
-      margin-top: 120px; } }
-
-a.inline__link {
-  color: #3884F8;
-  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
-  transition: color 0.2s, border-bottom 0.2s; }
-
-a.inline__link:hover {
-  color: #CFCFCF;
-  border-bottom: solid 1px #111; }
-
-section {
-  margin: 0% 20%;
-  margin-top: 240px; }
-  section h1 {
-    color: #fff;
-    font-family: tt-bold;
-    font-size: 80px;
-    margin-bottom: 240px; }
-    @media only screen and (min-width: 1921px) {
-      section h1 {
-        margin-right: 20%; } }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      section h1 {
-        font-size: 28px;
-        margin-bottom: 120px; } }
-    section h1 a {
-      color: #3884F8;
-      border-bottom: solid 1px rgba(56, 132, 248, 0.4);
-      transition: color 0.2s, border-bottom 0.2s; }
-    section h1 a:hover {
-      color: #fff;
-      border-bottom: solid 1px #111; }
-  @media only screen and (min-width: 1921px) {
-    section {
-      margin-right: auto;
-      margin-left: auto;
-      width: 1440px; } }
-  @media screen and (min-width: 1024px) and (max-width: 1921px) {
-    section {
-      margin-right: 20%;
-      margin-left: 20%; } }
-  @media screen and (min-width: 320px) and (max-width: 1024px) {
-    section {
-      margin-right: 4%;
-      margin-left: 4%; } }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    section {
-      margin-top: 120px; } }
-  section div.project {
-    margin-bottom: 120px; }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      section div.project {
-        margin-bottom: 40px; } }
-    section div.project a.project__thumbnail {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 24px; }
-      @media screen and (min-width: 320px) and (max-width: 768px) {
-        section div.project a.project__thumbnail {
-          margin-bottom: 12px; } }
-      section div.project a.project__thumbnail div.project-type-pill {
-        position: relative;
-        top: 64px;
-        left: 24px;
-        border-radius: 4px;
-        display: inline-block;
-        z-index: 100;
-        background-color: rgba(17, 17, 17, 0.8);
-        padding: 12px 24px;
-        box-shadow: 0px 16px 24px 0px rgba(17, 17, 17, 0.24); }
-        @media screen and (min-width: 320px) and (max-width: 768px) {
-          section div.project a.project__thumbnail div.project-type-pill {
-            top: 48px;
-            left: 12px;
-            padding: 8px 16px; } }
-        section div.project a.project__thumbnail div.project-type-pill p {
-          color: #fff;
-          font-family: tt-bold;
-          font-size: 16px; }
-      section div.project a.project__thumbnail img {
-        width: 100%;
-        height: auto;
-        transition: filter 0.2s; }
-      section div.project a.project__thumbnail img:hover {
-        filter: brightness(0.4); }
-    section div.project h2 {
-      color: #fff;
-      font-family: tt-bold;
-      font-size: 36px;
-      margin-bottom: 16px; }
-      @media screen and (min-width: 320px) and (max-width: 768px) {
-        section div.project h2 {
-          font-size: 28px;
-          margin-bottom: 8px; } }
-    section div.project p {
-      color: #CFCFCF;
-      font-family: tt-medium;
-      font-size: 20px; }
-      @media screen and (min-width: 320px) and (max-width: 768px) {
-        section div.project p {
-          font-size: 16px;
-          line-height: 140%; } }
-
-/*# sourceMappingURL=home.css.map */
+Backtrace:
+scss/home.scss:16
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/operation.rb:67:in `_perform'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$spacing__large\".\A         on line 16 of scss/home.scss\A \A 11: // =======\A 12: \A 13: section {\A 14: \A 15:   // margin: $padding__none;\A 16:   margin-top: $spacing__large * 2;\A 17: \A 18:   h1 {\A 19:     color: $white;\A 20:     font-family: om-bold;\A 21:     font-size: $font-size__x-large;"; }

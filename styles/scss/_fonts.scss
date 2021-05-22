@@ -1,96 +1,42 @@
 
 
 
-// =================
-// TT-Norms
-// =================
+// ================
+// LibreBaskerville
+// ================
 
 @font-face {
-    font-family: tt-black;
-    src: url(../fonts/tt/TTNorms-Black.otf);
+    font-family: lb-bold;
+    src: url(../fonts/lb/LibreBaskerville-Bold.ttf);
 }
 
 @font-face {
-    font-family: tt-blackItalic;
-    src: url(../fonts/tt/TTNorms-BlackItalic.otf);
+    font-family: lb-regular;
+    src: url(../fonts/lb/LibreBaskerville-Regular.ttf);
+}
+
+
+
+// =============
+// Overpass Mono
+// =============
+
+@font-face {
+    font-family: om-bold;
+    src: url(../fonts/om/OverpassMono-Bold.ttf);
 }
 
 @font-face {
-    font-family: tt-heavy;
-    src: url(../fonts/tt/TTNorms-Heavy.otf);
+    font-family: om-semibold;
+    src: url(../fonts/lb/OverpassMono-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: tt-heavyItalic;
-    src: url(../fonts/tt/TTNorms-HeavyItalic.otf);
+    font-family: om-regular;
+    src: url(../fonts/lb/OverpassMono-Regular.ttf);
 }
 
 @font-face {
-    font-family: tt-extraBold;
-    src: url(../fonts/tt/TTNorms-ExtraBold.otf);
-}
-
-@font-face {
-    font-family: tt-extraBoldItalix;
-    src: url(../fonts/tt/TTNorms-ExtraBoldItalic.otf);
-}
-
-@font-face {
-    font-family: tt-bold;
-    src: url(../fonts/tt/TTNorms-Bold.otf);
-}
-
-@font-face {
-    font-family: tt-boldItalic;
-    src: url(../fonts/tt/TTNorms-BoldItalic.otf);
-}
-
-@font-face {
-    font-family: tt-medium;
-    src: url(../fonts/tt/TTNorms-Medium.otf);
-}
-
-@font-face {
-    font-family: tt-mediumItalic;
-    src: url(../fonts/tt/TTNorms-MediumItalic.otf);
-}
-
-@font-face {
-    font-family: tt-regular;
-    src: url(../fonts/tt/TTNorms-Regular.otf);
-}
-
-@font-face {
-    font-family: tt-regularItalic;
-    src: url(../fonts/tt/TTNorms-RegularItalic.otf);
-}
-
-@font-face {
-    font-family: tt-light;
-    src: url(../fonts/tt/TTNorms-Light.otf);
-}
-
-@font-face {
-    font-family: tt-lightItalic;
-    src: url(../fonts/tt/TTNorms-LightItalic.otf);
-}
-
-@font-face {
-    font-family: tt-extraLight;
-    src: url(../fonts/tt/TTNorms-ExtraLight.otf);
-}
-
-@font-face {
-    font-family: tt-extraLightItalic;
-    src: url(../fonts/tt/TTNorms-ExtraLightItalic.otf);
-}
-
-@font-face {
-    font-family: tt-thin;
-    src: url(../fonts/tt/TTNorms-Thin.otf);
-}
-
-@font-face {
-    font-family: tt-thinItalic;
-    src: url(../fonts/tt/TTNorms-ThinItalic.otf);
+    font-family: om-light;
+    src: url(../fonts/lb/OverpassMono-Light.ttf);
 }
