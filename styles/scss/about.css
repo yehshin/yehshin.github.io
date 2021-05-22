@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+*::selection {
+  color: #333;
+  background: #fff; }
+
+::-moz-selection {
+  color: #333;
+  background: #fff; }
+
+body {
+  overflow-x: none; }
+
+@font-face {
+  font-family: tt-black;
+  src: url(../fonts/tt/TTNorms-Black.otf); }
+@font-face {
+  font-family: tt-blackItalic;
+  src: url(../fonts/tt/TTNorms-BlackItalic.otf); }
+@font-face {
+  font-family: tt-heavy;
+  src: url(../fonts/tt/TTNorms-Heavy.otf); }
+@font-face {
+  font-family: tt-heavyItalic;
+  src: url(../fonts/tt/TTNorms-HeavyItalic.otf); }
+@font-face {
+  font-family: tt-extraBold;
+  src: url(../fonts/tt/TTNorms-ExtraBold.otf); }
+@font-face {
+  font-family: tt-extraBoldItalix;
+  src: url(../fonts/tt/TTNorms-ExtraBoldItalic.otf); }
+@font-face {
+  font-family: tt-bold;
+  src: url(../fonts/tt/TTNorms-Bold.otf); }
+@font-face {
+  font-family: tt-boldItalic;
+  src: url(../fonts/tt/TTNorms-BoldItalic.otf); }
+@font-face {
+  font-family: tt-medium;
+  src: url(../fonts/tt/TTNorms-Medium.otf); }
+@font-face {
+  font-family: tt-mediumItalic;
+  src: url(../fonts/tt/TTNorms-MediumItalic.otf); }
+@font-face {
+  font-family: tt-regular;
+  src: url(../fonts/tt/TTNorms-Regular.otf); }
+@font-face {
+  font-family: tt-regularItalic;
+  src: url(../fonts/tt/TTNorms-RegularItalic.otf); }
+@font-face {
+  font-family: tt-light;
+  src: url(../fonts/tt/TTNorms-Light.otf); }
+@font-face {
+  font-family: tt-lightItalic;
+  src: url(../fonts/tt/TTNorms-LightItalic.otf); }
+@font-face {
+  font-family: tt-extraLight;
+  src: url(../fonts/tt/TTNorms-ExtraLight.otf); }
+@font-face {
+  font-family: tt-extraLightItalic;
+  src: url(../fonts/tt/TTNorms-ExtraLightItalic.otf); }
+@font-face {
+  font-family: tt-thin;
+  src: url(../fonts/tt/TTNorms-Thin.otf); }
+@font-face {
+  font-family: tt-thinItalic;
+  src: url(../fonts/tt/TTNorms-ThinItalic.otf); }
+body {
+  background-color: #333;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: 0.4s; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center; }
+
+footer {
+  height: 120px; }
+
+header a {
+  font-family: tt-bold;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.2s; }
+header a:hover {
+  color: #CFCFCF; }
+header li {
+  display: block;
+  float: right; }
+  header li a {
+    margin-left: 24px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      header li a {
+        margin-left: 16px; } }
+@media only screen and (min-width: 1921px) {
+  header {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px; } }
+@media screen and (min-width: 1024px) and (max-width: 1921px) {
+  header {
+    margin-right: 20%;
+    margin-left: 20%; } }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  header {
+    margin-right: 4%;
+    margin-left: 4%; } }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    height: 100px; } }
+
+footer {
+  margin: 0% 20%;
+  margin-bottom: 2em;
+  margin-top: 240px; }
+  footer h2 {
+    color: #fff;
+    font-family: tt-bold;
+    font-size: 36px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      footer h2 {
+        font-size: 28px; } }
+  footer a {
+    font-family: tt-bold;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.2s; }
+  footer a:hover {
+    color: #CFCFCF; }
+  footer li {
+    margin-top: 40px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      footer li {
+        margin-top: 24px; } }
+    footer li a {
+      margin-right: 16px; }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        footer li a {
+          display: inline-block;
+          margin-right: 12px;
+          margin-bottom: 8px; } }
+  @media only screen and (min-width: 1921px) {
+    footer {
+      margin-right: auto;
+      margin-left: auto;
+      width: 1440px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1921px) {
+    footer {
+      margin-right: 20%;
+      margin-left: 20%; } }
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    footer {
+      margin-right: 4%;
+      margin-left: 4%; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    footer {
+      margin-top: 120px; } }
+
+a.inline__link {
+  color: #3884F8;
+  border-bottom: solid 1px rgba(56, 132, 248, 0.4);
+  transition: color 0.2s, border-bottom 0.2s; }
+
+a.inline__link:hover {
+  color: #CFCFCF;
+  border-bottom: solid 1px #333; }
+
+article.copy {
+  margin: 0% 30%;
+  margin-top: 120px; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    article.copy {
+      margin: 0% 4%;
+      margin-top: 80px; } }
+  article.copy p.large {
+    color: #CFCFCF;
+    font-family: tt-medium;
+    font-size: 28px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.copy p.large {
+        font-size: 20px; } }
+  article.copy img {
+    width: 100%;
+    height: auto; }
+
+article.timeline {
+  margin: 0% 30%;
+  margin-top: 120px; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    article.timeline {
+      margin: 0% 4%;
+      margin-top: 80px; } }
+  article.timeline h2 {
+    color: #fff;
+    font-family: tt-bold;
+    font-size: 36px;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.timeline h2 {
+        font-size: 28px; } }
+  article.timeline ul {
+    display: block;
+    font-size: 20px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.timeline ul {
+        font-size: 16px; } }
+    article.timeline ul li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px; }
+      article.timeline ul li span.left {
+        color: #fff;
+        font-family: tt-bold; }
+      article.timeline ul li span.right {
+        color: #CFCFCF;
+        font-family: tt-medium;
+        text-align: right; }
+    article.timeline ul span.bottom {
+      display: inline-block;
+      color: #CFCFCF;
+      font-family: tt-medium;
+      margin-top: 12px; }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        article.timeline ul span.bottom {
+          margin-top: 8px; } }
+
+article.faq {
+  margin: 0% 30%;
+  margin-top: 120px; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    article.faq {
+      margin: 0% 4%;
+      margin-top: 80px; } }
+  article.faq h2 {
+    color: #fff;
+    font-family: tt-bold;
+    font-size: 36px;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.faq h2 {
+        font-size: 28px; } }
+  article.faq p.question {
+    color: #fff;
+    font-family: tt-bold;
+    font-size: 20px;
+    margin-bottom: 16px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.faq p.question {
+        font-size: 16px;
+        margin-bottom: 8px; } }
+  article.faq p.answer {
+    color: #CFCFCF;
+    font-family: tt-medium;
+    font-size: 20px;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      article.faq p.answer {
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 140%; } }
+
+section.col-1 {
+  display: block;
+  margin: 0% 20%;
+  margin-top: 7em; }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    section.col-1 {
+      margin: 0% 4%;
+      margin-top: 5em; } }
+  section.col-1 img {
+    display: inline-block;
+    width: 100%;
+    height: auto; }
+
+/*# sourceMappingURL=about.css.map */
