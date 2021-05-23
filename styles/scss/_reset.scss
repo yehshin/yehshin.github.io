@@ -1,7 +1,7 @@
 
 
 
-@use'variables';
+@import 'variables';
 
 
 
@@ -28,4 +28,6 @@
 
 body {
   overflow-x: none;
+  -moz-osx-font-smoothing: grayscale; /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased; /*(For Chrome and Safari)*/
 }

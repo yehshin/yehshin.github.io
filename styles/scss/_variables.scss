@@ -38,7 +38,7 @@ $height__flexible__large: 7em;
 // =====
 
 $width__half: 50%;
-$width__max: 1440px;
+$width__max: 1280px;
 
 
 
@@ -48,11 +48,22 @@ $width__max: 1440px;
 
 // Font Sizes
 
-$font-size__small: 16px;         // $font-size__extra-small
-$font-size__body: 20px;          // $font-size__small
-$font-size__body-large: 28px;    // $font-size__medium
-$font-size__sub-header: 36px;    // $font-size__large
-$font-size__x-large: 80px;       // $font-size__extra-large
+$font-size__12: 12px;
+$font-size__14: 14px;
+$font-size__16: 16px;
+$font-size__18: 18px;
+$font-size__20: 20px;
+$font-size__24: 24px;
+$font-size__40: 40px;
+$font-size__72: 72px;
+
+// $font-size__small: 16px;         // $font-size__extra-small
+// $font-size__body: 20px;          // $font-size__small
+// $font-size__body-large: 28px;    // $font-size__medium
+// $font-size__sub-header: 36px;    // $font-size__large
+// $font-size__x-large: 80px;       // $font-size__extra-large
+
+
 
 // Line Height
 
@@ -66,13 +77,23 @@ $line-height__body__small: 140%;
 // ======
 
 $black: #111;
+$gray: #F8F8F8;
+$white: #fff;
+
+$dark_blue: #3D4961;
+$orange: #C78758;
+$maroon: #BA969D;
+
+
+
+
+
 $black__transparent: rgba(17, 17, 17, 0.8);
 $white: #fff;
 $gray__dark: #222;
 $gray__light: #CFCFCF;
 $blue: #3884F8;
 $blue__transparent: rgba(56, 132, 248, 0.4);
-
 
 
 // ===========
@@ -88,7 +109,7 @@ $heavy-shadow: 0px 40px 40px 0px rgba(17, 17, 17, 0.80);
 // Breakpoints
 // ===========
 
-$breakpoint__extra-large: 1921px;
-$breakpoint__large: 1024px;
-$breakpoint__medium: 768px;
-$breakpoint__small: 320px;
+$breakpoint__extra-large: 2560px;
+$breakpoint__large: 1440px;
+$breakpoint__medium: 834px;
+$breakpoint__small: 375px;

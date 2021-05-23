@@ -1,0 +1,112 @@
+
+
+
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+
+
+
+// ======
+// Footer
+// ======
+
+// footer {
+//   @extend %footer-base;
+
+//   margin: $padding__none $padding__medium;
+//   margin-bottom: $height__flexible__small;
+//   margin-top: $spacing__large * 2;
+
+//   h2 {
+//     color: $white;
+//     font-family: tt-bold;
+//     font-size: $font-size__sub-header;
+
+//     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+//       font-size: $font-size__body-large;
+
+//     }
+
+//   }
+
+//   a {
+//     font-family: tt-bold;
+//     font-size: $font-size__small;
+//     color: $white;
+//     transition: color 0.2s;
+//   }
+
+//   a:hover {
+//     color: $gray__light;
+//   }
+
+//   li {
+//     margin-top: $spacing__medium;
+
+//     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+//       margin-top: $spacing__extra-small * 3;
+
+//     }
+
+//     a {
+//       margin-right: $spacing__small;
+
+//       @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+//         display: inline-block;
+//         margin-right: $spacing__extra-small + $spacing__extra-small/2;
+//         margin-bottom: $spacing__extra-small;
+
+//       }
+//     }
+//   }
+
+//   @media only screen and (min-width: $breakpoint__extra-large)   {
+
+//     margin-right: auto;
+//     margin-left: auto;
+//     width: $width__max;
+
+//   }
+
+//   @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+
+//     margin-right: $padding__medium;
+//     margin-left: $padding__medium;
+
+//   }
+
+//   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+//     margin-right: $padding__small;
+//     margin-left: $padding__small;
+
+//   }
+
+//   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+//     margin-top: $spacing__large;
+
+//   }
+
+// }
+
+
+
+// ============
+// Interactions
+// ============
+
+// a.inline__link {
+//   color: $blue;
+//   border-bottom: solid 1px $blue__transparent;
+//   transition: color 0.2s, border-bottom 0.2s;
+// }
+
+// a.inline__link:hover {
+//   color: $gray__light;
+//   border-bottom: solid 1px $black;
+// }

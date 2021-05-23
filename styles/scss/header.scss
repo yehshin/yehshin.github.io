@@ -1,0 +1,78 @@
+
+
+
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+
+
+
+// ==========
+// Extensions
+// ==========
+
+%nav-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: $width__max;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+// ======
+// Header
+// ======
+
+header {
+  @extend %nav-base;
+
+  a {
+    font-family: OverpassMono-Bold;
+    font-size: $font-size__20;
+    color: $black;
+  }
+
+  a:hover {
+    // color: $gray__light;
+  }
+
+  @media only screen and (min-width: $breakpoint__extra-large)   {
+
+    // margin-right: auto;
+    // margin-left: auto;
+    // width: $width__max;
+
+  }
+
+  @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+
+    // margin-right: $padding__medium;
+    // margin-left: $padding__medium;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+    // margin-right: $padding__small;
+    // margin-left: $padding__small;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+    // height: $spacing__medium * 2.5;
+
+  }
+
+}
+
+

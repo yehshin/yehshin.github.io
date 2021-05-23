@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+*::selection {
+  color: #111;
+  background: #fff; }
+
+::-moz-selection {
+  color: #111;
+  background: #fff; }
+
+body {
+  overflow-x: none;
+  -moz-osx-font-smoothing: grayscale;
+  /*(For Firefox)*/
+  -webkit-font-smoothing: antialiased;
+  /*(For Chrome and Safari)*/ }
+
+@font-face {
+  font-family: LibreBaskerville-Bold;
+  src: url(../fonts/lb/LibreBaskerville-Bold.ttf); }
+@font-face {
+  font-family: LibreBaskerville-Regular;
+  src: url(../fonts/lb/LibreBaskerville-Regular.ttf); }
+@font-face {
+  font-family: OverpassMono-Bold;
+  src: url(../fonts/om/OverpassMono-Bold.ttf); }
+@font-face {
+  font-family: OverpassMono-SemiBold;
+  src: url(../fonts/lb/OverpassMono-SemiBold.ttf); }
+@font-face {
+  font-family: OverpassMono-Regular;
+  src: url(../fonts/lb/OverpassMono-Regular.ttf); }
+@font-face {
+  font-family: OverpassMono-Light;
+  src: url(../fonts/lb/OverpassMono-Light.ttf); }
+
+/*# sourceMappingURL=footer.css.map */

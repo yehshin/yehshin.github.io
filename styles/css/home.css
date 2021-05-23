@@ -1,74 +1,34 @@
-/*
-Error: Undefined variable: "$spacing__large".
-        on line 16 of scss/home.scss
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
 
-11: // =======
-12: 
-13: section {
-14: 
-15:   // margin: $padding__none;
-16:   margin-top: $spacing__large * 2;
-17: 
-18:   h1 {
-19:     color: $white;
-20:     font-family: om-bold;
-21:     font-size: $font-size__x-large;
+section.hero {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section.hero h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: LibreBaskerville-Regular;
+    font-size: 72px;
+    color: #111;
+    text-align: center;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; }
+    section.hero h1 a {
+      color: #111;
+      text-decoration: underline; }
 
-Backtrace:
-scss/home.scss:16
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/operation.rb:67:in `_perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$spacing__large\".\A         on line 16 of scss/home.scss\A \A 11: // =======\A 12: \A 13: section {\A 14: \A 15:   // margin: $padding__none;\A 16:   margin-top: $spacing__large * 2;\A 17: \A 18:   h1 {\A 19:     color: $white;\A 20:     font-family: om-bold;\A 21:     font-size: $font-size__x-large;"; }
+/*# sourceMappingURL=home.css.map */
