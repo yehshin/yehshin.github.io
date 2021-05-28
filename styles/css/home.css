@@ -1,7 +1,8 @@
 section.hero {
   background-color: #F8F8F8;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  position: relative; }
   section.hero h1 {
     width: 100%;
     max-width: 1280px;
@@ -17,5 +18,33 @@ section.hero {
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased; }
+    section.hero h1 a {
+      text-decoration: underline;
+      color: #111; }
+  section.hero article {
+    opacity: 40%; }
+    section.hero article div#circle-1 {
+      width: 600px;
+      height: 600px;
+      background-color: #3D4961;
+      border-radius: 5000px;
+      margin-left: auto;
+      margin-right: auto; }
+    section.hero article div#circle-2 {
+      width: 600px;
+      height: 600px;
+      background-color: #C78758;
+      border-radius: 5000px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: auto;
+      margin-right: auto; }
+    section.hero article div#circle-3 {
+      width: 600px;
+      height: 600px;
+      background-color: #BA969D;
+      border-radius: 5000px;
+      margin-left: auto;
+      margin-right: auto; }
 
 /*# sourceMappingURL=home.css.map */
