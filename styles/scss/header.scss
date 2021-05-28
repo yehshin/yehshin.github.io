@@ -7,33 +7,24 @@
 
 
 
-// ==========
-// Extensions
-// ==========
-
-%nav-base {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  width: $width__max;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-
 // ======
 // Header
 // ======
 
 header {
-  @extend %nav-base;
+
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: blue;
+  // z-index: 100;
+  // position: absolute;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
   a {
     font-family: OverpassMono-Bold;
@@ -47,9 +38,7 @@ header {
 
   @media only screen and (min-width: $breakpoint__extra-large)   {
 
-    // margin-right: auto;
-    // margin-left: auto;
-    // width: $width__max;
+    // width: auto;
 
   }
 
