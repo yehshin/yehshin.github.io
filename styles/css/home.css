@@ -8,6 +8,7 @@ section.hero {
   background-repeat: no-repeat;
   background-size: cover; }
   section.hero h1 {
+    z-index: 100;
     width: 100%;
     max-width: 1280px;
     margin: 0;
@@ -25,10 +26,47 @@ section.hero {
     section.hero h1 a {
       text-decoration: underline;
       color: #111; }
+    section.hero h1 span {
+      float: left;
+      opacity: 0;
+      animation-name: titleAnimation;
+      animation-timing-function: ease;
+      animation-duration: 1s;
+      animation-delay: 0.5s;
+      -webkit-animation-fill-mode: forwards; }
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   section.hero img.circles {
     top: 0;
     height: 100vh;
     display: block;
-    margin: auto; }
+    margin: auto;
+    animation-name: fadeIn;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0; }
+
+section.projects {
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  background-color: red;
+  float: left; }
+  section.projects a {
+    display: block;
+    opacity: 0.4;
+    background-color: red; }
 
 /*# sourceMappingURL=home.css.map */
