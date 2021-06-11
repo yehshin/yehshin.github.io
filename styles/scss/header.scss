@@ -18,13 +18,12 @@ header {
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 80px;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
-  // background-color: blue;
-  // z-index: 100;
-  // position: absolute;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  text-align: center;
 
   a {
     font-family: OverpassMono-Bold;
