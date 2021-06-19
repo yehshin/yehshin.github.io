@@ -34,13 +34,13 @@ body {
   src: url(../fonts/om/OverpassMono-Bold.ttf); }
 @font-face {
   font-family: OverpassMono-SemiBold;
-  src: url(../fonts/lb/OverpassMono-SemiBold.ttf); }
+  src: url(../fonts/om/OverpassMono-SemiBold.ttf); }
 @font-face {
   font-family: OverpassMono-Regular;
-  src: url(../fonts/lb/OverpassMono-Regular.ttf); }
+  src: url(../fonts/om/OverpassMono-Regular.ttf); }
 @font-face {
   font-family: OverpassMono-Light;
-  src: url(../fonts/lb/OverpassMono-Light.ttf); }
+  src: url(../fonts/om/OverpassMono-Light.ttf); }
 header {
   max-width: 1280px;
   display: flex;

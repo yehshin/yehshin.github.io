@@ -31,14 +31,29 @@ footer {
 
             div.col {
 
+                h2 {
+                    font-family: LibreBaskerville-Regular;
+                    font-size: $font-size__24    
+                }
+
                 div.job {
                     display: grid;
                     grid-template-columns: auto auto;
+
+                    p.list-title {
+                        font-family: OverpassMono-Regular;
+                        font-size: $font-size__16    
+                    }
+    
+                    p {
+                        font-family: OverpassMono-Regular;
+                        font-size: $font-size__14    
+                    }
                 }
-            }
+            }            
         }
     }
-}
+} 
 
 
 

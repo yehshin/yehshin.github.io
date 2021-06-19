@@ -34,13 +34,13 @@ body {
   src: url(../fonts/om/OverpassMono-Bold.ttf); }
 @font-face {
   font-family: OverpassMono-SemiBold;
-  src: url(../fonts/lb/OverpassMono-SemiBold.ttf); }
+  src: url(../fonts/om/OverpassMono-SemiBold.ttf); }
 @font-face {
   font-family: OverpassMono-Regular;
-  src: url(../fonts/lb/OverpassMono-Regular.ttf); }
+  src: url(../fonts/om/OverpassMono-Regular.ttf); }
 @font-face {
   font-family: OverpassMono-Light;
-  src: url(../fonts/lb/OverpassMono-Light.ttf); }
+  src: url(../fonts/om/OverpassMono-Light.ttf); }
 footer {
   background-color: #111;
   color: #fff;
@@ -54,8 +54,17 @@ footer {
     footer section article.cols {
       display: grid;
       grid-template-columns: auto auto; }
+      footer section article.cols div.col h2 {
+        font-family: LibreBaskerville-Regular;
+        font-size: 24px; }
       footer section article.cols div.col div.job {
         display: grid;
         grid-template-columns: auto auto; }
+        footer section article.cols div.col div.job p.list-title {
+          font-family: OverpassMono-Regular;
+          font-size: 16px; }
+        footer section article.cols div.col div.job p {
+          font-family: OverpassMono-Regular;
+          font-size: 14px; }
 
 /*# sourceMappingURL=footer.css.map */
