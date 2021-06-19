@@ -11,6 +11,46 @@
 // Footer
 // ======
 
+footer {
+
+    background-color: $black;
+    color: $white;
+
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    section {
+        max-width: $max-width - 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        article.cols {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            div.col {
+
+                div.job {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // footer {
 //   @extend %footer-base;
 

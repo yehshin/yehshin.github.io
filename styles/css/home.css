@@ -60,13 +60,14 @@ section.hero {
 
 section.projects {
   max-width: 1280px;
-  width: 100%;
+  width: 1280px;
   height: auto;
-  background-color: red;
-  float: left; }
-  section.projects a {
-    display: block;
-    opacity: 0.4;
-    background-color: red; }
+  margin-left: auto;
+  margin-right: auto; }
+  section.projects article {
+    margin-top: 80px; }
+    section.projects article img {
+      width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=home.css.map */

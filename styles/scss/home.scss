@@ -139,16 +139,20 @@ section.hero {
 // ========
 
 section.projects {
-  max-width: $max-width;
-  width: 100%;
+  max-width: $width__max;
+  width: $width__max;
   height: auto;
-  background-color: red;
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
 
-  a {
-    display: block;
-    opacity: 0.4;
-    background-color: red;
+  article {
+    margin-top: 80px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
   }
   
 }
