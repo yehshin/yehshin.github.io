@@ -28,30 +28,66 @@ footer {
         article.cols {
             display: grid;
             grid-template-columns: auto auto;
+            grid-column-gap: 160px;
 
             div.col {
 
+                display: grid;
+                margin-bottom: 80px;
+                grid-row-gap: 16px;
+
                 h2 {
                     font-family: LibreBaskerville-Regular;
-                    font-size: $font-size__24    
+                    font-size: $font-size__24; 
+
+                    margin-bottom: 8px;
                 }
 
                 div.job {
                     display: grid;
                     grid-template-columns: auto auto;
+                    // margin-bottom: 16px;
 
                     p.list-title {
                         font-family: OverpassMono-Regular;
-                        font-size: $font-size__16    
+                        font-size: $font-size__16;
+                    }
+
+                    p.duration, p.job-title {
+                        color: $gray2;
+                    }
+
+                    p.job-title {
+                        text-align: right;
                     }
     
                     p {
                         font-family: OverpassMono-Regular;
-                        font-size: $font-size__14    
+                        font-size: $font-size__14;       
                     }
                 }
             }            
         }
+
+        article.social-icon-group {
+            text-align: center;
+
+            img.social-icon {
+                margin-right: 12px;
+                margin-bottom: 40px;
+            }
+
+            #spotify {
+                margin-right: 0px;
+            }
+
+            p {
+                font-family: OverpassMono-Regular;
+                font-size: $font-size__12;   
+            }
+
+        }
+
     }
 } 
 

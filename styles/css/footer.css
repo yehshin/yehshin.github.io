@@ -53,18 +53,38 @@ footer {
     margin-right: auto; }
     footer section article.cols {
       display: grid;
-      grid-template-columns: auto auto; }
-      footer section article.cols div.col h2 {
-        font-family: LibreBaskerville-Regular;
-        font-size: 24px; }
-      footer section article.cols div.col div.job {
+      grid-template-columns: auto auto;
+      grid-column-gap: 160px; }
+      footer section article.cols div.col {
         display: grid;
-        grid-template-columns: auto auto; }
-        footer section article.cols div.col div.job p.list-title {
-          font-family: OverpassMono-Regular;
-          font-size: 16px; }
-        footer section article.cols div.col div.job p {
-          font-family: OverpassMono-Regular;
-          font-size: 14px; }
+        margin-bottom: 80px;
+        grid-row-gap: 16px; }
+        footer section article.cols div.col h2 {
+          font-family: LibreBaskerville-Regular;
+          font-size: 24px;
+          margin-bottom: 8px; }
+        footer section article.cols div.col div.job {
+          display: grid;
+          grid-template-columns: auto auto; }
+          footer section article.cols div.col div.job p.list-title {
+            font-family: OverpassMono-Regular;
+            font-size: 16px; }
+          footer section article.cols div.col div.job p.duration, footer section article.cols div.col div.job p.job-title {
+            color: #A2A2A2; }
+          footer section article.cols div.col div.job p.job-title {
+            text-align: right; }
+          footer section article.cols div.col div.job p {
+            font-family: OverpassMono-Regular;
+            font-size: 14px; }
+    footer section article.social-icon-group {
+      text-align: center; }
+      footer section article.social-icon-group img.social-icon {
+        margin-right: 12px;
+        margin-bottom: 40px; }
+      footer section article.social-icon-group #spotify {
+        margin-right: 0px; }
+      footer section article.social-icon-group p {
+        font-family: OverpassMono-Regular;
+        font-size: 12px; }
 
 /*# sourceMappingURL=footer.css.map */
