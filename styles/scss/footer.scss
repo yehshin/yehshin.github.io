@@ -18,59 +18,77 @@ footer {
 
     margin-top: 80px;
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 
     section {
-        max-width: $max-width - 400px;
+        max-width: $max-width -  400px;
         margin-left: auto;
         margin-right: auto;
 
-        article.cols {
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-column-gap: 160px;
-
-            div.col {
-
-                display: grid;
-                margin-bottom: 80px;
-                grid-row-gap: 16px;
-
-                h2 {
-                    font-family: LibreBaskerville-Regular;
-                    font-size: $font-size__24; 
-
-                    margin-bottom: 8px;
-                }
-
-                div.job {
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    // margin-bottom: 16px;
-
-                    p.list-title {
-                        font-family: OverpassMono-Regular;
-                        font-size: $font-size__16;
-                    }
-
-                    p.duration, p.job-title {
-                        color: $gray2;
-                    }
-
-                    p.job-title {
-                        text-align: right;
-                    }
-    
-                    p {
-                        font-family: OverpassMono-Regular;
-                        font-size: $font-size__14;       
-                    }
-                }
-            }            
+        h1 {
+            font-family: LibreBaskerville-Regular;
+            font-size: $font-size__24; 
         }
 
-        article.social-icon-group {
+        p {
+            font-family: OverpassMono-Regular;
+        }
+
+        p.company {
+            font-size: 16px;
+        }
+
+        p.job, p.tenure, p.published {
+            font-size: 14px;
+            color: $gray2;
+        }
+
+        // Experience + Writing
+
+        article.experience-writing {
+            display: grid;  
+            grid-template-columns: repeat(2, auto);
+            grid-column-gap: 160px;
+            margin-bottom: 7rem;
+
+            // Experience 
+
+            div.role {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+                p.company {
+                    grid-column: 1 / span 2;
+                }
+
+                p.tenure {
+                    text-align: right;
+                }
+
+            }
+
+            // Writing
+
+            div.article {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+                p.title {
+                    grid-column: 1 / span 2;
+                }
+
+            }
+
+        }
+
+
+
+        // Social Icons + Last Updated
+
+        article.social {
             text-align: center;
+
+            // Social Icons
 
             img.social-icon {
                 margin-right: 12px;
@@ -80,6 +98,8 @@ footer {
             #spotify {
                 margin-right: 0px;
             }
+
+            // Last Updated
 
             p {
                 font-family: OverpassMono-Regular;
@@ -93,7 +113,51 @@ footer {
 
 
 
+        // article.cols {
+        //     display: grid;
+        //     grid-template-columns: repeat(2, auto);
+        //     grid-column-gap: 13rem;
 
+        //     div.col {
+
+        //         display: grid;
+        //         margin-bottom: 80px;
+        //         grid-row-gap: 16px;
+
+
+        //         h2 {
+        //             font-family: LibreBaskerville-Regular;
+        //             font-size: $font-size__24; 
+
+        //             margin-bottom: 24px;
+        //         }
+
+        //         div.job {
+        //             display: grid;
+        //             grid-template-columns: auto auto;
+        //             line-height: 24px;
+        //             margin-bottom: 0px;
+
+        //             p.list-title {
+        //                 font-family: OverpassMono-Regular;
+        //                 font-size: $font-size__16;
+        //             }
+
+        //             p.duration, p.job-title {
+        //                 color: $gray2;
+        //             }
+
+        //             p.duration {
+        //                 text-align: right;
+        //             }
+    
+        //             p {
+        //                 font-family: OverpassMono-Regular;
+        //                 font-size: $font-size__14;       
+        //             }
+        //         }
+        //     }            
+        // }
 
 
 

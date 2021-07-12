@@ -46,44 +46,46 @@ footer {
   color: #fff;
   margin-top: 80px;
   padding-top: 80px;
-  padding-bottom: 40px; }
+  padding-bottom: 80px; }
   footer section {
     max-width: 880px;
     margin-left: auto;
     margin-right: auto; }
-    footer section article.cols {
+    footer section h1 {
+      font-family: LibreBaskerville-Regular;
+      font-size: 24px; }
+    footer section p {
+      font-family: OverpassMono-Regular; }
+    footer section p.company {
+      font-size: 16px; }
+    footer section p.job, footer section p.tenure, footer section p.published {
+      font-size: 14px;
+      color: #A2A2A2; }
+    footer section article.experience-writing {
       display: grid;
-      grid-template-columns: auto auto;
-      grid-column-gap: 160px; }
-      footer section article.cols div.col {
+      grid-template-columns: repeat(2, auto);
+      grid-column-gap: 160px;
+      margin-bottom: 7rem; }
+      footer section article.experience-writing div.role {
         display: grid;
-        margin-bottom: 80px;
-        grid-row-gap: 16px; }
-        footer section article.cols div.col h2 {
-          font-family: LibreBaskerville-Regular;
-          font-size: 24px;
-          margin-bottom: 8px; }
-        footer section article.cols div.col div.job {
-          display: grid;
-          grid-template-columns: auto auto; }
-          footer section article.cols div.col div.job p.list-title {
-            font-family: OverpassMono-Regular;
-            font-size: 16px; }
-          footer section article.cols div.col div.job p.duration, footer section article.cols div.col div.job p.job-title {
-            color: #A2A2A2; }
-          footer section article.cols div.col div.job p.job-title {
-            text-align: right; }
-          footer section article.cols div.col div.job p {
-            font-family: OverpassMono-Regular;
-            font-size: 14px; }
-    footer section article.social-icon-group {
+        grid-template-columns: repeat(2, auto); }
+        footer section article.experience-writing div.role p.company {
+          grid-column: 1 / span 2; }
+        footer section article.experience-writing div.role p.tenure {
+          text-align: right; }
+      footer section article.experience-writing div.article {
+        display: grid;
+        grid-template-columns: repeat(2, auto); }
+        footer section article.experience-writing div.article p.title {
+          grid-column: 1 / span 2; }
+    footer section article.social {
       text-align: center; }
-      footer section article.social-icon-group img.social-icon {
+      footer section article.social img.social-icon {
         margin-right: 12px;
         margin-bottom: 40px; }
-      footer section article.social-icon-group #spotify {
+      footer section article.social #spotify {
         margin-right: 0px; }
-      footer section article.social-icon-group p {
+      footer section article.social p {
         font-family: OverpassMono-Regular;
         font-size: 12px; }
 
