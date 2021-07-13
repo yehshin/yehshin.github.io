@@ -28,10 +28,20 @@ footer {
         h1 {
             font-family: LibreBaskerville-Regular;
             font-size: $font-size__24; 
+            margin-bottom: 24px;
+            line-height: $line-height__30;
         }
 
         p {
             font-family: OverpassMono-Regular;
+            line-height: $line-height__24;
+        }
+
+        a {
+            font-family: OverpassMono-Regular;
+            line-height: $line-height__24;
+            color: $white;
+            text-decoration: underline;
         }
 
         p.company {
@@ -48,14 +58,15 @@ footer {
         article.experience-writing {
             display: grid;  
             grid-template-columns: repeat(2, auto);
-            grid-column-gap: 160px;
+            grid-column-gap: 7rem;
             margin-bottom: 7rem;
-
+            
             // Experience 
 
             div.role {
                 display: grid;
                 grid-template-columns: repeat(2, auto);
+                margin-bottom: 16px;
 
                 p.company {
                     grid-column: 1 / span 2;
@@ -73,7 +84,7 @@ footer {
                 display: grid;
                 grid-template-columns: repeat(2, auto);
 
-                p.title {
+                a.title {
                     grid-column: 1 / span 2;
                 }
 
@@ -90,6 +101,10 @@ footer {
 
             // Social Icons
 
+            a {
+                text-decoration: none;
+            }
+            
             img.social-icon {
                 margin-right: 12px;
                 margin-bottom: 40px;
@@ -103,7 +118,8 @@ footer {
 
             p {
                 font-family: OverpassMono-Regular;
-                font-size: $font-size__12;   
+                font-size: $font-size__12;
+                color: $gray2;
             }
 
         }

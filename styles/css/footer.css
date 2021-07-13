@@ -53,9 +53,17 @@ footer {
     margin-right: auto; }
     footer section h1 {
       font-family: LibreBaskerville-Regular;
-      font-size: 24px; }
+      font-size: 24px;
+      margin-bottom: 24px;
+      line-height: 30px; }
     footer section p {
-      font-family: OverpassMono-Regular; }
+      font-family: OverpassMono-Regular;
+      line-height: 24px; }
+    footer section a {
+      font-family: OverpassMono-Regular;
+      line-height: 24px;
+      color: #fff;
+      text-decoration: underline; }
     footer section p.company {
       font-size: 16px; }
     footer section p.job, footer section p.tenure, footer section p.published {
@@ -64,11 +72,12 @@ footer {
     footer section article.experience-writing {
       display: grid;
       grid-template-columns: repeat(2, auto);
-      grid-column-gap: 160px;
+      grid-column-gap: 7rem;
       margin-bottom: 7rem; }
       footer section article.experience-writing div.role {
         display: grid;
-        grid-template-columns: repeat(2, auto); }
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 16px; }
         footer section article.experience-writing div.role p.company {
           grid-column: 1 / span 2; }
         footer section article.experience-writing div.role p.tenure {
@@ -76,10 +85,12 @@ footer {
       footer section article.experience-writing div.article {
         display: grid;
         grid-template-columns: repeat(2, auto); }
-        footer section article.experience-writing div.article p.title {
+        footer section article.experience-writing div.article a.title {
           grid-column: 1 / span 2; }
     footer section article.social {
       text-align: center; }
+      footer section article.social a {
+        text-decoration: none; }
       footer section article.social img.social-icon {
         margin-right: 12px;
         margin-bottom: 40px; }
@@ -87,6 +98,7 @@ footer {
         margin-right: 0px; }
       footer section article.social p {
         font-family: OverpassMono-Regular;
-        font-size: 12px; }
+        font-size: 12px;
+        color: #A2A2A2; }
 
 /*# sourceMappingURL=footer.css.map */
