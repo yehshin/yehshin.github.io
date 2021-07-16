@@ -28,9 +28,9 @@ section.hero {
     section.hero h1 span {
       float: left;
       animation-name: slideUp;
-      animation-timing-function: ease;
-      animation-duration: 1s;
-      animation-delay: 1s;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1.5s;
+      animation-delay: 0.5s;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%; }
     section.hero h1 a {
@@ -44,6 +44,7 @@ section.hero {
     animation-name: fadeIn;
     animation-timing-function: ease;
     animation-duration: 2s;
+    animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0; }
 @keyframes fadeIn {
@@ -65,7 +66,39 @@ section.projects {
   margin-left: auto;
   margin-right: auto; }
   section.projects article {
-    margin-top: 80px; }
+    margin-top: 80px;
+    position: relative; }
+    section.projects article a .text {
+      position: absolute;
+      width: 562px;
+      margin: 0;
+      top: 50%;
+      left: 28%;
+      transform: translate(-50%, -50%); }
+      section.projects article a .text p.project-company {
+        font-family: OverpassMono-Regular;
+        font-size: 12px;
+        line-height: 24px;
+        color: #111;
+        opacity: 50%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 24px; }
+      section.projects article a .text p.project-name {
+        font-family: OverpassMono-SemiBold;
+        font-size: 48px;
+        line-height: 74px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        margin-bottom: 16px; }
+      section.projects article a .text p.project-description {
+        font-family: OverpassMono-Regular;
+        font-size: 16px;
+        line-height: 24px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased; }
     section.projects article img {
       width: 100%;
       height: auto; }

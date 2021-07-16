@@ -44,9 +44,9 @@ section.hero {
     span {
       float: left;
       animation-name: slideUp; 
-      animation-timing-function: ease;
-      animation-duration: 1s;
-      animation-delay: 1s;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1.5s;
+      animation-delay: 0.5s;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%;
     }
@@ -70,6 +70,7 @@ section.hero {
     animation-name: fadeIn; 
     animation-timing-function: ease;
     animation-duration: 2s;
+    animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
   }
@@ -150,6 +151,52 @@ section.projects {
 
   article {
     margin-top: 80px;
+    position: relative;
+
+    a {
+
+      .text {
+        position: absolute;
+
+        width: 562px;
+        margin: 0;
+        top: 50%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+
+        p.project-company {
+          font-family: OverpassMono-Regular;
+          font-size: $font-size__12;
+          line-height: $line-height__24;
+          color: $black;
+          opacity: 50%;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          margin-bottom: 24px;
+        }
+  
+        p.project-name {
+          font-family: OverpassMono-SemiBold;
+          font-size: $font-size__48;
+          line-height: $line-height__74;
+          color: $black;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          margin-bottom: 16px;
+        }
+  
+        p.project-description {
+          font-family: OverpassMono-Regular;
+          font-size: $font-size__16;
+          line-height: $line-height__24;
+          color: $black;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+        }
+
+      }
+
+    }
 
     img {
       width: 100%;
