@@ -22,30 +22,20 @@ section.hero {
     color: #111;
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased; }
+    -webkit-font-smoothing: antialiased;
+    height: 180px;
+    overflow: hidden; }
+    section.hero h1 span {
+      float: left;
+      animation-name: slideUp;
+      animation-timing-function: ease;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
+      margin-top: 100%; }
     section.hero h1 a {
       text-decoration: underline;
       color: #111; }
-    section.hero h1 span {
-      float: left;
-      opacity: 0;
-      animation-name: titleAnimation;
-      animation-timing-function: ease;
-      animation-duration: 1s;
-      animation-delay: 0.5s;
-      -webkit-animation-fill-mode: forwards; }
-@keyframes titleAnimation {
-  0% {
-    transform: translateY(50px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0px);
-    opacity: 1; } }
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
   section.hero img.circles {
     top: 0;
     height: 100vh;
@@ -53,11 +43,21 @@ section.hero {
     margin: auto;
     animation-name: fadeIn;
     animation-timing-function: ease;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0; }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slideUp {
+  0% {
+    margin-top: 100%;
+    height: 300%; }
+  100% {
+    margin-top: 0%;
+    height: 100%; } }
 section.projects {
   max-width: 1280px;
   width: 1280px;

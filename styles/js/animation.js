@@ -5,18 +5,18 @@
 // Fade In
 // =======
 
-window.addEventListener('load', function() {
+// window.addEventListener('load', function() {
 
-    var body = document.querySelector('body');
+//     var body = document.querySelector('body');
 
-    body.style.opacity = 1;
+//     body.style.opacity = 1;
 
-}, false)
+// }, false)
 
 
-// =======
-// Fade In
-// =======
+// ================
+// Hover Thumbnails
+// ================
 
 var nextProject = document.querySelectorAll(`a.next-project`);
 var nextProjectThumbnail = document.querySelectorAll(`img.next-project-thumbnail`);

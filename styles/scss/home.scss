@@ -18,6 +18,7 @@ section.hero {
   h1 {
     
     // Layout
+
     z-index: 100;
     width: 100%;
     max-width: $max-width;
@@ -37,48 +38,27 @@ section.hero {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 
-    // Link Styles
-    
-    a {
-      text-decoration: underline;
-      color: $black;
-    }
+    height: 180px;
+    overflow: hidden;
 
     span {
       float: left;
-      opacity: 0;
-      animation-name: titleAnimation; 
-      animation-timing-function:ease;
+      animation-name: slideUp; 
+      animation-timing-function: ease;
       animation-duration: 1s;
-      animation-delay: 0.5s;
+      animation-delay: 1s;
       -webkit-animation-fill-mode: forwards;
+      margin-top: 100%;
+    }
+
+    // Link Styles
+
+      a {
+        text-decoration: underline;
+        color: $black;
       }
 
     }
-
-  // Animation
-
-  @keyframes titleAnimation {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-      
-  }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;    
-    }
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      
-  }
-    100% {
-        opacity: 1;    
-    }
-  }
 
   // Assets
 
@@ -88,9 +68,8 @@ section.hero {
     display: block;
     margin: auto;
     animation-name: fadeIn; 
-    animation-timing-function:ease;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+    animation-timing-function: ease;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
   }
@@ -100,6 +79,30 @@ section.hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+  // Animation
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+  }
+
+    100% {
+      opacity: 1;    
+    } 
+  }
+
+  @keyframes slideUp {
+    0% {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    100% {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
 
   // Breakpoints
 
