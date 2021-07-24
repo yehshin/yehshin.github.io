@@ -45,8 +45,8 @@ section.hero {
       float: left;
       animation-name: slideUp; 
       animation-timing-function: ease-in-out;
-      animation-duration: 1.5s;
-      animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-delay: 0s;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%;
     }
@@ -81,29 +81,7 @@ section.hero {
   background-repeat: no-repeat;
   background-size: cover;
   
-  // Animation
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-  }
 
-    100% {
-      opacity: 1;    
-    } 
-  }
-
-  @keyframes slideUp {
-    0% {
-      margin-top: 100%;
-      height: 300%; 
-    }
-  
-    100% {
-      margin-top: 0%;
-      height: 100%;
-    }
-  }
 
   // Breakpoints
 
@@ -164,6 +142,15 @@ section.projects {
         left: 28%;
         transform: translate(-50%, -50%);
 
+        height: 180px;
+        overflow: hidden;
+
+        animation-name: slideUpThumbnailText; 
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        -webkit-animation-fill-mode: forwards;
+
         p.project-company {
           font-family: OverpassMono-Regular;
           font-size: $font-size__12;
@@ -201,6 +188,7 @@ section.projects {
     img {
       width: 100%;
       height: auto;
+      
     }
 
   }
@@ -215,8 +203,41 @@ section.projects {
 
 
 
+// Animation
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+  }
 
+    100% {
+      opacity: 1;    
+    } 
+  }
 
+  @keyframes slideUp {
+    0% {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    100% {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
+
+  @keyframes slideUpThumbnailText {
+    0% {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    100% {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
 
 
 

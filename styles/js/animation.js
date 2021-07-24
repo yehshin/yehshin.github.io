@@ -1,38 +1,89 @@
 
 
 
-// =======
-// Fade In
-// =======
-
-// window.addEventListener('load', function() {
-
-//     var body = document.querySelector('body');
-
-//     body.style.opacity = 1;
-
-// }, false)
-
-
 // ================
 // Hover Thumbnails
 // ================
 
-var nextProject = document.querySelectorAll(`a.next-project`);
-var nextProjectThumbnail = document.querySelectorAll(`img.next-project-thumbnail`);
-
-nextProject[0].addEventListener(`mouseenter`, function() {
-
-  nextProjectThumbnail[0].style.filter = "brightness(0)";
-  nextProjectThumbnail[0].style.WebkitFilter = "brightness(0)";
 
 
-}, false);
+// Variables
 
-nextProject[0].addEventListener(`mouseleave`, function() {
+var projectThumbnail = document.querySelectorAll(`article.project-thumbnail`);
 
-  nextProjectThumbnail[0].style.filter = "brightness(0.4)";
-  nextProjectThumbnail[0].style.WebkitFilter = "brightness(0.4)";
+var projectThumbnailText = document.querySelectorAll(`div.text`);
+
+var projectThumbnailImage = document.querySelectorAll(`img.thumbnail-image`);
 
 
-}, false);
+
+// Functions
+
+for(var i=0; i<projectThumbnail.length; i++){
+  projectThumbnail[i].addEventListener("mouseenter",mouseEnter(i));
+}
+
+function mouseEnter(i) {
+  console.log("MOUSE ENTER")
+
+  return function() {
+
+    projectThumbnailImage[i].style.opacity = "0.3";
+
+ };
+  
+}
+
+for(var i=0; i<projectThumbnail.length; i++){
+  projectThumbnail[i].addEventListener("mouseleave",mouseLeave(i));
+}
+
+function mouseLeave(i) {
+  console.log("MOUSE LEAVE")
+
+  return function() {
+
+    projectThumbnailImage[i].style.opacity = "1";
+
+ };
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// projectThumbnail[0].addEventListener(`mouseenter`, function() {
+
+//   // nextProjectThumbnail[0].style.filter = "brightness(0)";
+//   // nextProjectThumbnail[0].style.WebkitFilter = "brightness(0)";
+//   console.log("MOUSE ENTER")
+
+
+// }, false);
+
+// projectThumbnail[0].addEventListener(`mouseleave`, function() {
+
+//   // nextProjectThumbnail[0].style.filter = "brightness(0.4)";
+//   // nextProjectThumbnail[0].style.WebkitFilter = "brightness(0.4)";
+
+//   console.log("MOUSE LEAVE")
+
+// }, false);
+
+
+
+
+
+
+

@@ -29,8 +29,8 @@ section.hero {
       float: left;
       animation-name: slideUp;
       animation-timing-function: ease-in-out;
-      animation-duration: 1.5s;
-      animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-delay: 0s;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%; }
     section.hero h1 a {
@@ -47,18 +47,7 @@ section.hero {
     animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
     opacity: 0; }
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes slideUp {
-  0% {
-    margin-top: 100%;
-    height: 300%; }
-  100% {
-    margin-top: 0%;
-    height: 100%; } }
+
 section.projects {
   max-width: 1280px;
   width: 1280px;
@@ -74,7 +63,14 @@ section.projects {
       margin: 0;
       top: 50%;
       left: 28%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      height: 180px;
+      overflow: hidden;
+      animation-name: slideUpThumbnailText;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      -webkit-animation-fill-mode: forwards; }
       section.projects article a .text p.project-company {
         font-family: OverpassMono-Regular;
         font-size: 12px;
@@ -102,5 +98,25 @@ section.projects {
     section.projects article img {
       width: 100%;
       height: auto; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes slideUp {
+  0% {
+    margin-top: 100%;
+    height: 300%; }
+  100% {
+    margin-top: 0%;
+    height: 100%; } }
+@keyframes slideUpThumbnailText {
+  0% {
+    margin-top: 100%;
+    height: 300%; }
+  100% {
+    margin-top: 0%;
+    height: 100%; } }
 
 /*# sourceMappingURL=home.css.map */
