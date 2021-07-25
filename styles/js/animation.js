@@ -24,11 +24,11 @@ for(var i=0; i<projectThumbnail.length; i++){
 }
 
 function mouseEnter(i) {
-  console.log("MOUSE ENTER")
 
   return function() {
 
-    projectThumbnailImage[i].style.opacity = "0.3";
+    projectThumbnailImage[i].style.opacity = "0.2";
+    projectThumbnailText[i].style.opacity = "1";
 
  };
   
@@ -39,11 +39,11 @@ for(var i=0; i<projectThumbnail.length; i++){
 }
 
 function mouseLeave(i) {
-  console.log("MOUSE LEAVE")
 
   return function() {
 
     projectThumbnailImage[i].style.opacity = "1";
+    projectThumbnailText[i].style.opacity = "0";
 
  };
 

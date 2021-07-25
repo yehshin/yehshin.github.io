@@ -26,8 +26,8 @@ section.hero {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 
     // Text Styles
 
@@ -47,6 +47,7 @@ section.hero {
       animation-timing-function: ease-in-out;
       animation-duration: 2s;
       animation-delay: 0s;
+      animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%;
     }
@@ -71,6 +72,7 @@ section.hero {
     animation-timing-function: ease;
     animation-duration: 2s;
     animation-delay: 0.5s;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
   }
@@ -134,22 +136,25 @@ section.projects {
     a {
 
       .text {
+        display: block;
         position: absolute;
+        opacity: 0;
 
         width: 562px;
         margin: 0;
         top: 50%;
         left: 28%;
         transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
 
-        height: 180px;
-        overflow: hidden;
+        // animation-name: slideUpThumbnailText; 
+        // animation-timing-function: ease-in-out;
+        // animation-duration: 1s;
+        // animation-delay: 0s;
+        // animation-fill-mode: forwards;
+        // -webkit-animation-fill-mode: forwards;
 
-        animation-name: slideUpThumbnailText; 
-        animation-timing-function: ease-in-out;
-        animation-duration: 2s;
-        animation-delay: 0s;
-        -webkit-animation-fill-mode: forwards;
+        transition: 0.5s;
 
         p.project-company {
           font-family: OverpassMono-Regular;
@@ -185,21 +190,16 @@ section.projects {
 
     }
 
-    img {
+    img.thumbnail-image {
       width: 100%;
       height: auto;
+      transition: 0.5s;
       
     }
 
   }
   
 }
-
-
-
-
-
-
 
 
 
@@ -229,13 +229,13 @@ section.projects {
 
   @keyframes slideUpThumbnailText {
     0% {
-      margin-top: 100%;
-      height: 300%; 
+      top: 100%;
+      // height: 300%; 
     }
   
     100% {
-      margin-top: 0%;
-      height: 100%;
+      top: 50%;
+      // height: 100%;
     }
   }
 

@@ -15,8 +15,8 @@ section.hero {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     font-family: LibreBaskerville-Regular;
     font-size: 72px;
     color: #111;
@@ -31,6 +31,7 @@ section.hero {
       animation-timing-function: ease-in-out;
       animation-duration: 2s;
       animation-delay: 0s;
+      animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       margin-top: 100%; }
     section.hero h1 a {
@@ -45,6 +46,7 @@ section.hero {
     animation-timing-function: ease;
     animation-duration: 2s;
     animation-delay: 0.5s;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     opacity: 0; }
 
@@ -58,19 +60,16 @@ section.projects {
     margin-top: 80px;
     position: relative; }
     section.projects article a .text {
+      display: block;
       position: absolute;
+      opacity: 0;
       width: 562px;
       margin: 0;
       top: 50%;
       left: 28%;
       transform: translate(-50%, -50%);
-      height: 180px;
-      overflow: hidden;
-      animation-name: slideUpThumbnailText;
-      animation-timing-function: ease-in-out;
-      animation-duration: 2s;
-      animation-delay: 0s;
-      -webkit-animation-fill-mode: forwards; }
+      -ms-transform: translate(-50%, -50%);
+      transition: 0.5s; }
       section.projects article a .text p.project-company {
         font-family: OverpassMono-Regular;
         font-size: 12px;
@@ -95,9 +94,10 @@ section.projects {
         color: #111;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased; }
-    section.projects article img {
+    section.projects article img.thumbnail-image {
       width: 100%;
-      height: auto; }
+      height: auto;
+      transition: 0.5s; }
 
 @keyframes fadeIn {
   0% {
@@ -113,10 +113,8 @@ section.projects {
     height: 100%; } }
 @keyframes slideUpThumbnailText {
   0% {
-    margin-top: 100%;
-    height: 300%; }
+    top: 100%; }
   100% {
-    margin-top: 0%;
-    height: 100%; } }
+    top: 50%; } }
 
 /*# sourceMappingURL=home.css.map */
