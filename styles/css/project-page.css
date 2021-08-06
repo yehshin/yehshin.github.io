@@ -1,76 +1,88 @@
-/*
-Error: Undefined variable: "$padding__none".
-        on line 14 of scss/project-page.scss
+header {
+  position: relative; }
 
-9: // Hero
-10: // ====
-11: 
-12: article.copy__hero {
-13: 
-14:   margin: $padding__none $padding__large;
-15: 
-16:   @media only screen and (min-width: $breakpoint__extra-large)   {
-17: 
-18:     margin: $padding__none $padding__large * 1.15;
-19: 
+section.project-hero {
+  max-width: 1280px;
+  width: 1280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  section.project-hero h1 {
+    margin-top: 160px;
+    font-family: LibreBaskerville-Regular;
+    font-size: 72px;
+    color: #111;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; }
+  section.project-hero h2 {
+    margin-top: 40px;
+    font-family: LibreBaskerville-Regular;
+    font-size: 24px;
+    color: #111;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; }
+  section.project-hero img.thumbnail-image {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 80px; }
 
-Backtrace:
-scss/project-page.scss:14
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `map'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/yeheonshin/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$padding__none\".\A         on line 14 of scss/project-page.scss\A \A 9: // Hero\A 10: // ====\A 11: \A 12: article.copy__hero {\A 13: \A 14:   margin: $padding__none $padding__large;\A 15: \A 16:   @media only screen and (min-width: $breakpoint__extra-large)   {\A 17: \A 18:     margin: $padding__none $padding__large * 1.15;\A 19: "; }
+section.project-content {
+  max-width: 1280px;
+  width: 1280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  section.project-content article.col-2 div.col-left {
+    width: 65%;
+    float: left; }
+    section.project-content article.col-2 div.col-left div.content-block {
+      margin-bottom: 80px; }
+      section.project-content article.col-2 div.col-left div.content-block h1 {
+        margin-bottom: 24px;
+        font-family: LibreBaskerville-Regular;
+        font-size: 24px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 30px; }
+      section.project-content article.col-2 div.col-left div.content-block p {
+        margin-bottom: 16px;
+        font-family: OverpassMono-Regular;
+        font-size: 18px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 28px; }
+  section.project-content article.col-2 div.col-right {
+    float: right; }
+    section.project-content article.col-2 div.col-right div.content-block {
+      margin-bottom: 80px; }
+      section.project-content article.col-2 div.col-right div.content-block h1 {
+        margin-bottom: 24px;
+        font-family: LibreBaskerville-Regular;
+        font-size: 24px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 30px; }
+      section.project-content article.col-2 div.col-right div.content-block p {
+        margin-bottom: 8px;
+        font-family: OverpassMono-Regular;
+        font-size: 18px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 28px; }
+      section.project-content article.col-2 div.col-right div.content-block a {
+        margin-bottom: 8px;
+        display: block;
+        font-family: OverpassMono-Regular;
+        font-size: 18px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 28px;
+        text-decoration: underline; }
+
+/*# sourceMappingURL=project-page.css.map */
