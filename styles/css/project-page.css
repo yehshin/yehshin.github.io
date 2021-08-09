@@ -8,7 +8,7 @@ section.project-hero {
   margin-left: auto;
   margin-right: auto; }
   section.project-hero h1 {
-    margin-top: 160px;
+    margin-top: 80px;
     font-family: LibreBaskerville-Regular;
     font-size: 72px;
     color: #111;
@@ -84,5 +84,40 @@ section.project-content {
         -webkit-font-smoothing: antialiased;
         line-height: 28px;
         text-decoration: underline; }
+  section.project-content article.col-1 div.col-left {
+    width: 65%; }
+    section.project-content article.col-1 div.col-left div.content-block {
+      margin-bottom: 80px; }
+      section.project-content article.col-1 div.col-left div.content-block h1 {
+        margin-bottom: 24px;
+        font-family: LibreBaskerville-Regular;
+        font-size: 24px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 30px; }
+      section.project-content article.col-1 div.col-left div.content-block p {
+        margin-bottom: 16px;
+        font-family: OverpassMono-Regular;
+        font-size: 18px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 28px; }
+      section.project-content article.col-1 div.col-left div.content-block ol.project-reasons {
+        font-family: OverpassMono-Regular;
+        font-size: 18px;
+        color: #111;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        line-height: 28px;
+        margin-left: 32px;
+        margin-top: 24px; }
+        section.project-content article.col-1 div.col-left div.content-block ol.project-reasons li {
+          list-style: decimal;
+          display: list-item;
+          list-style-position: outside;
+          padding-left: 8px;
+          margin-bottom: 24px; }
 
 /*# sourceMappingURL=project-page.css.map */
