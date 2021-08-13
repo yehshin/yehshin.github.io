@@ -33,6 +33,9 @@ section.project-content {
   height: auto;
   margin-left: auto;
   margin-right: auto; }
+  section.project-content a {
+    color: #111;
+    text-decoration: underline; }
   section.project-content article.col-2 div.col-left {
     width: 65%;
     float: left; }
@@ -47,7 +50,7 @@ section.project-content {
         -webkit-font-smoothing: antialiased;
         line-height: 30px; }
       section.project-content article.col-2 div.col-left div.content-block p {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         font-family: OverpassMono-Regular;
         font-size: 18px;
         color: #111;
@@ -84,40 +87,108 @@ section.project-content {
         -webkit-font-smoothing: antialiased;
         line-height: 28px;
         text-decoration: underline; }
-  section.project-content article.col-1 div.col-left {
-    width: 65%; }
-    section.project-content article.col-1 div.col-left div.content-block {
-      margin-bottom: 80px; }
-      section.project-content article.col-1 div.col-left div.content-block h1 {
-        margin-bottom: 24px;
-        font-family: LibreBaskerville-Regular;
-        font-size: 24px;
-        color: #111;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        line-height: 30px; }
-      section.project-content article.col-1 div.col-left div.content-block p {
-        margin-bottom: 16px;
+  section.project-content article.col-1 {
+    clear: both; }
+    section.project-content article.col-1 div.col-left {
+      width: 65%; }
+      section.project-content article.col-1 div.col-left div.content-block {
+        margin-bottom: 80px; }
+        section.project-content article.col-1 div.col-left div.content-block h1 {
+          margin-bottom: 24px;
+          font-family: LibreBaskerville-Regular;
+          font-size: 24px;
+          color: #111;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          line-height: 30px; }
+        section.project-content article.col-1 div.col-left div.content-block p {
+          margin-bottom: 24px;
+          font-family: OverpassMono-Regular;
+          font-size: 18px;
+          color: #111;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          line-height: 28px; }
+        section.project-content article.col-1 div.col-left div.content-block ol.project-reasons {
+          font-family: OverpassMono-Regular;
+          font-size: 18px;
+          color: #111;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          line-height: 28px;
+          margin-left: 32px;
+          margin-top: 24px; }
+          section.project-content article.col-1 div.col-left div.content-block ol.project-reasons li {
+            list-style: decimal;
+            display: list-item;
+            list-style-position: outside;
+            padding-left: 8px;
+            margin-bottom: 24px; }
+  section.project-content article.col-2-asset {
+    overflow: auto;
+    margin-bottom: 80px; }
+    section.project-content article.col-2-asset div.video-container-left {
+      width: 47%;
+      height: auto;
+      background-color: #F8F8F8;
+      padding: 80px;
+      float: left;
+      border-radius: 16px;
+      display: block; }
+      section.project-content article.col-2-asset div.video-container-left video {
+        box-shadow: 0px 16px 40px 0px rgba(17, 17, 17, 0.2);
+        width: 100%;
+        height: auto; }
+    section.project-content article.col-2-asset div.video-container-right {
+      width: 47%;
+      height: auto;
+      background-color: #F8F8F8;
+      padding: 80px;
+      float: right;
+      border-radius: 16px;
+      display: block; }
+      section.project-content article.col-2-asset div.video-container-right video {
+        box-shadow: 0px 16px 40px 0px rgba(17, 17, 17, 0.2);
+        width: 100%;
+        height: auto; }
+  section.project-content article.col-1-asset {
+    margin-bottom: 80px; }
+    section.project-content article.col-1-asset div.col-left div.content-block img.project-image {
+      width: 100%;
+      height: auto;
+      border-radius: 16px; }
+  section.project-content article.project-links {
+    margin-bottom: 80px;
+    overflow: auto;
+    display: block; }
+    section.project-content article.project-links a.prev-project {
+      display: inline-block; }
+      section.project-content article.project-links a.prev-project img#back-arrow {
+        float: left;
+        display: inline-block;
+        margin-right: 16px; }
+      section.project-content article.project-links a.prev-project p {
+        float: right;
+        display: inline-block;
         font-family: OverpassMono-Regular;
         font-size: 18px;
+        line-height: 24px;
         color: #111;
         -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        line-height: 28px; }
-      section.project-content article.col-1 div.col-left div.content-block ol.project-reasons {
+        -webkit-font-smoothing: antialiased; }
+    section.project-content article.project-links a.next-project {
+      display: inline-block;
+      float: right; }
+      section.project-content article.project-links a.next-project img#next-arrow {
+        float: right;
+        margin-left: 16px; }
+      section.project-content article.project-links a.next-project p {
+        float: left;
         font-family: OverpassMono-Regular;
         font-size: 18px;
+        line-height: 24px;
         color: #111;
         -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        line-height: 28px;
-        margin-left: 32px;
-        margin-top: 24px; }
-        section.project-content article.col-1 div.col-left div.content-block ol.project-reasons li {
-          list-style: decimal;
-          display: list-item;
-          list-style-position: outside;
-          padding-left: 8px;
-          margin-bottom: 24px; }
+        -webkit-font-smoothing: antialiased; }
 
 /*# sourceMappingURL=project-page.css.map */

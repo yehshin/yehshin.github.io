@@ -46,7 +46,8 @@ footer {
   color: #fff;
   margin-top: 80px;
   padding-top: 80px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  clear: both; }
   footer section {
     max-width: 880px;
     margin-left: auto;
