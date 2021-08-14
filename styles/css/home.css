@@ -17,14 +17,15 @@ section.hero {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 180px;
+    overflow: hidden;
     font-family: LibreBaskerville-Regular;
     font-size: 72px;
     color: #111;
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    height: 180px;
-    overflow: hidden; }
+    -webkit-font-smoothing: antialiased; }
     section.hero h1 span {
       float: left;
       animation-name: slideUp;
@@ -37,6 +38,33 @@ section.hero {
     section.hero h1 a {
       text-decoration: underline;
       color: #111; }
+    @media only screen and (min-width: 2559px) {
+      section.hero h1 {
+        background-color: red; } }
+    @media screen and (min-width: 1439px) and (max-width: 2559px) {
+      section.hero h1 {
+        background-color: blue; } }
+    @media screen and (min-width: 319px) and (max-width: 1439px) {
+      section.hero h1 {
+        background-color: green;
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        display: inline-block;
+        height: 180px;
+        overflow: hidden;
+        max-width: auto;
+        width: 100%;
+        margin-left: 80px;
+        margin-right: 80px; } }
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+      section.hero h1 {
+        background-color: yellow;
+        margin-left: 16px;
+        margin-right: 16px; } }
   section.hero img.circles {
     top: 0;
     height: 100vh;

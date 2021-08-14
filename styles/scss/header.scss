@@ -31,33 +31,35 @@ header {
     color: $black;
   }
 
-  a:hover {
-    // color: $gray__light;
-  }
+  @media only screen and (min-width: $breakpoint__extra-large) {
 
-  @media only screen and (min-width: $breakpoint__extra-large)   {
-
-    // width: auto;
+    background-color: red;
 
   }
 
   @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
 
-    // margin-right: $padding__medium;
-    // margin-left: $padding__medium;
+    background-color: blue;
 
   }
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
 
-    // margin-right: $padding__small;
-    // margin-left: $padding__small;
+    background-color: green;
+
+    max-width: auto;
+    width: auto;
+    margin-left: 80px;
+    margin-right: 80px;
 
   }
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    // height: $spacing__medium * 2.5;
+    background-color: yellow;
+    
+    margin-left: 16px;
+    margin-right: 16px;
 
   }
 

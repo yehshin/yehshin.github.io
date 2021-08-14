@@ -28,6 +28,9 @@ section.hero {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 180px;
+    overflow: hidden;
 
     // Text Styles
 
@@ -37,9 +40,6 @@ section.hero {
     text-align: center;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
-    height: 180px;
-    overflow: hidden;
 
     span {
       float: left;
@@ -54,12 +54,59 @@ section.hero {
 
     // Link Styles
 
-      a {
-        text-decoration: underline;
-        color: $black;
-      }
-
+    a {
+      text-decoration: underline;
+      color: $black;
     }
+
+    // Breakpoints
+
+    @media only screen and (min-width: $breakpoint__extra-large) {
+
+      background-color: red;
+  
+    }
+  
+    @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
+  
+      background-color: blue;
+  
+    }
+  
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+  
+      background-color: green;
+
+      z-index: 100;
+      // width: 100%;
+      // max-width: auto;
+      // margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      display: inline-block;
+      height: 180px;
+      overflow: hidden;
+
+      max-width: auto;
+      width: 100%;
+      margin-left: 80px;
+      margin-right: 80px;
+  
+    }
+  
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      background-color: yellow;
+
+      margin-left: 16px;
+      margin-right: 16px;
+  
+    }
+
+  }
 
   // Assets
 
@@ -82,37 +129,6 @@ section.hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-
-
-  // Breakpoints
-
-  @media only screen and (min-width: $breakpoint__extra-large)   {
-
-    // background-color: red;
-
-  }
-
-  @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
-
-    // background-color: blue;
-
-  }
-
-  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
-
-    // background-color: green;
-
-  }
-
-  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-
-    // img.circles {
-    //   width: auto;
-    //   height: auto;
-    // }
-
-  }
 
 }
 
