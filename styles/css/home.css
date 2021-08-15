@@ -11,15 +11,15 @@ section.hero {
     z-index: 100;
     width: 100%;
     max-width: 1280px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    display: inline-block;
-    height: 180px;
     overflow: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 47%;
+    transform: translateY(-53%);
+    text-align: center;
     font-family: LibreBaskerville-Regular;
     font-size: 72px;
     color: #111;
@@ -27,44 +27,29 @@ section.hero {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased; }
     section.hero h1 span {
+      opacity: 0;
       float: left;
-      animation-name: slideUp;
+      animation-name: fadeIn;
       animation-timing-function: ease-in-out;
       animation-duration: 2s;
-      animation-delay: 0s;
+      animation-delay: 0.5s;
       animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-      margin-top: 100%; }
+      -webkit-animation-fill-mode: forwards; }
     section.hero h1 a {
       text-decoration: underline;
       color: #111; }
-    @media only screen and (min-width: 2559px) {
-      section.hero h1 {
-        background-color: red; } }
-    @media screen and (min-width: 1439px) and (max-width: 2559px) {
-      section.hero h1 {
-        background-color: blue; } }
     @media screen and (min-width: 319px) and (max-width: 1439px) {
       section.hero h1 {
-        background-color: green;
-        z-index: 100;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        display: inline-block;
-        height: 180px;
-        overflow: hidden;
-        max-width: auto;
-        width: 100%;
         margin-left: 80px;
-        margin-right: 80px; } }
+        margin-right: 80px;
+        max-width: auto;
+        width: auto; } }
     @media screen and (min-width: 319px) and (max-width: 767px) {
       section.hero h1 {
-        background-color: yellow;
         margin-left: 16px;
-        margin-right: 16px; } }
+        margin-right: 16px;
+        font-size: 40px;
+        text-align: left; } }
   section.hero img.circles {
     top: 0;
     height: 100vh;
@@ -77,6 +62,9 @@ section.hero {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     opacity: 0; }
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+      section.hero img.circles {
+        width: 100%; } }
 
 section.projects {
   max-width: 1280px;
@@ -87,6 +75,9 @@ section.projects {
   section.projects article {
     margin-top: 80px;
     position: relative; }
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+      section.projects article {
+        margin-top: 16px; } }
     section.projects article a .text {
       display: block;
       position: absolute;
@@ -126,6 +117,15 @@ section.projects {
       width: 100%;
       height: auto;
       transition: 0.5s; }
+  @media screen and (min-width: 319px) and (max-width: 1439px) {
+    section.projects {
+      width: auto;
+      margin-left: 80px;
+      margin-right: 80px; } }
+  @media screen and (min-width: 319px) and (max-width: 767px) {
+    section.projects {
+      margin-left: 16px;
+      margin-right: 16px; } }
 
 @keyframes fadeIn {
   0% {

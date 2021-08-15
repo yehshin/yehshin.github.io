@@ -29,23 +29,30 @@ header {
     font-family: OverpassMono-Bold;
     font-size: $font-size__20;
     color: $black;
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+      font-size: $font-size__16;
+  
+    }
+
   }
 
   @media only screen and (min-width: $breakpoint__extra-large) {
 
-    background-color: red;
+    // background-color: red;
 
   }
 
   @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
 
-    background-color: blue;
+    // background-color: blue;
 
   }
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
 
-    background-color: green;
+    // background-color: green;
 
     max-width: auto;
     width: auto;
@@ -56,7 +63,7 @@ header {
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
 
-    background-color: yellow;
+    // background-color: yellow;
     
     margin-left: 16px;
     margin-right: 16px;

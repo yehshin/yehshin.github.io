@@ -22,15 +22,16 @@ section.hero {
     z-index: 100;
     width: 100%;
     max-width: $max-width;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    display: inline-block;
-    height: 180px;
+    // height: 400px;
     overflow: hidden;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 47%;
+    transform: translateY(-53%);
+    text-align: center;
 
     // Text Styles
 
@@ -42,14 +43,17 @@ section.hero {
     -webkit-font-smoothing: antialiased;
 
     span {
+      opacity: 0;
       float: left;
-      animation-name: slideUp; 
+      // margin-top: 100%;
+
+      // animation-name: slideUp;
+      animation-name: fadeIn; 
       animation-timing-function: ease-in-out;
       animation-duration: 2s;
-      animation-delay: 0s;
+      animation-delay: 0.5s;
       animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
-      margin-top: 100%;
     }
 
     // Link Styles
@@ -63,46 +67,36 @@ section.hero {
 
     @media only screen and (min-width: $breakpoint__extra-large) {
 
-      background-color: red;
+      // background-color: red;
   
     }
   
     @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
   
-      background-color: blue;
+      // background-color: blue;
   
     }
   
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
   
-      background-color: green;
+      // background-color: green;
 
-      z-index: 100;
-      // width: 100%;
-      // max-width: auto;
-      // margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      display: inline-block;
-      height: 180px;
-      overflow: hidden;
-
-      max-width: auto;
-      width: 100%;
       margin-left: 80px;
       margin-right: 80px;
+      max-width: auto;
+      width: auto;
   
     }
   
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
       
-      background-color: yellow;
+      // background-color: yellow;
 
       margin-left: 16px;
       margin-right: 16px;
+
+      font-size: $font-size__40;
+      text-align: left;
   
     }
 
@@ -122,6 +116,13 @@ section.hero {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     opacity: 0;
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      width: 100%;
+  
+    }
+
   }
 
   background-image: url("/assets/images/home/dots.svg");
@@ -148,6 +149,12 @@ section.projects {
   article {
     margin-top: 80px;
     position: relative;
+  
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+    
+      margin-top: 16px;
+  
+    }
 
     a {
 
@@ -211,6 +218,25 @@ section.projects {
       height: auto;
       transition: 0.5s;
     }
+
+  }
+
+  // Breakpoints
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+    // background-color: green;
+
+    width: auto;
+    margin-left: 80px;
+    margin-right: 80px;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+    
+    margin-left: 16px;
+    margin-right: 16px;
 
   }
   

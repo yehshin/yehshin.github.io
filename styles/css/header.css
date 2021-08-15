@@ -57,22 +57,17 @@ header {
     font-family: OverpassMono-Bold;
     font-size: 20px;
     color: #111; }
-  @media only screen and (min-width: 2559px) {
-    header {
-      background-color: red; } }
-  @media screen and (min-width: 1439px) and (max-width: 2559px) {
-    header {
-      background-color: blue; } }
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+      header a {
+        font-size: 16px; } }
   @media screen and (min-width: 319px) and (max-width: 1439px) {
     header {
-      background-color: green;
       max-width: auto;
       width: auto;
       margin-left: 80px;
       margin-right: 80px; } }
   @media screen and (min-width: 319px) and (max-width: 767px) {
     header {
-      background-color: yellow;
       margin-left: 16px;
       margin-right: 16px; } }
 

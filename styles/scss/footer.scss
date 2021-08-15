@@ -22,6 +22,12 @@ footer {
 
     clear: both;
 
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        margin-top: 16px;
+    
+      }
+
     section {
         max-width: $max-width -  400px;
         margin-left: auto;
@@ -127,7 +133,10 @@ footer {
         }
 
     }
+
 } 
+
+
 
 
 
