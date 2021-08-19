@@ -17,16 +17,28 @@ footer {
     color: $white;
 
     margin-top: 80px;
+
     padding-top: 80px;
     padding-bottom: 40px;
 
     clear: both;
 
-    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+    // Breakpoints
 
-        margin-top: 16px;
-    
-      }
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+
+        padding-left: 80px;
+        padding-right: 80px;
+
+    }
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+        
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
 
     section {
         max-width: $max-width -  400px;
@@ -38,6 +50,12 @@ footer {
             font-size: $font-size__24; 
             margin-bottom: 24px;
             line-height: $line-height__30;
+
+            @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                font-size: $font-size__22; 
+        
+            }
         }
 
         p {
@@ -53,12 +71,25 @@ footer {
         }
 
         p.company {
-            font-size: 16px;
+            font-size: $font-size__18;
+            line-height: 24px;
+
+            @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                font-size: $font-size__16; 
+        
+            }
         }
 
         p.job, p.tenure, p.published {
             font-size: 14px;
             color: $gray2;
+
+            @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                font-size: $font-size__12; 
+        
+            }
         }
 
         // Experience + Writing
@@ -68,44 +99,71 @@ footer {
             grid-template-columns: repeat(2, auto);
             grid-column-gap: 7rem;
             margin-bottom: 7rem;
+
+            //
+
+            @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                grid-template-columns: repeat(1, auto);
+                margin-bottom: 4rem;
+        
+            }
             
             // Experience 
 
-            div.role {
-                display: grid;
-                grid-template-columns: repeat(2, auto);
-                margin-bottom: 16px;
+            div.experience {
 
-                p.company {
-                    grid-column: 1 / span 2;
+                @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                    margin-bottom: 40px;
+            
                 }
 
-                p.tenure {
-                    text-align: right;
+                div.role {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    margin-bottom: 16px;
+    
+                    p.company {
+                        grid-column: 1 / span 2;
+                    }
+    
+                    p.tenure {
+                        text-align: right;
+                    }
+    
                 }
 
             }
 
             // Writing
 
-            div.article {
-                display: grid;
-                grid-template-columns: repeat(2, auto);
+            div.writing {
 
-                a.title {
-                    grid-column: 1 / span 2;
+                div.article {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+    
+                    a.title {
+                        grid-column: 1 / span 2;
+                    }
+    
                 }
 
             }
 
         }
 
-
-
         // Social Icons + Last Updated
 
         article.social {
             text-align: center;
+
+            @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+                
+                text-align: left;
+        
+            }
 
             // Social Icons
 
@@ -137,158 +195,3 @@ footer {
 } 
 
 
-
-
-
-        // article.cols {
-        //     display: grid;
-        //     grid-template-columns: repeat(2, auto);
-        //     grid-column-gap: 13rem;
-
-        //     div.col {
-
-        //         display: grid;
-        //         margin-bottom: 80px;
-        //         grid-row-gap: 16px;
-
-
-        //         h2 {
-        //             font-family: LibreBaskerville-Regular;
-        //             font-size: $font-size__24; 
-
-        //             margin-bottom: 24px;
-        //         }
-
-        //         div.job {
-        //             display: grid;
-        //             grid-template-columns: auto auto;
-        //             line-height: 24px;
-        //             margin-bottom: 0px;
-
-        //             p.list-title {
-        //                 font-family: OverpassMono-Regular;
-        //                 font-size: $font-size__16;
-        //             }
-
-        //             p.duration, p.job-title {
-        //                 color: $gray2;
-        //             }
-
-        //             p.duration {
-        //                 text-align: right;
-        //             }
-    
-        //             p {
-        //                 font-family: OverpassMono-Regular;
-        //                 font-size: $font-size__14;       
-        //             }
-        //         }
-        //     }            
-        // }
-
-
-
-
-
-
-
-
-// footer {
-//   @extend %footer-base;
-
-//   margin: $padding__none $padding__medium;
-//   margin-bottom: $height__flexible__small;
-//   margin-top: $spacing__large * 2;
-
-//   h2 {
-//     color: $white;
-//     font-family: tt-bold;
-//     font-size: $font-size__sub-header;
-
-//     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-
-//       font-size: $font-size__body-large;
-
-//     }
-
-//   }
-
-//   a {
-//     font-family: tt-bold;
-//     font-size: $font-size__small;
-//     color: $white;
-//     transition: color 0.2s;
-//   }
-
-//   a:hover {
-//     color: $gray__light;
-//   }
-
-//   li {
-//     margin-top: $spacing__medium;
-
-//     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-
-//       margin-top: $spacing__extra-small * 3;
-
-//     }
-
-//     a {
-//       margin-right: $spacing__small;
-
-//       @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-
-//         display: inline-block;
-//         margin-right: $spacing__extra-small + $spacing__extra-small/2;
-//         margin-bottom: $spacing__extra-small;
-
-//       }
-//     }
-//   }
-
-//   @media only screen and (min-width: $breakpoint__extra-large)   {
-
-//     margin-right: auto;
-//     margin-left: auto;
-//     width: $width__max;
-
-//   }
-
-//   @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
-
-//     margin-right: $padding__medium;
-//     margin-left: $padding__medium;
-
-//   }
-
-//   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
-
-//     margin-right: $padding__small;
-//     margin-left: $padding__small;
-
-//   }
-
-//   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-
-//     margin-top: $spacing__large;
-
-//   }
-
-// }
-
-
-
-// ============
-// Interactions
-// ============
-
-// a.inline__link {
-//   color: $blue;
-//   border-bottom: solid 1px $blue__transparent;
-//   transition: color 0.2s, border-bottom 0.2s;
-// }
-
-// a.inline__link:hover {
-//   color: $gray__light;
-//   border-bottom: solid 1px $black;
-// }

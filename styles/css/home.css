@@ -55,16 +55,12 @@ section.hero {
     height: 100vh;
     display: block;
     margin: auto;
-    animation-name: fadeIn;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    opacity: 0; }
+    opacity: 0;
+    opacity: 1; }
     @media screen and (min-width: 319px) and (max-width: 767px) {
       section.hero img.circles {
-        width: 100%; } }
+        width: 100%;
+        opacity: 0; } }
 
 section.projects {
   max-width: 1280px;

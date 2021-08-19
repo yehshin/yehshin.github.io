@@ -10,6 +10,10 @@
 // Hero
 // ====
 
+body {
+  // overflow-x: hidden;
+}
+
 section.hero {
   background-color: $gray;
   height: 100vh;
@@ -109,17 +113,19 @@ section.hero {
     height: 100vh;
     display: block;
     margin: auto;
-    animation-name: fadeIn; 
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    // animation-name: fadeIn; 
+    // animation-timing-function: ease;
+    // animation-duration: 2s;
+    // animation-delay: 0.5s;
+    // animation-fill-mode: forwards;
+    // -webkit-animation-fill-mode: forwards;
     opacity: 0;
+    opacity: 1;
 
     @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
       
       width: 100%;
+      opacity: 0;
   
     }
 
@@ -178,6 +184,18 @@ section.projects {
         // -webkit-animation-fill-mode: forwards;
 
         transition: 0.5s;
+
+        // @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+  
+        //   width: auto;
+      
+        // }
+      
+        // @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+          
+        //   width: auto;
+      
+        // }
 
         p.project-company {
           font-family: OverpassMono-Regular;

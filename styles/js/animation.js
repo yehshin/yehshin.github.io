@@ -27,7 +27,7 @@ function mouseEnter(i) {
 
   return function() {
 
-    projectThumbnailImage[i].style.opacity = "0.2";
+    projectThumbnailImage[i].style.opacity = "0.1";
     projectThumbnailText[i].style.opacity = "1";
 
  };

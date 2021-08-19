@@ -48,9 +48,15 @@ footer {
   padding-top: 80px;
   padding-bottom: 40px;
   clear: both; }
+  @media screen and (min-width: 319px) and (max-width: 1439px) {
+    footer {
+      padding-left: 80px;
+      padding-right: 80px; } }
   @media screen and (min-width: 319px) and (max-width: 767px) {
     footer {
-      margin-top: 16px; } }
+      padding-top: 40px;
+      padding-left: 16px;
+      padding-right: 16px; } }
   footer section {
     max-width: 880px;
     margin-left: auto;
@@ -60,6 +66,9 @@ footer {
       font-size: 24px;
       margin-bottom: 24px;
       line-height: 30px; }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section h1 {
+          font-size: 22px; } }
     footer section p {
       font-family: OverpassMono-Regular;
       line-height: 24px; }
@@ -69,30 +78,47 @@ footer {
       color: #fff;
       text-decoration: underline; }
     footer section p.company {
-      font-size: 16px; }
+      font-size: 18px;
+      line-height: 24px; }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section p.company {
+          font-size: 16px; } }
     footer section p.job, footer section p.tenure, footer section p.published {
       font-size: 14px;
       color: #A2A2A2; }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section p.job, footer section p.tenure, footer section p.published {
+          font-size: 12px; } }
     footer section article.experience-writing {
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-column-gap: 7rem;
       margin-bottom: 7rem; }
-      footer section article.experience-writing div.role {
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section article.experience-writing {
+          grid-template-columns: repeat(1, auto);
+          margin-bottom: 4rem; } }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section article.experience-writing div.experience {
+          margin-bottom: 40px; } }
+      footer section article.experience-writing div.experience div.role {
         display: grid;
         grid-template-columns: repeat(2, auto);
         margin-bottom: 16px; }
-        footer section article.experience-writing div.role p.company {
+        footer section article.experience-writing div.experience div.role p.company {
           grid-column: 1 / span 2; }
-        footer section article.experience-writing div.role p.tenure {
+        footer section article.experience-writing div.experience div.role p.tenure {
           text-align: right; }
-      footer section article.experience-writing div.article {
+      footer section article.experience-writing div.writing div.article {
         display: grid;
         grid-template-columns: repeat(2, auto); }
-        footer section article.experience-writing div.article a.title {
+        footer section article.experience-writing div.writing div.article a.title {
           grid-column: 1 / span 2; }
     footer section article.social {
       text-align: center; }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        footer section article.social {
+          text-align: left; } }
       footer section article.social a {
         text-decoration: none; }
       footer section article.social img.social-icon {
