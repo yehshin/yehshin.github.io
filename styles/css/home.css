@@ -67,7 +67,8 @@ section.projects {
   width: 1280px;
   height: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow-x: hidden; }
   section.projects article {
     margin-top: 80px;
     position: relative; }
@@ -85,6 +86,17 @@ section.projects {
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transition: 0.5s; }
+      @media screen and (min-width: 319px) and (max-width: 1439px) {
+        section.projects article a .text {
+          top: 50%;
+          left: 40px;
+          transform: translate(0, -50%);
+          width: auto; } }
+      @media screen and (min-width: 319px) and (max-width: 767px) {
+        section.projects article a .text {
+          top: 50%;
+          left: 16px;
+          transform: translate(0, -50%); } }
       section.projects article a .text p.project-company {
         font-family: OverpassMono-Regular;
         font-size: 12px;
@@ -94,6 +106,9 @@ section.projects {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         margin-bottom: 24px; }
+        @media screen and (min-width: 319px) and (max-width: 767px) {
+          section.projects article a .text p.project-company {
+            margin-bottom: 16px; } }
       section.projects article a .text p.project-name {
         font-family: OverpassMono-SemiBold;
         font-size: 48px;
@@ -102,6 +117,10 @@ section.projects {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         margin-bottom: 16px; }
+        @media screen and (min-width: 319px) and (max-width: 767px) {
+          section.projects article a .text p.project-name {
+            font-size: 24px;
+            line-height: 24px; } }
       section.projects article a .text p.project-description {
         font-family: OverpassMono-Regular;
         font-size: 16px;
@@ -109,6 +128,11 @@ section.projects {
         color: #111;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased; }
+        @media screen and (min-width: 319px) and (max-width: 767px) {
+          section.projects article a .text p.project-description {
+            font-size: 14px;
+            line-height: 24px;
+            display: none; } }
     section.projects article img.thumbnail-image {
       width: 100%;
       height: auto;

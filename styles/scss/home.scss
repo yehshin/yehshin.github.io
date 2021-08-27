@@ -10,10 +10,6 @@
 // Hero
 // ====
 
-body {
-  // overflow-x: hidden;
-}
-
 section.hero {
   background-color: $gray;
   height: 100vh;
@@ -151,6 +147,7 @@ section.projects {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 
   article {
     margin-top: 80px;
@@ -176,26 +173,26 @@ section.projects {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
 
-        // animation-name: slideUpThumbnailText; 
-        // animation-timing-function: ease-in-out;
-        // animation-duration: 1s;
-        // animation-delay: 0s;
-        // animation-fill-mode: forwards;
-        // -webkit-animation-fill-mode: forwards;
-
         transition: 0.5s;
 
-        // @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+        // Breakpoints
+      
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
   
-        //   width: auto;
+          top: 50%;
+          left: 40px;
+          transform: translate(0, -50%);
+          width: auto;
       
-        // }
+        }
       
-        // @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
-          
-        //   width: auto;
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          top: 50%;
+          left: 16px;
+          transform: translate(0, -50%);
       
-        // }
+        }
 
         p.project-company {
           font-family: OverpassMono-Regular;
@@ -206,6 +203,12 @@ section.projects {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           margin-bottom: 24px;
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            margin-bottom: 16px;
+        
+          }
         }
   
         p.project-name {
@@ -216,6 +219,13 @@ section.projects {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           margin-bottom: 16px;
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            font-size: $font-size__24;
+            line-height: $line-height__24;
+        
+          }
         }
   
         p.project-description {
@@ -225,6 +235,14 @@ section.projects {
           color: $black;
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            font-size: $font-size__14;
+            line-height: $line-height__24;
+            display: none;
+        
+          }
         }
 
       }
@@ -242,8 +260,6 @@ section.projects {
   // Breakpoints
 
   @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
-
-    // background-color: green;
 
     width: auto;
     margin-left: 80px;

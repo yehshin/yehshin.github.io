@@ -154,9 +154,20 @@
 
 				<!-- Prototypes (Activate Card, Change PIN) -->
 
-				<div class="video-container-left">
+				<div class="video-container-left video-container">
 
-					<video autoplay="autoplay" loop="loop" muted playsinline>
+					<!-- <video autoplay="autoplay" loop="loop" muted playsinline>
+						<source src="../assets/videos/checking/activate-card.mp4" type="video/mp4">
+						Your browser does not support this video.
+					</video> -->
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<div class="video-overlay"></div>
+
+					<video id="video-1">
 						<source src="../assets/videos/checking/activate-card.mp4" type="video/mp4">
 						Your browser does not support this video.
 					</video>
@@ -164,6 +175,10 @@
 				</div>
 				
 				<div class="video-container-right">
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
 
 					<video autoplay="autoplay" loop="loop" muted playsinline>
 						<source src="../assets/videos/checking/change-pin.mp4" type="video/mp4">
@@ -371,7 +386,7 @@
 
 
 		<!--
-!
+
 		| Footer |
 
 		-->
@@ -469,28 +484,17 @@
 
 
 
+		<!--
 
+		| Scripts |
 
+		-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<!-- <script type="text/javascript" src="../styles/js/grained.js"></script> -->
+		<!-- <script type="text/javascript" src="../styles/js/animation.js"></script> -->
+		<script type="text/javascript" src="../styles/js/video-player.js"></script>
 		
-
-
+		
 		<!--
 
 		| Google Analytics |
