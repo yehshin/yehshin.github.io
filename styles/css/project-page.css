@@ -14,6 +14,17 @@ section.project-hero {
     color: #111;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased; }
+    @media screen and (min-width: 319px) and (max-width: 1439px) {
+      section.project-hero h1 {
+        margin-left: 80px;
+        margin-right: 80px;
+        max-width: auto;
+        width: auto; } }
+    @media screen and (min-width: 319px) and (max-width: 767px) {
+      section.project-hero h1 {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 48px; } }
   section.project-hero h2 {
     margin-top: 40px;
     font-family: LibreBaskerville-Regular;
