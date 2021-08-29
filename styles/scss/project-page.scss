@@ -17,17 +17,45 @@ header {
 section.project-hero {
 
   max-width: $max-width;
-  width: $max-width;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+
+  // Breakpoints
+
+  @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+    // background-color: green;
+    
+    width: auto;
+
+    margin-left: 80px;
+    margin-right: 80px;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+    
+    // background-color: yellow;
+
+    width: auto;
+
+    margin-left: 16px;
+    margin-right: 16px;
+
+  }
 
   h1 {
     
     // Layout
 
     margin-top: 80px;
-    
+    max-width: $max-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
     // Text Styles
   
     font-family: LibreBaskerville-Regular;
@@ -37,29 +65,13 @@ section.project-hero {
     -webkit-font-smoothing: antialiased;
 
     // Breakpoints
-
-    @media only screen and (min-width: $breakpoint__extra-large) {
-
-      // background-color: red;
   
-    }
-  
-    @media screen and (min-width: $breakpoint__large) and (max-width: $breakpoint__extra-large) {
-  
-      // background-color: blue;
-  
-    }
-  
-    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
   
       // background-color: green;
 
-      margin-left: 80px;
-      margin-right: 80px;
       max-width: auto;
       width: auto;
-
-
   
     }
   
@@ -67,8 +79,9 @@ section.project-hero {
       
       // background-color: yellow;
 
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-top: 0;
+      max-width: auto;
+      width: auto;
 
       font-size: $font-size__48;
   
@@ -86,17 +99,69 @@ section.project-hero {
   
     font-family: LibreBaskerville-Regular;
     font-size: $font-size__24;
+    line-height: $line-height__40;
     color: $black;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    // Breakpoints
+
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+      // background-color: green;
+
+      max-width: auto;
+      width: auto;
+  
+    }
+  
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      // background-color: yellow;
+
+      max-width: auto;
+      width: auto;
+
+      font-size: $font-size__16;
+      line-height: $line-height__24;
+  
+    }
   
   }
 
   img.thumbnail-image {
+
+    display: block;
+    max-width: $max-width;
     width: 100%;
     height: auto;
+
     margin-top: 80px;
     margin-bottom: 80px;
+
+    // Breakpoints
+
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+      // opacity: 0.2;
+      
+      max-width: 100%;
+      width: auto;
+  
+    }
+  
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      // background-color: yellow;
+
+      max-width: 100%;
+      width: auto;
+
+      margin-top: 40px;
+      margin-bottom: 40px;
+  
+    }
+
   }
 
 }
@@ -115,6 +180,30 @@ section.project-content {
   margin-left: auto;
   margin-right: auto;
 
+  // Breakpoints
+
+  @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+    // background-color: green;
+    
+    width: auto;
+
+    margin-left: 80px;
+    margin-right: 80px;
+
+  }
+
+  @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+    
+    // background-color: yellow;
+
+    width: auto;
+
+    margin-left: 16px;
+    margin-right: 16px;
+
+  }
+
   a {
     color: $black;
     text-decoration: underline;
@@ -127,9 +216,39 @@ section.project-content {
       width: 65%;
       float: left;
 
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+        width: 100%;
+
+      }
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+        
+        width: 100%;
+
+      }
+      
       div.content-block {
 
         margin-bottom: 80px;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+          margin-bottom: 40px;
+          width: 100%;
+
+        }
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+          
+          margin-bottom: 40px;
+          width: 100%;
+
+        }
 
         h1 {
 
@@ -145,6 +264,15 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 30px;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+            
+            font-size: $font-size__20;
+            line-height: auto;
+
+          }
       
           }
       
@@ -162,6 +290,15 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 28px;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            font-size: $font-size__16;
+            line-height: $line-height__24;
+
+          }
       
         }
 
@@ -173,9 +310,37 @@ section.project-content {
 
       float: right;
 
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+        float: left;
+
+      }
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+        
+        float: left;
+
+      }      
+
       div.content-block {
 
         margin-bottom: 80px;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+          margin-bottom: 40px;
+
+        }
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+          
+          margin-bottom: 40px;
+
+        }
 
         h1 {
 
@@ -191,6 +356,15 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 30px;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            font-size: $font-size__20;
+            line-height: auto;
+
+          }
 
         }
 
@@ -208,7 +382,16 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 28px;
-          
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+            font-size: $font-size__16;
+            line-height: $line-height__24;
+
+          }
+
         }
 
         a {
@@ -227,6 +410,15 @@ section.project-content {
           -webkit-font-smoothing: antialiased;
           line-height: 28px;
           text-decoration: underline;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+            font-size: $font-size__16;
+            line-height: $line-height__24;
+
+          }
           
         }
 
@@ -244,9 +436,37 @@ section.project-content {
 
       width: 65%;
 
+      @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+        width: 100%;
+
+      }
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+        
+        width: 100%;
+
+      }
+
       div.content-block {
 
         margin-bottom: 80px;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+          margin-bottom: 40px;
+          width: 100%;
+
+        }
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+          
+          margin-bottom: 40px;
+          width: 100%;
+
+        }
 
         h1 {
           // Layout
@@ -261,6 +481,15 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 30px;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+            font-size: $font-size__20;
+            line-height: auto;
+
+          }          
       
           }
       
@@ -278,7 +507,16 @@ section.project-content {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           line-height: 28px;
-      
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+            font-size: $font-size__16;
+            line-height: $line-height__24;
+
+          }
+          
         }
 
         ol.project-reasons {
@@ -291,6 +529,15 @@ section.project-content {
           line-height: 28px;
           margin-left: 32px;
           margin-top: 24px;
+
+          // Breakpoints
+
+          @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+            font-size: $font-size__16;
+            line-height: $line-height__24;
+
+          }
           
           li {
             
@@ -315,6 +562,20 @@ section.project-content {
     overflow: auto;
     margin-bottom: 80px;
 
+    // Breakpoints
+
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+      margin-bottom: 40px;
+
+    }
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      margin-bottom: 40px;
+
+    }
+
     div.video-container-left {
 
       width: 47%;
@@ -326,6 +587,16 @@ section.project-content {
       display: block;
       position: relative;
 
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+        
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 40px;
+
+      }
+
       button.play-button {
         position: absolute;
         width: 80px;
@@ -334,7 +605,7 @@ section.project-content {
         left: 0;
         margin: 0 auto;
         right: 0;
-        top: 50%;
+        top: 45%;
 
         background-color: transparent;
         color: none;
@@ -353,7 +624,7 @@ section.project-content {
         left: 0;
         margin: 0 auto;
         right: 0;
-        top: 50%;
+        top: 45%;
 
         background-color: transparent;
         color: none;
@@ -402,6 +673,15 @@ section.project-content {
       display: block;
       position: relative;
 
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+  
+        width: 100%;
+        padding: 40px;
+
+      }
+
       button.play-button {
         position: absolute;
         width: 80px;
@@ -410,7 +690,7 @@ section.project-content {
         left: 0;
         margin: 0 auto;
         right: 0;
-        top: 50%;
+        top: 45%;
 
         background-color: transparent;
         color: none;
@@ -429,7 +709,7 @@ section.project-content {
         left: 0;
         margin: 0 auto;
         right: 0;
-        top: 50%;
+        top: 45%;
 
         background-color: transparent;
         color: none;
@@ -473,6 +753,20 @@ section.project-content {
 
     margin-bottom: 80px;
 
+    // Breakpoints
+
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+      margin-bottom: 40px;
+
+    }
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+      
+      margin-bottom: 40px;
+
+    }
+
     div.col-left {
 
       div.content-block {
@@ -497,15 +791,51 @@ section.project-content {
     overflow: auto;
     display: block; 
 
+    // Breakpoints
+
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
+
+      margin-top: 80px;
+ 
+     }
+
+    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+     margin-bottom: 40px;
+
+    }
+
     a.prev-project {
 
       display: inline-block;
+
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        width: 50%;
+
+      }
 
       img#back-arrow {
         
         float: left;
         display: inline-block;
         margin-right: 16px;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          width: 24px;
+          height: 24px;
+
+          margin-left: 0;
+          margin-right: 0;
+          display: block;
+          margin-bottom: 8px;
+
+        }
 
       }
 
@@ -519,7 +849,18 @@ section.project-content {
         line-height: $line-height__24;
         color: $black;
         -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          font-size: $font-size__16;
+          line-height: $line-height__24;
+          float: left;
+          width: 100%;
+
+        }
 
       }
 
@@ -529,11 +870,54 @@ section.project-content {
 
       display: inline-block;
       float: right;
-      
+
+      // Breakpoints
+
+      @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+        width: 50%;
+
+      }
+
+      img#next-arrow-top {
+
+        float: right;
+        display: inline-block;
+        margin-left: 16px;
+        display: none;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          width: 24px;
+          height: 24px;
+
+          display: block;
+          text-align: right;
+          margin-bottom: 8px;
+
+        }
+
+      }
+
       img#next-arrow {
 
         float: right;
+        display: inline-block;
         margin-left: 16px;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          width: 24px;
+          height: 24px;
+
+          display: none;
+          text-align: right;
+
+        }
 
       }
 
@@ -547,6 +931,18 @@ section.project-content {
         color: $black;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
+
+        // Breakpoints
+
+        @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__medium) {
+
+          font-size: $font-size__16;
+          line-height: $line-height__24;
+          float: right;
+          text-align: right;
+          width: 100%;
+
+        }
 
       }
 

@@ -38,7 +38,7 @@ section.hero {
     section.hero h1 a {
       text-decoration: underline;
       color: #111; }
-    @media screen and (min-width: 319px) and (max-width: 1439px) {
+    @media screen and (min-width: 767px) and (max-width: 1439px) {
       section.hero h1 {
         margin-left: 80px;
         margin-right: 80px;
@@ -46,9 +46,11 @@ section.hero {
         width: auto; } }
     @media screen and (min-width: 319px) and (max-width: 767px) {
       section.hero h1 {
+        max-width: auto;
+        width: auto;
         margin-left: 16px;
         margin-right: 16px;
-        font-size: 48px;
+        font-size: 40px;
         text-align: left; } }
   section.hero img.circles {
     top: 0;

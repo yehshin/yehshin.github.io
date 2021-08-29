@@ -77,7 +77,7 @@ section.hero {
   
     }
   
-    @media screen and (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+    @media screen and (min-width: $breakpoint__medium) and (max-width: $breakpoint__large) {
   
       // background-color: green;
 
@@ -92,10 +92,13 @@ section.hero {
       
       // background-color: yellow;
 
+      max-width: auto;
+      width: auto;
+
       margin-left: 16px;
       margin-right: 16px;
 
-      font-size: $font-size__48;
+      font-size: $font-size__40;
       text-align: left;
   
     }
