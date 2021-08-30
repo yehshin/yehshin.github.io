@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 		<meta name="description" content="Ye Shin is a product designer at Betterment in New York City.">
-		<meta name="keywords" content="Ye Heon Shin, Ye Shin, Portfolio, Product Designer, Designer, New York City, Betterment">
+		<meta name="keywords" content="Ye Shin, Product Designer, Portfolio, New York City, Designer, Ye Heon Shin, Betterment">
 
 		<meta property="og:title" content="Ye Shin - Product Designer">
 		<meta property="og:url" content="http://yayitsye.com/">
@@ -22,45 +22,371 @@
 
 		<link rel="icon" type="image/png" href="../assets/visuals/meta/icon.png">
 
-		<link rel="stylesheet" href="../assets/css/base.css">
-		<link rel="stylesheet" href="../assets/css/project-page.css">
-		<link rel="stylesheet" href="../assets/css/normalize.css">
+		<link rel="stylesheet" href="../styles/css/normalize.css">
+		<link rel="stylesheet" href="../styles/css/header.css">
+		<link rel="stylesheet" href="../styles/css/footer.css">
+		<link rel="stylesheet" href="../styles/css/home.css">
+		<link rel="stylesheet" href="../styles/css/base.css">
+		<link rel="stylesheet" href="../styles/css/project-page.css">
 
-		<title>Ye Shin - Checking</title>
+		<title>Ye Shin - Flutter Design System</title>
 
 	</head>
 
 	<body>
 
+		<!--
+
+		| Hero |
+
+		-->
+
+		<header>
+			<a class="nav-item__home" href="../">ye</a>
+			<a class="nav-item__about" href="../about/">about</a>
+		</header>
 
 
+		<section class="project-hero">
 
+			<h1>Flutter Design System</h1>
+			<h2>Designed and worked with engineering to build out mobile design system using Flutter</h2>
 
+			<img class="thumbnail-image" id="thumbnail-image-flutter-design-system" src="../assets/images/home/flutter-design-system-thumbnail.png" width="2560" height="1200" alt="Project thumbnail for Flutter Design System">
 
+		</section>
 
+		<!--
 
+		| Project Content |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		-->
 		
+		<section class="project-content">
 
+			<article class="col-2">
 
+				<!-- Overview, Outcome -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>Overview</h1>
+						<p>Like many other companies, Betterement started with only a website. Now, with apps popping up left and right, it makes sense to start investing in our own. With a big focus lately and really updating our app, we spent a large focus on building out our first mobile design system.</p>
+
+					</div>
+
+					<div class="content-block">
+
+						<h1>Outcome</h1>
+						<p>As design never stops, so do design systems, and we’re constantly iterating. With Flutter being the technology of choice, we have been able to create a robust library of components as well as documentation and rules around the usage to help designers better focus on solving problems as opposed to creating components and help engineers implement components more efficiently.</p>
+
+					</div>
+
+				</div>
+
+				<!-- Overview, Outcome -->
+
+				<div class="col-right">
+
+					<div class="content-block">
+
+						<h1>Team</h1>
+						<p>David Kroner (Staff Designer)</p>
+						<p>Ken Yang (Sr. Staff Designer)</p>
+						<p>Jung Park (Sr. Staff Designer)</p>
+						<p>Mobile Engineers</p>
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="col-1">
+
+				<!-- Why, How -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>Problem</h1>
+						<p>Every team has their own reasons for implementing a design system; ours were:</p>
+
+						<ol class="project-reasons">
+							<li>Mobile app was becoming inconsistent with patterns and implementations, resulting in longer implementation times and disjointed experiences</li>
+							<li>With startup timelines, more time was being spent on building components every project as opposed to diving deeper into the problem being solved</li>
+							<li>The app felt very different from the desktop version, feeling like two different services even though it’s the same</li>
+							<li>With financial management increasingly becoming more mobile friendly, we wanted to make sure future projects and iterations can be done so easily with a flexible foundation</li>
+						</ol>  						  
+
+					</div>
+
+					<div class="content-block">
+
+						<h1>How we built a joint checking account</h1>
+						<p>We wanted to make it easy for people to create a joint checking account with their partner.</p>
+						<p>We allowed customers to easily add someone to their existing checking account, which would mean they would not have to update their billing or need to close out their account, or create a new separate account to be paired with their existing individual account.</p>		  
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="col-1">
+
+				<!-- So what's next? -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>The system in the design</h1>
+						<p>We paired with engineering to make sure that there were guidelines and rules set in place for the usage of components.</p>					  
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<!-- MRDC Flow -->
+	
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<img class="project-image" id="checking-mrdc-flow" src="../assets/images/checking/mrdc.png" width="3840" height="4140" alt="Image of Mobile Check Deposit flow path">
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<article class="col-1">
+
+				<!-- Blurb -->
+	
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<p>Execution wise, the components had to come first in order to start building out the rules. We paired with engineers to do an audit of the most reused components from the native app and converted those into Flutter components — some where 1:1 translations and some were updated based on if we thought it could be improved.</p>
+						<p>Once we had our building blocks, we started pairing that with current layouts in the app and started building out layouts, grids, usage, states, etc. We’d share certain examples and other designers from different squads would share how they’d use the components and we’d try to find the ruling that would be accomodate most use cases.</p>
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<article class="col-1-asset">
+
+				<!-- MRDC Flow -->
+	
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<img class="project-image" id="checking-mrdc-flow" src="../assets/images/checking/mrdc.png" width="3840" height="4140" alt="Image of Mobile Check Deposit flow path">
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<article class="col-1">
+
+				<!-- Blurb -->
+	
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<p>We then did the very fun, yet tedious, task of building out all the components into a Figma library. Variants happened to launch so we were able to do some fun stuff with them.</p>
+						<p>Once we got that in place, we started writing out the documenation for the components in the Figma pages so when references, other people can know how to use them. The documentation itself is very rough as I think writing documentation is such a hard and important skill, but we’re always working on it to make it better.</p>
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<article class="col-1">
+
+				<!-- So what's next? -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>So how’s it going?</h1>
+						<p>Designers have voiced how much easier it is now to create their designs, but also still not feel too constrained and not feel like they can’t get fun with their ideas. Engineers have also voiced how much easier it is to easily implement screens with the components and rules in place. People are working faster and smarter, and it feels good to serve people not just outside of Betterment, but in it as well.</p>					  
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<!-- MRDC Flow -->
+	
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<img class="project-image" id="checking-mrdc-flow" src="../assets/images/checking/mrdc.png" width="3840" height="4140" alt="Image of Mobile Check Deposit flow path">
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<!--
+
+			| Previous / Project Links |
+
+			-->
+
+			<article class="project-links">
+
+				<a href="../joint-checking/" class="prev-project">
+
+					<img class="nav-icon" id="back-arrow" src="../assets/images/global/back-icon.svg" width="24" height="24" alt="Back icon to previous project">
+
+					<p>Betterment Joint Checking</p>
+
+				</a>
+
+				<a href="../meetup-groups/" class="next-project">
+					
+					<img class="nav-icon" id="next-arrow-top" src="../assets/images/global/next-icon.svg" width="24" height="24" alt="Next icon to next project">
+					
+					<p>Meetup Groups</p>
+
+					<img class="nav-icon" id="next-arrow" src="../assets/images/global/next-icon.svg" width="24" height="24" alt="Next icon to next project">
+
+				</a>
+
+			</article>
+
+		</section>
+
+		<!--
+
+		| Footer |
+
+		-->
+
+		<footer>
+
+			<section>
+
+				<article class="experience-writing">
+
+					<div class="experience">
+
+						<h1>Experience</h1>
+
+						<div class="role">
+
+							<p class="company">Betterment</p>
+							<p class="job">Product Designer</p>
+							<p class="tenure">Mar 2019 - Present</p>
+
+						</div>
+
+						<div class="role">
+
+							<p class="company">Meetup</p>
+							<p class="job">Product Designer</p>
+							<p class="tenure">Feb 2018 - Mar 2019</p>
+
+						</div>
+
+						<div class="role">
+
+							<p class="company">Oak Studios</p>
+							<p class="job">Product Design Intern</p>
+							<p class="tenure">Aug 2017 - Feb 2018</p>
+
+						</div>
+
+						<a href="../assets/Ye Heon Shin - Resume.pdf" target="_blank">View Resume</a>
+
+					</div>
+
+					<div class="writing">
+
+						<h1>Writing</h1>
+
+						<div class="article">
+
+							<a class="title" href="https://bootcamp.uxdesign.cc/my-self-taught-career-switch-into-product-design-de8c5a012d49" target="_blank">My Self-Taught Career Into Design</a>
+							<p class="published">Oct 2020</p>
+
+						</div>
+						
+					</div>
+
+				</article>
+
+				<article class="social">
+
+					<a href="mailto:yeshin316@gmail.com">
+						<img class="social-icon" id="email" src="/assets/images/home/social-icon/email.svg" width="24" height="24" alt="Icon for email">
+					</a>
+
+					<a href="https://www.linkedin.com/in/ye-shin/" target="_blank">
+						<img class="social-icon" id="linkedin" src="/assets/images/home/social-icon/linkedin.svg" width="24" height="24" alt="Icon for LinkedIn">
+					</a>
+					
+					<a href="https://github.com/yehshin" target="_blank">
+						<img class="social-icon" id="github" src="/assets/images/home/social-icon/github.svg" width="24" height="24" alt="Icon for GitHub">
+					</a>
+
+					<a href="https://twitter.com/yayitsye" target="_blank">
+						<img class="social-icon" id="twitter" src="/assets/images/home/social-icon/twitter.svg" width="24" height="24" alt="Icon for Twitter">
+					</a>
+
+					<a href="https://www.instagram.com/yayitsye/" target="_blank">
+						<img class="social-icon" id="instagram" src="/assets/images/home/social-icon/instagram.svg" width="24" height="24" alt="Icon for Instagram">
+					</a>
+
+					<a href="https://yayitsye.medium.com/" target="_blank">
+						<img class="social-icon" id="medium" src="/assets/images/home/social-icon/medium.svg" width="24" height="24" alt="Icon for Medium">
+					</a>
+
+					<a href="https://open.spotify.com/user/yayitsye?si=76d121c86b324e56" target="_blank">
+						<img class="social-icon" id="spotify" src="/assets/images/home/social-icon/spotify.svg" width="24" height="24" alt="Icon for Spotify">
+					</a>
+
+					<p>Last updated July 12, 2021</p>
+			
+				</article>	
+
+			</section>	
+
+		</footer>
+
+		<!--
+
+		| Scripts |
+
+		-->
+
+		<script type="text/javascript" src="../styles/js/video-player.js"></script>		
+		
 		<!--
 
 		| Google Analytics |

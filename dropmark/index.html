@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 		<meta name="description" content="Ye Shin is a product designer at Betterment in New York City.">
-		<meta name="keywords" content="Ye Heon Shin, Ye Shin, Portfolio, Product Designer, Designer, New York City, Betterment">
+		<meta name="keywords" content="Ye Shin, Product Designer, Portfolio, New York City, Designer, Ye Heon Shin, Betterment">
 
 		<meta property="og:title" content="Ye Shin - Product Designer">
 		<meta property="og:url" content="http://yayitsye.com/">
@@ -22,9 +22,12 @@
 
 		<link rel="icon" type="image/png" href="../assets/visuals/meta/icon.png">
 
-		<link rel="stylesheet" href="../assets/css/base.css">
-		<link rel="stylesheet" href="../assets/css/project-page.css">
-		<link rel="stylesheet" href="../assets/css/normalize.css">
+		<link rel="stylesheet" href="../styles/css/normalize.css">
+		<link rel="stylesheet" href="../styles/css/header.css">
+		<link rel="stylesheet" href="../styles/css/footer.css">
+		<link rel="stylesheet" href="../styles/css/home.css">
+		<link rel="stylesheet" href="../styles/css/base.css">
+		<link rel="stylesheet" href="../styles/css/project-page.css">
 
 		<title>Ye Shin - Dropmark</title>
 
@@ -34,117 +37,344 @@
 
 		<!--
 
-		| Header |
+		| Hero |
 
 		-->
 
 		<header>
-
-			<a class="nav-item__home" href="../">ye.</a>
-			<li>
-				<a class="nav-item__about" href="../about/">about</a>
-				<a class="nav-item__resume" href="../assets/Ye Heon Shin - Resume.pdf" target="_blank">resume</a>
-				<a class="nav-item__contact" href="../contact/">contact</a>
-			</li>
-
+			<a class="nav-item__home" href="../">ye</a>
+			<a class="nav-item__about" href="../about/">about</a>
 		</header>
 
-		<!--
 
-		| Content |
+		<section class="project-hero">
 
-		-->
+			<h1>Dropmark</h1>
+			<h2>Developed the new rebrand of the marketing pages</h2>
 
-		<article class="copy__hero">
-
-			<h2>Dropmark</h2>
-
-			<p>Designed new features for Dropmark web and developed the rebranded marketing site</p>
-
-		</article>
-
-		<section class="hero">
-
-			<img src="../assets/visuals/dropmark/dropmark-thumbnail.png" width="2880" height="960" alt="Thumbnail image of venmo groups project">
+			<img class="thumbnail-image" id="thumbnail-image-dropmark" src="../assets/images/home/dropmark-thumbnail.png" width="2560" height="1200" alt="Project thumbnail for Dropmark">
 
 		</section>
-
-		<article class="copy">
-
-			<h2>Overview</h2>
-			<p>My first design job was as a product design intern at <a class="inline__link" href="https://oak.is/" target="_blank">Oak Studios</a>. From September to December 2017, my main focus was working on bringing the new <a class="inline__link" href="https://www.dropmark.com/" target="_blank"> Dropmark</a> to life.</p>
-			<br>
-			<p>I helped develop the new marketing site that <a class="inline__link" href="https://frankchimero.com/" target="_blank"> Frank Chimero </a> designed, as well as work on the redesign for Dropmark web.</p>
-
-			<h2>The results</h2>
-			<p>The marketing site I helped develop went live. It was built with standard HTML/CSS/JS, along with implementing SVG animations.</p>
-			<br>
-			<p>I also helped work on the new Dropmark style guide as well as design custom features for in-house teams at <a class="inline__link" href="https://www.nike.com/" target="_blank">Nike</a>.</p>
-
-		</article>
-
-		<section class="col-full-width">
-
-			<img src="../assets/visuals/dropmark/dropmark-asset-1.png" width="2880" height="1280" alt="Thumbnail image of venmo groups project">
-
-		</section>
-
-		<section class="col-full-width-video">
-
-			<video autoplay="autoplay" loop="loop" muted playsinline>
-				<source src="../assets/visuals/dropmark/dropmark-asset-2.mp4" type="video/mp4">
-				Your browser does not support this video.
-			</video>
-
-		</section>
-
-		<section class="col-full-width-video">
-
-			<video autoplay="autoplay" loop="loop" muted playsinline>
-				<source src="../assets/visuals/dropmark/dropmark-asset-3.mp4" type="video/mp4">
-				Your browser does not support this video.
-			</video>
-
-		</section>
-
-		<section class="col-full-width-video">
-
-			<video autoplay="autoplay" loop="loop" muted playsinline>
-				<source src="../assets/visuals/dropmark/dropmark-asset-4.mp4" type="video/mp4">
-				Your browser does not support this video.
-			</video>
-
-		</section>
-
-		<section class="col-full-width-video">
-
-			<video autoplay="autoplay" loop="loop" muted playsinline>
-				<source src="../assets/visuals/dropmark/dropmark-asset-5.mp4" type="video/mp4">
-				Your browser does not support this video.
-			</video>
-
-		</section>
-
-		<article class="copy">
-
-			<p class="single">Thank you to <a class="inline__link" href="https://oak.is/" target="_blank">Oak Studios</a> for taking a chance on me with my <a class="inline__link" href="https://oak.is/thinking/bye-bye-b-ye/" target="_blank">design career</a> and for giving me such big, fun projects to work on.</p>
-
-		</article>
 
 		<!--
 
-		| Next Project |
+		| Project Content |
+
+		-->
+		
+		<section class="project-content">
+
+			<article class="col-2">
+
+				<!-- Overview, Outcome -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>Overview</h1>
+						<p>Dropmark is a collaborative, organizational tool that can cover your many needs. It went through a redesign and rebrand along with the introduction of new features. With the designs being done by Frank Chimero, I implemented the new marketing pages for Dropmark.</p>
+
+					</div>
+
+					<div class="content-block">
+
+						<h1>Outcome</h1>
+						<p>The new site went up October 2019, which included the home, about, and pricing pages. Developed in with simple HTML/CSS/JS, there’s also some fun SVG animations included which was fun to code.</p>
+
+					</div>
+
+				</div>
+
+				<!-- Overview, Outcome -->
+
+				<div class="col-right">
+
+					<div class="content-block">
+
+						<h1>Team</h1>
+						<p>Frank Chimero (Design Lead)</p>
+						<p>Ethan Turkeltayb (Web Engineer)</p>
+
+					</div>
+
+					<div class="content-block">
+
+						<h1>Press</h1>
+
+						<a href="https://www.siteinspire.com/websites/9044-dropmark" target="_blank">Site Inspire</a>
+						<a href="https://twitter.com/sskylar/status/1115338621840703489?s=20" target="_blank">Tweet</a>
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<div class="col-left">
+	
+					<div class="content-block">
+	
+						<img class="project-image" id="dropmark-site-comparison" src="../assets/images/dropmark/site-screenshots.png" width="3840" height="1866" alt="Image of Dropmark site comparisons">
+	
+					</div>
+	
+				</div>
+	
+			</article>
+
+			<article class="col-1">
+
+				<!-- Why, How -->
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>Approach & Process</h1>
+						<p>This started as a team retreat hackathon project where they let the design intern (aka me) take a stab at livening up the marketing page. Thanks to my web development experience from school, I was able to develop the pages on my own as well as adding some fun animation delight.</p>					  
+
+					</div>
+
+				</div>
+
+			</article>
+			
+			<article class="col-1-asset">
+
+				<div class="video-container-left video-container-web">
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<button type="button" class="pause-button" id="pause-button">
+						<img src="../assets/images/global/pause-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<div class="video-overlay"></div>
+
+					<video loop="loop" muted>
+						<source src="../assets/videos/dropmark/dropmark-video-1.mp4" type="video/mp4">
+						Your browser does not support this video.
+					</video>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<div class="video-container-left video-container-web">
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<button type="button" class="pause-button" id="pause-button">
+						<img src="../assets/images/global/pause-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<div class="video-overlay"></div>
+
+					<video loop="loop" muted>
+						<source src="../assets/videos/dropmark/dropmark-video-2.mp4" type="video/mp4">
+						Your browser does not support this video.
+					</video>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<div class="video-container-left video-container-web">
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<button type="button" class="pause-button" id="pause-button">
+						<img src="../assets/images/global/pause-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<div class="video-overlay"></div>
+
+					<video loop="loop" muted>
+						<source src="../assets/videos/dropmark/dropmark-video-3.mp4" type="video/mp4">
+						Your browser does not support this video.
+					</video>
+
+				</div>
+
+			</article>
+
+			<article class="col-1-asset">
+
+				<div class="video-container-left video-container-web">
+
+					<button type="button" class="play-button" id="play-button">
+						<img src="../assets/images/global/play-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<button type="button" class="pause-button" id="pause-button">
+						<img src="../assets/images/global/pause-icon.svg" width="80" height="80" alt="Play icon for video">
+					</button>
+
+					<div class="video-overlay"></div>
+
+					<video loop="loop" muted>
+						<source src="../assets/videos/dropmark/dropmark-video-4.mp4" type="video/mp4">
+						Your browser does not support this video.
+					</video>
+
+				</div>
+
+			</article>			
+
+			<article class="col-1">
+
+				<div class="col-left">
+
+					<div class="content-block">
+
+						<h1>What I learned</h1>
+						<p>Oak is great, had a lot of experience, this was fun.</p>					  
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<!--
+
+			| Previous / Project Links |
+
+			-->
+
+			<article class="project-links">
+
+				<a href="../meetup-groups/" class="prev-project">
+
+					<img class="nav-icon" id="back-arrow" src="../assets/images/global/back-icon.svg" width="24" height="24" alt="Back icon to previous project">
+
+					<p>Meetup Groups</p>
+
+				</a>
+
+				<a href="../venmo-groups/" class="next-project">
+					
+					<img class="nav-icon" id="next-arrow-top" src="../assets/images/global/next-icon.svg" width="24" height="24" alt="Next icon to next project">
+					
+					<p>Venmo Groups</p>
+
+					<img class="nav-icon" id="next-arrow" src="../assets/images/global/next-icon.svg" width="24" height="24" alt="Next icon to next project">
+
+				</a>
+
+			</article>
+
+		</section>
+
+		<!--
+
+		| Footer |
 
 		-->
 
-		<a href="../starbucks/" class="next-project">
+		<footer>
 
-			<h2><span class="kicker">NEXT PROJECT</span><br>
-			Starbucks Redesign</h2>
+			<section>
 
-			<img class="next-project-thumbnail" src="../assets/visuals/starbucks/starbucks-thumbnail__cropped.png" width="2880" height="960" alt="Thumbnail image of venmo groups project">
+				<article class="experience-writing">
 
-		</a>
+					<div class="experience">
+
+						<h1>Experience</h1>
+
+						<div class="role">
+
+							<p class="company">Betterment</p>
+							<p class="job">Product Designer</p>
+							<p class="tenure">Mar 2019 - Present</p>
+
+						</div>
+
+						<div class="role">
+
+							<p class="company">Meetup</p>
+							<p class="job">Product Designer</p>
+							<p class="tenure">Feb 2018 - Mar 2019</p>
+
+						</div>
+
+						<div class="role">
+
+							<p class="company">Oak Studios</p>
+							<p class="job">Product Design Intern</p>
+							<p class="tenure">Aug 2017 - Feb 2018</p>
+
+						</div>
+
+						<a href="../assets/Ye Heon Shin - Resume.pdf" target="_blank">View Resume</a>
+
+					</div>
+
+					<div class="writing">
+
+						<h1>Writing</h1>
+
+						<div class="article">
+
+							<a class="title" href="https://bootcamp.uxdesign.cc/my-self-taught-career-switch-into-product-design-de8c5a012d49" target="_blank">My Self-Taught Career Into Design</a>
+							<p class="published">Oct 2020</p>
+
+						</div>
+						
+					</div>
+
+				</article>
+
+				<article class="social">
+
+					<a href="mailto:yeshin316@gmail.com">
+						<img class="social-icon" id="email" src="/assets/images/home/social-icon/email.svg" width="24" height="24" alt="Icon for email">
+					</a>
+
+					<a href="https://www.linkedin.com/in/ye-shin/" target="_blank">
+						<img class="social-icon" id="linkedin" src="/assets/images/home/social-icon/linkedin.svg" width="24" height="24" alt="Icon for LinkedIn">
+					</a>
+					
+					<a href="https://github.com/yehshin" target="_blank">
+						<img class="social-icon" id="github" src="/assets/images/home/social-icon/github.svg" width="24" height="24" alt="Icon for GitHub">
+					</a>
+
+					<a href="https://twitter.com/yayitsye" target="_blank">
+						<img class="social-icon" id="twitter" src="/assets/images/home/social-icon/twitter.svg" width="24" height="24" alt="Icon for Twitter">
+					</a>
+
+					<a href="https://www.instagram.com/yayitsye/" target="_blank">
+						<img class="social-icon" id="instagram" src="/assets/images/home/social-icon/instagram.svg" width="24" height="24" alt="Icon for Instagram">
+					</a>
+
+					<a href="https://yayitsye.medium.com/" target="_blank">
+						<img class="social-icon" id="medium" src="/assets/images/home/social-icon/medium.svg" width="24" height="24" alt="Icon for Medium">
+					</a>
+
+					<a href="https://open.spotify.com/user/yayitsye?si=76d121c86b324e56" target="_blank">
+						<img class="social-icon" id="spotify" src="/assets/images/home/social-icon/spotify.svg" width="24" height="24" alt="Icon for Spotify">
+					</a>
+
+					<p>Last updated July 12, 2021</p>
+			
+				</article>	
+
+			</section>	
+
+		</footer>
 
 		<!--
 
@@ -152,8 +382,8 @@
 
 		-->
 
-		<script type="text/javascript" src="../assets/js/animation.js"></script>
-
+		<script type="text/javascript" src="../styles/js/video-player.js"></script>		
+		
 		<!--
 
 		| Google Analytics |
