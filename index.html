@@ -55,21 +55,75 @@
 			max-width: 720px;
 		}
 
-		p span {
+		p a.name {
 			color: #b4b4b4;
+			cursor: pointer;
 		}
 
 		p a {
 			color: #b4b4b4;
 			text-decoration: none;
+			transition: color 0.3s ease;
 		}
 
 		p a:hover {
 			color: #e0e0e0;
 		}
+
+		@keyframes fadeOut {
+			0% {
+				-webkit-mask-position: 100% 100%;
+				mask-position: 100% 100%;
+			}
+			100% {
+				-webkit-mask-position: 0% 0%;
+				mask-position: 0% 0%;
+			}
+		}
+
+		p.fade-out {
+			-webkit-mask-image: linear-gradient(135deg, transparent 40%, #000 50%);
+			mask-image: linear-gradient(135deg, transparent 40%, #000 50%);
+			-webkit-mask-size: 500% 500%;
+			mask-size: 500% 500%;
+			animation: fadeOut 1.5s ease-in forwards;
+		}
+
+		@keyframes revealFromTopLeft {
+			0% {
+				-webkit-mask-position: 100% 100%;
+				mask-position: 100% 100%;
+			}
+			100% {
+				-webkit-mask-position: 0% 0%;
+				mask-position: 0% 0%;
+			}
+		}
+
+		p {
+			-webkit-mask-image: linear-gradient(135deg, #000 40%, transparent 50%);
+			mask-image: linear-gradient(135deg, #000 40%, transparent 50%);
+			-webkit-mask-size: 500% 500%;
+			mask-size: 500% 500%;
+			-webkit-mask-position: 100% 100%;
+			mask-position: 100% 100%;
+			animation: revealFromTopLeft 3s ease-out 0.3s forwards;
+		}
 	</style>
 </head>
 <body>
-	<p><span>Ye Shin</span> is in NYC building things at <a href="https://www.doordash.com/" target="_blank">DoorDash</a>. Previously at <a href="https://www.betterment.com/" target="_blank">Betterment</a>, <a href="https://www.meetup.com/" target="_blank">Meetup</a>, and <a href="https://oak.is/" target="_blank">Oak Studios</a>. For better or for worse, this site is currently being rebuilt. In the meantime, reach out through <a href="mailto:yeshin316@gmail.com">email</a>.</p>
+	<p><a class="name" href="/">Ye Shin</a> is in NYC building things at <a href="https://www.doordash.com/" target="_blank">DoorDash</a>. Previously at <a href="https://www.betterment.com/" target="_blank">Betterment</a>, <a href="https://www.meetup.com/" target="_blank">Meetup</a>, and <a href="https://oak.is/" target="_blank">Oak Studios</a>. For better or for worse, this site is currently being rebuilt. In the meantime, reach out through <a href="mailto:yeshin316@gmail.com">email</a>.</p>
+
+	<script>
+		document.querySelector('a.name').addEventListener('click', (e) => {
+			e.preventDefault();
+			const dest = e.currentTarget.href;
+			const p = document.querySelector('p');
+			p.classList.add('fade-out');
+			p.addEventListener('animationend', () => {
+				window.location.reload();
+			});
+		});
+	</script>
 </body>
 </html>
